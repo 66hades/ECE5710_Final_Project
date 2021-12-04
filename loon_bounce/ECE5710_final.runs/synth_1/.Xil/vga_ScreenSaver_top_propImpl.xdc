@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:{C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc} rfile:../../../ECE5710_final.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/loon_bounce/ECE5710_final.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc rfile:../../../ECE5710_final.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:2 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict { PACKAGE_PIN E3    IOSTANDARD LVCMOS33 } [get_ports { mclk }];
 set_property src_info {type:XDC file:1 line:6 export:INPUT save:INPUT read:READ} [current_design]

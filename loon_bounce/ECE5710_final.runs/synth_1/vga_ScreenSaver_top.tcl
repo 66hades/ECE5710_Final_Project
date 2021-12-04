@@ -17,29 +17,35 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
+set_param xicom.use_bs_reader 1
+set_param chipscope.maxJobs 4
 create_project -in_memory -part xc7a100tcsg324-1
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir {C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.cache/wt} [current_project]
-set_property parent.project_path {C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.xpr} [current_project]
+set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
+set_property webtalk.parent_dir /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/loon_bounce/ECE5710_final.cache/wt [current_project]
+set_property parent.project_path /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/loon_bounce/ECE5710_final.xpr [current_project]
+set_property XPM_LIBRARIES XPM_MEMORY [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
-set_property ip_output_repo {c:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.cache/ip} [current_project]
+set_property ip_output_repo /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/loon_bounce/ECE5710_final.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
-read_mem {{C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/sources_1/imports/Example 6/loons240x160.mif}}
+add_files /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/resources/ball.coe
+read_mem {{/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/loon_bounce/ECE5710_final.srcs/sources_1/imports/Example 6/loons240x160.mif}}
 read_vhdl -library xil_defaultlib {
-  {C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/sources_1/imports/Example 6/bounce.vhd}
-  {C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/sources_1/imports/Example 6/clkdiv2.vhd}
-  {C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/sources_1/imports/Example 6/clock_pulse.vhd}
-  {C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/sources_1/imports/Example 6/loons240x160.vhd}
-  {C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/sources_1/imports/Example 6/vga_640x480.vhd}
-  {C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/sources_1/imports/Example 6/vga_ScreenSaver.vhd}
-  {C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/sources_1/imports/Example 6/vga_components.vhd}
-  {C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/sources_1/imports/Example 6/vga_ScreenSaver_top.vhd}
+  {/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/loon_bounce/ECE5710_final.srcs/sources_1/imports/Example 6/bounce.vhd}
+  {/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/loon_bounce/ECE5710_final.srcs/sources_1/imports/Example 6/clkdiv2.vhd}
+  {/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/loon_bounce/ECE5710_final.srcs/sources_1/imports/Example 6/clock_pulse.vhd}
+  {/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/loon_bounce/ECE5710_final.srcs/sources_1/imports/Example 6/vga_640x480.vhd}
+  {/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/loon_bounce/ECE5710_final.srcs/sources_1/imports/Example 6/vga_ScreenSaver.vhd}
+  {/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/loon_bounce/ECE5710_final.srcs/sources_1/imports/Example 6/vga_components.vhd}
+  {/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/loon_bounce/ECE5710_final.srcs/sources_1/imports/Example 6/vga_ScreenSaver_top.vhd}
 }
-read_edif {{C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/sources_1/imports/Example 6/loons240x160.edn}}
+read_ip -quiet /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/loon_bounce/ECE5710_final.srcs/sources_1/ip/x8ball_ROM/x8ball_ROM.xci
+set_property used_in_implementation false [get_files -all /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/loon_bounce/ECE5710_final.srcs/sources_1/ip/x8ball_ROM/x8ball_ROM_ooc.xdc]
+
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
 # design are intentionally left as such for best results. Dcp files will be
@@ -48,8 +54,8 @@ read_edif {{C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc {{C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc}}
-set_property used_in_implementation false [get_files {{C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc}}]
+read_xdc /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/loon_bounce/ECE5710_final.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc
+set_property used_in_implementation false [get_files /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/loon_bounce/ECE5710_final.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]

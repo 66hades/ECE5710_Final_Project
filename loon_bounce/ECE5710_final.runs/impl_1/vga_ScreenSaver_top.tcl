@@ -65,17 +65,19 @@ start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
-  set_param chipscope.maxJobs 1
+  set_param xicom.use_bs_reader 1
+  set_param chipscope.maxJobs 4
   create_project -in_memory -part xc7a100tcsg324-1
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir {C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.cache/wt} [current_project]
-  set_property parent.project_path {C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.xpr} [current_project]
-  set_property ip_output_repo {{C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.cache/ip}} [current_project]
+  set_property webtalk.parent_dir /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/loon_bounce/ECE5710_final.cache/wt [current_project]
+  set_property parent.project_path /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/loon_bounce/ECE5710_final.xpr [current_project]
+  set_property ip_output_repo /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/loon_bounce/ECE5710_final.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
-  add_files -quiet {{C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.runs/synth_1/vga_ScreenSaver_top.dcp}}
-  read_edif {{C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/sources_1/imports/Example 6/loons240x160.edn}}
-  read_xdc {{C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc}}
+  set_property XPM_LIBRARIES XPM_MEMORY [current_project]
+  add_files -quiet /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/loon_bounce/ECE5710_final.runs/synth_1/vga_ScreenSaver_top.dcp
+  read_ip -quiet /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/loon_bounce/ECE5710_final.srcs/sources_1/ip/x8ball_ROM/x8ball_ROM.xci
+  read_xdc /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/loon_bounce/ECE5710_final.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc
   link_design -top vga_ScreenSaver_top -part xc7a100tcsg324-1
   close_msg_db -file init_design.pb
 } RESULT]
@@ -155,6 +157,7 @@ start_step write_bitstream
 set ACTIVE_STEP write_bitstream
 set rc [catch {
   create_msg_db write_bitstream.pb
+  set_property XPM_LIBRARIES XPM_MEMORY [current_project]
   catch { write_mem_info -force vga_ScreenSaver_top.mmi }
   write_bitstream -force vga_ScreenSaver_top.bit 
   catch {write_debug_probes -quiet -force vga_ScreenSaver_top}

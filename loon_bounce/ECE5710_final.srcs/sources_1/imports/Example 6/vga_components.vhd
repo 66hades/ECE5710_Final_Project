@@ -61,7 +61,7 @@ component brom8x16
 	dout: OUT std_logic_VECTOR(15 downto 0));
 end component;
 
-	component counter
+component counter
 	generic(
 		N : INTEGER := 8);
 	port(
@@ -70,7 +70,7 @@ end component;
 		q : out std_logic_vector(N-1 downto 0));
 	end component;
 	
-	component vga_640x480
+component vga_640x480
 	port(
 		clk : in std_logic;
 		clr : in std_logic;
@@ -81,7 +81,7 @@ end component;
 		vidon : out std_logic);
 	end component;
 
-	component vga_stripes
+component vga_stripes
 	port(
 		vidon : in std_logic;
 		hc : in std_logic_vector(9 downto 0);
@@ -91,7 +91,7 @@ end component;
 		blue : out std_logic_vector(1 downto 0));
 	end component;
 
-	component vga_640x480_mod60
+component vga_640x480_mod60
 	port(
 		clk : in std_logic;
 		clr : in std_logic;
@@ -104,7 +104,7 @@ end component;
 		vidon : out std_logic);
 	end component;
 
-	component vga_checkerboard
+component vga_checkerboard
 	port(
 		vidon : in std_logic;
 		clk : in std_logic;
@@ -118,7 +118,7 @@ end component;
 		blue : out std_logic_vector(1 downto 0));
 	end component;
  
-	component vga_640x480_mod30
+component vga_640x480_mod30
 	port(
 		clk : in std_logic;
 		clr : in std_logic;
@@ -130,7 +130,7 @@ end component;
 		vidon : out std_logic);
 	end component;
 
-	component vga_256color
+component vga_256color
 	port(
 		vidon : in std_logic;
 		hc : in std_logic_vector(9 downto 0);
@@ -165,6 +165,13 @@ component loons240x160
 	addr: IN std_logic_VECTOR(15 downto 0);
 	clk: IN std_logic;
 	dout: OUT std_logic_VECTOR(7 downto 0));
+end component;
+
+component x8ball_ROM
+	port (
+	addra: IN std_logic_VECTOR(5 downto 0);
+	clka: IN std_logic;
+	douta: OUT std_logic_VECTOR(7 downto 0));
 end component;
 	
 	component vga_bsprite
@@ -202,6 +209,7 @@ end component;
 		C1 : in std_logic_vector(9 downto 0);
 		R1 : in std_logic_vector(9 downto 0);
 		rom_addr16 : out std_logic_vector(15 downto 0);
+		rom_addr7 : out std_logic_vector(5 downto 0);
 		red : out std_logic_vector(2 downto 0);
 		green : out std_logic_vector(2 downto 0);
 		blue : out std_logic_vector(1 downto 0));

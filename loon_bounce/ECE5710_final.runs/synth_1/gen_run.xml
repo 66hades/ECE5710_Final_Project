@@ -1,24 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1638420488">
-  <File Type="PA-TCL" Name="vga_ScreenSaver_top.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="vga_ScreenSaver_top_drc_synth.rpt"/>
-  <File Type="REPORTS-TCL" Name="vga_ScreenSaver_top_reports.tcl"/>
-  <File Type="RDS-RDS" Name="vga_ScreenSaver_top.vds"/>
-  <File Type="RDS-UTIL" Name="vga_ScreenSaver_top_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="vga_ScreenSaver_top_utilization_synth.pb"/>
-  <File Type="RDS-DCP" Name="vga_ScreenSaver_top.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="vga_ScreenSaver_top_timing_summary_synth.rpt"/>
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1638660751">
   <File Type="VDS-TIMING-PB" Name="vga_ScreenSaver_top_timing_summary_synth.pb"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="vga_ScreenSaver_top_timing_summary_synth.rpt"/>
+  <File Type="RDS-DCP" Name="vga_ScreenSaver_top.dcp"/>
+  <File Type="RDS-UTIL-PB" Name="vga_ScreenSaver_top_utilization_synth.pb"/>
+  <File Type="RDS-UTIL" Name="vga_ScreenSaver_top_utilization_synth.rpt"/>
+  <File Type="RDS-PROPCONSTRS" Name="vga_ScreenSaver_top_drc_synth.rpt"/>
+  <File Type="RDS-RDS" Name="vga_ScreenSaver_top.vds"/>
+  <File Type="REPORTS-TCL" Name="vga_ScreenSaver_top_reports.tcl"/>
+  <File Type="PA-TCL" Name="vga_ScreenSaver_top.tcl"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
-    <File Path="$PSRCDIR/sources_1/imports/Example 6/loons240x160.edn">
-      <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../test2.srcs/sources_1/imports/Example 6/loons240x160.edn"/>
-        <Attr Name="ImportTime" Val="1638242750"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-      </FileInfo>
-    </File>
     <File Path="$PSRCDIR/sources_1/imports/Example 6/bounce.vhd">
       <FileInfo>
         <Attr Name="ImportPath" Val="$PPRDIR/../test2.srcs/sources_1/imports/Example 6/bounce.vhd"/>
@@ -38,14 +30,6 @@
     <File Path="$PSRCDIR/sources_1/imports/Example 6/clock_pulse.vhd">
       <FileInfo>
         <Attr Name="ImportPath" Val="$PPRDIR/../test2.srcs/sources_1/imports/Example 6/clock_pulse.vhd"/>
-        <Attr Name="ImportTime" Val="1638242750"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/imports/Example 6/loons240x160.vhd">
-      <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../test2.srcs/sources_1/imports/Example 6/loons240x160.vhd"/>
         <Attr Name="ImportTime" Val="1638242750"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -83,10 +67,34 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/imports/Example 6/loons240x160.edn">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../test2.srcs/sources_1/imports/Example 6/loons240x160.edn"/>
+        <Attr Name="ImportTime" Val="1638242750"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Example 6/loons240x160.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../test2.srcs/sources_1/imports/Example 6/loons240x160.vhd"/>
+        <Attr Name="ImportTime" Val="1638242750"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/imports/Example 6/loons240x160.mif">
       <FileInfo>
         <Attr Name="ImportPath" Val="$PPRDIR/../test2.srcs/sources_1/imports/Example 6/loons240x160.mif"/>
         <Attr Name="ImportTime" Val="1638242750"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../resources/ball.coe">
+      <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
@@ -118,9 +126,8 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019">
-      <Desc>Vivado Synthesis Defaults</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
     <Step Id="synth_design"/>
   </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="x8ball_ROM"/>
 </GenRun>

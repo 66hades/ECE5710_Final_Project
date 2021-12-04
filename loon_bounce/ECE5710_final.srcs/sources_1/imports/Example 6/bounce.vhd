@@ -21,8 +21,10 @@ process(cclk, clr)
 variable c1v, r1v: STD_LOGIC_VECTOR(9 downto 0);
 variable dcv, drv: STD_LOGIC_VECTOR(9 downto 0);
 variable calc: std_logic;
-constant c1max: integer := 400; --640-240 = 400
-constant r1max: integer := 320; --480-160 = 320
+--constant c1max: integer := 400; --640-240 = 400
+--constant r1max: integer := 320; --480-160 = 320
+constant c1max: integer := 632; --640-8 = 632
+constant r1max: integer := 472; --480-8 = 472
 begin
 	if clr = '1' then
 		c1v := "0001010000";   -- 80 = 0x50       --starting column
