@@ -1,0 +1,466 @@
+
+*** Running vivado
+    with args -log vga_ScreenSaver_top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source vga_ScreenSaver_top.tcl
+
+
+****** Vivado v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source vga_ScreenSaver_top.tcl -notrace
+Command: synth_design -top vga_ScreenSaver_top -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 10300 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 691.152 ; gain = 178.484
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'vga_ScreenSaver_top' [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/sources_1/imports/Example 6/vga_ScreenSaver_top.vhd:19]
+INFO: [Synth 8-3491] module 'clkdiv2' declared at 'C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/sources_1/imports/Example 6/clkdiv2.vhd:6' bound to instance 'U1' of component 'clkdiv2' [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/sources_1/imports/Example 6/vga_ScreenSaver_top.vhd:28]
+INFO: [Synth 8-638] synthesizing module 'clkdiv2' [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/sources_1/imports/Example 6/clkdiv2.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'clkdiv2' (1#1) [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/sources_1/imports/Example 6/clkdiv2.vhd:15]
+INFO: [Synth 8-3491] module 'vga_640x480' declared at 'C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/sources_1/imports/Example 6/vga_640x480.vhd:6' bound to instance 'U2' of component 'vga_640x480' [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/sources_1/imports/Example 6/vga_ScreenSaver_top.vhd:36]
+INFO: [Synth 8-638] synthesizing module 'vga_640x480' [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/sources_1/imports/Example 6/vga_640x480.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'vga_640x480' (2#1) [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/sources_1/imports/Example 6/vga_640x480.vhd:16]
+INFO: [Synth 8-3491] module 'vga_ScreenSaver' declared at 'C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/sources_1/imports/Example 6/vga_ScreenSaver.vhd:6' bound to instance 'U3' of component 'vga_screensaver' [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/sources_1/imports/Example 6/vga_ScreenSaver_top.vhd:47]
+INFO: [Synth 8-638] synthesizing module 'vga_ScreenSaver' [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/sources_1/imports/Example 6/vga_ScreenSaver.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'vga_ScreenSaver' (3#1) [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/sources_1/imports/Example 6/vga_ScreenSaver.vhd:19]
+INFO: [Synth 8-3491] module 'loons240x160' declared at 'C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/sources_1/imports/Example 6/loons240x160.vhd:43' bound to instance 'U4' of component 'loons240x160' [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/sources_1/imports/Example 6/vga_ScreenSaver_top.vhd:61]
+INFO: [Synth 8-638] synthesizing module 'loons240x160' [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/sources_1/imports/Example 6/loons240x160.vhd:50]
+INFO: [Synth 8-256] done synthesizing module 'loons240x160' (4#1) [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/sources_1/imports/Example 6/loons240x160.vhd:50]
+INFO: [Synth 8-3491] module 'clock_pulse' declared at 'C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/sources_1/imports/Example 6/clock_pulse.vhd:5' bound to instance 'U5' of component 'clock_pulse' [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/sources_1/imports/Example 6/vga_ScreenSaver_top.vhd:67]
+INFO: [Synth 8-638] synthesizing module 'clock_pulse' [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/sources_1/imports/Example 6/clock_pulse.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'clock_pulse' (5#1) [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/sources_1/imports/Example 6/clock_pulse.vhd:12]
+INFO: [Synth 8-3491] module 'bounce' declared at 'C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/sources_1/imports/Example 6/bounce.vhd:6' bound to instance 'U6' of component 'bounce' [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/sources_1/imports/Example 6/vga_ScreenSaver_top.vhd:75]
+INFO: [Synth 8-638] synthesizing module 'bounce' [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/sources_1/imports/Example 6/bounce.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'bounce' (6#1) [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/sources_1/imports/Example 6/bounce.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'vga_ScreenSaver_top' (7#1) [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/sources_1/imports/Example 6/vga_ScreenSaver_top.vhd:19]
+WARNING: [Synth 8-3331] design vga_ScreenSaver_top has unconnected port btn[2]
+WARNING: [Synth 8-3331] design vga_ScreenSaver_top has unconnected port btn[1]
+WARNING: [Synth 8-3331] design vga_ScreenSaver_top has unconnected port sw[7]
+WARNING: [Synth 8-3331] design vga_ScreenSaver_top has unconnected port sw[6]
+WARNING: [Synth 8-3331] design vga_ScreenSaver_top has unconnected port sw[5]
+WARNING: [Synth 8-3331] design vga_ScreenSaver_top has unconnected port sw[4]
+WARNING: [Synth 8-3331] design vga_ScreenSaver_top has unconnected port sw[3]
+WARNING: [Synth 8-3331] design vga_ScreenSaver_top has unconnected port sw[2]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 755.414 ; gain = 242.746
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 755.414 ; gain = 242.746
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 755.414 ; gain = 242.746
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc]
+WARNING: [Vivado 12-584] No ports matched 'sw[8]'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:14]
+WARNING: [Vivado 12-584] No ports matched 'sw[9]'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:15]
+WARNING: [Vivado 12-584] No ports matched 'sw[10]'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:16]
+WARNING: [Vivado 12-584] No ports matched 'sw[11]'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:17]
+WARNING: [Vivado 12-584] No ports matched 'sw[12]'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:18]
+WARNING: [Vivado 12-584] No ports matched 'sw[13]'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:19]
+WARNING: [Vivado 12-584] No ports matched 'sw[14]'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:20]
+WARNING: [Vivado 12-584] No ports matched 'sw[15]'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:21]
+WARNING: [Vivado 12-584] No ports matched 'ld[0]'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:24]
+WARNING: [Vivado 12-584] No ports matched 'ld[1]'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:25]
+WARNING: [Vivado 12-584] No ports matched 'ld[2]'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:26]
+WARNING: [Vivado 12-584] No ports matched 'ld[3]'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:27]
+WARNING: [Vivado 12-584] No ports matched 'ld[4]'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:28]
+WARNING: [Vivado 12-584] No ports matched 'ld[5]'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:29]
+WARNING: [Vivado 12-584] No ports matched 'ld[6]'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:30]
+WARNING: [Vivado 12-584] No ports matched 'ld[7]'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:31]
+WARNING: [Vivado 12-584] No ports matched 'ld[8]'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:32]
+WARNING: [Vivado 12-584] No ports matched 'ld[9]'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:33]
+WARNING: [Vivado 12-584] No ports matched 'ld[10]'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:34]
+WARNING: [Vivado 12-584] No ports matched 'ld[11]'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:35]
+WARNING: [Vivado 12-584] No ports matched 'ld[12]'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:36]
+WARNING: [Vivado 12-584] No ports matched 'ld[13]'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:37]
+WARNING: [Vivado 12-584] No ports matched 'ld[14]'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:38]
+WARNING: [Vivado 12-584] No ports matched 'ld[15]'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:39]
+WARNING: [Vivado 12-584] No ports matched 'ld16b'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:42]
+WARNING: [Vivado 12-584] No ports matched 'ld16g'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:43]
+WARNING: [Vivado 12-584] No ports matched 'ld16r'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:44]
+WARNING: [Vivado 12-584] No ports matched 'ld17b'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:45]
+WARNING: [Vivado 12-584] No ports matched 'ld17g'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:46]
+WARNING: [Vivado 12-584] No ports matched 'ld17r'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:47]
+WARNING: [Vivado 12-584] No ports matched 'a_to_g[6]'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:50]
+WARNING: [Vivado 12-584] No ports matched 'a_to_g[5]'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:51]
+WARNING: [Vivado 12-584] No ports matched 'a_to_g[4]'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:52]
+WARNING: [Vivado 12-584] No ports matched 'a_to_g[3]'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:53]
+WARNING: [Vivado 12-584] No ports matched 'a_to_g[2]'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:54]
+WARNING: [Vivado 12-584] No ports matched 'a_to_g[1]'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:55]
+WARNING: [Vivado 12-584] No ports matched 'a_to_g[0]'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:56]
+WARNING: [Vivado 12-584] No ports matched 'dp'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:58]
+WARNING: [Vivado 12-584] No ports matched 'an[0]'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:60]
+WARNING: [Vivado 12-584] No ports matched 'an[1]'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:61]
+WARNING: [Vivado 12-584] No ports matched 'an[2]'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:62]
+WARNING: [Vivado 12-584] No ports matched 'an[3]'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:63]
+WARNING: [Vivado 12-584] No ports matched 'an[4]'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:64]
+WARNING: [Vivado 12-584] No ports matched 'an[5]'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:65]
+WARNING: [Vivado 12-584] No ports matched 'an[6]'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:66]
+WARNING: [Vivado 12-584] No ports matched 'an[7]'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:67]
+WARNING: [Vivado 12-584] No ports matched 'rstn'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:70]
+WARNING: [Vivado 12-584] No ports matched 'btn[4]'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:71]
+WARNING: [Vivado 12-584] No ports matched 'ja1'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:78]
+WARNING: [Vivado 12-584] No ports matched 'ja2'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:79]
+WARNING: [Vivado 12-584] No ports matched 'ja3'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:80]
+WARNING: [Vivado 12-584] No ports matched 'ja4'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:81]
+WARNING: [Vivado 12-584] No ports matched 'ja7'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:82]
+WARNING: [Vivado 12-584] No ports matched 'ja8'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:83]
+WARNING: [Vivado 12-584] No ports matched 'ja9'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:84]
+WARNING: [Vivado 12-584] No ports matched 'ja10'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:85]
+WARNING: [Vivado 12-584] No ports matched 'jb1'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:88]
+WARNING: [Vivado 12-584] No ports matched 'jb2'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:89]
+WARNING: [Vivado 12-584] No ports matched 'jb3'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:90]
+WARNING: [Vivado 12-584] No ports matched 'jb4'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:91]
+WARNING: [Vivado 12-584] No ports matched 'jb7'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:92]
+WARNING: [Vivado 12-584] No ports matched 'jb8'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:93]
+WARNING: [Vivado 12-584] No ports matched 'jb9'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:94]
+WARNING: [Vivado 12-584] No ports matched 'jb10'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:95]
+WARNING: [Vivado 12-584] No ports matched 'jc1'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:98]
+WARNING: [Vivado 12-584] No ports matched 'jc2'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:99]
+WARNING: [Vivado 12-584] No ports matched 'jc3'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:100]
+WARNING: [Vivado 12-584] No ports matched 'jc4'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:101]
+WARNING: [Vivado 12-584] No ports matched 'jc7'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:102]
+WARNING: [Vivado 12-584] No ports matched 'jc8'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:103]
+WARNING: [Vivado 12-584] No ports matched 'jc9'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:104]
+WARNING: [Vivado 12-584] No ports matched 'jc10'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:105]
+WARNING: [Vivado 12-584] No ports matched 'jd1'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:108]
+WARNING: [Vivado 12-584] No ports matched 'jd2'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:109]
+WARNING: [Vivado 12-584] No ports matched 'jd3'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:110]
+WARNING: [Vivado 12-584] No ports matched 'jd4'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:111]
+WARNING: [Vivado 12-584] No ports matched 'jd7'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:112]
+WARNING: [Vivado 12-584] No ports matched 'jd8'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:113]
+WARNING: [Vivado 12-584] No ports matched 'jd9'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:114]
+WARNING: [Vivado 12-584] No ports matched 'jd10'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:115]
+WARNING: [Vivado 12-584] No ports matched 'xa_n[1]'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:118]
+WARNING: [Vivado 12-584] No ports matched 'xa_p[1]'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:119]
+WARNING: [Vivado 12-584] No ports matched 'xa_n[2]'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:120]
+WARNING: [Vivado 12-584] No ports matched 'xa_p[2]'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:121]
+WARNING: [Vivado 12-584] No ports matched 'xa_n[3]'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:122]
+WARNING: [Vivado 12-584] No ports matched 'xa_p[3]'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:123]
+WARNING: [Vivado 12-584] No ports matched 'xa_n[4]'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:124]
+WARNING: [Vivado 12-584] No ports matched 'xa_p[4]'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:125]
+WARNING: [Vivado 12-584] No ports matched 'red[3]'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:131]
+WARNING: [Vivado 12-584] No ports matched 'green[3]'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:136]
+WARNING: [Vivado 12-584] No ports matched 'blue[2]'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:140]
+WARNING: [Vivado 12-584] No ports matched 'blue[3]'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:141]
+WARNING: [Vivado 12-584] No ports matched 'ACL_MISO'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:147]
+WARNING: [Vivado 12-584] No ports matched 'ACL_MOSI'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:148]
+WARNING: [Vivado 12-584] No ports matched 'ACL_SCLK'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:149]
+WARNING: [Vivado 12-584] No ports matched 'ACL_CSN'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:150]
+WARNING: [Vivado 12-584] No ports matched 'ACL_INT[1]'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:151]
+WARNING: [Vivado 12-584] No ports matched 'ACL_INT[2]'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:152]
+WARNING: [Vivado 12-584] No ports matched 'TMP_SCL'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:155]
+WARNING: [Vivado 12-584] No ports matched 'TMP_SDA'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:156]
+INFO: [Common 17-14] Message 'Vivado 12-584' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc:156]
+Finished Parsing XDC File [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/vga_ScreenSaver_top_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/constrs_1/imports/ECE5710/nexys4_ddr.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/vga_ScreenSaver_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/vga_ScreenSaver_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 875.809 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 875.809 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 875.809 ; gain = 363.141
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 875.809 ; gain = 363.141
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 875.809 ; gain = 363.141
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 875.809 ; gain = 363.141
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   5 Input     16 Bit       Adders := 1     
+	   3 Input     11 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 12    
+	   3 Input     10 Bit       Adders := 2     
++---Registers : 
+	               10 Bit    Registers := 6     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 2     
+	   4 Input     10 Bit        Muxes := 3     
+	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module vga_640x480 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 2     
++---Registers : 
+	               10 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 2     
+Module vga_ScreenSaver 
+Detailed RTL Component Info : 
++---Adders : 
+	   5 Input     16 Bit       Adders := 1     
+	   3 Input     11 Bit       Adders := 1     
+	   3 Input     10 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 4     
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 1     
+Module clock_pulse 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 3     
+Module bounce 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 6     
++---Registers : 
+	               10 Bit    Registers := 4     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   4 Input     10 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3331] design vga_ScreenSaver_top has unconnected port btn[2]
+WARNING: [Synth 8-3331] design vga_ScreenSaver_top has unconnected port btn[1]
+WARNING: [Synth 8-3331] design vga_ScreenSaver_top has unconnected port sw[7]
+WARNING: [Synth 8-3331] design vga_ScreenSaver_top has unconnected port sw[6]
+WARNING: [Synth 8-3331] design vga_ScreenSaver_top has unconnected port sw[5]
+WARNING: [Synth 8-3331] design vga_ScreenSaver_top has unconnected port sw[4]
+WARNING: [Synth 8-3331] design vga_ScreenSaver_top has unconnected port sw[3]
+WARNING: [Synth 8-3331] design vga_ScreenSaver_top has unconnected port sw[2]
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\U6/dcv_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\U6/drv_reg[0] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 875.809 ; gain = 363.141
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:37 . Memory (MB): peak = 875.809 ; gain = 363.141
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:38 . Memory (MB): peak = 875.809 ; gain = 363.141
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:31 ; elapsed = 00:00:38 . Memory (MB): peak = 875.809 ; gain = 363.141
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:34 ; elapsed = 00:00:42 . Memory (MB): peak = 884.934 ; gain = 372.266
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:34 ; elapsed = 00:00:42 . Memory (MB): peak = 884.934 ; gain = 372.266
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:34 ; elapsed = 00:00:43 . Memory (MB): peak = 884.934 ; gain = 372.266
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:34 ; elapsed = 00:00:43 . Memory (MB): peak = 884.934 ; gain = 372.266
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:34 ; elapsed = 00:00:43 . Memory (MB): peak = 884.934 ; gain = 372.266
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:34 ; elapsed = 00:00:43 . Memory (MB): peak = 884.934 ; gain = 372.266
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |loons240x160  |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+-------------+------+
+|      |Cell         |Count |
++------+-------------+------+
+|1     |loons240x160 |     1|
+|2     |BUFG         |     2|
+|3     |CARRY4       |    45|
+|4     |LUT1         |    23|
+|5     |LUT2         |    83|
+|6     |LUT3         |    27|
+|7     |LUT4         |    57|
+|8     |LUT5         |    32|
+|9     |LUT6         |    38|
+|10    |FDCE         |    67|
+|11    |FDPE         |    14|
+|12    |FDRE         |     1|
+|13    |IBUF         |     5|
+|14    |OBUF         |    10|
++------+-------------+------+
+
+Report Instance Areas: 
++------+---------+----------------+------+
+|      |Instance |Module          |Cells |
++------+---------+----------------+------+
+|1     |top      |                |   412|
+|2     |  U1     |clkdiv2         |    25|
+|3     |  U2     |vga_640x480     |    91|
+|4     |  U3     |vga_ScreenSaver |    60|
+|5     |  U5     |clock_pulse     |     6|
+|6     |  U6     |bounce          |   205|
++------+---------+----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:34 ; elapsed = 00:00:43 . Memory (MB): peak = 884.934 ; gain = 372.266
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 8 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:25 ; elapsed = 00:00:38 . Memory (MB): peak = 884.934 ; gain = 251.871
+Synthesis Optimization Complete : Time (s): cpu = 00:00:35 ; elapsed = 00:00:43 . Memory (MB): peak = 884.934 ; gain = 372.266
+INFO: [Project 1-571] Translating synthesized netlist
+Parsing EDIF File [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/sources_1/imports/Example 6/loons240x160.edn]
+Finished Parsing EDIF File [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.srcs/sources_1/imports/Example 6/loons240x160.edn]
+INFO: [Netlist 29-17] Analyzing 133 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Xilinx CORE Generator Xilinx CORE Generator 9.2.02i; Cores Update # 1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 912.281 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 80 instances were transformed.
+  FDE => FDRE: 5 instances
+  MUXF5 => LUT3: 40 instances
+  MUXF6 => LUT3: 16 instances
+  RAMB16_S9 => RAMB18E1: 19 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+36 Infos, 117 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:41 ; elapsed = 00:00:52 . Memory (MB): peak = 912.281 ; gain = 619.914
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 912.281 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_final/ECE5710_final.runs/synth_1/vga_ScreenSaver_top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file vga_ScreenSaver_top_utilization_synth.rpt -pb vga_ScreenSaver_top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Dec  1 23:49:08 2021...

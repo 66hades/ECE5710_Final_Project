@@ -1,0 +1,510 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sat Dec  4 14:20:04 2021
+# Process ID: 156200
+# Current directory: /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.runs/synth_1
+# Command line: vivado -log Platform_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Platform_top.tcl
+# Log file: /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.runs/synth_1/Platform_top.vds
+# Journal file: /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source Platform_top.tcl -notrace
+Command: synth_design -top Platform_top -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 156246 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1654.180 ; gain = 152.688 ; free physical = 47383 ; free virtual = 57708
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Platform_top' [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/sources_1/imports/sources_1/new/Platform_top.vhd:17]
+INFO: [Synth 8-3491] module 'ClkDiv' declared at '/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/sources_1/imports/sources_1/imports/blocks/ClkDiv.vhd:6' bound to instance 'U1' of component 'ClkDiv' [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/sources_1/imports/sources_1/new/Platform_top.vhd:45]
+INFO: [Synth 8-638] synthesizing module 'ClkDiv' [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/sources_1/imports/sources_1/imports/blocks/ClkDiv.vhd:36]
+INFO: [Synth 8-256] done synthesizing module 'ClkDiv' (1#1) [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/sources_1/imports/sources_1/imports/blocks/ClkDiv.vhd:36]
+INFO: [Synth 8-3491] module 'vga_640x480' declared at '/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/sources_1/imports/sources_1/imports/new/vga_640x480.vhd:6' bound to instance 'U2' of component 'vga_640x480' [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/sources_1/imports/sources_1/new/Platform_top.vhd:50]
+INFO: [Synth 8-638] synthesizing module 'vga_640x480' [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/sources_1/imports/sources_1/imports/new/vga_640x480.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'vga_640x480' (2#1) [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/sources_1/imports/sources_1/imports/new/vga_640x480.vhd:16]
+INFO: [Synth 8-3491] module 'Platform_Motion' declared at '/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/sources_1/imports/sources_1/new/Motion.vhd:5' bound to instance 'U3' of component 'Platform_Motion' [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/sources_1/imports/sources_1/new/Platform_top.vhd:55]
+INFO: [Synth 8-638] synthesizing module 'Platform_Motion' [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/sources_1/imports/sources_1/new/Motion.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'Platform_Motion' (3#1) [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/sources_1/imports/sources_1/new/Motion.vhd:14]
+INFO: [Synth 8-3491] module 'vga_control' declared at '/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/sources_1/imports/sources_1/new/vga_control.vhd:5' bound to instance 'U4' of component 'vga_control' [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/sources_1/imports/sources_1/new/Platform_top.vhd:59]
+INFO: [Synth 8-638] synthesizing module 'vga_control' [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/sources_1/imports/sources_1/new/vga_control.vhd:20]
+WARNING: [Synth 8-614] signal 'B_spriteon' is read in the process but is not in the sensitivity list [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/sources_1/imports/sources_1/new/vga_control.vhd:95]
+WARNING: [Synth 8-3848] Net rom_addr16 in module/entity vga_control does not have driver. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/sources_1/imports/sources_1/new/vga_control.vhd:13]
+WARNING: [Synth 8-3848] Net B_spriteon in module/entity vga_control does not have driver. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/sources_1/imports/sources_1/new/vga_control.vhd:31]
+INFO: [Synth 8-256] done synthesizing module 'vga_control' (4#1) [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/sources_1/imports/sources_1/new/vga_control.vhd:20]
+INFO: [Synth 8-3491] module 'platformROM' declared at '/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.runs/synth_1/.Xil/Vivado-156200-QUANTUM-DSKTP/realtime/platformROM_stub.vhdl:5' bound to instance 'platform_uut' of component 'platformROM' [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/sources_1/imports/sources_1/new/Platform_top.vhd:69]
+INFO: [Synth 8-638] synthesizing module 'platformROM' [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.runs/synth_1/.Xil/Vivado-156200-QUANTUM-DSKTP/realtime/platformROM_stub.vhdl:14]
+INFO: [Synth 8-3491] module 'W_ROM' declared at '/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/sources_1/imports/sources_1/new/W_ROM.vhd:5' bound to instance 'LWALL' of component 'W_ROM' [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/sources_1/imports/sources_1/new/Platform_top.vhd:77]
+INFO: [Synth 8-638] synthesizing module 'W_ROM' [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/sources_1/imports/sources_1/new/W_ROM.vhd:10]
+INFO: [Synth 8-256] done synthesizing module 'W_ROM' (5#1) [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/sources_1/imports/sources_1/new/W_ROM.vhd:10]
+INFO: [Synth 8-3491] module 'W_ROM' declared at '/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/sources_1/imports/sources_1/new/W_ROM.vhd:5' bound to instance 'RWALL' of component 'W_ROM' [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/sources_1/imports/sources_1/new/Platform_top.vhd:81]
+WARNING: [Synth 8-3848] Net BM in module/entity Platform_top does not have driver. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/sources_1/imports/sources_1/new/Platform_top.vhd:36]
+WARNING: [Synth 8-3848] Net BC1 in module/entity Platform_top does not have driver. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/sources_1/imports/sources_1/new/Platform_top.vhd:35]
+WARNING: [Synth 8-3848] Net BR1 in module/entity Platform_top does not have driver. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/sources_1/imports/sources_1/new/Platform_top.vhd:35]
+INFO: [Synth 8-256] done synthesizing module 'Platform_top' (6#1) [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/sources_1/imports/sources_1/new/Platform_top.vhd:17]
+WARNING: [Synth 8-3331] design W_ROM has unconnected port addr[13]
+WARNING: [Synth 8-3331] design W_ROM has unconnected port addr[12]
+WARNING: [Synth 8-3331] design W_ROM has unconnected port addr[11]
+WARNING: [Synth 8-3331] design W_ROM has unconnected port addr[10]
+WARNING: [Synth 8-3331] design W_ROM has unconnected port addr[9]
+WARNING: [Synth 8-3331] design W_ROM has unconnected port addr[8]
+WARNING: [Synth 8-3331] design W_ROM has unconnected port addr[7]
+WARNING: [Synth 8-3331] design W_ROM has unconnected port addr[6]
+WARNING: [Synth 8-3331] design W_ROM has unconnected port addr[5]
+WARNING: [Synth 8-3331] design W_ROM has unconnected port addr[4]
+WARNING: [Synth 8-3331] design W_ROM has unconnected port addr[3]
+WARNING: [Synth 8-3331] design W_ROM has unconnected port addr[2]
+WARNING: [Synth 8-3331] design W_ROM has unconnected port addr[1]
+WARNING: [Synth 8-3331] design W_ROM has unconnected port addr[0]
+WARNING: [Synth 8-3331] design vga_control has unconnected port rom_addr16[15]
+WARNING: [Synth 8-3331] design vga_control has unconnected port rom_addr16[14]
+WARNING: [Synth 8-3331] design vga_control has unconnected port rom_addr16[13]
+WARNING: [Synth 8-3331] design vga_control has unconnected port rom_addr16[12]
+WARNING: [Synth 8-3331] design vga_control has unconnected port rom_addr16[11]
+WARNING: [Synth 8-3331] design vga_control has unconnected port rom_addr16[10]
+WARNING: [Synth 8-3331] design vga_control has unconnected port rom_addr16[9]
+WARNING: [Synth 8-3331] design vga_control has unconnected port rom_addr16[8]
+WARNING: [Synth 8-3331] design vga_control has unconnected port rom_addr16[7]
+WARNING: [Synth 8-3331] design vga_control has unconnected port rom_addr16[6]
+WARNING: [Synth 8-3331] design vga_control has unconnected port rom_addr16[5]
+WARNING: [Synth 8-3331] design vga_control has unconnected port rom_addr16[4]
+WARNING: [Synth 8-3331] design vga_control has unconnected port rom_addr16[3]
+WARNING: [Synth 8-3331] design vga_control has unconnected port rom_addr16[2]
+WARNING: [Synth 8-3331] design vga_control has unconnected port rom_addr16[1]
+WARNING: [Synth 8-3331] design vga_control has unconnected port rom_addr16[0]
+WARNING: [Synth 8-3331] design vga_control has unconnected port BC1[9]
+WARNING: [Synth 8-3331] design vga_control has unconnected port BC1[8]
+WARNING: [Synth 8-3331] design vga_control has unconnected port BC1[7]
+WARNING: [Synth 8-3331] design vga_control has unconnected port BC1[6]
+WARNING: [Synth 8-3331] design vga_control has unconnected port BC1[5]
+WARNING: [Synth 8-3331] design vga_control has unconnected port BC1[4]
+WARNING: [Synth 8-3331] design vga_control has unconnected port BC1[3]
+WARNING: [Synth 8-3331] design vga_control has unconnected port BC1[2]
+WARNING: [Synth 8-3331] design vga_control has unconnected port BC1[1]
+WARNING: [Synth 8-3331] design vga_control has unconnected port BC1[0]
+WARNING: [Synth 8-3331] design vga_control has unconnected port BR1[9]
+WARNING: [Synth 8-3331] design vga_control has unconnected port BR1[8]
+WARNING: [Synth 8-3331] design vga_control has unconnected port BR1[7]
+WARNING: [Synth 8-3331] design vga_control has unconnected port BR1[6]
+WARNING: [Synth 8-3331] design vga_control has unconnected port BR1[5]
+WARNING: [Synth 8-3331] design vga_control has unconnected port BR1[4]
+WARNING: [Synth 8-3331] design vga_control has unconnected port BR1[3]
+WARNING: [Synth 8-3331] design vga_control has unconnected port BR1[2]
+WARNING: [Synth 8-3331] design vga_control has unconnected port BR1[1]
+WARNING: [Synth 8-3331] design vga_control has unconnected port BR1[0]
+WARNING: [Synth 8-3331] design Platform_top has unconnected port BTND
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1714.898 ; gain = 213.406 ; free physical = 47406 ; free virtual = 57731
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1717.867 ; gain = 216.375 ; free physical = 47404 ; free virtual = 57729
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1717.867 ; gain = 216.375 ; free physical = 47404 ; free virtual = 57729
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/sources_1/ip/platformROM/platformROM/Pl_Rom_in_context.xdc] for cell 'platform_uut'
+Finished Parsing XDC File [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/sources_1/ip/platformROM/platformROM/Pl_Rom_in_context.xdc] for cell 'platform_uut'
+Parsing XDC File [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc]
+WARNING: [Vivado 12-584] No ports matched 'sw[0]'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:12]
+WARNING: [Vivado 12-584] No ports matched 'sw[1]'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:13]
+WARNING: [Vivado 12-584] No ports matched 'sw[2]'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:14]
+WARNING: [Vivado 12-584] No ports matched 'sw[3]'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:15]
+WARNING: [Vivado 12-584] No ports matched 'sw[4]'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:16]
+WARNING: [Vivado 12-584] No ports matched 'sw[5]'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:17]
+WARNING: [Vivado 12-584] No ports matched 'sw[6]'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:18]
+WARNING: [Vivado 12-584] No ports matched 'sw[7]'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:19]
+WARNING: [Vivado 12-584] No ports matched 'sw[8]'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:20]
+WARNING: [Vivado 12-584] No ports matched 'sw[9]'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:21]
+WARNING: [Vivado 12-584] No ports matched 'sw[10]'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:22]
+WARNING: [Vivado 12-584] No ports matched 'sw[11]'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:23]
+WARNING: [Vivado 12-584] No ports matched 'sw[12]'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:24]
+WARNING: [Vivado 12-584] No ports matched 'sw[13]'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:25]
+WARNING: [Vivado 12-584] No ports matched 'sw[14]'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:26]
+WARNING: [Vivado 12-584] No ports matched 'sw[15]'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:27]
+WARNING: [Vivado 12-584] No ports matched 'ld[0]'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:30]
+WARNING: [Vivado 12-584] No ports matched 'ld[1]'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:31]
+WARNING: [Vivado 12-584] No ports matched 'ld[2]'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:32]
+WARNING: [Vivado 12-584] No ports matched 'ld[3]'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:33]
+WARNING: [Vivado 12-584] No ports matched 'ld[4]'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:34]
+WARNING: [Vivado 12-584] No ports matched 'ld[5]'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:35]
+WARNING: [Vivado 12-584] No ports matched 'ld[6]'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:36]
+WARNING: [Vivado 12-584] No ports matched 'ld[7]'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:37]
+WARNING: [Vivado 12-584] No ports matched 'ld[8]'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:38]
+WARNING: [Vivado 12-584] No ports matched 'ld[9]'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:39]
+WARNING: [Vivado 12-584] No ports matched 'ld[10]'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:40]
+WARNING: [Vivado 12-584] No ports matched 'ld[11]'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:41]
+WARNING: [Vivado 12-584] No ports matched 'ld[12]'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:42]
+WARNING: [Vivado 12-584] No ports matched 'ld[13]'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:43]
+WARNING: [Vivado 12-584] No ports matched 'ld[14]'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:44]
+WARNING: [Vivado 12-584] No ports matched 'ld[15]'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:45]
+WARNING: [Vivado 12-584] No ports matched 'ld16b'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:48]
+WARNING: [Vivado 12-584] No ports matched 'ld16g'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:49]
+WARNING: [Vivado 12-584] No ports matched 'ld16r'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:50]
+WARNING: [Vivado 12-584] No ports matched 'ld17b'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:51]
+WARNING: [Vivado 12-584] No ports matched 'ld17g'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:52]
+WARNING: [Vivado 12-584] No ports matched 'ld17r'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:53]
+WARNING: [Vivado 12-584] No ports matched 'a_to_g[6]'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:56]
+WARNING: [Vivado 12-584] No ports matched 'a_to_g[5]'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:57]
+WARNING: [Vivado 12-584] No ports matched 'a_to_g[4]'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:58]
+WARNING: [Vivado 12-584] No ports matched 'a_to_g[3]'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:59]
+WARNING: [Vivado 12-584] No ports matched 'a_to_g[2]'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:60]
+WARNING: [Vivado 12-584] No ports matched 'a_to_g[1]'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:61]
+WARNING: [Vivado 12-584] No ports matched 'a_to_g[0]'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:62]
+WARNING: [Vivado 12-584] No ports matched 'dp'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:64]
+WARNING: [Vivado 12-584] No ports matched 'an[0]'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:66]
+WARNING: [Vivado 12-584] No ports matched 'an[1]'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:67]
+WARNING: [Vivado 12-584] No ports matched 'an[2]'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:68]
+WARNING: [Vivado 12-584] No ports matched 'an[3]'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:69]
+WARNING: [Vivado 12-584] No ports matched 'an[4]'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:70]
+WARNING: [Vivado 12-584] No ports matched 'an[5]'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:71]
+WARNING: [Vivado 12-584] No ports matched 'an[6]'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:72]
+WARNING: [Vivado 12-584] No ports matched 'an[7]'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:73]
+WARNING: [Vivado 12-584] No ports matched 'rstn'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:76]
+WARNING: [Vivado 12-584] No ports matched 'BTNU'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:83]
+WARNING: [Vivado 12-584] No ports matched 'ja1'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:90]
+WARNING: [Vivado 12-584] No ports matched 'ja2'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:91]
+WARNING: [Vivado 12-584] No ports matched 'ja3'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:92]
+WARNING: [Vivado 12-584] No ports matched 'ja4'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:93]
+WARNING: [Vivado 12-584] No ports matched 'ja7'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:94]
+WARNING: [Vivado 12-584] No ports matched 'ja8'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:95]
+WARNING: [Vivado 12-584] No ports matched 'ja9'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:96]
+WARNING: [Vivado 12-584] No ports matched 'ja10'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:97]
+WARNING: [Vivado 12-584] No ports matched 'jb1'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:100]
+WARNING: [Vivado 12-584] No ports matched 'jb2'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:101]
+WARNING: [Vivado 12-584] No ports matched 'jb3'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:102]
+WARNING: [Vivado 12-584] No ports matched 'jb4'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:103]
+WARNING: [Vivado 12-584] No ports matched 'jb7'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:104]
+WARNING: [Vivado 12-584] No ports matched 'jb8'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:105]
+WARNING: [Vivado 12-584] No ports matched 'jb9'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:106]
+WARNING: [Vivado 12-584] No ports matched 'jb10'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:107]
+WARNING: [Vivado 12-584] No ports matched 'jc1'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:110]
+WARNING: [Vivado 12-584] No ports matched 'jc2'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:111]
+WARNING: [Vivado 12-584] No ports matched 'jc3'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:112]
+WARNING: [Vivado 12-584] No ports matched 'jc4'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:113]
+WARNING: [Vivado 12-584] No ports matched 'jc7'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:114]
+WARNING: [Vivado 12-584] No ports matched 'jc8'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:115]
+WARNING: [Vivado 12-584] No ports matched 'jc9'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:116]
+WARNING: [Vivado 12-584] No ports matched 'jc10'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:117]
+WARNING: [Vivado 12-584] No ports matched 'jd1'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:120]
+WARNING: [Vivado 12-584] No ports matched 'jd2'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:121]
+WARNING: [Vivado 12-584] No ports matched 'jd3'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:122]
+WARNING: [Vivado 12-584] No ports matched 'jd4'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:123]
+WARNING: [Vivado 12-584] No ports matched 'jd7'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:124]
+WARNING: [Vivado 12-584] No ports matched 'jd8'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:125]
+WARNING: [Vivado 12-584] No ports matched 'jd9'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:126]
+WARNING: [Vivado 12-584] No ports matched 'jd10'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:127]
+WARNING: [Vivado 12-584] No ports matched 'xa_n[1]'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:130]
+WARNING: [Vivado 12-584] No ports matched 'xa_p[1]'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:131]
+WARNING: [Vivado 12-584] No ports matched 'xa_n[2]'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:132]
+WARNING: [Vivado 12-584] No ports matched 'xa_p[2]'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:133]
+WARNING: [Vivado 12-584] No ports matched 'xa_n[3]'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:134]
+WARNING: [Vivado 12-584] No ports matched 'xa_p[3]'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:135]
+WARNING: [Vivado 12-584] No ports matched 'xa_n[4]'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:136]
+WARNING: [Vivado 12-584] No ports matched 'xa_p[4]'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:137]
+WARNING: [Vivado 12-584] No ports matched 'red[3]'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:143]
+WARNING: [Vivado 12-584] No ports matched 'green[3]'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:148]
+WARNING: [Vivado 12-584] No ports matched 'blue[2]'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:152]
+WARNING: [Vivado 12-584] No ports matched 'blue[3]'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:153]
+INFO: [Common 17-14] Message 'Vivado 12-584' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:153]
+Finished Parsing XDC File [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/Platform_top_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Platform_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Platform_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1887.617 ; gain = 0.000 ; free physical = 47309 ; free virtual = 57634
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1887.617 ; gain = 0.000 ; free physical = 47309 ; free virtual = 57634
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1887.617 ; gain = 386.125 ; free physical = 47373 ; free virtual = 57698
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1887.617 ; gain = 386.125 ; free physical = 47368 ; free virtual = 57693
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for platform_uut. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1887.617 ; gain = 386.125 ; free physical = 47377 ; free virtual = 57702
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-327] inferring latch for variable 'r1v_reg' [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/sources_1/imports/sources_1/new/Motion.vhd:31]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1887.617 ; gain = 386.125 ; free physical = 47370 ; free virtual = 57695
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     14 Bit       Adders := 2     
+	   5 Input     11 Bit       Adders := 1     
+	   3 Input     11 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 11    
+	   3 Input     10 Bit       Adders := 2     
++---Registers : 
+	               10 Bit    Registers := 3     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module vga_640x480 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 2     
++---Registers : 
+	               10 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 2     
+Module Platform_Motion 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 2     
++---Registers : 
+	               10 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 1     
+Module vga_control 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     14 Bit       Adders := 2     
+	   5 Input     11 Bit       Adders := 1     
+	   3 Input     11 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 7     
+	   3 Input     10 Bit       Adders := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3331] design Platform_top has unconnected port BTND
+INFO: [Synth 8-3886] merging instance 'U3/r1v_reg[0]' (LD) to 'U3/r1v_reg[8]'
+INFO: [Synth 8-3886] merging instance 'U3/r1v_reg[8]' (LD) to 'U3/r1v_reg[7]'
+INFO: [Synth 8-3886] merging instance 'U3/r1v_reg[7]' (LD) to 'U3/r1v_reg[6]'
+INFO: [Synth 8-3886] merging instance 'U3/r1v_reg[6]' (LD) to 'U3/r1v_reg[4]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\U3/r1v_reg[4] )
+INFO: [Synth 8-3886] merging instance 'U3/r1v_reg[1]' (LD) to 'U3/r1v_reg[9]'
+INFO: [Synth 8-3886] merging instance 'U3/r1v_reg[2]' (LD) to 'U3/r1v_reg[9]'
+INFO: [Synth 8-3886] merging instance 'U3/r1v_reg[3]' (LD) to 'U3/r1v_reg[9]'
+INFO: [Synth 8-3886] merging instance 'U3/r1v_reg[5]' (LD) to 'U3/r1v_reg[9]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U3/r1v_reg[9] )
+WARNING: [Synth 8-3332] Sequential element (U3/r1v_reg[9]) is unused and will be removed from module Platform_top.
+WARNING: [Synth 8-3332] Sequential element (U3/r1v_reg[4]) is unused and will be removed from module Platform_top.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1887.617 ; gain = 386.125 ; free physical = 47354 ; free virtual = 57682
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1887.617 ; gain = 386.125 ; free physical = 47235 ; free virtual = 57563
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1887.617 ; gain = 386.125 ; free physical = 47231 ; free virtual = 57559
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1887.617 ; gain = 386.125 ; free physical = 47222 ; free virtual = 57550
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1887.617 ; gain = 386.125 ; free physical = 47228 ; free virtual = 57556
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1887.617 ; gain = 386.125 ; free physical = 47228 ; free virtual = 57556
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1887.617 ; gain = 386.125 ; free physical = 47228 ; free virtual = 57556
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1887.617 ; gain = 386.125 ; free physical = 47228 ; free virtual = 57556
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1887.617 ; gain = 386.125 ; free physical = 47228 ; free virtual = 57556
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1887.617 ; gain = 386.125 ; free physical = 47228 ; free virtual = 57556
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |platformROM   |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+-------------------+------+
+|      |Cell               |Count |
++------+-------------------+------+
+|1     |platformROM_bbox_0 |     1|
+|2     |BUFG               |     1|
+|3     |CARRY4             |    25|
+|4     |LUT1               |     4|
+|5     |LUT2               |    40|
+|6     |LUT3               |    21|
+|7     |LUT4               |    31|
+|8     |LUT5               |    27|
+|9     |LUT6               |    38|
+|10    |FDCE               |    44|
+|11    |FDPE               |     3|
+|12    |FDRE               |     1|
+|13    |IBUF               |     4|
+|14    |OBUF               |    10|
++------+-------------------+------+
+
+Report Instance Areas: 
++------+---------+----------------+------+
+|      |Instance |Module          |Cells |
++------+---------+----------------+------+
+|1     |top      |                |   257|
+|2     |  U1     |ClkDiv          |    23|
+|3     |  U2     |vga_640x480     |    91|
+|4     |  U3     |Platform_Motion |    67|
+|5     |  U4     |vga_control     |    53|
++------+---------+----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1887.617 ; gain = 386.125 ; free physical = 47228 ; free virtual = 57556
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 4 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1887.617 ; gain = 216.375 ; free physical = 47282 ; free virtual = 57610
+Synthesis Optimization Complete : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1887.617 ; gain = 386.125 ; free physical = 47282 ; free virtual = 57610
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 25 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1887.617 ; gain = 0.000 ; free physical = 47231 ; free virtual = 57559
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+43 Infos, 162 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1887.617 ; gain = 477.531 ; free physical = 47329 ; free virtual = 57657
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1887.617 ; gain = 0.000 ; free physical = 47329 ; free virtual = 57657
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.runs/synth_1/Platform_top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Platform_top_utilization_synth.rpt -pb Platform_top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Dec  4 14:20:27 2021...
