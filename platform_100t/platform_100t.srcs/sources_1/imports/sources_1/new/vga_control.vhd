@@ -11,6 +11,7 @@ entity vga_control is
            W_addr14, W2_addr14: out STD_LOGIC_VECTOR(13 DOWNTO 0);
            P_addr11: out std_logic_vector(10 downto 0);
            rom_addr16: out std_logic_vector(15 downto 0);
+           rom_addr6: out std_logic_vector(5 downto 0);
            red : out std_logic_vector(2 downto 0);
            green : out std_logic_vector(2 downto 0);
            blue : out std_logic_vector(1 downto 0)
@@ -22,35 +23,47 @@ constant hbp: std_logic_vector(9 downto 0) := "0010010000";
 	--Horizontal back porch = 144 (128+16)
 constant vbp: std_logic_vector(9 downto 0) := "0000011111";	 
 	--Vertical back porch = 31 (2+29)
-constant Pw: integer := 75;
-constant Ph: integer := 15;
-constant Ww: integer := 20;
-constant Wh: integer := 480;
+constant Pw: integer := 75; --for platform width
+constant Ph: integer := 15; --for platform height
+constant Ww: integer := 20; --for wall width
+constant Wh: integer := 480; --for wall height
+constant w_ball: integer := 8; --for ball width
+constant h_ball: integer := 8; --for ball height
 
-signal P_xpix, P_ypix, W1_xpix, W1_ypix, W2_xpix, W2_ypix: std_logic_vector(9 downto 0);			
+signal P_xpix, P_ypix, B_xpix, B_ypix, W1_xpix, W1_ypix, W2_xpix, W2_ypix: std_logic_vector(9 downto 0);			
 signal P_spriteon, B_spriteon, WL_spriteon, WR_spriteon: std_logic;
 
 begin
+    --platform
 	P_ypix <= vc - vbp - PR1;
 	P_xpix <= hc - hbp - PC1;
-		
+	
+	--walls
 	W1_ypix <= vc - vbp;  
 	W1_xpix <= hc - hbp;
-	
 	W2_ypix <= vc - vbp;
 	W2_xpix <= hc - hbp - 620;
 	
+	--ball
+	B_ypix <= vc - vbp - BR1;
+	B_xpix <= hc - hbp - BC1;
 	
 	--Enable sprite video out when within the sprite region
 -- Synchronous ROM
-P_spriteon <= '1' when (((hc > PC1 + hbp) and (hc <= PC1 + hbp + Pw))
-          and ((vc >= PR1 + vbp) and (vc < PR1 + vbp + Ph))) else '0'; 
-          
-WL_spriteon <= '1' when (((hc > hbp) and (hc <=hbp + Ww))
-          and ((vc >= vbp) and (vc < vbp + Wh))) else '0';
-WR_spriteon <= '1' when (((hc > 620 + hbp) and (hc <= 620 + hbp + Ww))
-          and ((vc >= vbp) and (vc < vbp + Wh))) else '0';
-
+--platform
+    P_spriteon <= '1' when (((hc > PC1 + hbp) and (hc <= PC1 + hbp + Pw))
+              and ((vc >= PR1 + vbp) and (vc < PR1 + vbp + Ph))) else '0'; 
+    
+    --walls          
+    WL_spriteon <= '1' when (((hc > hbp) and (hc <=hbp + Ww))
+              and ((vc >= vbp) and (vc < vbp + Wh))) else '0';
+    WR_spriteon <= '1' when (((hc > 620 + hbp) and (hc <= 620 + hbp + Ww))
+              and ((vc >= vbp) and (vc < vbp + Wh))) else '0';
+    
+    --ball
+    B_spriteon <= '1' when (((hc > BC1 + hbp) and (hc <=BC1 + hbp + w_ball))
+                    and ((vc >= BR1 + vbp) and (vc < BR1 + vbp + h_ball))) else '0';
+                    
 Platform: process(P_xpix, P_ypix)
 	variable  rom_addr1, rom_addr2: STD_LOGIC_VECTOR (16 downto 0);
 	begin 
@@ -61,6 +74,14 @@ Platform: process(P_xpix, P_ypix)
 		rom_addr2 := rom_addr1 + ("0000000" & P_xpix);    -- y*75+x
 		P_addr11 <= rom_addr2(10 downto 0);
 end process platform;
+
+ball_proc: 	process(B_xpix, B_ypix)
+	variable  rom_addr1, rom_addr2: STD_LOGIC_VECTOR (16 downto 0);
+	begin 
+		rom_addr1 := ("0000" & B_ypix & "000");	-- y*(8) = y*8
+		rom_addr2 := rom_addr1 + ("0000000" & B_xpix);	-- y*8+x
+		rom_addr6 <= rom_addr2(5 downto 0);
+	end process;
 
 LeftWall: process(W1_xpix, W1_ypix)
 	variable  rom_addr1, rom_addr2: STD_LOGIC_VECTOR (13 downto 0);
@@ -82,17 +103,7 @@ RightWall: process(W2_xpix, W2_ypix)
 		W2_addr14 <= rom_addr2(13 downto 0);
 end process RightWall;
 
---BG: process (BG_xpix, BG_ypix)
---variable  rom_addr1, rom_addr2: STD_LOGIC_VECTOR (18 downto 0);
---	begin 
---		rom_addr1 := (BG_ypix & "000000000") + ("00" & BG_ypix & "0000000");            	
---						-- y*(512+128) = y*640
-
---		rom_addr2 := rom_addr1 + ("000000000" & BG_xpix);    -- y*640+x
---		BG_addr19 <= rom_addr2(18 downto 0);
---end process BG;
-
-	process(P_spriteon, WL_spriteon, WR_spriteon, vidon, PM, BM, WM, W2M)
+	process(P_spriteon, WL_spriteon, WR_spriteon, B_spriteon, vidon, PM, BM, WM, W2M)
   	variable j: integer;
  	begin
 		red <= "000";

@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
-| Date             : Sat Dec  4 14:21:06 2021
+| Date             : Sat Dec  4 21:51:04 2021
 | Host             : QUANTUM-DSKTP running 64-bit Ubuntu 20.04.3 LTS
 | Command          : report_power -file Platform_top_power_routed.rpt -pb Platform_top_power_summary_routed.pb -rpx Platform_top_power_routed.rpx
 | Design           : Platform_top
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.100        |
+| Total On-Chip Power (W)  | 0.101        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.003        |
+| Dynamic (W)              | 0.004        |
 | Device Static (W)        | 0.097        |
 | Effective TJA (C/W)      | 4.6          |
 | Max Ambient (C)          | 84.5         |
@@ -53,16 +53,16 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |    <0.001 |        3 |       --- |             --- |
-| Slice Logic    |    <0.001 |      242 |       --- |             --- |
-|   LUT as Logic |    <0.001 |      123 |     63400 |            0.19 |
-|   CARRY4       |    <0.001 |       25 |     15850 |            0.16 |
+| Slice Logic    |    <0.001 |      295 |       --- |             --- |
+|   LUT as Logic |    <0.001 |      156 |     63400 |            0.25 |
+|   CARRY4       |    <0.001 |       36 |     15850 |            0.23 |
 |   Register     |    <0.001 |       48 |    126800 |            0.04 |
-|   Others       |     0.000 |        8 |       --- |             --- |
-| Signals        |    <0.001 |      183 |       --- |             --- |
-| Block RAM      |    <0.001 |      0.5 |       135 |            0.37 |
-| I/O            |    <0.001 |       14 |       210 |            6.67 |
+|   Others       |     0.000 |       10 |       --- |             --- |
+| Signals        |    <0.001 |      213 |       --- |             --- |
+| Block RAM      |    <0.001 |        1 |       135 |            0.74 |
+| I/O            |     0.001 |       14 |       210 |            6.67 |
 | Static Power   |     0.097 |          |           |                 |
-| Total          |     0.100 |          |           |                 |
+| Total          |     0.101 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -72,7 +72,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.017 |       0.002 |      0.015 |
+| Vccint    |       1.000 |     0.018 |       0.003 |      0.015 |
 | Vccaux    |       1.800 |     0.018 |       0.000 |      0.018 |
 | Vcco33    |       3.300 |     0.004 |       0.000 |      0.004 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -141,7 +141,7 @@ Table of Contents
 +--------------+-----------+
 | Name         | Power (W) |
 +--------------+-----------+
-| Platform_top |     0.003 |
+| Platform_top |     0.004 |
 +--------------+-----------+
 
 

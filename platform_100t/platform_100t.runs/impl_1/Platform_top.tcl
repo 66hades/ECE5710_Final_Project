@@ -65,6 +65,7 @@ start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
+  set_param xicom.use_bs_reader 1
   set_param chipscope.maxJobs 4
   create_project -in_memory -part xc7a100tcsg324-1
   set_property design_mode GateLvl [current_fileset]
@@ -75,6 +76,7 @@ set rc [catch {
   set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES XPM_MEMORY [current_project]
   add_files -quiet /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.runs/synth_1/Platform_top.dcp
+  read_ip -quiet /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/sources_1/ip/x8ball_ROM/x8ball_ROM.xci
   read_ip -quiet /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/sources_1/ip/platformROM/platformROM.xci
   read_xdc /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc
   link_design -top Platform_top -part xc7a100tcsg324-1

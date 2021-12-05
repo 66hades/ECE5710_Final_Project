@@ -21,7 +21,7 @@ signal clr, clk25, clk190, vidon, go1: std_logic;
 signal hc, vc, C1, R1: std_logic_vector(9 downto 0);
 signal M: std_logic_vector(7 downto 0);
 signal rom_addr16: std_logic_vector(15 downto 0);
-signal rom_addr7: std_logic_vector(5 downto 0);
+signal rom_addr6: std_logic_vector(5 downto 0);
 begin
   
 	clr <= btn(3);
@@ -54,7 +54,7 @@ U3 : vga_screensaver
 		C1 => C1,
 		R1 => R1,
 		rom_addr16 => rom_addr16,
-		rom_addr7 => rom_addr7,
+		rom_addr6 => rom_addr6,
 		red => red,
 		green => green,
 		blue => blue
@@ -68,7 +68,7 @@ U3 : vga_screensaver
 
 U4 : x8ball_ROM
 		port map (
-			addra => rom_addr7,
+			addra => rom_addr6,
 			clka => clk25,
 			douta => M);
 	

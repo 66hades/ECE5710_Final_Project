@@ -209,7 +209,7 @@ end component;
 		C1 : in std_logic_vector(9 downto 0);
 		R1 : in std_logic_vector(9 downto 0);
 		rom_addr16 : out std_logic_vector(15 downto 0);
-		rom_addr7 : out std_logic_vector(5 downto 0);
+		rom_addr6 : out std_logic_vector(5 downto 0);
 		red : out std_logic_vector(2 downto 0);
 		green : out std_logic_vector(2 downto 0);
 		blue : out std_logic_vector(1 downto 0));

@@ -17,6 +17,7 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
+set_param xicom.use_bs_reader 1
 set_param chipscope.maxJobs 4
 create_project -in_memory -part xc7a100tcsg324-1
 
@@ -32,15 +33,20 @@ set_property target_language VHDL [current_project]
 set_property ip_output_repo /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 add_files /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/resources/platform.coe
+add_files /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/resources/ball.coe
 read_vhdl -library xil_defaultlib {
   /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/sources_1/imports/sources_1/imports/blocks/ClkDiv.vhd
   /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/sources_1/imports/sources_1/new/Motion.vhd
   /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/sources_1/imports/sources_1/imports/new/vga_components.vhd
   /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/sources_1/imports/sources_1/new/W_ROM.vhd
+  /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/sources_1/new/bounce.vhd
   /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/sources_1/imports/sources_1/imports/new/vga_640x480.vhd
   /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/sources_1/imports/sources_1/new/vga_control.vhd
   /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/sources_1/imports/sources_1/new/Platform_top.vhd
 }
+read_ip -quiet /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/sources_1/ip/x8ball_ROM/x8ball_ROM.xci
+set_property used_in_implementation false [get_files -all /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/sources_1/ip/x8ball_ROM/x8ball_ROM_ooc.xdc]
+
 read_ip -quiet /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/sources_1/ip/platformROM/platformROM.xci
 set_property used_in_implementation false [get_files -all /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/sources_1/ip/platformROM/platformROM_ooc.xdc]
 

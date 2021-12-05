@@ -45,6 +45,22 @@ component vga_640x480 is
            vc : out STD_LOGIC_VECTOR (9 downto 0));
 end component;
 
+component vga_control is
+    port ( vidon: in std_logic;
+           hc : in std_logic_vector(9 downto 0);
+           vc : in std_logic_vector(9 downto 0);
+           BM, PM, WM, W2M: in std_logic_vector(7 downto 0);
+           BC1, BR1, PC1, PR1: in std_logic_vector(9 downto 0);
+           W_addr14, W2_addr14: out STD_LOGIC_VECTOR(13 DOWNTO 0);
+           P_addr11: out std_logic_vector(10 downto 0);
+           rom_addr16: out std_logic_vector(15 downto 0);
+           rom_addr6: out std_logic_vector(5 downto 0);
+           red : out std_logic_vector(2 downto 0);
+           green : out std_logic_vector(2 downto 0);
+           blue : out std_logic_vector(1 downto 0)
+	);
+end component;
+
 component Platform_Motion is
 	 port(
 		 clk : in STD_LOGIC;
@@ -70,13 +86,25 @@ component platformROM IS
   );
 END component;
 
---component BG_ROM IS
---  PORT (
---    clka : IN STD_LOGIC;
---    addra : IN STD_LOGIC_VECTOR(18 DOWNTO 0);
---    douta : OUT STD_LOGIC_VECTOR(7 DOWNTO 0)
---  );
---END component;
+component x8ball_ROM
+	port (
+	addra: IN std_logic_VECTOR(5 downto 0);
+	clka: IN std_logic;
+	douta: OUT std_logic_VECTOR(7 downto 0));
+end component;
+
+component bounce
+	port(
+		cclk : in std_logic;
+		clr : in std_logic;
+		go : in std_logic;
+		angle : in STD_LOGIC_VECTOR(1 downto 0);
+		c1 : out std_logic_vector(9 downto 0);
+		r1 : out std_logic_vector(9 downto 0));
+--		platform_c1 : in std_logic_vector(9 downto 0);
+--	    platform_r1: in std_logic_VECTOR(9 downto 0));
+
+	end component;
 
 component W_ROM is
     Port ( addr : in STD_LOGIC_VECTOR (13 downto 0);

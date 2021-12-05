@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
-| Date         : Sat Dec  4 14:20:27 2021
+| Date         : Sat Dec  4 21:50:26 2021
 | Host         : QUANTUM-DSKTP running 64-bit Ubuntu 20.04.3 LTS
 | Command      : report_utilization -file Platform_top_utilization_synth.rpt -pb Platform_top_utilization_synth.pb
 | Design       : Platform_top
@@ -30,8 +30,8 @@ Table of Contents
 +-------------------------+------+-------+-----------+-------+
 |        Site Type        | Used | Fixed | Available | Util% |
 +-------------------------+------+-------+-----------+-------+
-| Slice LUTs*             |  123 |     0 |     63400 |  0.19 |
-|   LUT as Logic          |  123 |     0 |     63400 |  0.19 |
+| Slice LUTs*             |  156 |     0 |     63400 |  0.25 |
+|   LUT as Logic          |  156 |     0 |     63400 |  0.25 |
 |   LUT as Memory         |    0 |     0 |     19000 |  0.00 |
 | Slice Registers         |   48 |     0 |    126800 |  0.04 |
 |   Register as Flip Flop |   48 |     0 |    126800 |  0.04 |
@@ -146,15 +146,15 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
+| LUT2     |   59 |                 LUT |
+| LUT6     |   45 |                 LUT |
 | FDCE     |   44 |        Flop & Latch |
-| LUT2     |   40 |                 LUT |
-| LUT6     |   38 |                 LUT |
-| LUT4     |   31 |                 LUT |
-| LUT5     |   27 |                 LUT |
-| CARRY4   |   25 |          CarryLogic |
-| LUT3     |   21 |                 LUT |
+| LUT4     |   36 |                 LUT |
+| CARRY4   |   36 |          CarryLogic |
+| LUT5     |   25 |                 LUT |
+| LUT3     |   20 |                 LUT |
+| LUT1     |   16 |                 LUT |
 | OBUF     |   10 |                  IO |
-| LUT1     |    4 |                 LUT |
 | IBUF     |    4 |                  IO |
 | FDPE     |    3 |        Flop & Latch |
 | FDRE     |    1 |        Flop & Latch |
@@ -168,6 +168,7 @@ Table of Contents
 +-------------+------+
 |   Ref Name  | Used |
 +-------------+------+
+| x8ball_ROM  |    1 |
 | platformROM |    1 |
 +-------------+------+
 

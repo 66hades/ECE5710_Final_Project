@@ -10,7 +10,7 @@ entity vga_ScreenSaver is
 		   M: in std_logic_vector(7 downto 0);
      	   C1, R1: in std_logic_vector(9 downto 0);
            rom_addr16: out std_logic_vector(15 downto 0);
-           rom_addr7: out std_logic_vector(5 downto 0);
+           rom_addr6: out std_logic_vector(5 downto 0);
 		   red : out std_logic_vector(2 downto 0);
            green : out std_logic_vector(2 downto 0);
            blue : out std_logic_vector(1 downto 0)
@@ -43,7 +43,7 @@ begin
 	begin 
 		rom_addr1 := ("0000" & ypix & "000");	-- y*(8) = y*8
 		rom_addr2 := rom_addr1 + ("0000000" & xpix);	-- y*8+x
-		rom_addr7 <= rom_addr2(5 downto 0);
+		rom_addr6 <= rom_addr2(5 downto 0);
 	end process;
 
 	process(spriteon, vidon, M)
