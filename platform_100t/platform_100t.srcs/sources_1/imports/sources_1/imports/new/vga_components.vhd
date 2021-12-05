@@ -100,9 +100,9 @@ component bounce
 		go : in std_logic;
 		angle : in STD_LOGIC_VECTOR(1 downto 0);
 		c1 : out std_logic_vector(9 downto 0);
-		r1 : out std_logic_vector(9 downto 0));
---		platform_c1 : in std_logic_vector(9 downto 0);
---	    platform_r1: in std_logic_VECTOR(9 downto 0));
+		r1 : out std_logic_vector(9 downto 0);
+		platform_c1 : in std_logic_vector(9 downto 0);
+	    platform_r1: in std_logic_VECTOR(9 downto 0));
 
 	end component;
 

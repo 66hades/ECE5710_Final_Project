@@ -109,9 +109,9 @@ bounce_uut : bounce
 		go => BTNU, --upper button starts ball movement
 		angle => sw(1 downto 0),
 		c1 => BC1,
-		r1 => BR1		
-		platform_c1 => BC1,
-		platform_r1 => BR1
+		r1 => BR1,
+		platform_c1 => PC1,
+		platform_r1 => PR1
 	);
 	
 end Platform_top;
