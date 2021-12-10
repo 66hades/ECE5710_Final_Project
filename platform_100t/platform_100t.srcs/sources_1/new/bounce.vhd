@@ -18,10 +18,10 @@ end bounce;
 
 architecture bounce of bounce is
 
-signal ball_angle : STD_LOGIC_VECTOR(1 downto 0);
+signal ball_angle : STD_LOGIC_VECTOR(1 downto 0) := "00" ;
 
 begin
-ball_angle <= angle;
+--ball_angle <= angle;
 
 process(cclk, clr)
     
@@ -45,79 +45,78 @@ begin
 	elsif cclk'event and cclk = '1' then	
 		if go = '1' then
 			calc := '1';
-		elsif calc = '1' then --increments THEN checks bounds
---			c1v := c1v + dcv;    --inits to increasing, moving from left to right
---			r1v := r1v + drv;    --inits to decreasing, moving from top to bottom
+		elsif calc = '1' then --calculates then increments
 
-               --controls angle with switches
---            case angle is
---                when "00" =>
---                    c1v := c1v; --just straight up
---                    r1v := r1v + drv + drv + drv; -- 0,3
---                when "01" =>
---                    c1v := c1v + dcv; --sharp low angle         
---                    r1v := r1v + drv + drv + drv; -- 3,1 
---                when "10" =>
---                    c1v := c1v + dcv + dcv + dcv; --sharp high angle       
---                    r1v := r1v + drv; -- 1,3                        
---                when "11" =>
---                    c1v := c1v + dcv + dcv; --45 deg angle         
---                    r1v := r1v + drv + drv; -- 2,2  
---                when others =>
---                     null;  
---                end case;    
-               --end angle control with switches
-
-			--bounds checking
-			if (c1v < c1min or c1v >= c1max) then
+			if (c1v < c1min or c1v >= c1max) then --side bounds checking
 				dcv := 0 - dcv; --flips incrementer
 			end if;
-			if (r1v < r1min) then
+			--
+			if (r1v < r1min) then --top of screen checking
 				drv := 0 - drv; --flips incrementer
 			end if;
 			
-			--platform checking
---			if (r1v >= r1max) then
---			    c1v := platform_c1 + 33; --centered               
---                drv := 0 - drv; --flips incrementer to go up  
---                calc := '0'; --stops from moving
+			if (r1v >= r1max) then --bottom of screen / platform checking
 			
---			if (c1v >= platform_c1 - 4 and c1v < platform_c1 + 75 + 4) then
---			    --drv := 0 - drv; --flips incrementer --simple bounce hit platform
-			if c1v >= platform_c1 - 8 and c1v < platform_c1 + 1 then
-			    drv := "1111111111"; --moves ball from right to left
-			    dcv := "1111111111"; --ball moves up
-			    ball_angle <= "01"; --sharp low
-			elsif (c1v >= platform_c1 + 2 and c1v < platform_c1 + 15) then
-                drv := "1111111111"; --moves ball from right to left
-			    dcv := "1111111111"; --ball moves up
-                ball_angle <= "11"; --45 deg
-			elsif (c1v >= platform_c1 + 16 and c1v < platform_c1 + 33) then
-			    drv := "1111111111"; --moves ball from right to left
-			    dcv := "1111111111"; --ball moves up			    
-			    ball_angle <= "10"; --sharp high
-			elsif (c1v >= platform_c1 + 34 and c1v < platform_c1 + 52) then
-			    drv := "0000000001"; --moves ball from left to right
-			    dcv := "1111111111"; --ball moves up
-			    ball_angle <= "10"; --sharp high
-			elsif (c1v >= platform_c1 + 53 and c1v < platform_c1 + 71) then
-			    drv := "0000000001"; ---moves ball from left to right
-			    dcv := "1111111111"; --ball moves up
-                ball_angle <= "11"; --45 deg
-			elsif (c1v >= platform_c1 + 72 and c1v < platform_c1 + 80) then
-			    drv := "0000000001"; ---moves ball from left to right
-			    dcv := "1111111111"; --ball moves up
-			    ball_angle <= "01"; --sharp low
-			             
-			else --didn't hit platform
-			    c1v := platform_c1 + 33; --centered
-			    calc := '0'; --stops from moving
-			    drv := "1111111111"; --flips incrementer to go up
-			    ball_angle <= "00"; --sets to straight up
-			end if;
+                if c1v >= platform_c1 - 8 and c1v < platform_c1 + 1 then
+                    --drv := "1111111111"; --moves ball from right to left
+                    dcv := 0 - dcv; --flips incrementer
+                    ball_angle <= "01"; --sharp low
+                elsif (c1v >= platform_c1 + 2 and c1v < platform_c1 + 15) then
+                    --drv := "1111111111"; --moves ball from right to left
+                    dcv := 0 - dcv; --flips incrementer
+                    ball_angle <= "11"; --45 deg
+                elsif (c1v >= platform_c1 + 16 and c1v < platform_c1 + 33) then
+                    --drv := "1111111111"; --moves ball from right to left
+                    dcv := 0 - dcv; --flips incrementer
+                    ball_angle <= "10"; --sharp high
+                elsif (c1v >= platform_c1 + 34 and c1v < platform_c1 + 52) then
+                    --drv := "0000000001"; --moves ball from left to right
+                    dcv := 0 - dcv; --flips incrementer
+                    ball_angle <= "10"; --sharp high
+                elsif (c1v >= platform_c1 + 53 and c1v < platform_c1 + 71) then
+                    --drv := "0000000001"; ---moves ball from left to right
+                    dcv := 0 - dcv; --flips incrementer
+                    ball_angle <= "11"; --45 deg
+                elsif (c1v >= platform_c1 + 72 and c1v < platform_c1 + 80) then
+                    --drv := "0000000001"; ---moves ball from left to right
+                    dcv := 0 - dcv; --flips incrementer
+                    ball_angle <= "01"; --sharp low
+                             
+                else --didn't hit platform
+                    c1v := platform_c1 + 33; --centered
+                    r1v := "0111000010"; --starts a bit above platform
+                    calc := '0'; --stops from moving
+                    dcv := 0 - dcv; --flips incrementer
+                    ball_angle <= "00"; --sets to straight up
+                end if;
+            
+            end if;
+            
+            
+            --problem is here. Not a "serial" down the line process. r1v & c1v are still
+            --previous values from this cycle, so ball continues in direction
+            
+            
+            --moves ball
+            case ball_angle is
+                when "00" =>
+                    c1v := c1v; --just straight up
+                    r1v := r1v + drv + drv + drv; -- 0,3
+                when "01" =>
+                    c1v := c1v + dcv; --sharp low angle         
+                    r1v := r1v + drv + drv + drv; -- 3,1 
+                when "10" =>
+                    c1v := c1v + dcv + dcv + dcv; --sharp high angle       
+                    r1v := r1v + drv; -- 1,3                        
+                when "11" =>
+                    c1v := c1v + dcv + dcv; --45 deg angle         
+                    r1v := r1v + drv + drv; -- 2,2  
+                when others =>
+                     null;  
+                end case; 
 			
---	   elsif calc = '0' then --if not calc, then center ball on platform
---	       c1v := platform_c1 + 33; --centered
+	   elsif calc = '0' then --if not calc, then center ball on platform
+	       c1v := platform_c1 + 33; --centered
 	       
 	   end if;
 
