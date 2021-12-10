@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
-| Date         : Fri Dec 10 00:46:02 2021
+| Date         : Fri Dec 10 01:24:29 2021
 | Host         : QUANTUM-DSKTP running 64-bit Ubuntu 20.04.3 LTS
 | Command      : report_control_sets -verbose -file Platform_top_control_sets_placed.rpt
 | Design       : Platform_top
@@ -27,7 +27,7 @@ Table of Contents
 |    Minimum number of control sets                        |    38 |
 |    Addition due to synthesis replication                 |     0 |
 |    Addition due to physical synthesis replication        |     0 |
-| Unused register locations in slices containing registers |   256 |
+| Unused register locations in slices containing registers |   258 |
 +----------------------------------------------------------+-------+
 * Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
 ** Run report_qor_suggestions for automated merging and remapping suggestions
@@ -40,10 +40,10 @@ Table of Contents
 |       Fanout       | Count |
 +--------------------+-------+
 | Total control sets |    38 |
-| >= 0 to < 4        |    33 |
+| >= 0 to < 4        |    32 |
 | >= 4 to < 6        |     0 |
 | >= 6 to < 8        |     0 |
-| >= 8 to < 10       |     0 |
+| >= 8 to < 10       |     1 |
 | >= 10 to < 12      |     3 |
 | >= 12 to < 14      |     0 |
 | >= 14 to < 16      |     0 |
@@ -58,11 +58,11 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |               3 |            3 |
-| No           | No                    | Yes                    |              41 |           20 |
+| No           | No                    | No                     |               1 |            1 |
+| No           | No                    | Yes                    |              41 |           21 |
 | No           | Yes                   | No                     |              10 |           10 |
 | Yes          | No                    | No                     |               0 |            0 |
-| Yes          | No                    | Yes                    |              58 |           30 |
+| Yes          | No                    | Yes                    |              58 |           32 |
 | Yes          | Yes                   | No                     |               0 |            0 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
@@ -73,44 +73,44 @@ Table of Contents
 +----------------------+-----------------------------+------------------+------------------+----------------+
 |     Clock Signal     |        Enable Signal        | Set/Reset Signal | Slice Load Count | Bel Load Count |
 +----------------------+-----------------------------+------------------+------------------+----------------+
-|  clk95_BUFG          | bounce_uut/c1v[9]_P_i_1_n_0 | U3/c1v_reg[1]_2  |                1 |              1 |
-|  clk95_BUFG          |                             | U3/c1v_reg[0]_1  |                1 |              1 |
-|  clk95_BUFG          |                             | U3/BTNC_4        |                1 |              1 |
-|  clk95_BUFG          |                             | U3/BTNC_1        |                1 |              1 |
-|  clk95_BUFG          |                             | U3/BTNC          |                1 |              1 |
-|  clk95_BUFG          |                             | BTNC_IBUF        |                1 |              1 |
-|  clk95_BUFG          | bounce_uut/c1v[9]_P_i_1_n_0 | U3/c1v_reg[6]_15 |                1 |              1 |
-|  clk95_BUFG          | bounce_uut/c1v[9]_P_i_1_n_0 | U3/c1v_reg[5]_4  |                1 |              1 |
-|  clk95_BUFG          | bounce_uut/c1v[9]_P_i_1_n_0 | U3/c1v_reg[2]_2  |                1 |              1 |
-|  U3/c1v_reg[5]_4     |                             | U3/c1v_reg[5]_5  |                1 |              1 |
-|  clk95_BUFG          | bounce_uut/c1v[9]_P_i_1_n_0 | U3/c1v_reg[0]_5  |                1 |              1 |
-|  clk95_BUFG          | bounce_uut/c1v[9]_P_i_1_n_0 | U3/c1v_reg[0]_4  |                1 |              1 |
-|  clk95_BUFG          | bounce_uut/c1v[9]_P_i_1_n_0 | U3/c1v_reg[0]_2  |                1 |              1 |
-|  clk95_BUFG          | bounce_uut/c1v[9]_P_i_1_n_0 | U3/BTNC_3        |                1 |              1 |
-|  clk95_BUFG          | bounce_uut/c1v[9]_P_i_1_n_0 | U3/BTNC_2        |                1 |              1 |
-|  clk95_BUFG          | bounce_uut/c1v[9]_P_i_1_n_0 | U3/BTNC_0        |                1 |              1 |
-|  U1/out[0]           |                             |                  |                1 |              1 |
-|  clk95_BUFG          |                             | U3/c1v_reg[0]_6  |                1 |              1 |
-|  U3/c1v_reg[6]_15    |                             | U3/c1v_reg[6]_14 |                1 |              1 |
-|  U3/c1v_reg[2]_2     |                             | U3/c1v_reg[2]_1  |                1 |              1 |
-|  U3/c1v_reg[1]_2     |                             | U3/c1v_reg[1]_1  |                1 |              1 |
-|  U3/c1v_reg[0]_5     |                             | U3/c1v_reg[0]_6  |                1 |              1 |
-|  U3/c1v_reg[0]_4     |                             | U3/c1v_reg[0]_3  |                1 |              1 |
-|  U3/c1v_reg[0]_2     |                             | U3/c1v_reg[0]_1  |                1 |              1 |
-|  U3/BTNC_3           |                             | U3/BTNC_4        |                1 |              1 |
-|  U3/BTNC_2           |                             | U3/BTNC_1        |                1 |              1 |
+|  cclk_BUFG           | bounce_uut/c1v[9]_P_i_1_n_0 | U3/c1v_reg[4]_1  |                1 |              1 |
+|  cclk_BUFG           |                             | U3/BTNC_4        |                1 |              1 |
+|  cclk_BUFG           |                             | U3/c1v_reg[0]_2  |                1 |              1 |
+|  cclk_BUFG           |                             | U3/c1v_reg[0]_4  |                1 |              1 |
+|  cclk_BUFG           |                             | U3/c1v_reg[1]_1  |                1 |              1 |
+|  cclk_BUFG           |                             | U3/c1v_reg[1]_4  |                1 |              1 |
+|  cclk_BUFG           |                             | U3/c1v_reg[2]_1  |                1 |              1 |
+|  cclk_BUFG           |                             | BTNC_IBUF        |                1 |              1 |
+|  cclk_BUFG           | bounce_uut/c1v[9]_P_i_1_n_0 | U3/c1v_reg[5]_1  |                1 |              1 |
+|  U3/c1v_reg[4]_1     |                             | U3/c1v_reg[4]_2  |                1 |              1 |
+|  cclk_BUFG           | bounce_uut/c1v[9]_P_i_1_n_0 | U3/BTNC_0        |                1 |              1 |
+|  cclk_BUFG           | bounce_uut/c1v[9]_P_i_1_n_0 | U3/BTNC_2        |                1 |              1 |
+|  cclk_BUFG           | bounce_uut/c1v[9]_P_i_1_n_0 | U3/BTNC_3        |                1 |              1 |
+|  cclk_BUFG           | bounce_uut/c1v[9]_P_i_1_n_0 | U3/c1v_reg[0]_1  |                1 |              1 |
+|  cclk_BUFG           | bounce_uut/c1v[9]_P_i_1_n_0 | U3/c1v_reg[0]_3  |                1 |              1 |
+|  cclk_BUFG           | bounce_uut/c1v[9]_P_i_1_n_0 | U3/c1v_reg[1]_2  |                1 |              1 |
+|  cclk_BUFG           | bounce_uut/c1v[9]_P_i_1_n_0 | U3/c1v_reg[1]_3  |                1 |              1 |
+|  cclk_BUFG           | bounce_uut/c1v[9]_P_i_1_n_0 | U3/c1v_reg[2]_2  |                1 |              1 |
+|  cclk_BUFG           |                             | U3/BTNC          |                1 |              1 |
+|  U3/c1v_reg[5]_1     |                             | U3/c1v_reg[5]_2  |                1 |              1 |
 |  U3/BTNC_0           |                             | U3/BTNC          |                1 |              1 |
-|  clk95_BUFG          |                             | U3/c1v_reg[6]_14 |                1 |              1 |
-|  clk95_BUFG          |                             | U3/c1v_reg[5]_5  |                1 |              1 |
-|  clk95_BUFG          |                             | U3/c1v_reg[2]_1  |                1 |              1 |
-|  clk95_BUFG          |                             | U3/c1v_reg[1]_1  |                1 |              1 |
-|  clk95_BUFG          |                             | U3/c1v_reg[0]_3  |                1 |              1 |
-|  clk95_BUFG          |                             |                  |                2 |              2 |
-|  U1/out[0]           |                             | BTNC_IBUF        |                4 |             10 |
-|  U1/out[0]           | U2/vsenable                 | BTNC_IBUF        |                4 |             10 |
-|  U1/out[1]           | U3/c1v[9]_i_1_n_0           | BTNC_IBUF        |                8 |             10 |
+|  U3/BTNC_2           |                             | U3/BTNC_1        |                1 |              1 |
+|  U3/BTNC_3           |                             | U3/BTNC_4        |                1 |              1 |
+|  U1/out[0]           |                             |                  |                1 |              1 |
+|  U3/c1v_reg[0]_1     |                             | U3/c1v_reg[0]_2  |                1 |              1 |
+|  U3/c1v_reg[0]_3     |                             | U3/c1v_reg[0]_4  |                1 |              1 |
+|  U3/c1v_reg[1]_2     |                             | U3/c1v_reg[1]_1  |                1 |              1 |
+|  U3/c1v_reg[1]_3     |                             | U3/c1v_reg[1]_4  |                1 |              1 |
+|  U3/c1v_reg[2]_2     |                             | U3/c1v_reg[2]_1  |                1 |              1 |
+|  cclk_BUFG           |                             | U3/c1v_reg[5]_2  |                1 |              1 |
+|  cclk_BUFG           |                             | U3/c1v_reg[4]_2  |                1 |              1 |
+|  cclk_BUFG           |                             | U3/BTNC_1        |                1 |              1 |
+|  cclk_BUFG           | bounce_uut/dcv_0            | BTNC_IBUF        |                4 |              9 |
+|  U1/out[1]           | U3/c1v[9]_i_1_n_0           | BTNC_IBUF        |                5 |             10 |
+|  U1/out[0]           | U2/vsenable                 | BTNC_IBUF        |                6 |             10 |
+|  U1/out[0]           |                             | BTNC_IBUF        |                5 |             10 |
+|  cclk_BUFG           | bounce_uut/r1v_1            | BTNC_IBUF        |                7 |             19 |
 |  CLK100MHZ_IBUF_BUFG |                             | BTNC_IBUF        |                5 |             20 |
-|  clk95_BUFG          | bounce_uut/drv[9]_i_1_n_0   | BTNC_IBUF        |                8 |             28 |
 +----------------------+-----------------------------+------------------+------------------+----------------+
 
 
