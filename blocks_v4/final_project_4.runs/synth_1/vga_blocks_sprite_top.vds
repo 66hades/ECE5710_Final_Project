@@ -1,0 +1,719 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Wed Dec  8 01:11:16 2021
+# Process ID: 2388
+# Current directory: C:/378/final project/ver3/final_project_4.runs/synth_1
+# Command line: vivado.exe -log vga_blocks_sprite_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source vga_blocks_sprite_top.tcl
+# Log file: C:/378/final project/ver3/final_project_4.runs/synth_1/vga_blocks_sprite_top.vds
+# Journal file: C:/378/final project/ver3/final_project_4.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source vga_blocks_sprite_top.tcl -notrace
+Command: synth_design -top vga_blocks_sprite_top -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 4432 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 356.477 ; gain = 100.281
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'vga_blocks_sprite_top' [C:/378/final project/ver3/final_project_4.srcs/sources_1/new/vga_blocks_sprite_top.vhd:18]
+INFO: [Synth 8-3491] module 'clkdiv' declared at 'C:/378/final project/ver3/final_project_4.srcs/sources_1/new/clkdiv.vhd:7' bound to instance 'U1' of component 'clkdiv' [C:/378/final project/ver3/final_project_4.srcs/sources_1/new/vga_blocks_sprite_top.vhd:35]
+INFO: [Synth 8-638] synthesizing module 'clkdiv' [C:/378/final project/ver3/final_project_4.srcs/sources_1/new/clkdiv.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'clkdiv' (1#1) [C:/378/final project/ver3/final_project_4.srcs/sources_1/new/clkdiv.vhd:16]
+INFO: [Synth 8-3491] module 'vga_640x480' declared at 'C:/378/final project/ver3/final_project_4.srcs/sources_1/new/vga_640x480.vhd:6' bound to instance 'U2' of component 'vga_640x480' [C:/378/final project/ver3/final_project_4.srcs/sources_1/new/vga_blocks_sprite_top.vhd:43]
+INFO: [Synth 8-638] synthesizing module 'vga_640x480' [C:/378/final project/ver3/final_project_4.srcs/sources_1/new/vga_640x480.vhd:16]
+WARNING: [Synth 8-614] signal 'vsenable' is read in the process but is not in the sensitivity list [C:/378/final project/ver3/final_project_4.srcs/sources_1/new/vga_640x480.vhd:62]
+INFO: [Synth 8-256] done synthesizing module 'vga_640x480' (2#1) [C:/378/final project/ver3/final_project_4.srcs/sources_1/new/vga_640x480.vhd:16]
+INFO: [Synth 8-3491] module 'vga_blocks_sprite' declared at 'C:/378/final project/ver3/final_project_4.srcs/sources_1/new/vga_blocks_sprite.vhd:6' bound to instance 'U3' of component 'vga_blocks_sprite' [C:/378/final project/ver3/final_project_4.srcs/sources_1/new/vga_blocks_sprite_top.vhd:54]
+INFO: [Synth 8-638] synthesizing module 'vga_blocks_sprite' [C:/378/final project/ver3/final_project_4.srcs/sources_1/new/vga_blocks_sprite.vhd:20]
+WARNING: [Synth 8-614] signal 'ypix' is read in the process but is not in the sensitivity list [C:/378/final project/ver3/final_project_4.srcs/sources_1/new/vga_blocks_sprite.vhd:39]
+WARNING: [Synth 8-614] signal 'xpix' is read in the process but is not in the sensitivity list [C:/378/final project/ver3/final_project_4.srcs/sources_1/new/vga_blocks_sprite.vhd:39]
+WARNING: [Synth 8-614] signal 'ypix1' is read in the process but is not in the sensitivity list [C:/378/final project/ver3/final_project_4.srcs/sources_1/new/vga_blocks_sprite.vhd:39]
+WARNING: [Synth 8-614] signal 'xpix1' is read in the process but is not in the sensitivity list [C:/378/final project/ver3/final_project_4.srcs/sources_1/new/vga_blocks_sprite.vhd:39]
+WARNING: [Synth 8-614] signal 'bspriteon' is read in the process but is not in the sensitivity list [C:/378/final project/ver3/final_project_4.srcs/sources_1/new/vga_blocks_sprite.vhd:53]
+WARNING: [Synth 8-614] signal 'M' is read in the process but is not in the sensitivity list [C:/378/final project/ver3/final_project_4.srcs/sources_1/new/vga_blocks_sprite.vhd:62]
+WARNING: [Synth 8-3936] Found unconnected internal register 'xpix1_reg' and it is trimmed from '10' to '9' bits. [C:/378/final project/ver3/final_project_4.srcs/sources_1/new/vga_blocks_sprite.vhd:47]
+WARNING: [Synth 8-3936] Found unconnected internal register 'ypix1_reg' and it is trimmed from '10' to '8' bits. [C:/378/final project/ver3/final_project_4.srcs/sources_1/new/vga_blocks_sprite.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'vga_blocks_sprite' (3#1) [C:/378/final project/ver3/final_project_4.srcs/sources_1/new/vga_blocks_sprite.vhd:20]
+INFO: [Synth 8-3491] module 'ram' declared at 'C:/378/final project/ver3/final_project_4.srcs/sources_1/new/ram.vhd:7' bound to instance 'U4' of component 'ram' [C:/378/final project/ver3/final_project_4.srcs/sources_1/new/vga_blocks_sprite_top.vhd:69]
+INFO: [Synth 8-638] synthesizing module 'ram' [C:/378/final project/ver3/final_project_4.srcs/sources_1/new/ram.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'ram' (4#1) [C:/378/final project/ver3/final_project_4.srcs/sources_1/new/ram.vhd:15]
+INFO: [Synth 8-3491] module 'rom_OB' declared at 'C:/378/final project/ver3/final_project_4.srcs/sources_1/new/rom_RB.vhd:5' bound to instance 'U5' of component 'rom_OB' [C:/378/final project/ver3/final_project_4.srcs/sources_1/new/vga_blocks_sprite_top.vhd:78]
+INFO: [Synth 8-638] synthesizing module 'rom_OB' [C:/378/final project/ver3/final_project_4.srcs/sources_1/new/rom_RB.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'rom_OB' (5#1) [C:/378/final project/ver3/final_project_4.srcs/sources_1/new/rom_RB.vhd:13]
+INFO: [Synth 8-3491] module 'decode38' declared at 'C:/378/final project/ver3/final_project_4.srcs/sources_1/new/decode38.vhd:6' bound to instance 'U6' of component 'decode38' [C:/378/final project/ver3/final_project_4.srcs/sources_1/new/vga_blocks_sprite_top.vhd:85]
+INFO: [Synth 8-638] synthesizing module 'decode38' [C:/378/final project/ver3/final_project_4.srcs/sources_1/new/decode38.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'decode38' (6#1) [C:/378/final project/ver3/final_project_4.srcs/sources_1/new/decode38.vhd:13]
+INFO: [Synth 8-3491] module 'rom_yb' declared at 'C:/378/final project/ver3/final_project_4.srcs/sources_1/new/rom_yb.vhd:5' bound to instance 'U7' of component 'rom_yb' [C:/378/final project/ver3/final_project_4.srcs/sources_1/new/vga_blocks_sprite_top.vhd:91]
+INFO: [Synth 8-638] synthesizing module 'rom_yb' [C:/378/final project/ver3/final_project_4.srcs/sources_1/new/rom_yb.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'rom_yb' (7#1) [C:/378/final project/ver3/final_project_4.srcs/sources_1/new/rom_yb.vhd:13]
+INFO: [Synth 8-3491] module 'rom_gb' declared at 'C:/378/final project/ver3/final_project_4.srcs/sources_1/new/rom_gb.vhd:5' bound to instance 'U8' of component 'rom_gb' [C:/378/final project/ver3/final_project_4.srcs/sources_1/new/vga_blocks_sprite_top.vhd:98]
+INFO: [Synth 8-638] synthesizing module 'rom_gb' [C:/378/final project/ver3/final_project_4.srcs/sources_1/new/rom_gb.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'rom_gb' (8#1) [C:/378/final project/ver3/final_project_4.srcs/sources_1/new/rom_gb.vhd:13]
+INFO: [Synth 8-3491] module 'rom_pnb' declared at 'C:/378/final project/ver3/final_project_4.srcs/sources_1/new/rom_pb.vhd:5' bound to instance 'U9' of component 'rom_Pnb' [C:/378/final project/ver3/final_project_4.srcs/sources_1/new/vga_blocks_sprite_top.vhd:105]
+INFO: [Synth 8-638] synthesizing module 'rom_pnb' [C:/378/final project/ver3/final_project_4.srcs/sources_1/new/rom_pb.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'rom_pnb' (9#1) [C:/378/final project/ver3/final_project_4.srcs/sources_1/new/rom_pb.vhd:13]
+INFO: [Synth 8-3491] module 'rom_PRB' declared at 'C:/378/final project/ver3/final_project_4.srcs/sources_1/new/rom_bb.vhd:5' bound to instance 'U10' of component 'rom_prb' [C:/378/final project/ver3/final_project_4.srcs/sources_1/new/vga_blocks_sprite_top.vhd:112]
+INFO: [Synth 8-638] synthesizing module 'rom_PRB' [C:/378/final project/ver3/final_project_4.srcs/sources_1/new/rom_bb.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'rom_PRB' (10#1) [C:/378/final project/ver3/final_project_4.srcs/sources_1/new/rom_bb.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'vga_blocks_sprite_top' (11#1) [C:/378/final project/ver3/final_project_4.srcs/sources_1/new/vga_blocks_sprite_top.vhd:18]
+WARNING: [Synth 8-3331] design vga_blocks_sprite has unconnected port vidon
+WARNING: [Synth 8-3331] design vga_blocks_sprite has unconnected port data[4]
+WARNING: [Synth 8-3331] design vga_blocks_sprite has unconnected port data[3]
+WARNING: [Synth 8-3331] design vga_blocks_sprite has unconnected port data[2]
+WARNING: [Synth 8-3331] design vga_blocks_sprite has unconnected port data[1]
+WARNING: [Synth 8-3331] design vga_blocks_sprite_top has unconnected port btn[2]
+WARNING: [Synth 8-3331] design vga_blocks_sprite_top has unconnected port btn[1]
+WARNING: [Synth 8-3331] design vga_blocks_sprite_top has unconnected port btn[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 411.809 ; gain = 155.613
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 411.809 ; gain = 155.613
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 411.809 ; gain = 155.613
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc]
+WARNING: [Vivado 12-584] No ports matched 'sw[0]'. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:6]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:6]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[1]'. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:7]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:7]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[2]'. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:8]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:8]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[3]'. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:9]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:9]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[4]'. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:10]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:10]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[5]'. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:11]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:11]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[6]'. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:12]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:12]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[7]'. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[8]'. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[9]'. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[10]'. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:16]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:16]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[11]'. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:17]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[12]'. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[13]'. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:19]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:19]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[14]'. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:20]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:20]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[15]'. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:21]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:21]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ld[0]'. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:24]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ld[1]'. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:25]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:25]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ld[2]'. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:26]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:26]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ld[3]'. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:27]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ld[4]'. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:28]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:28]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ld[5]'. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:29]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:29]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ld[6]'. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:30]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:30]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ld[7]'. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:31]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:31]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ld[8]'. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:32]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:32]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ld[9]'. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:33]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ld[10]'. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ld[11]'. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:35]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ld[12]'. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ld[13]'. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ld[14]'. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ld[15]'. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:39]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ld16b'. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:42]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:42]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ld16g'. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:43]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:43]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ld16r'. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:44]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:44]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ld17b'. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:45]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:45]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ld17g'. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:46]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:46]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ld17r'. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:47]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:47]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'a_to_g[6]'. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:50]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:50]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'a_to_g[5]'. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:51]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:51]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'a_to_g[4]'. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:52]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:52]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'a_to_g[3]'. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:53]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:53]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'a_to_g[2]'. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:54]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:54]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'a_to_g[1]'. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:55]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:55]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'a_to_g[0]'. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:56]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:56]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dp'. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:58]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:58]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[0]'. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:60]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:60]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[1]'. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:61]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:61]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[2]'. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:62]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:62]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[3]'. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:63]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:63]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[4]'. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:64]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:64]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[5]'. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:65]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:65]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[6]'. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:66]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:66]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[7]'. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:67]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:67]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'rstn'. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:70]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:70]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btn[4]'. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:71]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:71]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ja1'. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:78]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:78]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ja2'. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:79]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:79]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ja3'. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:80]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:80]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ja4'. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:81]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:81]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ja7'. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:82]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:82]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ja8'. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:83]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:83]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ja9'. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:84]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:84]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ja10'. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:85]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:85]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jb1'. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:88]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:88]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jb2'. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:89]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:89]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jb3'. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:90]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:90]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jb4'. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:91]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:91]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jb7'. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:92]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:92]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jb8'. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:93]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:93]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jb9'. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:94]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:94]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jb10'. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:95]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:95]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jc1'. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:98]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:98]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jc2'. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:99]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:99]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jc3'. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:100]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:100]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jc4'. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:101]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:101]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jc7'. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:102]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:102]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jc8'. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:103]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:103]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jc9'. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:104]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:104]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jc10'. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:105]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:105]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jd1'. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:108]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:108]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jd2'. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:109]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:109]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jd3'. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:110]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:110]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jd4'. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:111]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:111]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jd7'. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:112]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:112]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jd8'. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:113]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:113]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jd9'. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:114]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:114]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jd10'. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:115]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:115]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'xa_n[1]'. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:118]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:118]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'xa_p[1]'. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:119]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:119]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'xa_n[2]'. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:120]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:120]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'xa_p[2]'. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:121]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:121]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'xa_n[3]'. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:122]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:122]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'xa_p[3]'. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:123]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:123]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'xa_n[4]'. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:124]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:124]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'xa_p[4]'. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:125]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:125]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'red[3]'. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:131]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:131]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'green[3]'. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:136]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:136]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'blue[2]'. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:140]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:140]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'blue[3]'. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:141]
+INFO: [Common 17-14] Message 'Vivado 12-584' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:141]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc:141]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/378/final project/ver3/final_project_4.srcs/constrs_1/imports/Desktop/constraintsfile.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/vga_blocks_sprite_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/vga_blocks_sprite_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 758.312 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 758.312 ; gain = 502.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 758.312 ; gain = 502.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 758.312 ; gain = 502.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 758.312 ; gain = 502.117
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 4     
+	   3 Input      9 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 2     
+	                9 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---RAMs : 
+	               1K Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 2     
+	 512 Input      8 Bit        Muxes := 4     
+	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module vga_640x480 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 2     
++---Registers : 
+	               10 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 2     
+Module vga_blocks_sprite 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 2     
+	   3 Input      9 Bit       Adders := 1     
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 1     
+Module ram 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
++---RAMs : 
+	               1K Bit         RAMs := 1     
+Module rom_OB 
+Detailed RTL Component Info : 
++---Muxes : 
+	 512 Input      8 Bit        Muxes := 1     
+Module rom_yb 
+Detailed RTL Component Info : 
++---Muxes : 
+	 512 Input      8 Bit        Muxes := 1     
+Module rom_pnb 
+Detailed RTL Component Info : 
++---Muxes : 
+	 512 Input      8 Bit        Muxes := 1     
+Module rom_PRB 
+Detailed RTL Component Info : 
++---Muxes : 
+	 512 Input      8 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3331] design vga_blocks_sprite_top has unconnected port btn[2]
+WARNING: [Synth 8-3331] design vga_blocks_sprite_top has unconnected port btn[1]
+WARNING: [Synth 8-3331] design vga_blocks_sprite_top has unconnected port btn[0]
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 758.312 ; gain = 502.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++----------------------+------------+---------------+----------------+
+|Module Name           | RTL Object | Depth x Width | Implemented As | 
++----------------------+------------+---------------+----------------+
+|rom_gb                | rom[0]     | 512x5         | LUT            | 
+|vga_blocks_sprite_top | U8/rom[0]  | 512x5         | LUT            | 
++----------------------+------------+---------------+----------------+
+
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++----------------------+------------+-----------+----------------------+----------------------------+
+|Module Name           | RTL Object | Inference | Size (Depth x Width) | Primitives                 | 
++----------------------+------------+-----------+----------------------+----------------------------+
+|vga_blocks_sprite_top | U4/ram_reg | Implied   | 512 x 4              | RAM64X1D x 5  RAM64M x 5   | 
++----------------------+------------+-----------+----------------------+----------------------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 758.312 ; gain = 502.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 783.316 ; gain = 527.121
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping  Report
++----------------------+------------+-----------+----------------------+----------------------------+
+|Module Name           | RTL Object | Inference | Size (Depth x Width) | Primitives                 | 
++----------------------+------------+-----------+----------------------+----------------------------+
+|vga_blocks_sprite_top | U4/ram_reg | Implied   | 512 x 4              | RAM64X1D x 5  RAM64M x 5   | 
++----------------------+------------+-----------+----------------------+----------------------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 783.637 ; gain = 527.441
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 783.637 ; gain = 527.441
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 783.637 ; gain = 527.441
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 783.637 ; gain = 527.441
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 783.637 ; gain = 527.441
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 783.637 ; gain = 527.441
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 783.637 ; gain = 527.441
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     2|
+|2     |CARRY4   |     4|
+|3     |LUT1     |     2|
+|4     |LUT2     |    34|
+|5     |LUT3     |    23|
+|6     |LUT4     |    35|
+|7     |LUT5     |    50|
+|8     |LUT6     |   159|
+|9     |MUXF7    |    14|
+|10    |RAM64M   |     5|
+|11    |RAM64X1D |     5|
+|12    |FDCE     |    22|
+|13    |FDRE     |    10|
+|14    |IBUF     |     2|
+|15    |OBUF     |    10|
++------+---------+------+
+
+Report Instance Areas: 
++------+---------+------------------+------+
+|      |Instance |Module            |Cells |
++------+---------+------------------+------+
+|1     |top      |                  |   377|
+|2     |  U1     |clkdiv            |     4|
+|3     |  U2     |vga_640x480       |   295|
+|4     |  U3     |vga_blocks_sprite |     3|
+|5     |  U4     |ram               |    39|
+|6     |  U6     |decode38          |     5|
+|7     |  U8     |rom_gb            |    17|
++------+---------+------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 783.637 ; gain = 527.441
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 3 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:27 . Memory (MB): peak = 783.637 ; gain = 180.938
+Synthesis Optimization Complete : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 783.637 ; gain = 527.441
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 30 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 10 instances were transformed.
+  RAM64M => RAM64M (RAMD64E, RAMD64E, RAMD64E, RAMD64E): 5 instances
+  RAM64X1D => RAM64X1D (RAMD64E, RAMD64E): 5 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+45 Infos, 120 Warnings, 100 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 791.262 ; gain = 547.906
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'C:/378/final project/ver3/final_project_4.runs/synth_1/vga_blocks_sprite_top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file vga_blocks_sprite_top_utilization_synth.rpt -pb vga_blocks_sprite_top_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.050 . Memory (MB): peak = 791.262 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Dec  8 01:11:59 2021...
