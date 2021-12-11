@@ -17,8 +17,6 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_param xicom.use_bs_reader 1
-set_param chipscope.maxJobs 4
 create_project -in_memory -part xc7a100tcsg324-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -40,6 +38,13 @@ read_vhdl -library xil_defaultlib {
   /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/sources_1/imports/sources_1/imports/new/vga_components.vhd
   /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/sources_1/imports/sources_1/new/W_ROM.vhd
   /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/sources_1/new/bounce.vhd
+  /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/sources_1/imports/new/decode38.vhd
+  /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/sources_1/imports/new/ram.vhd
+  /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/sources_1/imports/new/rom_RB.vhd
+  /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/sources_1/imports/new/rom_bb.vhd
+  /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/sources_1/imports/new/rom_gb.vhd
+  /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/sources_1/imports/new/rom_pb.vhd
+  /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/sources_1/imports/new/rom_yb.vhd
   /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/sources_1/imports/sources_1/imports/new/vga_640x480.vhd
   /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/sources_1/imports/sources_1/new/vga_control.vhd
   /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.srcs/sources_1/imports/sources_1/new/Platform_top.vhd

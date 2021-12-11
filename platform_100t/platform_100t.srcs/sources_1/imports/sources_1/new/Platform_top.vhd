@@ -17,17 +17,27 @@ end Platform_top;
 
 architecture Platform_top of Platform_top is 
 
-signal clr, plclk, blclk, clk25, clk190, clk95, vidon, go1: std_logic;
+signal clr, plclk, clk25, clk190, clk95, vidon, go1: std_logic;
 signal hc, vc, PC1, PR1, BC1, BR1: std_logic_vector(9 downto 0);
-signal PM, BM, WM, W2M: std_logic_vector(7 downto 0);
+signal PM, BM, WM, W2M, BlockM: std_logic_vector(7 downto 0);
 signal rom_addr16: std_logic_vector(15 downto 0);
 signal rom_addr6: std_logic_vector(5 downto 0);
 signal P_addr11: std_logic_vector(10 downto 0);
 signal W_addr14, W2_addr14: STD_LOGIC_VECTOR(13 DOWNTO 0);
 
+--signals for blocks
+signal data : std_logic_vector(4 downto 0);
+signal addr: std_logic_vector(8 downto 0); 
+signal rom_addr: std_logic_vector(8 downto 0);
+signal M: std_logic_vector(7 downto 0);
+signal decoder_in : std_logic_vector(2 downto 0);
+signal decoder_out : std_logic_vector(7 downto 0);
+--end signals from blocks
+
 begin
 	
 clr <= BTNC;
+decoder_in <= data(3 downto 1);
 
 U1 : clkdiv	port map
 	   (mclk => CLK100MHZ, 
@@ -38,9 +48,14 @@ U1 : clkdiv	port map
 	   clk95hz => clk95
 		);
 	
-U2 : vga_640x480 port map
-        (clk => clk25, clr => clr, hsync => hsync,
-		vsync => vsync, hc => hc, vc => vc, vidon => vidon
+U2 : vga_640x480 port map(
+        clk => clk25, 
+        clr => clr, 
+        hsync => hsync,
+		vsync => vsync, 
+		hc => hc, 
+		vc => vc, 
+		vidon => vidon
 		); 
 		
 U3 : Platform_Motion port map
@@ -56,6 +71,11 @@ U4 : vga_control port map
         (vidon => vidon, 
         hc => hc, 
         vc => vc, 
+        data => data, -- takes data in from RAM         
+        addr => addr, --outputs RAM address for blocks
+        bso => open, -- high when vc and hc within the blocks grid area
+        rom_addr => rom_addr, --gets pixels from ROM     
+        BlockM => BlockM,  --block's return data from ROM 
         PM => PM, 
         BM => BM, 
         WM => WM, 
@@ -73,10 +93,58 @@ U4 : vga_control port map
 		green => green, 
 		blue => blue
 		);
-	
---PL : Pl_ROM	port map 
---        (addra => P_addr11, clka => clk25, douta => PM
---        );
+		
+--start block port mapping
+ram_uut : ram
+	port map(
+		clk => clk25,
+		addr => addr,
+		din => "00000",
+		dout => data,
+		we => '0'
+		); 	
+		
+decoder_uut: decode38
+port map(
+		a => decoder_in,
+		y => decoder_out
+		);    
+
+romOB_uut: rom_OB
+port map(
+		M => BlockM,
+		CE => decoder_out(4),
+		addr => rom_addr
+		); 	
+		
+romYB_uut: rom_yb
+port map(
+		M => BlockM,
+		CE => decoder_out(6),
+		addr => rom_addr
+		);
+		
+romGB_uut: rom_gb
+        port map(
+        M => BlockM,
+        CE => decoder_out(2),
+        addr => rom_addr
+        );		 	
+
+romPNB_uut: rom_PNB
+        port map(
+        M => BlockM,
+        CE => decoder_out(5),
+        addr => rom_addr
+        );		 	
+
+romPRB_uut: rom_PRB
+        port map(
+        M => BlockM,
+        CE => decoder_out(1),
+        addr => rom_addr
+        );
+--end block port mapping        
         
 platform_uut : platformROM	port map 
         (addra => P_addr11, 

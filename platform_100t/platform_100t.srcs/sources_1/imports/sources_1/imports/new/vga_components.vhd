@@ -5,7 +5,90 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 Package vga_components is
 
-component ClkDiv is
+component mux2g --from blocks
+    generic(N:integer := 5);
+	   port(
+		 a : in STD_LOGIC_VECTOR(N-1 downto 0);
+		 b : in STD_LOGIC_VECTOR(N-1 downto 0);
+		 s : in STD_LOGIC;
+		 y : out STD_LOGIC_VECTOR(N-1 downto 0)
+	     );
+end component;
+
+component buff3 --from blocks
+	generic (N:integer);
+	port(
+		 input : in STD_LOGIC_vector(N-1 downto 0);
+		 en : in STD_LOGIC;
+		 output : out STD_LOGIC_vector(N-1 downto 0)
+	     );
+end component;
+
+component ram --from blocks
+    Port ( clk : in STD_LOGIC;
+           addr : in STD_LOGIC_VECTOR (8 downto 0);
+           Dout : out STD_LOGIC_VECTOR (4 downto 0);
+           din : in STD_LOGIC_VECTOR (4 downto 0);
+           we : in STD_LOGIC);
+end component;
+
+component clock_pulse --from blocks
+	 port(
+		 inp : in STD_LOGIC;
+		 cclk : in STD_LOGIC;
+		 clr : in STD_LOGIC;
+		 outp : out STD_LOGIC
+	     );
+end component;
+
+component rom_OB --from blocks
+    port (
+        addr: in STD_LOGIC_VECTOR (8 downto 0);
+        M: out STD_LOGIC_VECTOR (0 to 7);
+        CE: in STD_LOGIC
+    );
+end component;
+
+component decode38 --from blocks
+	 port(
+		 a : in STD_LOGIC_VECTOR(2 downto 0);
+		 y : out STD_LOGIC_VECTOR(7 downto 0)
+	     );
+end component;
+
+component rom_yb  --from blocks
+    port (
+        addr: in STD_LOGIC_VECTOR (8 downto 0);
+        M: out STD_LOGIC_VECTOR (0 to 7);
+        CE: in STD_LOGIC
+    );
+end component;
+
+component rom_gb  --from blocks
+    port (
+        addr: in STD_LOGIC_VECTOR (8 downto 0);
+        M: out STD_LOGIC_VECTOR (0 to 7);
+        CE: in STD_LOGIC
+    );
+end component;
+	
+component rom_Pnb  --from blocks
+    port (
+        addr: in STD_LOGIC_VECTOR (8 downto 0);
+        M: out STD_LOGIC_VECTOR (0 to 7);
+        CE: in STD_LOGIC
+    );
+end component;
+
+component rom_prb  --from blocks
+    port (
+        addr: in STD_LOGIC_VECTOR (8 downto 0);
+        M: out STD_LOGIC_VECTOR (0 to 7);
+        CE: in STD_LOGIC
+    );
+end component;
+
+component clkDiv is
     Port ( clr : in STD_LOGIC;
            mclk : in STD_LOGIC;
            clk50Mhz : out STD_LOGIC;        --q(0)
@@ -45,11 +128,14 @@ component vga_640x480 is
            vc : out STD_LOGIC_VECTOR (9 downto 0));
 end component;
 
-component vga_control is
+component vga_control is --same function as block's vga_blocks_sprite
     port ( vidon: in std_logic;
-           hc : in std_logic_vector(9 downto 0);
-           vc : in std_logic_vector(9 downto 0);
-           BM, PM, WM, W2M: in std_logic_vector(7 downto 0);
+           hc, vc : in std_logic_vector(9 downto 0);  --horizontal and vertical pixel being rendered
+           data: in std_logic_vector(4 downto 0);-- takes data in from RAM
+           addr: out std_logic_vector(8 downto 0); --outputs RAM address for blocks
+           bso : out std_logic;  -- high when vc and hc within the blocks grid area
+           rom_addr: out std_logic_vector(8 downto 0); --gets pixels from ROM
+           BM, PM, WM, W2M, BlockM: in std_logic_vector(7 downto 0); --input pixel data from ROM or RAM
            BC1, BR1, PC1, PR1: in std_logic_vector(9 downto 0);
            W_addr14, W2_addr14: out STD_LOGIC_VECTOR(13 DOWNTO 0);
            P_addr11: out std_logic_vector(10 downto 0);
