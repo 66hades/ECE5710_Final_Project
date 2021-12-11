@@ -39,7 +39,7 @@ begin
 clr <= BTNC;
 decoder_in <= data(3 downto 1);
 
-U1 : clkdiv	port map
+clkdiv_uut : clkdiv	port map
 	   (mclk => CLK100MHZ, 
 	   clr => clr, 
 	   clk762hz => plclk,
@@ -48,7 +48,7 @@ U1 : clkdiv	port map
 	   clk95hz => clk95
 		);
 	
-U2 : vga_640x480 port map(
+vga_640x480_uut : vga_640x480 port map(
         clk => clk25, 
         clr => clr, 
         hsync => hsync,
@@ -58,7 +58,7 @@ U2 : vga_640x480 port map(
 		vidon => vidon
 		); 
 		
-U3 : Platform_Motion port map
+Platform_Motion_uut : Platform_Motion port map
 	   (clk => plclk, 
 	   clr => clr, 
 	   left => BTNL, 
@@ -67,7 +67,7 @@ U3 : Platform_Motion port map
 	   PR1 => PR1
 		);
 		
-U4 : vga_control port map
+vga_control_uut : vga_control port map
         (vidon => vidon, 
         hc => hc, 
         vc => vc, 
@@ -98,10 +98,15 @@ U4 : vga_control port map
 ram_uut : ram
 	port map(
 		clk => clk25,
+		--ball_clk => 
 		addr => addr,
 		din => "00000",
 		dout => data,
-		we => '0'
+		we => '0',
+		c1_inv => open,--placeholder
+		R1_inv => open,--placeholder
+		ball_c1 => "0111000101", --placeholder
+		ball_r1 => "0111000101" --placeholder
 		); 	
 		
 decoder_uut: decode38

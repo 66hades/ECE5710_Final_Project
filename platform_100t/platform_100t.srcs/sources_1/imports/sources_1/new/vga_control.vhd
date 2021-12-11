@@ -144,7 +144,7 @@ begin
             W2_addr14 <= rom_addr2(13 downto 0);
     end process RightWall;
 
-	process(P_spriteon, WL_spriteon, WR_spriteon, B_spriteon, vidon, PM, BM, WM, W2M)
+	spriteon_proc: process(P_spriteon, WL_spriteon, WR_spriteon, B_spriteon, vidon, PM, BM, WM, W2M)
   	variable j: integer;
  	begin
 		red <= "000";
@@ -173,6 +173,6 @@ begin
     		green <= BlockM(4 downto 2);
     		blue <= BlockM(1 downto 0);
 		end if;
-  	end process; 
+  	end process spriteon_proc; 
 					
 end vga_control;

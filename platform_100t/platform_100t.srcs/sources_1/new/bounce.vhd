@@ -9,9 +9,10 @@ entity bounce is
 		 clr : in STD_LOGIC;
 		 go : in STD_LOGIC;
 		 angle : in STD_LOGIC_VECTOR(1 downto 0);
-		 c1 : out STD_LOGIC_VECTOR(9 downto 0);
-		 r1 : out STD_LOGIC_VECTOR(9 downto 0);
-		 platform_c1 : in STD_LOGIC_VECTOR(9 downto 0);
+		 c1 : out STD_LOGIC_VECTOR(9 downto 0); --current column
+		 r1 : out STD_LOGIC_VECTOR(9 downto 0); --current row
+         dcv_out, drv_out: out STD_LOGIC_VECTOR(9 downto 0);	--direction of bounce	 
+         platform_c1 : in STD_LOGIC_VECTOR(9 downto 0);
 		 platform_r1 : in STD_LOGIC_VECTOR(9 downto 0)		 
 	     );
 end bounce;
@@ -132,8 +133,12 @@ begin
 			
 	end if; --ends if clear or rising clock edge
 	
+	dcv_out <= dcv; --outputs current left-right direction
+	drv_out <= drv; --outputs current up-down direction
+	
 	c1 <= c1v; --outputs ball column position
 	r1 <= r1v; --outputs ball row position
+	
 end process;
 
 end bounce;

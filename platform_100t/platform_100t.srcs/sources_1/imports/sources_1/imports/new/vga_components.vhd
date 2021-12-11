@@ -26,10 +26,16 @@ end component;
 
 component ram --from blocks
     Port ( clk : in STD_LOGIC;
+           --ball_clk : in STD_LOGIC; --unneeded?
            addr : in STD_LOGIC_VECTOR (8 downto 0);
            Dout : out STD_LOGIC_VECTOR (4 downto 0);
            din : in STD_LOGIC_VECTOR (4 downto 0);
-           we : in STD_LOGIC);
+           we : in STD_LOGIC;
+           c1_inv : out STD_LOGIC;
+           R1_inv : out STD_LOGIC;
+           ball_c1 : in std_logic_vector(9 downto 0);
+           ball_r1 : in std_logic_vector(9 downto 0)
+           );
 end component;
 
 component clock_pulse --from blocks
@@ -187,6 +193,7 @@ component bounce
 		angle : in STD_LOGIC_VECTOR(1 downto 0);
 		c1 : out std_logic_vector(9 downto 0);
 		r1 : out std_logic_vector(9 downto 0);
+		dcv_out, drv_out: out STD_LOGIC_VECTOR(9 downto 0);	--direction of bounce	 
 		platform_c1 : in std_logic_vector(9 downto 0);
 	    platform_r1: in std_logic_VECTOR(9 downto 0));
 

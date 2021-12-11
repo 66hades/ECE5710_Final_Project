@@ -2,14 +2,21 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.all;
 use IEEE.STD_LOGIC_unsigned.all;
+use ieee.numeric_std.all;
 
 
 entity ram is
     Port ( clk : in STD_LOGIC;
+           --ball_clk : in STD_LOGIC; --unneeded?
            addr : in STD_LOGIC_VECTOR (8 downto 0);
            Dout : out STD_LOGIC_VECTOR (4 downto 0);
            din : in STD_LOGIC_VECTOR (4 downto 0);
-           we : in STD_LOGIC);
+           we : in STD_LOGIC;
+           c1_inv : out STD_LOGIC;
+           R1_inv : out STD_LOGIC;
+           ball_c1 : in std_logic_vector(9 downto 0);
+           ball_r1 : in std_logic_vector(9 downto 0)
+           );
 end ram;
 
 architecture Behavioral of ram is
@@ -23,7 +30,7 @@ constant PN : std_logic_vector(4 downto 0):="01011"; -- PINK BLOCK
 
 type ram_type is array(natural range <>) of std_logic_vector(4 downto 0);
 signal ram : ram_type(0 to 287) := (
-NB,NB,NB,NB,NB,NB,NB,NB,NB,NB,NB,NB,NB,NB,NB,NB,NB,NB,
+PN,NB,NB,NB,NB,NB,NB,NB,NB,NB,NB,NB,NB,NB,NB,NB,NB,PN,
 NB,NB,NB,NB,NB,NB,NB,NB,NB,NB,NB,NB,NB,NB,NB,NB,NB,NB,
 NB,NB,NB,NB,NB,NB,OG,OG,OG,OG,OG,OG,NB,NB,NB,NB,NB,NB,
 NB,NB,NB,NB,PN,PN,PN,PN,PN,PN,PN,PN,PN,PN,NB,NB,NB,NB,
@@ -38,9 +45,13 @@ NB,NB,NB,NB,NB,NB,NB,NB,NB,NB,NB,NB,NB,NB,NB,NB,NB,NB,
 NB,NB,NB,NB,NB,NB,NB,NB,NB,NB,NB,NB,NB,NB,NB,NB,NB,NB,
 NB,NB,NB,NB,NB,NB,NB,NB,NB,NB,NB,NB,NB,NB,NB,NB,NB,NB,
 NB,NB,NB,NB,NB,NB,NB,NB,NB,NB,NB,NB,NB,NB,NB,NB,NB,NB,
-NB,NB,NB,NB,NB,NB,NB,NB,NB,NB,NB,NB,NB,NB,NB,NB,NB,NB);
+PN,NB,NB,NB,NB,NB,NB,NB,NB,NB,NB,NB,NB,NB,NB,NB,NB,PN);
 
 signal read_address : std_logic_vector(8 downto 0);
+signal internal_we : STD_LOGIC := '0';
+
+
+
 
 begin
 
@@ -53,6 +64,45 @@ begin
      read_address <= addr;        
     end if;
 end process;
+
+process(ball_c1, ball_r1) --process tao check block-ball collision
+    constant block_height: integer := 16; 
+    constant block_width: integer := 32; 
+    constant ball_dimension: integer := 8; 
+    constant block_global_R: integer := 71; 
+    constant block_global_C: integer := 33; 
+    
+    variable current_block_C, current_block_R: integer;
+    variable current_block_C_max, current_block_R_max: integer;
+    
+
+    begin
+        current_block_C := (conv_integer(addr) rem  block_width) * 32 + 71;
+        current_block_R := (conv_integer(addr) /  block_width) * 16 + 71;
+        current_block_C_max := current_block_C + block_width;
+        current_block_R_max := current_block_R + block_height;
+        
+         --checks upper & lower block dimesions
+         if (ball_r1 < current_block_R_max or ball_r1 + ball_dimension >= current_block_R) then
+            internal_we <= '1'; --clears current block at current address?
+            --todo: add bounce
+         end if;
+         
+         if (ball_c1 < current_block_C_max or ball_c1 + ball_dimension >= current_block_C) then
+            internal_we <= '1'; --clears current block at current address?
+            --todo: add bounce
+         end if;
+         
+    
+----wall bounds checking
+--			if (c1v < c1min or c1v >= c1max) then
+--				dcv := 0 - dcv; --flips incrementer
+--			end if;   
+
+    
+end process;
+
+
 
 Dout <= ram(conv_integer(read_address));
                
