@@ -90,39 +90,31 @@ process(ball_clk, ball_c1, ball_r1, clk, Din, addr) --process to check block-bal
         current_block_R_max := current_block_R + block_height;
         
         if ball_clk'event and ball_clk = '1' then
-            --checks upper ball edge
-             if (ball_r1 >= current_block_R and ball_r1 < current_block_R + current_block_R_max) then 
-                internal_we := '1'; --clears current block at current address?
+            
+             if (ball_r1 >= current_block_R and ball_r1 < current_block_R + current_block_R_max) then --checks upper ball edge
+--                if (ball_c1 + ball_dimension >= current_block_C and ball_c1 + ball_dimension < current_block_R + current_block_R_max) then
+--                    internal_we := '1'; --clears current block at current address?
+--                elsif (ball_c1 >= current_block_C and ball_c1 < current_block_R + current_block_R_max) then
+--                    internal_we := '1'; --clears current block at current address?
+--                end if;
+                
+                    internal_we := '1'; --clears current block at current address?
                 --todo: add bounce
              end if;
              
-             --checks lower ball edge
-             if (ball_r1 + ball_dimension >= current_block_R and ball_r1 + ball_dimension < current_block_R + current_block_R_max) then 
-                internal_we := '1'; --clears current block at current address?
-                --todo: add bounce
-             end if;
-             
---             --checks right ball side
---             if (ball_c1 + ball_dimension >= current_block_C and ball_c1 + ball_dimension < current_block_R + current_block_R_max) then 
---                internal_we <= '1'; --clears current block at current address?
+--             if (ball_r1 + ball_dimension >= current_block_R and ball_r1 + ball_dimension < current_block_R + current_block_R_max) then --checks lower ball edge
+--                if (ball_c1 + ball_dimension >= current_block_C and ball_c1 + ball_dimension < current_block_R + current_block_R_max) then --checks right ball side
+--                    internal_we := '1'; --clears current block at current address?
+--                elsif (ball_c1 >= current_block_C and ball_c1 < current_block_R + current_block_R_max) then --checks left ball side
+--                    internal_we := '1'; --clears current block at current address?
+--                end if;
 --                --todo: add bounce
 --             end if;
-
              
         end if;
-         
-    
-----wall bounds checking
---			if (c1v < c1min or c1v >= c1max) then
---				dcv := 0 - dcv; --flips incrementer
---			end if;   
-
     
 end process;
 
-
-
 Dout <= ram(conv_integer(read_address));
                
-
 end Behavioral;

@@ -1,14 +1,14 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
----------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
-| Date         : Sat Dec 11 17:48:44 2021
+| Date         : Sat Dec 11 17:49:03 2021
 | Host         : QUANTUM-DSKTP running 64-bit Ubuntu 20.04.3 LTS
-| Command      : report_drc -file Platform_top_drc_opted.rpt -pb Platform_top_drc_opted.pb -rpx Platform_top_drc_opted.rpx
+| Command      : report_drc -file Platform_top_drc_routed.rpt -pb Platform_top_drc_routed.pb -rpx Platform_top_drc_routed.rpx
 | Design       : Platform_top
 | Device       : xc7a100tcsg324-1
 | Speed File   : -1
-| Design State : Synthesized
----------------------------------------------------------------------------------------------------------------------------
+| Design State : Fully Routed
+------------------------------------------------------------------------------------------------------------------------------
 
 Report DRC
 
@@ -24,11 +24,12 @@ Table of Contents
       Design limits: <entire design considered>
            Ruledeck: default
              Max violations: <unlimited>
-             Violations found: 21
+             Violations found: 31
 +-----------+----------+----------------------------+------------+
 | Rule      | Severity | Description                | Violations |
 +-----------+----------+----------------------------+------------+
 | CHECK-3   | Warning  | Report rule limit reached  | 1          |
+| PDRC-153  | Warning  | Gated clock check          | 10         |
 | REQP-1840 | Warning  | RAMB18 async control check | 20         |
 +-----------+----------+----------------------------+------------+
 
@@ -37,6 +38,56 @@ Table of Contents
 CHECK-3#1 Warning
 Report rule limit reached  
 REQP-1840 rule limit reached: 20 violations have been found.
+Related violations: <none>
+
+PDRC-153#1 Warning
+Gated clock check  
+Net Platform_Motion_uut/BTNC_0 is a gated clock net sourced by a combinational pin Platform_Motion_uut/c1v_reg[9]_LDC_i_1/O, cell Platform_Motion_uut/c1v_reg[9]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#2 Warning
+Gated clock check  
+Net Platform_Motion_uut/BTNC_1 is a gated clock net sourced by a combinational pin Platform_Motion_uut/c1v_reg[5]_LDC_i_1/O, cell Platform_Motion_uut/c1v_reg[5]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#3 Warning
+Gated clock check  
+Net Platform_Motion_uut/c1v_reg[0]_2 is a gated clock net sourced by a combinational pin Platform_Motion_uut/c1v_reg[1]_LDC_i_1/O, cell Platform_Motion_uut/c1v_reg[1]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#4 Warning
+Gated clock check  
+Net Platform_Motion_uut/c1v_reg[0]_3 is a gated clock net sourced by a combinational pin Platform_Motion_uut/c1v_reg[0]_LDC_i_1/O, cell Platform_Motion_uut/c1v_reg[0]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#5 Warning
+Gated clock check  
+Net Platform_Motion_uut/c1v_reg[1]_0 is a gated clock net sourced by a combinational pin Platform_Motion_uut/c1v_reg[2]_LDC_i_1/O, cell Platform_Motion_uut/c1v_reg[2]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#6 Warning
+Gated clock check  
+Net Platform_Motion_uut/c1v_reg[2]_2 is a gated clock net sourced by a combinational pin Platform_Motion_uut/c1v_reg[3]_LDC_i_1/O, cell Platform_Motion_uut/c1v_reg[3]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#7 Warning
+Gated clock check  
+Net Platform_Motion_uut/c1v_reg[3]_2 is a gated clock net sourced by a combinational pin Platform_Motion_uut/c1v_reg[4]_LDC_i_1/O, cell Platform_Motion_uut/c1v_reg[4]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#8 Warning
+Gated clock check  
+Net Platform_Motion_uut/c1v_reg[4]_1 is a gated clock net sourced by a combinational pin Platform_Motion_uut/c1v_reg[7]_LDC_i_1/O, cell Platform_Motion_uut/c1v_reg[7]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#9 Warning
+Gated clock check  
+Net Platform_Motion_uut/c1v_reg[5]_1 is a gated clock net sourced by a combinational pin Platform_Motion_uut/c1v_reg[6]_LDC_i_1/O, cell Platform_Motion_uut/c1v_reg[6]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#10 Warning
+Gated clock check  
+Net Platform_Motion_uut/c1v_reg[6]_5 is a gated clock net sourced by a combinational pin Platform_Motion_uut/c1v_reg[8]_LDC_i_1/O, cell Platform_Motion_uut/c1v_reg[8]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 REQP-1840#1 Warning

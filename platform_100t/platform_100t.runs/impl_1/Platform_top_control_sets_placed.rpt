@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
-| Date         : Sat Dec 11 17:27:20 2021
+| Date         : Sat Dec 11 17:48:47 2021
 | Host         : QUANTUM-DSKTP running 64-bit Ubuntu 20.04.3 LTS
 | Command      : report_control_sets -verbose -file Platform_top_control_sets_placed.rpt
 | Design       : Platform_top
@@ -59,10 +59,10 @@ Table of Contents
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | No           | No                    | No                     |               2 |            2 |
-| No           | No                    | Yes                    |              41 |           20 |
+| No           | No                    | Yes                    |              41 |           24 |
 | No           | Yes                   | No                     |              10 |           10 |
 | Yes          | No                    | No                     |               0 |            0 |
-| Yes          | No                    | Yes                    |              58 |           34 |
+| Yes          | No                    | Yes                    |              58 |           38 |
 | Yes          | Yes                   | No                     |               0 |            0 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
@@ -73,44 +73,44 @@ Table of Contents
 +-----------------------------------+------------------------------------+----------------------------------+------------------+----------------+
 |            Clock Signal           |            Enable Signal           |         Set/Reset Signal         | Slice Load Count | Bel Load Count |
 +-----------------------------------+------------------------------------+----------------------------------+------------------+----------------+
-|  Platform_Motion_uut/c1v_reg[6]_3 |                                    | Platform_Motion_uut/c1v_reg[6]_4 |                1 |              1 |
-|  clk95_BUFG                       | bounce_uut/c1v[9]_P_i_1_n_0        | Platform_Motion_uut/BTNC_2       |                1 |              1 |
-|  clk95_BUFG                       | bounce_uut/c1v[9]_P_i_1_n_0        | Platform_Motion_uut/c1v_reg[0]_2 |                1 |              1 |
+|  Platform_Motion_uut/BTNC_1       |                                    | Platform_Motion_uut/BTNC_2       |                1 |              1 |
 |  clk95_BUFG                       | bounce_uut/c1v[9]_P_i_1_n_0        | Platform_Motion_uut/c1v_reg[0]_3 |                1 |              1 |
-|  clk95_BUFG                       | bounce_uut/c1v[9]_P_i_1_n_0        | Platform_Motion_uut/c1v_reg[1]_1 |                1 |              1 |
+|  clk95_BUFG                       | bounce_uut/c1v[9]_P_i_1_n_0        | Platform_Motion_uut/c1v_reg[1]_0 |                1 |              1 |
 |  clk95_BUFG                       | bounce_uut/c1v[9]_P_i_1_n_0        | Platform_Motion_uut/c1v_reg[2]_2 |                1 |              1 |
 |  clk95_BUFG                       | bounce_uut/c1v[9]_P_i_1_n_0        | Platform_Motion_uut/c1v_reg[3]_2 |                1 |              1 |
-|  clk95_BUFG                       | bounce_uut/c1v[9]_P_i_1_n_0        | Platform_Motion_uut/c1v_reg[5]_2 |                1 |              1 |
-|  Platform_Motion_uut/c1v_reg[5]_4 |                                    | Platform_Motion_uut/c1v_reg[5]_5 |                1 |              1 |
-|  CLK100MHZ_IBUF_BUFG              |                                    |                                  |                1 |              1 |
-|  Platform_Motion_uut/BTNC_2       |                                    | Platform_Motion_uut/BTNC_1       |                1 |              1 |
+|  Platform_Motion_uut/c1v_reg[4]_1 |                                    | Platform_Motion_uut/c1v_reg[4]_2 |                1 |              1 |
+|  Platform_Motion_uut/c1v_reg[5]_1 |                                    | Platform_Motion_uut/c1v_reg[5]_2 |                1 |              1 |
+|  Platform_Motion_uut/c1v_reg[6]_5 |                                    | Platform_Motion_uut/c1v_reg[6]_6 |                1 |              1 |
+|  Platform_Motion_uut/BTNC_0       |                                    | Platform_Motion_uut/BTNC         |                1 |              1 |
+|  clk95_BUFG                       |                                    | Platform_Motion_uut/c1v_reg[5]_2 |                1 |              1 |
 |  Platform_Motion_uut/c1v_reg[0]_2 |                                    | Platform_Motion_uut/c1v_reg[0]_1 |                1 |              1 |
 |  Platform_Motion_uut/c1v_reg[0]_3 |                                    | Platform_Motion_uut/c1v_reg[0]_4 |                1 |              1 |
-|  Platform_Motion_uut/c1v_reg[1]_1 |                                    | Platform_Motion_uut/c1v_reg[1]_2 |                1 |              1 |
+|  Platform_Motion_uut/c1v_reg[1]_0 |                                    | Platform_Motion_uut/c1v_reg[1]_1 |                1 |              1 |
 |  Platform_Motion_uut/c1v_reg[2]_2 |                                    | Platform_Motion_uut/c1v_reg[2]_1 |                1 |              1 |
 |  Platform_Motion_uut/c1v_reg[3]_2 |                                    | Platform_Motion_uut/c1v_reg[3]_3 |                1 |              1 |
-|  Platform_Motion_uut/c1v_reg[5]_2 |                                    | Platform_Motion_uut/c1v_reg[5]_3 |                1 |              1 |
+|  CLK100MHZ_IBUF_BUFG              |                                    |                                  |                1 |              1 |
 |  clkdiv_uut/CLK                   |                                    |                                  |                1 |              1 |
-|  clk95_BUFG                       | bounce_uut/c1v[9]_P_i_1_n_0        | Platform_Motion_uut/c1v_reg[5]_4 |                1 |              1 |
-|  Platform_Motion_uut/BTNC         |                                    | Platform_Motion_uut/BTNC_0       |                1 |              1 |
-|  clk95_BUFG                       |                                    | BTNC_IBUF                        |                1 |              1 |
-|  clk95_BUFG                       |                                    | Platform_Motion_uut/c1v_reg[5]_3 |                1 |              1 |
-|  clk95_BUFG                       |                                    | Platform_Motion_uut/c1v_reg[5]_5 |                1 |              1 |
-|  clk95_BUFG                       |                                    | Platform_Motion_uut/c1v_reg[6]_4 |                1 |              1 |
-|  clk95_BUFG                       |                                    | Platform_Motion_uut/BTNC_0       |                1 |              1 |
-|  clk95_BUFG                       |                                    | Platform_Motion_uut/BTNC_1       |                1 |              1 |
+|  clk95_BUFG                       | bounce_uut/c1v[9]_P_i_1_n_0        | Platform_Motion_uut/BTNC_1       |                1 |              1 |
+|  clk95_BUFG                       |                                    | Platform_Motion_uut/c1v_reg[4]_2 |                1 |              1 |
+|  clk95_BUFG                       |                                    | Platform_Motion_uut/c1v_reg[6]_6 |                1 |              1 |
+|  clk95_BUFG                       |                                    | Platform_Motion_uut/BTNC         |                1 |              1 |
+|  clk95_BUFG                       |                                    | Platform_Motion_uut/BTNC_2       |                1 |              1 |
 |  clk95_BUFG                       |                                    | Platform_Motion_uut/c1v_reg[0]_1 |                1 |              1 |
 |  clk95_BUFG                       |                                    | Platform_Motion_uut/c1v_reg[0]_4 |                1 |              1 |
-|  clk95_BUFG                       |                                    | Platform_Motion_uut/c1v_reg[1]_2 |                1 |              1 |
+|  clk95_BUFG                       |                                    | Platform_Motion_uut/c1v_reg[1]_1 |                1 |              1 |
 |  clk95_BUFG                       |                                    | Platform_Motion_uut/c1v_reg[2]_1 |                1 |              1 |
 |  clk95_BUFG                       |                                    | Platform_Motion_uut/c1v_reg[3]_3 |                1 |              1 |
-|  clk95_BUFG                       | bounce_uut/c1v[9]_P_i_1_n_0        | Platform_Motion_uut/BTNC         |                1 |              1 |
-|  clk95_BUFG                       | bounce_uut/c1v[9]_P_i_1_n_0        | Platform_Motion_uut/c1v_reg[6]_3 |                1 |              1 |
-|  clk95_BUFG                       | bounce_uut/dcv                     | BTNC_IBUF                        |                4 |              9 |
-|  clkdiv_uut/CLK                   |                                    | BTNC_IBUF                        |                4 |             10 |
-|  clkdiv_uut/CLK                   | vga_640x480_uut/vsenable           | BTNC_IBUF                        |                7 |             10 |
+|  clk95_BUFG                       |                                    | BTNC_IBUF                        |                1 |              1 |
+|  clk95_BUFG                       | bounce_uut/c1v[9]_P_i_1_n_0        | Platform_Motion_uut/c1v_reg[4]_1 |                1 |              1 |
+|  clk95_BUFG                       | bounce_uut/c1v[9]_P_i_1_n_0        | Platform_Motion_uut/c1v_reg[5]_1 |                1 |              1 |
+|  clk95_BUFG                       | bounce_uut/c1v[9]_P_i_1_n_0        | Platform_Motion_uut/c1v_reg[6]_5 |                1 |              1 |
+|  clk95_BUFG                       | bounce_uut/c1v[9]_P_i_1_n_0        | Platform_Motion_uut/BTNC_0       |                1 |              1 |
+|  clk95_BUFG                       | bounce_uut/c1v[9]_P_i_1_n_0        | Platform_Motion_uut/c1v_reg[0]_2 |                1 |              1 |
+|  clk95_BUFG                       | bounce_uut/dcv                     | BTNC_IBUF                        |                5 |              9 |
+|  clkdiv_uut/CLK                   |                                    | BTNC_IBUF                        |                8 |             10 |
+|  clkdiv_uut/CLK                   | vga_640x480_uut/vsenable           | BTNC_IBUF                        |                9 |             10 |
 |  clkdiv_uut/q_reg[16]_0           | Platform_Motion_uut/c1v[9]_i_1_n_0 | BTNC_IBUF                        |                5 |             10 |
-|  clk95_BUFG                       | bounce_uut/r1v                     | BTNC_IBUF                        |                8 |             19 |
+|  clk95_BUFG                       | bounce_uut/r1v                     | BTNC_IBUF                        |                9 |             19 |
 |  CLK100MHZ_IBUF_BUFG              |                                    | BTNC_IBUF                        |                5 |             20 |
 +-----------------------------------+------------------------------------+----------------------------------+------------------+----------------+
 
