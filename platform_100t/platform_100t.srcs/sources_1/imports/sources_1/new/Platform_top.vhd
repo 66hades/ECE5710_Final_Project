@@ -24,6 +24,8 @@ signal rom_addr16: std_logic_vector(15 downto 0);
 signal rom_addr6: std_logic_vector(5 downto 0);
 signal P_addr11: std_logic_vector(10 downto 0);
 signal W_addr14, W2_addr14: STD_LOGIC_VECTOR(13 DOWNTO 0);
+signal dcv_out, drv_out : std_logic_vector(9 downto 0);
+
 
 --signals for blocks
 signal data : std_logic_vector(4 downto 0);
@@ -98,15 +100,15 @@ vga_control_uut : vga_control port map
 ram_uut : ram
 	port map(
 		clk => clk25,
-		--ball_clk => 
+		ball_clk => CLK100MHZ,
 		addr => addr,
 		din => "00000",
 		dout => data,
 		we => '0',
 		c1_inv => open,--placeholder
 		R1_inv => open,--placeholder
-		ball_c1 => "0111000101", --placeholder
-		ball_r1 => "0111000101" --placeholder
+		ball_c1 => BC1, --placeholder
+		ball_r1 => BR1 --placeholder
 		); 	
 		
 decoder_uut: decode38
@@ -183,6 +185,8 @@ bounce_uut : bounce
 		angle => sw(1 downto 0),
 		c1 => BC1,
 		r1 => BR1,
+		dcv_out => dcv_out,
+		drv_out => drv_out,
 		platform_c1 => PC1,
 		platform_r1 => PR1
 	);

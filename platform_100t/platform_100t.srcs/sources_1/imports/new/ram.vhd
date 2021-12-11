@@ -7,7 +7,7 @@ use ieee.numeric_std.all;
 
 entity ram is
     Port ( clk : in STD_LOGIC;
-           --ball_clk : in STD_LOGIC; --unneeded?
+           ball_clk : in STD_LOGIC; --unneeded?
            addr : in STD_LOGIC_VECTOR (8 downto 0);
            Dout : out STD_LOGIC_VECTOR (4 downto 0);
            din : in STD_LOGIC_VECTOR (4 downto 0);
@@ -48,24 +48,21 @@ NB,NB,NB,NB,NB,NB,NB,NB,NB,NB,NB,NB,NB,NB,NB,NB,NB,NB,
 PN,NB,NB,NB,NB,NB,NB,NB,NB,NB,NB,NB,NB,NB,NB,NB,NB,PN);
 
 signal read_address : std_logic_vector(8 downto 0);
-signal internal_we : STD_LOGIC := '0';
-
-
-
 
 begin
 
-process(clk,we,Din,addr)
-begin
-    if (clk'event and clk = '1') then
-    if (we = '1') then   
-     ram(conv_integer(addr)) <= din ;
-     end if;
-     read_address <= addr;        
-    end if;
-end process;
+--process(clk,Din,addr) --merged with other process
+--begin
+--    if (clk'event and clk = '1') then
+--        if (internal_we = '1') then   
+--             ram(conv_integer(addr)) <= din ;
+--             internal_we := '0';
+--        end if;
+--     read_address <= addr;        
+--    end if;
+--end process;
 
-process(ball_c1, ball_r1) --process tao check block-ball collision
+process(ball_clk, ball_c1, ball_r1, clk, Din, addr) --process to check block-ball collision
     constant block_height: integer := 16; 
     constant block_width: integer := 32; 
     constant ball_dimension: integer := 8; 
@@ -74,24 +71,45 @@ process(ball_c1, ball_r1) --process tao check block-ball collision
     
     variable current_block_C, current_block_R: integer;
     variable current_block_C_max, current_block_R_max: integer;
-    
+    variable internal_we : STD_LOGIC := '0';
 
     begin
+        --from other process
+        if (clk'event and clk = '1') then
+            if (internal_we = '1') then   
+                 ram(conv_integer(addr)) <= din ;
+                 internal_we := '0';
+            end if;
+         read_address <= addr;        
+        end if;
+        --end other process
+    
         current_block_C := (conv_integer(addr) rem  block_width) * 32 + 71;
         current_block_R := (conv_integer(addr) /  block_width) * 16 + 71;
         current_block_C_max := current_block_C + block_width;
         current_block_R_max := current_block_R + block_height;
         
-         --checks upper & lower block dimesions
-         if (ball_r1 < current_block_R_max or ball_r1 + ball_dimension >= current_block_R) then
-            internal_we <= '1'; --clears current block at current address?
-            --todo: add bounce
-         end if;
-         
-         if (ball_c1 < current_block_C_max or ball_c1 + ball_dimension >= current_block_C) then
-            internal_we <= '1'; --clears current block at current address?
-            --todo: add bounce
-         end if;
+        if ball_clk'event and ball_clk = '1' then
+            --checks upper ball edge
+             if (ball_r1 >= current_block_R and ball_r1 < current_block_R + current_block_R_max) then 
+                internal_we := '1'; --clears current block at current address?
+                --todo: add bounce
+             end if;
+             
+             --checks lower ball edge
+             if (ball_r1 + ball_dimension >= current_block_R and ball_r1 + ball_dimension < current_block_R + current_block_R_max) then 
+                internal_we := '1'; --clears current block at current address?
+                --todo: add bounce
+             end if;
+             
+--             --checks right ball side
+--             if (ball_c1 + ball_dimension >= current_block_C and ball_c1 + ball_dimension < current_block_R + current_block_R_max) then 
+--                internal_we <= '1'; --clears current block at current address?
+--                --todo: add bounce
+--             end if;
+
+             
+        end if;
          
     
 ----wall bounds checking

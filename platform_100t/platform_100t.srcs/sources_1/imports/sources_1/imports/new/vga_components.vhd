@@ -26,7 +26,7 @@ end component;
 
 component ram --from blocks
     Port ( clk : in STD_LOGIC;
-           --ball_clk : in STD_LOGIC; --unneeded?
+           ball_clk : in STD_LOGIC; --unneeded?
            addr : in STD_LOGIC_VECTOR (8 downto 0);
            Dout : out STD_LOGIC_VECTOR (4 downto 0);
            din : in STD_LOGIC_VECTOR (4 downto 0);
