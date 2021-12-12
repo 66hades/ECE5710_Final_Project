@@ -195,6 +195,7 @@ component bounce
 	port(
 		cclk : in std_logic;
 		clr : in std_logic;
+		we : out STD_LOGIC;
 		go : in std_logic;
 		angle : in STD_LOGIC_VECTOR(1 downto 0);
 		c1 : out std_logic_vector(9 downto 0);

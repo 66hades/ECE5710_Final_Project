@@ -2,8 +2,8 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Sun Dec 12 00:50:47 2021
-# Process ID: 1490403
+# Start of session at: Sun Dec 12 16:11:44 2021
+# Process ID: 1934520
 # Current directory: /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.runs/synth_1
 # Command line: vivado -log Platform_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Platform_top.tcl
 # Log file: /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.runs/synth_1/Platform_top.vds
@@ -16,9 +16,9 @@ Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 1490468 
+INFO: Helper process launched with PID 1934586 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1654.992 ; gain = 153.719 ; free physical = 40618 ; free virtual = 54905
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1655.117 ; gain = 153.719 ; free physical = 40546 ; free virtual = 55003
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'Platform_top' [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/imports/sources_1/new/Platform_top.vhd:18]
 INFO: [Synth 8-3491] module 'ClkDiv' declared at '/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/imports/sources_1/imports/blocks/ClkDiv.vhd:6' bound to instance 'clkdiv_uut' of component 'clkDiv' [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/imports/sources_1/new/Platform_top.vhd:42]
@@ -44,8 +44,8 @@ WARNING: [Synth 8-3936] Found unconnected internal register 'xpix1_reg' and it i
 WARNING: [Synth 8-3936] Found unconnected internal register 'ypix1_reg' and it is trimmed from '10' to '8' bits. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/imports/sources_1/new/vga_control.vhd:102]
 WARNING: [Synth 8-3848] Net rom_addr16 in module/entity vga_control does not have driver. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/imports/sources_1/new/vga_control.vhd:17]
 INFO: [Synth 8-256] done synthesizing module 'vga_control' (4#1) [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/imports/sources_1/new/vga_control.vhd:25]
-INFO: [Synth 8-3491] module 'DPRAM' declared at '/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.runs/synth_1/.Xil/Vivado-1490403-QUANTUM-DSKTP/realtime/DPRAM_stub.vhdl:5' bound to instance 'dpram_uut' of component 'dpram' [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/imports/sources_1/new/Platform_top.vhd:98]
-INFO: [Synth 8-638] synthesizing module 'DPRAM' [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.runs/synth_1/.Xil/Vivado-1490403-QUANTUM-DSKTP/realtime/DPRAM_stub.vhdl:18]
+INFO: [Synth 8-3491] module 'DPRAM' declared at '/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.runs/synth_1/.Xil/Vivado-1934520-QUANTUM-DSKTP/realtime/DPRAM_stub.vhdl:5' bound to instance 'dpram_uut' of component 'dpram' [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/imports/sources_1/new/Platform_top.vhd:98]
+INFO: [Synth 8-638] synthesizing module 'DPRAM' [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.runs/synth_1/.Xil/Vivado-1934520-QUANTUM-DSKTP/realtime/DPRAM_stub.vhdl:18]
 INFO: [Synth 8-3491] module 'decode38' declared at '/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/imports/new/decode38.vhd:6' bound to instance 'decoder_uut' of component 'decode38' [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/imports/sources_1/new/Platform_top.vhd:118]
 INFO: [Synth 8-638] synthesizing module 'decode38' [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/imports/new/decode38.vhd:13]
 INFO: [Synth 8-256] done synthesizing module 'decode38' (5#1) [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/imports/new/decode38.vhd:13]
@@ -64,33 +64,26 @@ INFO: [Synth 8-256] done synthesizing module 'rom_pnb' (9#1) [/home/quantum/Docu
 INFO: [Synth 8-3491] module 'rom_PRB' declared at '/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/imports/new/rom_bb.vhd:5' bound to instance 'romPRB_uut' of component 'rom_prb' [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/imports/sources_1/new/Platform_top.vhd:152]
 INFO: [Synth 8-638] synthesizing module 'rom_PRB' [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/imports/new/rom_bb.vhd:13]
 INFO: [Synth 8-256] done synthesizing module 'rom_PRB' (10#1) [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/imports/new/rom_bb.vhd:13]
-INFO: [Synth 8-3491] module 'platformROM' declared at '/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.runs/synth_1/.Xil/Vivado-1490403-QUANTUM-DSKTP/realtime/platformROM_stub.vhdl:5' bound to instance 'platform_uut' of component 'platformROM' [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/imports/sources_1/new/Platform_top.vhd:160]
-INFO: [Synth 8-638] synthesizing module 'platformROM' [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.runs/synth_1/.Xil/Vivado-1490403-QUANTUM-DSKTP/realtime/platformROM_stub.vhdl:14]
-INFO: [Synth 8-3491] module 'x8ball_ROM' declared at '/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.runs/synth_1/.Xil/Vivado-1490403-QUANTUM-DSKTP/realtime/x8ball_ROM_stub.vhdl:5' bound to instance 'ball_uut' of component 'x8ball_ROM' [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/imports/sources_1/new/Platform_top.vhd:166]
-INFO: [Synth 8-638] synthesizing module 'x8ball_ROM' [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.runs/synth_1/.Xil/Vivado-1490403-QUANTUM-DSKTP/realtime/x8ball_ROM_stub.vhdl:14]
+INFO: [Synth 8-3491] module 'platformROM' declared at '/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.runs/synth_1/.Xil/Vivado-1934520-QUANTUM-DSKTP/realtime/platformROM_stub.vhdl:5' bound to instance 'platform_uut' of component 'platformROM' [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/imports/sources_1/new/Platform_top.vhd:160]
+INFO: [Synth 8-638] synthesizing module 'platformROM' [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.runs/synth_1/.Xil/Vivado-1934520-QUANTUM-DSKTP/realtime/platformROM_stub.vhdl:14]
+INFO: [Synth 8-3491] module 'x8ball_ROM' declared at '/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.runs/synth_1/.Xil/Vivado-1934520-QUANTUM-DSKTP/realtime/x8ball_ROM_stub.vhdl:5' bound to instance 'ball_uut' of component 'x8ball_ROM' [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/imports/sources_1/new/Platform_top.vhd:166]
+INFO: [Synth 8-638] synthesizing module 'x8ball_ROM' [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.runs/synth_1/.Xil/Vivado-1934520-QUANTUM-DSKTP/realtime/x8ball_ROM_stub.vhdl:14]
 INFO: [Synth 8-3491] module 'W_ROM' declared at '/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/imports/sources_1/new/W_ROM.vhd:5' bound to instance 'LWALL' of component 'W_ROM' [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/imports/sources_1/new/Platform_top.vhd:176]
 INFO: [Synth 8-638] synthesizing module 'W_ROM' [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/imports/sources_1/new/W_ROM.vhd:10]
 INFO: [Synth 8-256] done synthesizing module 'W_ROM' (11#1) [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/imports/sources_1/new/W_ROM.vhd:10]
 INFO: [Synth 8-3491] module 'W_ROM' declared at '/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/imports/sources_1/new/W_ROM.vhd:5' bound to instance 'RWALL' of component 'W_ROM' [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/imports/sources_1/new/Platform_top.vhd:180]
-INFO: [Synth 8-3491] module 'bounce' declared at '/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/new/bounce.vhd:6' bound to instance 'bounce_uut' of component 'bounce' [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/imports/sources_1/new/Platform_top.vhd:184]
-INFO: [Synth 8-638] synthesizing module 'bounce' [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/new/bounce.vhd:22]
-WARNING: [Synth 8-614] signal 'ypix_block' is read in the process but is not in the sensitivity list [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/new/bounce.vhd:50]
-WARNING: [Synth 8-614] signal 'ypix' is read in the process but is not in the sensitivity list [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/new/bounce.vhd:50]
-WARNING: [Synth 8-614] signal 'xpix_block' is read in the process but is not in the sensitivity list [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/new/bounce.vhd:50]
-WARNING: [Synth 8-614] signal 'xpix' is read in the process but is not in the sensitivity list [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/new/bounce.vhd:50]
-INFO: [Synth 8-226] default block is never used [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/new/bounce.vhd:87]
-WARNING: [Synth 8-614] signal 'platform_c1' is read in the process but is not in the sensitivity list [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/new/bounce.vhd:64]
-WARNING: [Synth 8-3936] Found unconnected internal register 'ypix_reg' and it is trimmed from '10' to '8' bits. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/new/bounce.vhd:56]
-WARNING: [Synth 8-3936] Found unconnected internal register 'xpix_reg' and it is trimmed from '10' to '9' bits. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/new/bounce.vhd:58]
-WARNING: [Synth 8-3848] Net data_out in module/entity bounce does not have driver. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/new/bounce.vhd:18]
-INFO: [Synth 8-256] done synthesizing module 'bounce' (12#1) [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/new/bounce.vhd:22]
+INFO: [Synth 8-3491] module 'bounce' declared at '/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/new/bounce.vhd:7' bound to instance 'bounce_uut' of component 'bounce' [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/imports/sources_1/new/Platform_top.vhd:184]
+INFO: [Synth 8-638] synthesizing module 'bounce' [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/new/bounce.vhd:24]
+WARNING: [Synth 8-613] shared variable will be implemented as local to architecture [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/new/bounce.vhd:32]
+WARNING: [Synth 8-613] shared variable will be implemented as local to architecture [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/new/bounce.vhd:32]
+WARNING: [Synth 8-613] shared variable will be implemented as local to architecture [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/new/bounce.vhd:32]
+WARNING: [Synth 8-614] signal 'addr_s' is read in the process but is not in the sensitivity list [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/new/bounce.vhd:70]
+WARNING: [Synth 8-614] signal 'data_in' is read in the process but is not in the sensitivity list [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/new/bounce.vhd:85]
+INFO: [Synth 8-226] default block is never used [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/new/bounce.vhd:123]
+WARNING: [Synth 8-614] signal 'platform_c1' is read in the process but is not in the sensitivity list [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/new/bounce.vhd:101]
+INFO: [Synth 8-256] done synthesizing module 'bounce' (12#1) [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/new/bounce.vhd:24]
 WARNING: [Synth 8-3848] Net data_in in module/entity Platform_top does not have driver. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/imports/sources_1/new/Platform_top.vhd:29]
 INFO: [Synth 8-256] done synthesizing module 'Platform_top' (13#1) [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/imports/sources_1/new/Platform_top.vhd:18]
-WARNING: [Synth 8-3331] design bounce has unconnected port data_out[4]
-WARNING: [Synth 8-3331] design bounce has unconnected port data_out[3]
-WARNING: [Synth 8-3331] design bounce has unconnected port data_out[2]
-WARNING: [Synth 8-3331] design bounce has unconnected port data_out[1]
-WARNING: [Synth 8-3331] design bounce has unconnected port data_out[0]
 WARNING: [Synth 8-3331] design bounce has unconnected port platform_r1[9]
 WARNING: [Synth 8-3331] design bounce has unconnected port platform_r1[8]
 WARNING: [Synth 8-3331] design bounce has unconnected port platform_r1[7]
@@ -105,7 +98,6 @@ WARNING: [Synth 8-3331] design bounce has unconnected port data_in[4]
 WARNING: [Synth 8-3331] design bounce has unconnected port data_in[3]
 WARNING: [Synth 8-3331] design bounce has unconnected port data_in[2]
 WARNING: [Synth 8-3331] design bounce has unconnected port data_in[1]
-WARNING: [Synth 8-3331] design bounce has unconnected port data_in[0]
 WARNING: [Synth 8-3331] design W_ROM has unconnected port addr[13]
 WARNING: [Synth 8-3331] design W_ROM has unconnected port addr[12]
 WARNING: [Synth 8-3331] design W_ROM has unconnected port addr[11]
@@ -148,7 +140,7 @@ WARNING: [Synth 8-3331] design Platform_top has unconnected port sw[4]
 WARNING: [Synth 8-3331] design Platform_top has unconnected port sw[3]
 WARNING: [Synth 8-3331] design Platform_top has unconnected port sw[2]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1717.711 ; gain = 216.438 ; free physical = 40628 ; free virtual = 54916
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1717.836 ; gain = 216.438 ; free physical = 40569 ; free virtual = 55027
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -161,10 +153,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1723.648 ; gain = 222.375 ; free physical = 40628 ; free virtual = 54915
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1723.773 ; gain = 222.375 ; free physical = 40569 ; free virtual = 55026
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1723.648 ; gain = 222.375 ; free physical = 40628 ; free virtual = 54915
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1723.773 ; gain = 222.375 ; free physical = 40569 ; free virtual = 55026
 ---------------------------------------------------------------------------------
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
@@ -286,20 +278,20 @@ Parsing XDC File [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/E
 Finished Parsing XDC File [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1896.367 ; gain = 0.000 ; free physical = 40533 ; free virtual = 54821
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1894.523 ; gain = 0.000 ; free physical = 40478 ; free virtual = 54935
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 1896.367 ; gain = 0.000 ; free physical = 40533 ; free virtual = 54821
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1894.523 ; gain = 0.000 ; free physical = 40478 ; free virtual = 54935
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1896.367 ; gain = 395.094 ; free physical = 40626 ; free virtual = 54914
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1894.523 ; gain = 393.125 ; free physical = 40552 ; free virtual = 55011
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1896.367 ; gain = 395.094 ; free physical = 40626 ; free virtual = 54914
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1894.523 ; gain = 393.125 ; free physical = 40552 ; free virtual = 55011
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -308,11 +300,13 @@ Applied set_property DONT_TOUCH = true for ball_uut. (constraint file  auto gene
 Applied set_property DONT_TOUCH = true for platform_uut. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for dpram_uut. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1896.367 ; gain = 395.094 ; free physical = 40626 ; free virtual = 54914
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1894.523 ; gain = 393.125 ; free physical = 40552 ; free virtual = 55011
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-327] inferring latch for variable 'r1v_reg' [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/imports/sources_1/new/Motion.vhd:31]
+WARNING: [Synth 8-327] inferring latch for variable 'we_reg' [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/new/bounce.vhd:92]
+WARNING: [Synth 8-327] inferring latch for variable 'data_out_reg' [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/new/bounce.vhd:93]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1896.367 ; gain = 395.094 ; free physical = 40617 ; free virtual = 54906
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1894.523 ; gain = 393.125 ; free physical = 40551 ; free virtual = 55009
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -325,12 +319,13 @@ Start RTL Component Statistics
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
+	   2 Input     32 Bit       Adders := 2     
 	   3 Input     14 Bit       Adders := 2     
 	   5 Input     11 Bit       Adders := 1     
 	   3 Input     11 Bit       Adders := 3     
-	   2 Input     10 Bit       Adders := 30    
+	   2 Input     10 Bit       Adders := 28    
 	   3 Input     10 Bit       Adders := 2     
-	   3 Input      9 Bit       Adders := 2     
+	   3 Input      9 Bit       Adders := 1     
 	   4 Input      6 Bit       Adders := 1     
 	   3 Input      3 Bit       Adders := 1     
 +---Registers : 
@@ -399,9 +394,9 @@ Detailed RTL Component Info :
 Module bounce 
 Detailed RTL Component Info : 
 +---Adders : 
+	   2 Input     32 Bit       Adders := 2     
 	   3 Input     11 Bit       Adders := 1     
-	   2 Input     10 Bit       Adders := 13    
-	   3 Input      9 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 11    
 +---Registers : 
 	               10 Bit    Registers := 4     
 	                1 Bit    Registers := 1     
@@ -425,11 +420,6 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
-WARNING: [Synth 8-3331] design bounce has unconnected port data_out[4]
-WARNING: [Synth 8-3331] design bounce has unconnected port data_out[3]
-WARNING: [Synth 8-3331] design bounce has unconnected port data_out[2]
-WARNING: [Synth 8-3331] design bounce has unconnected port data_out[1]
-WARNING: [Synth 8-3331] design bounce has unconnected port data_out[0]
 WARNING: [Synth 8-3331] design bounce has unconnected port platform_r1[9]
 WARNING: [Synth 8-3331] design bounce has unconnected port platform_r1[8]
 WARNING: [Synth 8-3331] design bounce has unconnected port platform_r1[7]
@@ -444,7 +434,6 @@ WARNING: [Synth 8-3331] design bounce has unconnected port data_in[4]
 WARNING: [Synth 8-3331] design bounce has unconnected port data_in[3]
 WARNING: [Synth 8-3331] design bounce has unconnected port data_in[2]
 WARNING: [Synth 8-3331] design bounce has unconnected port data_in[1]
-WARNING: [Synth 8-3331] design bounce has unconnected port data_in[0]
 WARNING: [Synth 8-3331] design vga_control has unconnected port rom_addr16[15]
 WARNING: [Synth 8-3331] design vga_control has unconnected port rom_addr16[14]
 WARNING: [Synth 8-3331] design vga_control has unconnected port rom_addr16[13]
@@ -464,7 +453,14 @@ WARNING: [Synth 8-3331] design vga_control has unconnected port rom_addr16[0]
 WARNING: [Synth 8-3331] design vga_control has unconnected port data[4]
 WARNING: [Synth 8-3331] design vga_control has unconnected port data[3]
 WARNING: [Synth 8-3331] design vga_control has unconnected port data[2]
-INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-3331] design vga_control has unconnected port data[1]
+WARNING: [Synth 8-3331] design Platform_top has unconnected port BTND
+WARNING: [Synth 8-3331] design Platform_top has unconnected port sw[7]
+WARNING: [Synth 8-3331] design Platform_top has unconnected port sw[6]
+WARNING: [Synth 8-3331] design Platform_top has unconnected port sw[5]
+WARNING: [Synth 8-3331] design Platform_top has unconnected port sw[4]
+WARNING: [Synth 8-3331] design Platform_top has unconnected port sw[3]
+WARNING: [Synth 8-3331] design Platform_top has unconnected port sw[2]
 INFO: [Synth 8-3333] propagating constant 1 across sequential element (\bounce_uut/dcv_reg[0] )
 INFO: [Synth 8-3886] merging instance 'Platform_Motion_uut/r1v_reg[0]' (LD) to 'Platform_Motion_uut/r1v_reg[4]'
 INFO: [Synth 8-3886] merging instance 'Platform_Motion_uut/r1v_reg[8]' (LD) to 'Platform_Motion_uut/r1v_reg[4]'
@@ -478,8 +474,13 @@ INFO: [Synth 8-3886] merging instance 'Platform_Motion_uut/r1v_reg[5]' (LD) to '
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Platform_Motion_uut/r1v_reg[9] )
 WARNING: [Synth 8-3332] Sequential element (Platform_Motion_uut/r1v_reg[9]) is unused and will be removed from module Platform_top.
 WARNING: [Synth 8-3332] Sequential element (Platform_Motion_uut/r1v_reg[4]) is unused and will be removed from module Platform_top.
+WARNING: [Synth 8-3332] Sequential element (bounce_uut/data_out_reg[4]) is unused and will be removed from module Platform_top.
+WARNING: [Synth 8-3332] Sequential element (bounce_uut/data_out_reg[3]) is unused and will be removed from module Platform_top.
+WARNING: [Synth 8-3332] Sequential element (bounce_uut/data_out_reg[2]) is unused and will be removed from module Platform_top.
+WARNING: [Synth 8-3332] Sequential element (bounce_uut/data_out_reg[1]) is unused and will be removed from module Platform_top.
+WARNING: [Synth 8-3332] Sequential element (bounce_uut/data_out_reg[0]) is unused and will be removed from module Platform_top.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1896.367 ; gain = 395.094 ; free physical = 40595 ; free virtual = 54887
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1894.523 ; gain = 393.125 ; free physical = 40524 ; free virtual = 54986
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -505,13 +506,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1896.367 ; gain = 395.094 ; free physical = 40478 ; free virtual = 54770
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1894.523 ; gain = 393.125 ; free physical = 40411 ; free virtual = 54874
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1896.367 ; gain = 395.094 ; free physical = 40444 ; free virtual = 54736
+Finished Timing Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1894.523 ; gain = 393.125 ; free physical = 40374 ; free virtual = 54836
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -523,7 +524,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1896.367 ; gain = 395.094 ; free physical = 40442 ; free virtual = 54735
+Finished Technology Mapping : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1894.523 ; gain = 393.125 ; free physical = 40372 ; free virtual = 54834
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -547,7 +548,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1896.367 ; gain = 395.094 ; free physical = 40442 ; free virtual = 54735
+Finished IO Insertion : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1894.523 ; gain = 393.125 ; free physical = 40373 ; free virtual = 54835
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -560,7 +561,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1896.367 ; gain = 395.094 ; free physical = 40442 ; free virtual = 54735
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1894.523 ; gain = 393.125 ; free physical = 40373 ; free virtual = 54835
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -572,25 +573,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1896.367 ; gain = 395.094 ; free physical = 40441 ; free virtual = 54735
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1894.523 ; gain = 393.125 ; free physical = 40373 ; free virtual = 54835
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1896.367 ; gain = 395.094 ; free physical = 40441 ; free virtual = 54735
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1894.523 ; gain = 393.125 ; free physical = 40373 ; free virtual = 54835
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1896.367 ; gain = 395.094 ; free physical = 40441 ; free virtual = 54734
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1894.523 ; gain = 393.125 ; free physical = 40373 ; free virtual = 54835
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1896.367 ; gain = 395.094 ; free physical = 40441 ; free virtual = 54734
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1894.523 ; gain = 393.125 ; free physical = 40373 ; free virtual = 54835
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -613,14 +614,14 @@ Report Cell Usage:
 |2     |platformROM_bbox_1 |     1|
 |3     |x8ball_ROM_bbox_2  |     1|
 |4     |BUFG               |     2|
-|5     |CARRY4             |    65|
+|5     |CARRY4             |    66|
 |6     |LUT1               |    15|
-|7     |LUT2               |   130|
+|7     |LUT2               |   128|
 |8     |LUT3               |    71|
-|9     |LUT4               |    98|
-|10    |LUT5               |   119|
-|11    |LUT6               |   304|
-|12    |MUXF7              |     9|
+|9     |LUT4               |   106|
+|10    |LUT5               |   137|
+|11    |LUT6               |   295|
+|12    |MUXF7              |    12|
 |13    |FDCE               |    72|
 |14    |FDPE               |    27|
 |15    |FDRE               |     1|
@@ -633,38 +634,38 @@ Report Instance Areas:
 +------+----------------------+----------------+------+
 |      |Instance              |Module          |Cells |
 +------+----------------------+----------------+------+
-|1     |top                   |                |   966|
-|2     |  Platform_Motion_uut |Platform_Motion |   122|
-|3     |  bounce_uut          |bounce          |   315|
+|1     |top                   |                |   985|
+|2     |  Platform_Motion_uut |Platform_Motion |   120|
+|3     |  bounce_uut          |bounce          |   331|
 |4     |  clkdiv_uut          |ClkDiv          |    26|
 |5     |  decoder_uut         |decode38        |    17|
 |6     |  romGB_uut           |rom_gb          |    17|
-|7     |  vga_640x480_uut     |vga_640x480     |   357|
-|8     |  vga_control_uut     |vga_control     |    67|
+|7     |  vga_640x480_uut     |vga_640x480     |   360|
+|8     |  vga_control_uut     |vga_control     |    69|
 +------+----------------------+----------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1896.367 ; gain = 395.094 ; free physical = 40441 ; free virtual = 54734
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1894.523 ; gain = 393.125 ; free physical = 40373 ; free virtual = 54835
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 50 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1896.367 ; gain = 222.375 ; free physical = 40495 ; free virtual = 54788
-Synthesis Optimization Complete : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1896.367 ; gain = 395.094 ; free physical = 40495 ; free virtual = 54788
+Synthesis finished with 0 errors, 0 critical warnings and 51 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1894.523 ; gain = 222.375 ; free physical = 40425 ; free virtual = 54887
+Synthesis Optimization Complete : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1894.523 ; gain = 393.125 ; free physical = 40425 ; free virtual = 54887
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 84 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 88 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1923.352 ; gain = 0.000 ; free physical = 40442 ; free virtual = 54740
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1925.414 ; gain = 0.000 ; free physical = 40387 ; free virtual = 54849
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 10 instances were transformed.
   LDC => LDCE: 10 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-71 Infos, 224 Warnings, 0 Critical Warnings and 0 Errors encountered.
+70 Infos, 225 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1923.352 ; gain = 557.492 ; free physical = 40557 ; free virtual = 54856
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1923.352 ; gain = 0.000 ; free physical = 40557 ; free virtual = 54856
+synth_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1925.414 ; gain = 559.430 ; free physical = 40504 ; free virtual = 54966
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1925.414 ; gain = 0.000 ; free physical = 40504 ; free virtual = 54966
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint '/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.runs/synth_1/Platform_top.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file Platform_top_utilization_synth.rpt -pb Platform_top_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sun Dec 12 00:51:14 2021...
+INFO: [Common 17-206] Exiting Vivado at Sun Dec 12 16:12:12 2021...

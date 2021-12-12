@@ -1,7 +1,7 @@
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
-// Date        : Sat Dec 11 22:36:23 2021
+// Date        : Sun Dec 12 01:59:52 2021
 // Host        : QUANTUM-DSKTP running 64-bit Ubuntu 20.04.3 LTS
 // Command     : write_verilog -force -mode funcsim
 //               /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/ip/DPRAM/DPRAM_sim_netlist.v
@@ -484,7 +484,7 @@ module DPRAM_dist_mem_gen_v8_0_13_dpram
   (* ram_slice_begin = "0" *) 
   (* ram_slice_end = "0" *) 
   RAM32X1D #(
-    .INIT(32'h00003FFF)) 
+    .INIT(32'hFFFFFFFF)) 
     ram_reg_0_31_0_0
        (.A0(a[0]),
         .A1(a[1]),
@@ -530,7 +530,7 @@ module DPRAM_dist_mem_gen_v8_0_13_dpram
   (* ram_slice_begin = "2" *) 
   (* ram_slice_end = "2" *) 
   RAM32X1D #(
-    .INIT(32'h00003FFF)) 
+    .INIT(32'hFFFFFFFF)) 
     ram_reg_0_31_0_0__1
        (.A0(a[0]),
         .A1(a[1]),
@@ -553,7 +553,7 @@ module DPRAM_dist_mem_gen_v8_0_13_dpram
   (* ram_slice_begin = "3" *) 
   (* ram_slice_end = "3" *) 
   RAM32X1D #(
-    .INIT(32'h00003FFF)) 
+    .INIT(32'hFFFFFFFF)) 
     ram_reg_0_31_0_0__2
        (.A0(a[0]),
         .A1(a[1]),

@@ -17,7 +17,7 @@ end Platform_top;
 
 architecture Platform_top of Platform_top is 
 
-signal clr, plclk, clk25, clk190, clk95, vidon, go1: std_logic;
+signal clr, plclk, clk25, clk190, clk95, vidon, go1, we_s: std_logic;
 signal hc, vc, PC1, PR1, BC1, BR1: std_logic_vector(9 downto 0);
 signal PM, BM, WM, W2M, BlockM: std_logic_vector(7 downto 0);
 signal rom_addr16: std_logic_vector(15 downto 0);
@@ -102,7 +102,7 @@ dpram_uut : dpram
 		d => data_in,
 		dpo => data,
 		spo => data_out,
-		we => '0',
+		we => we_s,
 		a => ram_addr
 		); 	
 
@@ -185,6 +185,7 @@ bounce_uut : bounce
 	port map(
 		cclk => clk95,
 		clr => clr,
+		we => we_s,
 		go => BTNU, --upper button starts ball movement
 		angle => sw(1 downto 0),
 		c1 => BC1,
