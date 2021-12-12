@@ -17,7 +17,7 @@ end Platform_top;
 
 architecture Platform_top of Platform_top is 
 
-signal clr, plclk, clk25, clk190, clk95, vidon, go1: std_logic;
+signal clr, plclk, clk25, clk190, clk95, clk50, vidon, go1: std_logic;
 signal hc, vc, PC1, PR1, BC1, BR1: std_logic_vector(9 downto 0);
 signal PM, BM, WM, W2M, BlockM: std_logic_vector(7 downto 0);
 signal rom_addr16: std_logic_vector(15 downto 0);
@@ -34,6 +34,8 @@ signal rom_addr: std_logic_vector(8 downto 0);
 signal M: std_logic_vector(7 downto 0);
 signal decoder_in : std_logic_vector(2 downto 0);
 signal decoder_out : std_logic_vector(7 downto 0);
+signal we_s: std_logic;
+
 --end signals from blocks
 
 begin
@@ -45,6 +47,7 @@ clkdiv_uut : clkdiv	port map
 	   (mclk => CLK100MHZ, 
 	   clr => clr, 
 	   clk762hz => plclk,
+	   clk50Mhz => clk50,
 	   clk25Mhz => clk25,
 	   clk190hz => clk190,
 	   clk95hz => clk95
@@ -96,19 +99,23 @@ vga_control_uut : vga_control port map
 		blue => blue
 		);
 		
+block_destroy_uut: block_destroy
+    Port map ( 
+           RAM_data => data,
+           RAM_addr => addr,
+           ball_c1 => BC1,
+		   ball_r1 => BR1,
+           we => we_s
+           );
+           
 --start block port mapping
 ram_uut : ram
 	port map(
 		clk => clk25,
-		ball_clk => CLK100MHZ,
 		addr => addr,
 		din => "00000",
 		dout => data,
-		we => '0',
-		c1_inv => open,--placeholder
-		R1_inv => open,--placeholder
-		ball_c1 => BC1, --placeholder
-		ball_r1 => BR1 --placeholder
+		we => we_s
 		); 	
 		
 decoder_uut: decode38

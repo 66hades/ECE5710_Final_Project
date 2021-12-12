@@ -48,7 +48,7 @@
 
 
 // IP VLNV: xilinx.com:ip:dist_mem_gen:8.0
-// IP Revision: 12
+// IP Revision: 13
 
 `timescale 1ns/1ps
 
@@ -56,30 +56,26 @@
 module DPRAM (
   a,
   d,
-  dpra,
   clk,
   we,
-  spo,
-  dpo
+  spo
 );
 
-input wire [8 : 0] a;
-input wire [4 : 0] d;
-input wire [8 : 0] dpra;
+input wire [5 : 0] a;
+input wire [15 : 0] d;
 input wire clk;
 input wire we;
-output wire [4 : 0] spo;
-output wire [4 : 0] dpo;
+output wire [15 : 0] spo;
 
-  dist_mem_gen_v8_0_12 #(
+  dist_mem_gen_v8_0_13 #(
     .C_FAMILY("artix7"),
-    .C_ADDR_WIDTH(9),
+    .C_ADDR_WIDTH(6),
     .C_DEFAULT_DATA("0"),
-    .C_DEPTH(288),
+    .C_DEPTH(64),
     .C_HAS_CLK(1),
     .C_HAS_D(1),
-    .C_HAS_DPO(1),
-    .C_HAS_DPRA(1),
+    .C_HAS_DPO(0),
+    .C_HAS_DPRA(0),
     .C_HAS_I_CE(0),
     .C_HAS_QDPO(0),
     .C_HAS_QDPO_CE(0),
@@ -94,7 +90,7 @@ output wire [4 : 0] dpo;
     .C_HAS_WE(1),
     .C_MEM_INIT_FILE("DPRAM.mif"),
     .C_ELABORATION_DIR("./"),
-    .C_MEM_TYPE(2),
+    .C_MEM_TYPE(1),
     .C_PIPELINE_STAGES(0),
     .C_QCE_JOINED(0),
     .C_QUALIFY_WE(0),
@@ -102,12 +98,12 @@ output wire [4 : 0] dpo;
     .C_REG_A_D_INPUTS(0),
     .C_REG_DPRA_INPUT(0),
     .C_SYNC_ENABLE(1),
-    .C_WIDTH(5),
+    .C_WIDTH(16),
     .C_PARSER_TYPE(1)
   ) inst (
     .a(a),
     .d(d),
-    .dpra(dpra),
+    .dpra(6'B0),
     .clk(clk),
     .we(we),
     .i_ce(1'D1),
@@ -119,7 +115,7 @@ output wire [4 : 0] dpo;
     .qspo_srst(1'D0),
     .qdpo_srst(1'D0),
     .spo(spo),
-    .dpo(dpo),
+    .dpo(),
     .qspo(),
     .qdpo()
   );

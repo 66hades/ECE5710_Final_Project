@@ -2,8 +2,8 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Sat Dec 11 17:48:27 2021
-# Process ID: 1122393
+# Start of session at: Sat Dec 11 20:00:05 2021
+# Process ID: 1331410
 # Current directory: /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.runs/impl_1
 # Command line: vivado -log Platform_top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source Platform_top.tcl -notrace
 # Log file: /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t/platform_100t.runs/impl_1/Platform_top.vdi

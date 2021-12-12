@@ -5,6 +5,15 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 Package vga_components is
 
+component block_destroy is
+    Port ( RAM_data : in STD_LOGIC_VECTOR (4 downto 0);
+           RAM_addr : in STD_LOGIC_VECTOR (8 downto 0);
+           ball_c1 : in STD_LOGIC_VECTOR(9 downto 0); --current column
+		   ball_r1 : in STD_LOGIC_VECTOR(9 downto 0); --current row
+           we : out STD_LOGIC
+           );
+end component block_destroy;
+
 component mux2g --from blocks
     generic(N:integer := 5);
 	   port(
@@ -26,15 +35,10 @@ end component;
 
 component ram --from blocks
     Port ( clk : in STD_LOGIC;
-           ball_clk : in STD_LOGIC; --unneeded?
            addr : in STD_LOGIC_VECTOR (8 downto 0);
            Dout : out STD_LOGIC_VECTOR (4 downto 0);
            din : in STD_LOGIC_VECTOR (4 downto 0);
-           we : in STD_LOGIC;
-           c1_inv : out STD_LOGIC;
-           R1_inv : out STD_LOGIC;
-           ball_c1 : in std_logic_vector(9 downto 0);
-           ball_r1 : in std_logic_vector(9 downto 0)
+           we : in STD_LOGIC
            );
 end component;
 

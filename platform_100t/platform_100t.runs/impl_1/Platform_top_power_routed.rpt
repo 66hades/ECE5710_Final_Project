@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
-| Date             : Sat Dec 11 17:49:05 2021
+| Date             : Sat Dec 11 20:00:43 2021
 | Host             : QUANTUM-DSKTP running 64-bit Ubuntu 20.04.3 LTS
 | Command          : report_power -file Platform_top_power_routed.rpt -pb Platform_top_power_summary_routed.pb -rpx Platform_top_power_routed.rpx
 | Design           : Platform_top
@@ -30,7 +30,7 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.110        |
+| Total On-Chip Power (W)  | 0.111        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
 | Dynamic (W)              | 0.013        |
@@ -53,18 +53,18 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |    <0.001 |        3 |       --- |             --- |
-| Slice Logic    |     0.005 |      930 |       --- |             --- |
-|   LUT as Logic |     0.005 |      599 |     63400 |            0.94 |
+| Slice Logic    |     0.005 |      937 |       --- |             --- |
+|   LUT as Logic |     0.005 |      608 |     63400 |            0.96 |
 |   CARRY4       |    <0.001 |       67 |     15850 |            0.42 |
 |   Register     |    <0.001 |      111 |    126800 |            0.09 |
-|   F7/F8 Muxes  |    <0.001 |       11 |     63400 |            0.02 |
+|   F7/F8 Muxes  |    <0.001 |       12 |     63400 |            0.02 |
 |   BUFG         |    <0.001 |        1 |        32 |            3.13 |
-|   Others       |     0.000 |       15 |       --- |             --- |
-| Signals        |     0.004 |      744 |       --- |             --- |
+|   Others       |     0.000 |       19 |       --- |             --- |
+| Signals        |     0.005 |      741 |       --- |             --- |
 | Block RAM      |    <0.001 |      1.5 |       135 |            1.11 |
 | I/O            |     0.002 |       17 |       210 |            8.10 |
 | Static Power   |     0.097 |          |           |                 |
-| Total          |     0.110 |          |           |                 |
+| Total          |     0.111 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -146,7 +146,7 @@ Table of Contents
 | Platform_top          |     0.013 |
 |   Platform_Motion_uut |     0.001 |
 |   bounce_uut          |     0.003 |
-|   vga_640x480_uut     |     0.004 |
+|   vga_640x480_uut     |     0.005 |
 +-----------------------+-----------+
 
 

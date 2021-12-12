@@ -2,8 +2,8 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Sat Dec 11 16:35:28 2021
-# Process ID: 948485
+# Start of session at: Sat Dec 11 22:08:15 2021
+# Process ID: 1403181
 # Current directory: /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/blocks_v5/ver5/ver5.runs/DPRAM_synth_1
 # Command line: vivado -log DPRAM.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source DPRAM.tcl
 # Log file: /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/blocks_v5/ver5/ver5.runs/DPRAM_synth_1/DPRAM.vds
@@ -12,28 +12,23 @@
 source DPRAM.tcl -notrace
 Command: synth_design -top DPRAM -part xc7a100tcsg324-1 -mode out_of_context
 Starting synth_design
-WARNING: [Vivado_Tcl 4-393] The 'Synthesis' target of the following IPs are stale, please generate the output products using the generate_target or synth_ip command before running synth_design.
-/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/blocks_v5/ver5/ver5.srcs/sources_1/ip/DPRAM/DPRAM.xci
-
-INFO: [IP_Flow 19-2162] IP 'DPRAM' is locked:
-* IP definition 'Distributed Memory Generator (8.0)' for IP 'DPRAM' (customized with software release 2018.2) has a different revision in the IP Catalog.
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 948517 
+INFO: Helper process launched with PID 1403277 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1653.992 ; gain = 154.719 ; free physical = 42209 ; free virtual = 56086
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1653.375 ; gain = 151.719 ; free physical = 40814 ; free virtual = 55060
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'DPRAM' [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/blocks_v5/ver5/ver5.srcs/sources_1/ip/DPRAM/synth/DPRAM.vhd:71]
+INFO: [Synth 8-638] synthesizing module 'DPRAM' [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/blocks_v5/ver5/ver5.srcs/sources_1/ip/DPRAM/synth/DPRAM.vhd:69]
 	Parameter C_FAMILY bound to: artix7 - type: string 
-	Parameter C_ADDR_WIDTH bound to: 9 - type: integer 
+	Parameter C_ADDR_WIDTH bound to: 6 - type: integer 
 	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
-	Parameter C_DEPTH bound to: 288 - type: integer 
+	Parameter C_DEPTH bound to: 64 - type: integer 
 	Parameter C_HAS_CLK bound to: 1 - type: integer 
 	Parameter C_HAS_D bound to: 1 - type: integer 
-	Parameter C_HAS_DPO bound to: 1 - type: integer 
-	Parameter C_HAS_DPRA bound to: 1 - type: integer 
+	Parameter C_HAS_DPO bound to: 0 - type: integer 
+	Parameter C_HAS_DPRA bound to: 0 - type: integer 
 	Parameter C_HAS_I_CE bound to: 0 - type: integer 
 	Parameter C_HAS_QDPO bound to: 0 - type: integer 
 	Parameter C_HAS_QDPO_CE bound to: 0 - type: integer 
@@ -48,7 +43,7 @@ INFO: [Synth 8-638] synthesizing module 'DPRAM' [/home/quantum/Documents/Oakland
 	Parameter C_HAS_WE bound to: 1 - type: integer 
 	Parameter C_MEM_INIT_FILE bound to: DPRAM.mif - type: string 
 	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
-	Parameter C_MEM_TYPE bound to: 2 - type: integer 
+	Parameter C_MEM_TYPE bound to: 1 - type: integer 
 	Parameter C_PIPELINE_STAGES bound to: 0 - type: integer 
 	Parameter C_QCE_JOINED bound to: 0 - type: integer 
 	Parameter C_QUALIFY_WE bound to: 0 - type: integer 
@@ -56,38 +51,88 @@ INFO: [Synth 8-638] synthesizing module 'DPRAM' [/home/quantum/Documents/Oakland
 	Parameter C_REG_A_D_INPUTS bound to: 0 - type: integer 
 	Parameter C_REG_DPRA_INPUT bound to: 0 - type: integer 
 	Parameter C_SYNC_ENABLE bound to: 1 - type: integer 
-	Parameter C_WIDTH bound to: 5 - type: integer 
+	Parameter C_WIDTH bound to: 16 - type: integer 
 	Parameter C_PARSER_TYPE bound to: 1 - type: integer 
-INFO: [Synth 8-3491] module 'dist_mem_gen_v8_0_12' declared at '/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/blocks_v5/ver5/ver5.srcs/sources_1/ip/DPRAM/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:3237' bound to instance 'U0' of component 'dist_mem_gen_v8_0_12' [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/blocks_v5/ver5/ver5.srcs/sources_1/ip/DPRAM/synth/DPRAM.vhd:137]
-INFO: [Synth 8-256] done synthesizing module 'DPRAM' (4#1) [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/blocks_v5/ver5/ver5.srcs/sources_1/ip/DPRAM/synth/DPRAM.vhd:71]
-WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_12_dpram has unconnected port qspo[4]
-WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_12_dpram has unconnected port qspo[3]
-WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_12_dpram has unconnected port qspo[2]
-WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_12_dpram has unconnected port qspo[1]
-WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_12_dpram has unconnected port qspo[0]
-WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_12_dpram has unconnected port qdpo[4]
-WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_12_dpram has unconnected port qdpo[3]
-WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_12_dpram has unconnected port qdpo[2]
-WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_12_dpram has unconnected port qdpo[1]
-WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_12_dpram has unconnected port qdpo[0]
-WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_12_dpram has unconnected port i_ce
-WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_12_dpram has unconnected port qspo_ce
-WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_12_dpram has unconnected port qspo_rst
-WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_12_dpram has unconnected port qspo_srst
-WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_12_dpram has unconnected port qdpo_clk
-WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_12_dpram has unconnected port qdpo_ce
-WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_12_dpram has unconnected port qdpo_rst
-WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_12_dpram has unconnected port qdpo_srst
-WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_12 has unconnected port i_ce
-WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_12 has unconnected port qspo_ce
-WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_12 has unconnected port qdpo_ce
-WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_12 has unconnected port qdpo_clk
-WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_12 has unconnected port qspo_rst
-WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_12 has unconnected port qdpo_rst
-WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_12 has unconnected port qspo_srst
-WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_12 has unconnected port qdpo_srst
+INFO: [Synth 8-3491] module 'dist_mem_gen_v8_0_13' declared at '/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/blocks_v5/ver5/ver5.srcs/sources_1/ip/DPRAM/hdl/dist_mem_gen_v8_0_vhsyn_rfs.vhd:3237' bound to instance 'U0' of component 'dist_mem_gen_v8_0_13' [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/blocks_v5/ver5/ver5.srcs/sources_1/ip/DPRAM/synth/DPRAM.vhd:135]
+INFO: [Synth 8-256] done synthesizing module 'DPRAM' (4#1) [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/blocks_v5/ver5/ver5.srcs/sources_1/ip/DPRAM/synth/DPRAM.vhd:69]
+WARNING: [Synth 8-3331] design spram has unconnected port qspo[15]
+WARNING: [Synth 8-3331] design spram has unconnected port qspo[14]
+WARNING: [Synth 8-3331] design spram has unconnected port qspo[13]
+WARNING: [Synth 8-3331] design spram has unconnected port qspo[12]
+WARNING: [Synth 8-3331] design spram has unconnected port qspo[11]
+WARNING: [Synth 8-3331] design spram has unconnected port qspo[10]
+WARNING: [Synth 8-3331] design spram has unconnected port qspo[9]
+WARNING: [Synth 8-3331] design spram has unconnected port qspo[8]
+WARNING: [Synth 8-3331] design spram has unconnected port qspo[7]
+WARNING: [Synth 8-3331] design spram has unconnected port qspo[6]
+WARNING: [Synth 8-3331] design spram has unconnected port qspo[5]
+WARNING: [Synth 8-3331] design spram has unconnected port qspo[4]
+WARNING: [Synth 8-3331] design spram has unconnected port qspo[3]
+WARNING: [Synth 8-3331] design spram has unconnected port qspo[2]
+WARNING: [Synth 8-3331] design spram has unconnected port qspo[1]
+WARNING: [Synth 8-3331] design spram has unconnected port qspo[0]
+WARNING: [Synth 8-3331] design spram has unconnected port i_ce
+WARNING: [Synth 8-3331] design spram has unconnected port qspo_ce
+WARNING: [Synth 8-3331] design spram has unconnected port qspo_rst
+WARNING: [Synth 8-3331] design spram has unconnected port qspo_srst
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpo[15]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpo[14]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpo[13]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpo[12]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpo[11]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpo[10]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpo[9]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpo[8]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpo[7]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpo[6]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpo[5]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpo[4]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpo[3]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpo[2]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpo[1]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpo[0]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port qdpo[15]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port qdpo[14]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port qdpo[13]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port qdpo[12]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port qdpo[11]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port qdpo[10]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port qdpo[9]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port qdpo[8]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port qdpo[7]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port qdpo[6]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port qdpo[5]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port qdpo[4]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port qdpo[3]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port qdpo[2]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port qdpo[1]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port qdpo[0]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpra[5]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpra[4]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpra[3]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpra[2]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpra[1]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port dpra[0]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port qdpo_ce
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port qdpo_clk
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port qdpo_rst
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13_synth has unconnected port qdpo_srst
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13 has unconnected port dpra[5]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13 has unconnected port dpra[4]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13 has unconnected port dpra[3]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13 has unconnected port dpra[2]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13 has unconnected port dpra[1]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13 has unconnected port dpra[0]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13 has unconnected port i_ce
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13 has unconnected port qspo_ce
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13 has unconnected port qdpo_ce
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13 has unconnected port qdpo_clk
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13 has unconnected port qspo_rst
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13 has unconnected port qdpo_rst
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13 has unconnected port qspo_srst
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13 has unconnected port qdpo_srst
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1722.742 ; gain = 223.469 ; free physical = 42225 ; free virtual = 56103
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1717.125 ; gain = 215.469 ; free physical = 40834 ; free virtual = 55081
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -100,10 +145,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1722.742 ; gain = 223.469 ; free physical = 42223 ; free virtual = 56101
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1717.125 ; gain = 215.469 ; free physical = 40832 ; free virtual = 55078
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1722.742 ; gain = 223.469 ; free physical = 42223 ; free virtual = 56101
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1717.125 ; gain = 215.469 ; free physical = 40832 ; free virtual = 55078
 ---------------------------------------------------------------------------------
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
@@ -115,30 +160,30 @@ Parsing XDC File [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/E
 Finished Parsing XDC File [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/blocks_v5/ver5/ver5.runs/DPRAM_synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1838.492 ; gain = 0.000 ; free physical = 42143 ; free virtual = 56020
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1849.875 ; gain = 0.000 ; free physical = 40744 ; free virtual = 54990
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1841.461 ; gain = 2.969 ; free physical = 42141 ; free virtual = 56019
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1855.812 ; gain = 5.938 ; free physical = 40743 ; free virtual = 54989
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1841.461 ; gain = 342.188 ; free physical = 42210 ; free virtual = 56088
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1855.812 ; gain = 354.156 ; free physical = 40808 ; free virtual = 55055
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1841.461 ; gain = 342.188 ; free physical = 42210 ; free virtual = 56088
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1855.812 ; gain = 354.156 ; free physical = 40808 ; free virtual = 55055
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 Applied set_property DONT_TOUCH = true for U0. (constraint file  /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/blocks_v5/ver5/ver5.runs/DPRAM_synth_1/dont_touch.xdc, line 9).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1841.461 ; gain = 342.188 ; free physical = 42210 ; free virtual = 56088
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1855.812 ; gain = 354.156 ; free physical = 40808 ; free virtual = 55055
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1841.461 ; gain = 342.188 ; free physical = 42210 ; free virtual = 56088
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1855.812 ; gain = 354.156 ; free physical = 40808 ; free virtual = 55056
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -151,7 +196,7 @@ Start RTL Component Statistics
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Registers : 
-	                5 Bit    Registers := 2     
+	               16 Bit    Registers := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -159,10 +204,10 @@ Finished RTL Component Statistics
 Start RTL Hierarchical Component Statistics 
 ---------------------------------------------------------------------------------
 Hierarchical RTL Component report 
-Module dist_mem_gen_v8_0_12_dpram 
+Module spram 
 Detailed RTL Component Info : 
 +---Registers : 
-	                5 Bit    Registers := 2     
+	               16 Bit    Registers := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
 ---------------------------------------------------------------------------------
@@ -179,37 +224,44 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
-WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_12 has unconnected port qspo[4]
-WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_12 has unconnected port qspo[3]
-WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_12 has unconnected port qspo[2]
-WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_12 has unconnected port qspo[1]
-WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_12 has unconnected port qspo[0]
-WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_12 has unconnected port qdpo[4]
-WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_12 has unconnected port qdpo[3]
-WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_12 has unconnected port qdpo[2]
-WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_12 has unconnected port qdpo[1]
-WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_12 has unconnected port qdpo[0]
-WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_12 has unconnected port i_ce
-WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_12 has unconnected port qspo_ce
-WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_12 has unconnected port qdpo_ce
-WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_12 has unconnected port qdpo_clk
-WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_12 has unconnected port qspo_rst
-WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_12 has unconnected port qdpo_rst
-WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_12 has unconnected port qspo_srst
-WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_12 has unconnected port qdpo_srst
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13 has unconnected port dpo[15]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13 has unconnected port dpo[14]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13 has unconnected port dpo[13]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13 has unconnected port dpo[12]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13 has unconnected port dpo[11]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13 has unconnected port dpo[10]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13 has unconnected port dpo[9]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13 has unconnected port dpo[8]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13 has unconnected port dpo[7]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13 has unconnected port dpo[6]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13 has unconnected port dpo[5]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13 has unconnected port dpo[4]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13 has unconnected port dpo[3]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13 has unconnected port dpo[2]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13 has unconnected port dpo[1]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13 has unconnected port dpo[0]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13 has unconnected port qspo[15]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13 has unconnected port qspo[14]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13 has unconnected port qspo[13]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13 has unconnected port qspo[12]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13 has unconnected port qspo[11]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13 has unconnected port qspo[10]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13 has unconnected port qspo[9]
+WARNING: [Synth 8-3331] design dist_mem_gen_v8_0_13 has unconnected port qspo[8]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1841.461 ; gain = 342.188 ; free physical = 42190 ; free virtual = 56070
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1855.812 ; gain = 354.156 ; free physical = 40797 ; free virtual = 55046
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
 
 Distributed RAM: Preliminary Mapping  Report (see note below)
-+------------+-----------------------------------------------------------+-----------+----------------------+--------------------------------+
-|Module Name | RTL Object                                                | Inference | Size (Depth x Width) | Primitives                     | 
-+------------+-----------------------------------------------------------+-----------+----------------------+--------------------------------+
-|U0          | synth_options.dist_mem_inst/gen_dp_ram.dpram_inst/ram_reg | Implied   | 512 x 5              | RAM32X1D x 5  RAM128X1D x 10   | 
-+------------+-----------------------------------------------------------+-----------+----------------------+--------------------------------+
++------------+-----------------------------------------------------------+-----------+----------------------+-----------------+
+|Module Name | RTL Object                                                | Inference | Size (Depth x Width) | Primitives      | 
++------------+-----------------------------------------------------------+-----------+----------------------+-----------------+
+|U0          | synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg | Implied   | 64 x 16              | RAM64X1S x 16   | 
++------------+-----------------------------------------------------------+-----------+----------------------+-----------------+
 
 Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
 ---------------------------------------------------------------------------------
@@ -225,24 +277,24 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1841.461 ; gain = 342.188 ; free physical = 42081 ; free virtual = 55961
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1855.812 ; gain = 354.156 ; free physical = 40659 ; free virtual = 54909
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1841.461 ; gain = 342.188 ; free physical = 42080 ; free virtual = 55961
+Finished Timing Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1855.812 ; gain = 354.156 ; free physical = 40659 ; free virtual = 54908
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
 
 Distributed RAM: Final Mapping  Report
-+------------+-----------------------------------------------------------+-----------+----------------------+--------------------------------+
-|Module Name | RTL Object                                                | Inference | Size (Depth x Width) | Primitives                     | 
-+------------+-----------------------------------------------------------+-----------+----------------------+--------------------------------+
-|U0          | synth_options.dist_mem_inst/gen_dp_ram.dpram_inst/ram_reg | Implied   | 512 x 5              | RAM32X1D x 5  RAM128X1D x 10   | 
-+------------+-----------------------------------------------------------+-----------+----------------------+--------------------------------+
++------------+-----------------------------------------------------------+-----------+----------------------+-----------------+
+|Module Name | RTL Object                                                | Inference | Size (Depth x Width) | Primitives      | 
++------------+-----------------------------------------------------------+-----------+----------------------+-----------------+
+|U0          | synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg | Implied   | 64 x 16              | RAM64X1S x 16   | 
++------------+-----------------------------------------------------------+-----------+----------------------+-----------------+
 
 ---------------------------------------------------------------------------------
 Finished ROM, RAM, DSP and Shift Register Reporting
@@ -257,7 +309,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1841.461 ; gain = 342.188 ; free physical = 42078 ; free virtual = 55959
+Finished Technology Mapping : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1855.812 ; gain = 354.156 ; free physical = 40658 ; free virtual = 54907
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -281,7 +333,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1841.461 ; gain = 342.188 ; free physical = 42079 ; free virtual = 55959
+Finished IO Insertion : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1855.812 ; gain = 354.156 ; free physical = 40656 ; free virtual = 54905
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -294,7 +346,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1841.461 ; gain = 342.188 ; free physical = 42079 ; free virtual = 55959
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1855.812 ; gain = 354.156 ; free physical = 40656 ; free virtual = 54905
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -306,25 +358,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1841.461 ; gain = 342.188 ; free physical = 42079 ; free virtual = 55959
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1855.812 ; gain = 354.156 ; free physical = 40656 ; free virtual = 54905
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1841.461 ; gain = 342.188 ; free physical = 42079 ; free virtual = 55959
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1855.812 ; gain = 354.156 ; free physical = 40656 ; free virtual = 54905
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1841.461 ; gain = 342.188 ; free physical = 42079 ; free virtual = 55959
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1855.812 ; gain = 354.156 ; free physical = 40656 ; free virtual = 54905
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1841.461 ; gain = 342.188 ; free physical = 42079 ; free virtual = 55959
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1855.812 ; gain = 354.156 ; free physical = 40656 ; free virtual = 54905
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -337,58 +389,52 @@ Report BlackBoxes:
 +-+--------------+----------+
 
 Report Cell Usage: 
-+------+----------+------+
-|      |Cell      |Count |
-+------+----------+------+
-|1     |LUT3      |     2|
-|2     |LUT4      |     2|
-|3     |LUT5      |     1|
-|4     |LUT6      |    10|
-|5     |RAM128X1D |    10|
-|6     |RAM32X1D  |     5|
-|7     |FDRE      |    10|
-+------+----------+------+
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |RAM64X1S |    16|
+|2     |FDRE     |    16|
++------+---------+------+
 
 Report Instance Areas: 
 +------+----------------------------------+---------------------------+------+
 |      |Instance                          |Module                     |Cells |
 +------+----------------------------------+---------------------------+------+
-|1     |top                               |                           |    40|
-|2     |  U0                              |dist_mem_gen_v8_0_12       |    40|
-|3     |    \synth_options.dist_mem_inst  |dist_mem_gen_v8_0_12_synth |    40|
-|4     |      \gen_dp_ram.dpram_inst      |dist_mem_gen_v8_0_12_dpram |    40|
+|1     |top                               |                           |    32|
+|2     |  U0                              |dist_mem_gen_v8_0_13       |    32|
+|3     |    \synth_options.dist_mem_inst  |dist_mem_gen_v8_0_13_synth |    32|
+|4     |      \gen_sp_ram.spram_inst      |spram                      |    32|
 +------+----------------------------------+---------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1841.461 ; gain = 342.188 ; free physical = 42079 ; free virtual = 55959
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1855.812 ; gain = 354.156 ; free physical = 40656 ; free virtual = 54905
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 18 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1841.461 ; gain = 223.469 ; free physical = 42131 ; free virtual = 56012
-Synthesis Optimization Complete : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1841.461 ; gain = 342.188 ; free physical = 42131 ; free virtual = 56012
+Synthesis finished with 0 errors, 0 critical warnings and 62 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1855.812 ; gain = 215.469 ; free physical = 40709 ; free virtual = 54959
+Synthesis Optimization Complete : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1855.812 ; gain = 354.156 ; free physical = 40709 ; free virtual = 54959
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 15 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 16 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1847.180 ; gain = 0.000 ; free physical = 42079 ; free virtual = 55960
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1855.812 ; gain = 0.000 ; free physical = 40657 ; free virtual = 54907
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 15 instances were transformed.
-  RAM128X1D => RAM128X1D (RAMD64E, RAMD64E, MUXF7, MUXF7, RAMD64E, RAMD64E): 10 instances
-  RAM32X1D => RAM32X1D (RAMD32, RAMD32): 5 instances
+  A total of 16 instances were transformed.
+  RAM64X1S => RAM64X1S (RAMS64E): 16 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-15 Infos, 45 Warnings, 0 Critical Warnings and 0 Errors encountered.
+15 Infos, 100 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1847.180 ; gain = 483.320 ; free physical = 42176 ; free virtual = 56057
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1847.180 ; gain = 0.000 ; free physical = 42176 ; free virtual = 56057
+synth_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1855.812 ; gain = 482.438 ; free physical = 40746 ; free virtual = 54995
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1855.812 ; gain = 0.000 ; free physical = 40746 ; free virtual = 54995
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint '/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/blocks_v5/ver5/ver5.runs/DPRAM_synth_1/DPRAM.dcp' has been generated.
 WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP DPRAM, cache-ID = 7be4902ece84d1a9
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP DPRAM, cache-ID = 01cdcaee881df0d1
 INFO: [Coretcl 2-1174] Renamed 3 cell refs.
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1847.180 ; gain = 0.000 ; free physical = 42176 ; free virtual = 56056
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1855.812 ; gain = 0.000 ; free physical = 40743 ; free virtual = 54992
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint '/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/blocks_v5/ver5/ver5.runs/DPRAM_synth_1/DPRAM.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file DPRAM_utilization_synth.rpt -pb DPRAM_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sat Dec 11 16:35:48 2021...
+INFO: [Common 17-206] Exiting Vivado at Sat Dec 11 22:08:36 2021...

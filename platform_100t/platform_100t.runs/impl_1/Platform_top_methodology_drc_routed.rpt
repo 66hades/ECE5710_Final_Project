@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
-| Date         : Sat Dec 11 17:49:04 2021
+| Date         : Sat Dec 11 20:00:43 2021
 | Host         : QUANTUM-DSKTP running 64-bit Ubuntu 20.04.3 LTS
 | Command      : report_methodology -file Platform_top_methodology_drc_routed.rpt -pb Platform_top_methodology_drc_routed.pb -rpx Platform_top_methodology_drc_routed.rpx
 | Design       : Platform_top
@@ -23,14 +23,14 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 115
+             Violations found: 116
 +-----------+------------------+-------------------------------+------------+
 | Rule      | Severity         | Description                   | Violations |
 +-----------+------------------+-------------------------------+------------+
 | TIMING-17 | Critical Warning | Non-clocked sequential cell   | 84         |
 | LUTAR-1   | Warning          | LUT drives async reset alert  | 20         |
 | TIMING-18 | Warning          | Missing input or output delay | 1          |
-| TIMING-20 | Warning          | Non-clocked latch             | 10         |
+| TIMING-20 | Warning          | Non-clocked latch             | 11         |
 +-----------+------------------+-------------------------------+------------+
 
 2. REPORT DETAILS
@@ -562,50 +562,55 @@ Related violations: <none>
 
 TIMING-20#1 Warning
 Non-clocked latch  
-The latch bounce_uut/c1v_reg[0]_LDC cannot be properly analyzed as its control pin bounce_uut/c1v_reg[0]_LDC/G is not reached by a timing clock
+The latch block_destroy_uut/internal_we_reg cannot be properly analyzed as its control pin block_destroy_uut/internal_we_reg/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#2 Warning
 Non-clocked latch  
-The latch bounce_uut/c1v_reg[1]_LDC cannot be properly analyzed as its control pin bounce_uut/c1v_reg[1]_LDC/G is not reached by a timing clock
+The latch bounce_uut/c1v_reg[0]_LDC cannot be properly analyzed as its control pin bounce_uut/c1v_reg[0]_LDC/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#3 Warning
 Non-clocked latch  
-The latch bounce_uut/c1v_reg[2]_LDC cannot be properly analyzed as its control pin bounce_uut/c1v_reg[2]_LDC/G is not reached by a timing clock
+The latch bounce_uut/c1v_reg[1]_LDC cannot be properly analyzed as its control pin bounce_uut/c1v_reg[1]_LDC/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#4 Warning
 Non-clocked latch  
-The latch bounce_uut/c1v_reg[3]_LDC cannot be properly analyzed as its control pin bounce_uut/c1v_reg[3]_LDC/G is not reached by a timing clock
+The latch bounce_uut/c1v_reg[2]_LDC cannot be properly analyzed as its control pin bounce_uut/c1v_reg[2]_LDC/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#5 Warning
 Non-clocked latch  
-The latch bounce_uut/c1v_reg[4]_LDC cannot be properly analyzed as its control pin bounce_uut/c1v_reg[4]_LDC/G is not reached by a timing clock
+The latch bounce_uut/c1v_reg[3]_LDC cannot be properly analyzed as its control pin bounce_uut/c1v_reg[3]_LDC/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#6 Warning
 Non-clocked latch  
-The latch bounce_uut/c1v_reg[5]_LDC cannot be properly analyzed as its control pin bounce_uut/c1v_reg[5]_LDC/G is not reached by a timing clock
+The latch bounce_uut/c1v_reg[4]_LDC cannot be properly analyzed as its control pin bounce_uut/c1v_reg[4]_LDC/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#7 Warning
 Non-clocked latch  
-The latch bounce_uut/c1v_reg[6]_LDC cannot be properly analyzed as its control pin bounce_uut/c1v_reg[6]_LDC/G is not reached by a timing clock
+The latch bounce_uut/c1v_reg[5]_LDC cannot be properly analyzed as its control pin bounce_uut/c1v_reg[5]_LDC/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#8 Warning
 Non-clocked latch  
-The latch bounce_uut/c1v_reg[7]_LDC cannot be properly analyzed as its control pin bounce_uut/c1v_reg[7]_LDC/G is not reached by a timing clock
+The latch bounce_uut/c1v_reg[6]_LDC cannot be properly analyzed as its control pin bounce_uut/c1v_reg[6]_LDC/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#9 Warning
 Non-clocked latch  
-The latch bounce_uut/c1v_reg[8]_LDC cannot be properly analyzed as its control pin bounce_uut/c1v_reg[8]_LDC/G is not reached by a timing clock
+The latch bounce_uut/c1v_reg[7]_LDC cannot be properly analyzed as its control pin bounce_uut/c1v_reg[7]_LDC/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#10 Warning
+Non-clocked latch  
+The latch bounce_uut/c1v_reg[8]_LDC cannot be properly analyzed as its control pin bounce_uut/c1v_reg[8]_LDC/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#11 Warning
 Non-clocked latch  
 The latch bounce_uut/c1v_reg[9]_LDC cannot be properly analyzed as its control pin bounce_uut/c1v_reg[9]_LDC/G is not reached by a timing clock
 Related violations: <none>

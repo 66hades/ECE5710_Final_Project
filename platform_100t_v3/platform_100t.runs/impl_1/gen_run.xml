@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1639288246">
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="BG-DRC" Name="Platform_top.drc"/>
+  <File Type="BG-BGN" Name="Platform_top.bgn"/>
+  <File Type="BITSTR-SYSDEF" Name="Platform_top.sysdef"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="Platform_top.ltx"/>
+  <File Type="BITSTR-MMI" Name="Platform_top.mmi"/>
+  <File Type="BITSTR-BMM" Name="Platform_top_bd.bmm"/>
+  <File Type="BITSTR-NKY" Name="Platform_top.nky"/>
+  <File Type="BITSTR-RBT" Name="Platform_top.rbt"/>
+  <File Type="BITSTR-MSK" Name="Platform_top.msk"/>
+  <File Type="BG-BIN" Name="Platform_top.bin"/>
+  <File Type="BG-BIT" Name="Platform_top.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="Platform_top_bus_skew_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="Platform_top_bus_skew_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="Platform_top_bus_skew_postroute_physopted.rpt"/>
+  <File Type="RDI-RDI" Name="Platform_top.vdi"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="Platform_top_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="Platform_top_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="Platform_top_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="Platform_top_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="Platform_top_postroute_physopt.dcp"/>
+  <File Type="ROUTE-BUS-SKEW" Name="Platform_top_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="Platform_top_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-SIMILARITY" Name="Platform_top_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-TIMING-RPX" Name="Platform_top_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-TIMING-PB" Name="Platform_top_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="Platform_top_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="Platform_top_route_status.pb"/>
+  <File Type="ROUTE-STATUS" Name="Platform_top_route_status.rpt"/>
+  <File Type="ROUTE-PWR-RPX" Name="Platform_top_power_routed.rpx"/>
+  <File Type="ROUTE-PWR-SUM" Name="Platform_top_power_summary_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="Platform_top_power_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="Platform_top_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="Platform_top_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="Platform_top_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-RPX" Name="Platform_top_drc_routed.rpx"/>
+  <File Type="ROUTE-DRC-PB" Name="Platform_top_drc_routed.pb"/>
+  <File Type="ROUTE-DRC" Name="Platform_top_drc_routed.rpt"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="Platform_top_routed_bb.dcp"/>
+  <File Type="ROUTE-DCP" Name="Platform_top_routed.dcp"/>
+  <File Type="ROUTE-ERROR-DCP" Name="Platform_top_routed_error.dcp"/>
+  <File Type="PHYSOPT-TIMING" Name="Platform_top_timing_summary_physopted.rpt"/>
+  <File Type="PHYSOPT-DRC" Name="Platform_top_drc_physopted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="Platform_top_physopt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="Platform_top_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="Platform_top_postplace_pwropt.dcp"/>
+  <File Type="PLACE-TIMING" Name="Platform_top_timing_summary_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="Platform_top_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="Platform_top_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-CTRL" Name="Platform_top_control_sets_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="Platform_top_utilization_placed.pb"/>
+  <File Type="PLACE-UTIL" Name="Platform_top_utilization_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="Platform_top_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-IO" Name="Platform_top_io_placed.rpt"/>
+  <File Type="PLACE-DCP" Name="Platform_top_placed.dcp"/>
+  <File Type="PWROPT-TIMING" Name="Platform_top_timing_summary_pwropted.rpt"/>
+  <File Type="PWROPT-DRC" Name="Platform_top_drc_pwropted.rpt"/>
+  <File Type="PWROPT-DCP" Name="Platform_top_pwropt.dcp"/>
+  <File Type="OPT-TIMING" Name="Platform_top_timing_summary_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="Platform_top.hwdef"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="Platform_top_methodology_drc_opted.rpt"/>
+  <File Type="OPT-DRC" Name="Platform_top_drc_opted.rpt"/>
+  <File Type="OPT-DCP" Name="Platform_top_opt.dcp"/>
+  <File Type="INIT-TIMING" Name="Platform_top_timing_summary_init.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="Platform_top_bus_skew_routed.rpx"/>
+  <File Type="REPORTS-TCL" Name="Platform_top_reports.tcl"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="Platform_top_bus_skew_routed.pb"/>
+  <File Type="PA-TCL" Name="Platform_top.tcl"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/ip/x8ball_ROM/x8ball_ROM.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/platformROM/platformROM.xci">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/blocks/ClkDiv.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../platform_basic_start/platform.srcs/sources_1/imports/blocks/ClkDiv.vhd"/>
+        <Attr Name="ImportTime" Val="1634835914"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/new/Motion.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../platform_basic_start/platform.srcs/sources_1/new/Motion.vhd"/>
+        <Attr Name="ImportTime" Val="1637965402"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/new/vga_components.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../platform_basic_start/platform.srcs/sources_1/imports/new/vga_components.vhd"/>
+        <Attr Name="ImportTime" Val="1638111026"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/new/W_ROM.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../platform_basic_start/platform.srcs/sources_1/new/W_ROM.vhd"/>
+        <Attr Name="ImportTime" Val="1638110224"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/bounce.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/decode38.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../blocks_v4/final_project_4.srcs/sources_1/new/decode38.vhd"/>
+        <Attr Name="ImportTime" Val="1638885398"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/rom_RB.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../blocks_v4/final_project_4.srcs/sources_1/new/rom_RB.vhd"/>
+        <Attr Name="ImportTime" Val="1638926866"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/rom_bb.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../blocks_v4/final_project_4.srcs/sources_1/new/rom_bb.vhd"/>
+        <Attr Name="ImportTime" Val="1638926866"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/rom_gb.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../blocks_v4/final_project_4.srcs/sources_1/new/rom_gb.vhd"/>
+        <Attr Name="ImportTime" Val="1638921490"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/rom_pb.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../blocks_v4/final_project_4.srcs/sources_1/new/rom_pb.vhd"/>
+        <Attr Name="ImportTime" Val="1638927426"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/rom_yb.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../blocks_v4/final_project_4.srcs/sources_1/new/rom_yb.vhd"/>
+        <Attr Name="ImportTime" Val="1638919722"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/new/vga_640x480.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../platform_basic_start/platform.srcs/sources_1/imports/new/vga_640x480.vhd"/>
+        <Attr Name="ImportTime" Val="1634829782"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/new/vga_control.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../platform_basic_start/platform.srcs/sources_1/new/vga_control.vhd"/>
+        <Attr Name="ImportTime" Val="1638112328"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/new/Platform_top.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../platform_basic_start/platform.srcs/sources_1/new/Platform_top.vhd"/>
+        <Attr Name="ImportTime" Val="1638113896"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/synth/DPRAM.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../blocks_v5/ver5/ver5.srcs/sources_1/ip/DPRAM/synth/DPRAM.vhd"/>
+        <Attr Name="ImportTime" Val="1639169924"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/ram.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../blocks_v4/final_project_4.srcs/sources_1/new/ram.vhd"/>
+        <Attr Name="ImportTime" Val="1638933062"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../resources/platform.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../resources/ball.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../blocks_v5/ver5/ver5.ip_user_files/mem_init_files/dpram.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="Platform_top"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../nexys4_ddr.xdc"/>
+        <Attr Name="ImportTime" Val="1638598517"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="DPRAM"/>
+</GenRun>
