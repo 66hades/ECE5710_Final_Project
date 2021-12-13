@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1639201639">
-  <File Type="RDS-DCP" Name="vga_blocks_sprite_top.dcp"/>
   <File Type="PA-TCL" Name="vga_blocks_sprite_top.tcl"/>
+  <File Type="RDS-DCP" Name="vga_blocks_sprite_top.dcp"/>
   <File Type="REPORTS-TCL" Name="vga_blocks_sprite_top_reports.tcl"/>
   <File Type="RDS-RDS" Name="vga_blocks_sprite_top.vds"/>
   <File Type="RDS-UTIL" Name="vga_blocks_sprite_top_utilization_synth.rpt"/>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="DPRAM_synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1639180725">
-  <File Type="RDS-DCP" Name="DPRAM.dcp"/>
   <File Type="PA-TCL" Name="DPRAM.tcl"/>
+  <File Type="RDS-DCP" Name="DPRAM.dcp"/>
   <File Type="REPORTS-TCL" Name="DPRAM_reports.tcl"/>
   <File Type="RDS-RDS" Name="DPRAM.vds"/>
   <File Type="RDS-UTIL" Name="DPRAM_utilization_synth.rpt"/>

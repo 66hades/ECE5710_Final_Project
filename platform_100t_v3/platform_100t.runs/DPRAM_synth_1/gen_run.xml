@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="DPRAM_synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1639292370">
-  <File Type="VDS-TIMING-PB" Name="DPRAM_timing_summary_synth.pb"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="DPRAM_timing_summary_synth.rpt"/>
+<GenRun Id="DPRAM_synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1639355175">
+  <File Type="PA-TCL" Name="DPRAM.tcl"/>
+  <File Type="REPORTS-TCL" Name="DPRAM_reports.tcl"/>
+  <File Type="RDS-RDS" Name="DPRAM.vds"/>
   <File Type="RDS-DCP" Name="DPRAM.dcp"/>
   <File Type="RDS-UTIL-PB" Name="DPRAM_utilization_synth.pb"/>
   <File Type="RDS-UTIL" Name="DPRAM_utilization_synth.rpt"/>
-  <File Type="RDS-PROPCONSTRS" Name="DPRAM_drc_synth.rpt"/>
-  <File Type="RDS-RDS" Name="DPRAM.vds"/>
-  <File Type="REPORTS-TCL" Name="DPRAM_reports.tcl"/>
-  <File Type="PA-TCL" Name="DPRAM.tcl"/>
   <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/DPRAM">
     <File Path="$PSRCDIR/sources_1/ip/DPRAM/DPRAM.xci">
       <FileInfo>

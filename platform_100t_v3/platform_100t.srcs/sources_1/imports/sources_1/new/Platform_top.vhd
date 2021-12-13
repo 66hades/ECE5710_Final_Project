@@ -193,8 +193,8 @@ bounce_uut : bounce
 		platform_c1 => PC1,
 		platform_r1 => PR1,
 		addr => ram_addr,
-        data_in => data_in,
-        data_out => data_out
+        data_in => data_out,
+        data_out => data_in
 	);
 	
 end Platform_top;
