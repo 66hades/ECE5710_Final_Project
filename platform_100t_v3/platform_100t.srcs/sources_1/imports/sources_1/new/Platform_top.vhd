@@ -9,9 +9,13 @@ entity Platform_top is
 		 sw : in STD_LOGIC_VECTOR(7 downto 0); --hardware interface, may be different in constraints file
          hsync : out STD_LOGIC;
          vsync : out STD_LOGIC;
+         PS2C : in STD_LOGIC;
+         PS2D : in STD_LOGIC;
          red : out std_logic_vector(2 downto 0);
          green : out std_logic_vector(2 downto 0);
-         blue : out std_logic_vector(1 downto 0)
+         blue : out std_logic_vector(1 downto 0);
+         AUD_SD : out STD_LOGIC;   
+         AUD_PWM : out STD_LOGIC   
 	     );
 end Platform_top;
 
@@ -34,10 +38,32 @@ signal decoder_in : std_logic_vector(2 downto 0);
 signal decoder_out : std_logic_vector(7 downto 0);
 --end signals from blocks
 
+--signals from keyboard
+signal left, right, shoot: std_logic;
+
+--signals from sounds
+signal bounce_flg_s : std_logic;
+signal break_flg_s : std_logic;
+signal death_flg_s : std_logic;
+--signal shoot_flg_s : std_logic;
+
 begin
 	
 clr <= BTNC;
 decoder_in <= data(3 downto 1);
+
+sound_main_uut: sound_main port map(
+    mclk => CLK100MHZ,
+    clr => clr,
+    shoot_high => '1', --activates sound, when ball moves
+    bounce_flg => bounce_flg_s,   --bounce_flg_s,
+    break_flg => break_flg_s,   --break_flg_s,   
+    death_flg => death_flg_s,   --death_flg_s   
+    power_flg => '0',
+--    btn => ,
+    AUD_SD => AUD_SD,
+    AUD_PWM => AUD_PWM
+);
 
 clkdiv_uut : clkdiv	port map
 	   (mclk => CLK100MHZ, 
@@ -61,12 +87,31 @@ vga_640x480_uut : vga_640x480 port map(
 Platform_Motion_uut : Platform_Motion port map
 	   (clk => plclk, 
 	   clr => clr, 
-	   left => BTNL, 
-	   right => BTNR, 
+--	   left => BTNL, 
+--	   right => BTNR, 
+	   left => left, 
+	   right => right, 
 	   PC1 => PC1, 
 	   PR1 => PR1
 		);
 		
+keyConv_uut: KeyConv port map
+        (clk25 => clk25, 
+        clr => clr, 
+        PS2C => PS2C, 
+        PS2D => PS2D, 
+        left => left, 
+        right => right, 
+        shoot => shoot
+        );
+        
+--debounce4_uut : debounce4 Port map(
+--    cclk => clk190, 
+--    clr => clr, 
+--    inp => btn,
+--	outp => BTND
+--	);
+				
 vga_control_uut : vga_control port map
         (vidon => vidon, 
         hc => hc, 
@@ -169,9 +214,6 @@ ball_uut : x8ball_ROM
 			clka => clk25,
 			douta => BM);
 
---BG : BG_ROM	port map 
---        (addra => BG_addr19, clka => clk25, douta => BGM
---        );
         
 LWALL: W_ROM port map 
         (addr => W_addr14, M => WM
@@ -183,10 +225,11 @@ RWALL: W_ROM port map
         
 bounce_uut : bounce
 	port map(
-		cclk => clk95,
+		cclk => clk190,
 		clr => clr,
 		we => we_s,
-		go => BTNU, --upper button starts ball movement
+--		go => BTNU, --upper button starts ball movement
+		go => shoot, 
 		angle => sw(1 downto 0),
 		c1 => BC1,
 		r1 => BR1,
@@ -194,7 +237,11 @@ bounce_uut : bounce
 		platform_r1 => PR1,
 		addr => ram_addr,
         data_in => data_out,
-        data_out => data_in
+        data_out => data_in,
+        bounce_flg => bounce_flg_s,
+        break_flg => break_flg_s,
+        death_flg => death_flg_s
 	);
 	
+AUD_SD <= '1';	
 end Platform_top;

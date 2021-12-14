@@ -35,18 +35,86 @@ set_property ip_cache_permissions {read write} [current_project]
 add_files /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/resources/platform.coe
 add_files /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/resources/ball.coe
 add_files /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/blocks_v5/ver5/ver5.ip_user_files/mem_init_files/dpram.coe
+add_files /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/resources/effect12.coe
+add_files /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/resources/effect14.coe
+add_files /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/resources/effect1.coe
+add_files /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/resources/effect20.coe
+add_files /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.ip_user_files/mem_init_files/8BitFunk.coe
+read_mem {
+  /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/imports/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/sim_scripts/blk_mem_gen_1/xcelium/blk_mem_gen_1.mif
+  /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/imports/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/sim_scripts/blk_mem_gen_2/xsim/blk_mem_gen_2.mif
+  /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/imports/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/mem_init_files/blk_mem_gen_4.mif
+  /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/imports/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/sim_scripts/blk_mem_gen_0/questa/blk_mem_gen_0.mif
+  /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/imports/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/sim_scripts/blk_mem_gen_2/activehdl/blk_mem_gen_2.mif
+  /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/imports/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/sim_scripts/blk_mem_gen_2/riviera/blk_mem_gen_2.mif
+  /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/imports/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/sim_scripts/blk_mem_gen_1/xsim/blk_mem_gen_1.mif
+  /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/imports/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/mem_init_files/blk_mem_gen_3.mif
+  /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/imports/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/sim_scripts/blk_mem_gen_1/activehdl/blk_mem_gen_1.mif
+  /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/imports/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/sim_scripts/blk_mem_gen_2/xcelium/blk_mem_gen_2.mif
+  /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/imports/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/sim_scripts/blk_mem_gen_0/xsim/blk_mem_gen_0.mif
+  /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/imports/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/sim_scripts/blk_mem_gen_4/ies/blk_mem_gen_4.mif
+  /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/imports/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/mem_init_files/blk_mem_gen_2.mif
+  /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/imports/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/sim_scripts/blk_mem_gen_3/riviera/blk_mem_gen_3.mif
+  /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/imports/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/sim_scripts/blk_mem_gen_0/riviera/blk_mem_gen_0.mif
+  /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/imports/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/sim_scripts/blk_mem_gen_0/activehdl/blk_mem_gen_0.mif
+  /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/imports/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/sim_scripts/blk_mem_gen_3/xsim/blk_mem_gen_3.mif
+  /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/imports/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/mem_init_files/blk_mem_gen_1.mif
+  /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/imports/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/sim_scripts/blk_mem_gen_3/xcelium/blk_mem_gen_3.mif
+  /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/imports/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/mem_init_files/blk_mem_gen_0.mif
+  /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/imports/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/sim_scripts/blk_mem_gen_2/modelsim/blk_mem_gen_2.mif
+  /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/imports/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/sim_scripts/blk_mem_gen_3/modelsim/blk_mem_gen_3.mif
+  /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/imports/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/sim_scripts/blk_mem_gen_0/ies/blk_mem_gen_0.mif
+  /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/imports/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/sim_scripts/blk_mem_gen_4/modelsim/blk_mem_gen_4.mif
+  /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/imports/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/sim_scripts/blk_mem_gen_1/ies/blk_mem_gen_1.mif
+  /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/imports/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/sim_scripts/blk_mem_gen_2/ies/blk_mem_gen_2.mif
+  /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/imports/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/sim_scripts/blk_mem_gen_3/ies/blk_mem_gen_3.mif
+  /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/imports/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/sim_scripts/blk_mem_gen_0/modelsim/blk_mem_gen_0.mif
+  /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/imports/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/sim_scripts/blk_mem_gen_1/modelsim/blk_mem_gen_1.mif
+  /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/imports/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/sim_scripts/blk_mem_gen_4/activehdl/blk_mem_gen_4.mif
+  /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/imports/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/sim_scripts/blk_mem_gen_4/riviera/blk_mem_gen_4.mif
+  /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/imports/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/sim_scripts/blk_mem_gen_4/vcs/blk_mem_gen_4.mif
+  /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/imports/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/sim_scripts/blk_mem_gen_1/riviera/blk_mem_gen_1.mif
+  /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/imports/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/sim_scripts/blk_mem_gen_0/xcelium/blk_mem_gen_0.mif
+  /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/imports/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/sim_scripts/blk_mem_gen_2/questa/blk_mem_gen_2.mif
+  /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/imports/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/sim_scripts/blk_mem_gen_1/questa/blk_mem_gen_1.mif
+  /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/imports/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/sim_scripts/blk_mem_gen_4/xsim/blk_mem_gen_4.mif
+  /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/imports/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/sim_scripts/blk_mem_gen_4/xcelium/blk_mem_gen_4.mif
+  /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/imports/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/sim_scripts/blk_mem_gen_3/activehdl/blk_mem_gen_3.mif
+  /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/imports/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/sim_scripts/blk_mem_gen_4/questa/blk_mem_gen_4.mif
+  /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/imports/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/sim_scripts/blk_mem_gen_2/vcs/blk_mem_gen_2.mif
+  /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/imports/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/sim_scripts/blk_mem_gen_1/vcs/blk_mem_gen_1.mif
+  /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/imports/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/sim_scripts/blk_mem_gen_3/vcs/blk_mem_gen_3.mif
+  /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/imports/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/sim_scripts/blk_mem_gen_3/questa/blk_mem_gen_3.mif
+  /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/imports/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/sim_scripts/blk_mem_gen_0/vcs/blk_mem_gen_0.mif
+}
+read_verilog -library xil_defaultlib {
+  /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/imports/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/ip/blk_mem_gen_0/blk_mem_gen_0_stub.v
+  /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/imports/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/ip/blk_mem_gen_1/blk_mem_gen_1_stub.v
+  /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/imports/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/ip/blk_mem_gen_2/blk_mem_gen_2_stub.v
+  /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/imports/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/ip/blk_mem_gen_3/blk_mem_gen_3_stub.v
+}
 read_vhdl -library xil_defaultlib {
   /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/imports/sources_1/imports/blocks/ClkDiv.vhd
+  /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/imports/new/KeyConv.vhd
   /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/imports/sources_1/new/Motion.vhd
   /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/imports/sources_1/imports/new/vga_components.vhd
   /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/imports/sources_1/new/W_ROM.vhd
+  /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/imports/sources_1/new/aud_pwm_mod.vhd
   /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/new/bounce.vhd
+  /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/imports/sources_1/new/counter.vhd
   /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/imports/new/decode38.vhd
+  /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/imports/new/keyboard_ctrl.vhd
+  /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/imports/sources_1/new/music_cntr.vhd
+  /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/imports/sources_1/new/music_ctrl.vhd
+  /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/imports/sources_1/new/mux51.vhd
+  {/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/imports/sources_1/imports/Example 44/reg.vhd}
   /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/imports/new/rom_RB.vhd
   /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/imports/new/rom_bb.vhd
   /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/imports/new/rom_gb.vhd
   /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/imports/new/rom_pb.vhd
   /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/imports/new/rom_yb.vhd
+  /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/imports/sources_1/new/sound_main.vhd
+  /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/imports/sources_1/new/sound_top.vhd
   /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/imports/sources_1/imports/new/vga_640x480.vhd
   /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/imports/sources_1/new/vga_control.vhd
   /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/imports/sources_1/new/Platform_top.vhd
@@ -57,8 +125,23 @@ set_property used_in_implementation false [get_files -all /home/quantum/Document
 read_ip -quiet /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/ip/platformROM/platformROM.xci
 set_property used_in_implementation false [get_files -all /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/ip/platformROM/platformROM_ooc.xdc]
 
+read_ip -quiet /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/ip/blk_mem_gen_3/blk_mem_gen_3.xci
+set_property used_in_implementation false [get_files -all /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/ip/blk_mem_gen_3/blk_mem_gen_3_ooc.xdc]
+
+read_ip -quiet /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/ip/blk_mem_gen_2/blk_mem_gen_2.xci
+set_property used_in_implementation false [get_files -all /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/ip/blk_mem_gen_2/blk_mem_gen_2_ooc.xdc]
+
+read_ip -quiet /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1.xci
+set_property used_in_implementation false [get_files -all /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1_ooc.xdc]
+
+read_ip -quiet /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci
+set_property used_in_implementation false [get_files -all /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_ooc.xdc]
+
 read_ip -quiet /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/ip/DPRAM/DPRAM.xci
 set_property used_in_implementation false [get_files -all /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/ip/DPRAM/DPRAM_ooc.xdc]
+
+read_ip -quiet /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/ip/blk_mem_gen_4/blk_mem_gen_4.xci
+set_property used_in_implementation false [get_files -all /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/ip/blk_mem_gen_4/blk_mem_gen_4_ooc.xdc]
 
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the

@@ -78,7 +78,12 @@ set rc [catch {
   add_files -quiet /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.runs/synth_1/Platform_top.dcp
   read_ip -quiet /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/ip/x8ball_ROM/x8ball_ROM.xci
   read_ip -quiet /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/ip/platformROM/platformROM.xci
+  read_ip -quiet /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/ip/blk_mem_gen_3/blk_mem_gen_3.xci
+  read_ip -quiet /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/ip/blk_mem_gen_2/blk_mem_gen_2.xci
+  read_ip -quiet /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1.xci
+  read_ip -quiet /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci
   read_ip -quiet /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/ip/DPRAM/DPRAM.xci
+  read_ip -quiet /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/ip/blk_mem_gen_4/blk_mem_gen_4.xci
   read_xdc /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc
   link_design -top Platform_top -part xc7a100tcsg324-1
   close_msg_db -file init_design.pb

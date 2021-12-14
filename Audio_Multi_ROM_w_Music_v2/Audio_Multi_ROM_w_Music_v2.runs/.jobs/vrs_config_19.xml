@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="blk_mem_gen_2_synth_1" LaunchDir="/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/Audio_Multi_ROM_w_Music_v2/Audio_Multi_ROM_w_Music_v2.runs/blk_mem_gen_2_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+

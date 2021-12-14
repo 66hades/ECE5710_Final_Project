@@ -1,0 +1,1416 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
+| Date         : Mon Dec 13 19:08:38 2021
+| Host         : QUANTUM-DSKTP running 64-bit Ubuntu 20.04.3 LTS
+| Command      : report_timing_summary -max_paths 10 -file sound_main_timing_summary_routed.rpt -pb sound_main_timing_summary_routed.pb -rpx sound_main_timing_summary_routed.rpx -warn_on_violation
+| Design       : sound_main
+| Device       : 7a100t-csg324
+| Speed File   : -1  PRODUCTION 1.23 2018-06-13
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+  Ignore I/O Paths                           :  No
+  Timing Early Launch at Borrowing Latches   :  No
+  Borrow Time for Max Delay Exceptions       :  Yes
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock
+2. checking constant_clock
+3. checking pulse_width_clock
+4. checking unconstrained_internal_endpoints
+5. checking no_input_delay
+6. checking no_output_delay
+7. checking multiple_clock
+8. checking generated_clocks
+9. checking loops
+10. checking partial_input_delay
+11. checking partial_output_delay
+12. checking latch_loops
+
+1. checking no_clock
+--------------------
+ There are 36 register/latch pins with no clock driven by root clock pin: clkdivtester_MAP/q_reg[12]/Q (HIGH)
+
+ There are 3 register/latch pins with no clock driven by root clock pin: clkdivtester_MAP/q_reg[17]/Q (HIGH)
+
+
+2. checking constant_clock
+--------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock
+-----------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints
+--------------------------------------------
+ There are 94 pins that are not constrained for maximum delay. (HIGH)
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay
+--------------------------
+ There are 2 input ports with no input delay specified. (HIGH)
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay
+---------------------------
+ There is 1 port with no output delay specified. (HIGH)
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock
+--------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks
+----------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops
+-----------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay
+--------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay
+---------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops
+------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+      1.526        0.000                      0                   55        0.254        0.000                      0                   55        4.500        0.000                       0                   171  
+
+
+All user specified timing constraints are met.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+Clock        Waveform(ns)       Period(ns)      Frequency(MHz)
+-----        ------------       ----------      --------------
+sys_clk_pin  {0.000 5.000}      10.000          100.000         
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+sys_clk_pin         1.526        0.000                      0                   55        0.254        0.000                      0                   55        4.500        0.000                       0                   171  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    ----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  sys_clk_pin
+  To Clock:  sys_clk_pin
+
+Setup :            0  Failing Endpoints,  Worst Slack        1.526ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.254ns,  Total Violation        0.000ns
+PW    :            0  Failing Endpoints,  Worst Slack        4.500ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             1.526ns  (required time - arrival time)
+  Source:                 sound_top_MAP/audio_rom4_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[9].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKARDCLK
+                            (rising edge-triggered cell RAMB36E1 clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            sound_top_MAP/HEX2PWM_reg_MAP/q_reg[0]/D
+                            (rising edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (sys_clk_pin rise@10.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        8.173ns  (logic 3.318ns (40.596%)  route 4.855ns (59.404%))
+  Logic Levels:           5  (LUT5=2 LUT6=1 MUXF7=1 MUXF8=1)
+  Clock Path Skew:        -0.344ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.919ns = ( 14.919 - 10.000 ) 
+    Source Clock Delay      (SCD):    5.450ns
+    Clock Pessimism Removal (CPR):    0.187ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  mclk (IN)
+                         net (fo=0)                   0.000     0.000    mclk
+    E3                   IBUF (Prop_ibuf_I_O)         1.482     1.482 r  mclk_IBUF_inst/O
+                         net (fo=1, routed)           2.025     3.506    mclk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.096     3.602 r  mclk_IBUF_BUFG_inst/O
+                         net (fo=170, routed)         1.848     5.450    sound_top_MAP/audio_rom4_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[9].ram.r/prim_init.ram/clka
+    RAMB36_X1Y8          RAMB36E1                                     r  sound_top_MAP/audio_rom4_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[9].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB36_X1Y8          RAMB36E1 (Prop_ramb36e1_CLKARDCLK_DOADO[0])
+                                                      2.454     7.904 r  sound_top_MAP/audio_rom4_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[9].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/DOADO[0]
+                         net (fo=1, routed)           2.201    10.105    sound_top_MAP/audio_rom4_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/douta_array[72]
+    SLICE_X8Y50          LUT6 (Prop_lut6_I3_O)        0.124    10.229 r  sound_top_MAP/audio_rom4_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/douta[0]_INST_0_i_20/O
+                         net (fo=1, routed)           0.000    10.229    sound_top_MAP/audio_rom4_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/douta[0]_INST_0_i_20_n_0
+    SLICE_X8Y50          MUXF7 (Prop_muxf7_I0_O)      0.209    10.438 r  sound_top_MAP/audio_rom4_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/douta[0]_INST_0_i_9/O
+                         net (fo=1, routed)           0.000    10.438    sound_top_MAP/audio_rom4_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/douta[0]_INST_0_i_9_n_0
+    SLICE_X8Y50          MUXF8 (Prop_muxf8_I1_O)      0.088    10.526 r  sound_top_MAP/audio_rom4_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/douta[0]_INST_0_i_3/O
+                         net (fo=1, routed)           1.675    12.202    sound_top_MAP/audio_rom4_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/douta[0]_INST_0_i_3_n_0
+    SLICE_X62Y57         LUT5 (Prop_lut5_I4_O)        0.319    12.521 r  sound_top_MAP/audio_rom4_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/douta[0]_INST_0/O
+                         net (fo=1, routed)           0.979    13.499    sound_top_MAP/HEX2PWM_reg_MAP/douta[0]
+    SLICE_X62Y73         LUT5 (Prop_lut5_I0_O)        0.124    13.623 r  sound_top_MAP/HEX2PWM_reg_MAP/q[0]_i_1/O
+                         net (fo=1, routed)           0.000    13.623    sound_top_MAP/HEX2PWM_reg_MAP/SFX_MUX_MAP/z[0]
+    SLICE_X62Y73         FDCE                                         r  sound_top_MAP/HEX2PWM_reg_MAP/q_reg[0]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                     10.000    10.000 r  
+    E3                                                0.000    10.000 r  mclk (IN)
+                         net (fo=0)                   0.000    10.000    mclk
+    E3                   IBUF (Prop_ibuf_I_O)         1.411    11.411 r  mclk_IBUF_inst/O
+                         net (fo=1, routed)           1.920    13.331    mclk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    13.422 r  mclk_IBUF_BUFG_inst/O
+                         net (fo=170, routed)         1.496    14.919    sound_top_MAP/HEX2PWM_reg_MAP/clka
+    SLICE_X62Y73         FDCE                                         r  sound_top_MAP/HEX2PWM_reg_MAP/q_reg[0]/C
+                         clock pessimism              0.187    15.106    
+                         clock uncertainty           -0.035    15.070    
+    SLICE_X62Y73         FDCE (Setup_fdce_C_D)        0.079    15.149    sound_top_MAP/HEX2PWM_reg_MAP/q_reg[0]
+  -------------------------------------------------------------------
+                         required time                         15.149    
+                         arrival time                         -13.623    
+  -------------------------------------------------------------------
+                         slack                                  1.526    
+
+Slack (MET) :             1.576ns  (required time - arrival time)
+  Source:                 sound_top_MAP/audio_rom4_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[12].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKARDCLK
+                            (rising edge-triggered cell RAMB36E1 clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            sound_top_MAP/HEX2PWM_reg_MAP/q_reg[2]/D
+                            (rising edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (sys_clk_pin rise@10.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        8.279ns  (logic 3.329ns (40.212%)  route 4.950ns (59.788%))
+  Logic Levels:           5  (LUT5=2 LUT6=1 MUXF7=1 MUXF8=1)
+  Clock Path Skew:        -0.190ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.919ns = ( 14.919 - 10.000 ) 
+    Source Clock Delay      (SCD):    5.368ns
+    Clock Pessimism Removal (CPR):    0.259ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  mclk (IN)
+                         net (fo=0)                   0.000     0.000    mclk
+    E3                   IBUF (Prop_ibuf_I_O)         1.482     1.482 r  mclk_IBUF_inst/O
+                         net (fo=1, routed)           2.025     3.506    mclk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.096     3.602 r  mclk_IBUF_BUFG_inst/O
+                         net (fo=170, routed)         1.766     5.368    sound_top_MAP/audio_rom4_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[12].ram.r/prim_init.ram/clka
+    RAMB36_X3Y11         RAMB36E1                                     r  sound_top_MAP/audio_rom4_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[12].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB36_X3Y11         RAMB36E1 (Prop_ramb36e1_CLKARDCLK_DOADO[2])
+                                                      2.454     7.822 r  sound_top_MAP/audio_rom4_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[12].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/DOADO[2]
+                         net (fo=1, routed)           2.427    10.249    sound_top_MAP/audio_rom4_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/douta_array[98]
+    SLICE_X9Y50          LUT6 (Prop_lut6_I5_O)        0.124    10.373 r  sound_top_MAP/audio_rom4_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/douta[2]_INST_0_i_21/O
+                         net (fo=1, routed)           0.000    10.373    sound_top_MAP/audio_rom4_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/douta[2]_INST_0_i_21_n_0
+    SLICE_X9Y50          MUXF7 (Prop_muxf7_I1_O)      0.217    10.590 r  sound_top_MAP/audio_rom4_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/douta[2]_INST_0_i_9/O
+                         net (fo=1, routed)           0.000    10.590    sound_top_MAP/audio_rom4_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/douta[2]_INST_0_i_9_n_0
+    SLICE_X9Y50          MUXF8 (Prop_muxf8_I1_O)      0.094    10.684 r  sound_top_MAP/audio_rom4_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/douta[2]_INST_0_i_3/O
+                         net (fo=1, routed)           1.673    12.357    sound_top_MAP/audio_rom4_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/douta[2]_INST_0_i_3_n_0
+    SLICE_X62Y57         LUT5 (Prop_lut5_I4_O)        0.316    12.673 r  sound_top_MAP/audio_rom4_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/douta[2]_INST_0/O
+                         net (fo=1, routed)           0.850    13.523    sound_top_MAP/HEX2PWM_reg_MAP/douta[2]
+    SLICE_X62Y73         LUT5 (Prop_lut5_I0_O)        0.124    13.647 r  sound_top_MAP/HEX2PWM_reg_MAP/q[2]_i_1/O
+                         net (fo=1, routed)           0.000    13.647    sound_top_MAP/HEX2PWM_reg_MAP/SFX_MUX_MAP/z[2]
+    SLICE_X62Y73         FDCE                                         r  sound_top_MAP/HEX2PWM_reg_MAP/q_reg[2]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                     10.000    10.000 r  
+    E3                                                0.000    10.000 r  mclk (IN)
+                         net (fo=0)                   0.000    10.000    mclk
+    E3                   IBUF (Prop_ibuf_I_O)         1.411    11.411 r  mclk_IBUF_inst/O
+                         net (fo=1, routed)           1.920    13.331    mclk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    13.422 r  mclk_IBUF_BUFG_inst/O
+                         net (fo=170, routed)         1.496    14.919    sound_top_MAP/HEX2PWM_reg_MAP/clka
+    SLICE_X62Y73         FDCE                                         r  sound_top_MAP/HEX2PWM_reg_MAP/q_reg[2]/C
+                         clock pessimism              0.259    15.178    
+                         clock uncertainty           -0.035    15.142    
+    SLICE_X62Y73         FDCE (Setup_fdce_C_D)        0.081    15.223    sound_top_MAP/HEX2PWM_reg_MAP/q_reg[2]
+  -------------------------------------------------------------------
+                         required time                         15.223    
+                         arrival time                         -13.647    
+  -------------------------------------------------------------------
+                         slack                                  1.576    
+
+Slack (MET) :             1.644ns  (required time - arrival time)
+  Source:                 sound_top_MAP/audio_rom4_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKARDCLK
+                            (rising edge-triggered cell RAMB36E1 clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            sound_top_MAP/HEX2PWM_reg_MAP/q_reg[5]/D
+                            (rising edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (sys_clk_pin rise@10.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        8.007ns  (logic 3.360ns (41.965%)  route 4.647ns (58.035%))
+  Logic Levels:           5  (LUT5=2 LUT6=1 MUXF7=1 MUXF8=1)
+  Clock Path Skew:        -0.344ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.920ns = ( 14.920 - 10.000 ) 
+    Source Clock Delay      (SCD):    5.451ns
+    Clock Pessimism Removal (CPR):    0.187ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  mclk (IN)
+                         net (fo=0)                   0.000     0.000    mclk
+    E3                   IBUF (Prop_ibuf_I_O)         1.482     1.482 r  mclk_IBUF_inst/O
+                         net (fo=1, routed)           2.025     3.506    mclk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.096     3.602 r  mclk_IBUF_BUFG_inst/O
+                         net (fo=170, routed)         1.849     5.451    sound_top_MAP/audio_rom4_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/prim_init.ram/clka
+    RAMB36_X0Y5          RAMB36E1                                     r  sound_top_MAP/audio_rom4_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB36_X0Y5          RAMB36E1 (Prop_ramb36e1_CLKARDCLK_DOADO[5])
+                                                      2.454     7.905 r  sound_top_MAP/audio_rom4_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/DOADO[5]
+                         net (fo=1, routed)           2.532    10.438    sound_top_MAP/audio_rom4_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/douta_array[29]
+    SLICE_X35Y54         LUT6 (Prop_lut6_I0_O)        0.124    10.562 r  sound_top_MAP/audio_rom4_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/douta[5]_INST_0_i_18/O
+                         net (fo=1, routed)           0.000    10.562    sound_top_MAP/audio_rom4_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/douta[5]_INST_0_i_18_n_0
+    SLICE_X35Y54         MUXF7 (Prop_muxf7_I0_O)      0.238    10.800 r  sound_top_MAP/audio_rom4_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/douta[5]_INST_0_i_8/O
+                         net (fo=1, routed)           0.000    10.800    sound_top_MAP/audio_rom4_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/douta[5]_INST_0_i_8_n_0
+    SLICE_X35Y54         MUXF8 (Prop_muxf8_I0_O)      0.104    10.904 r  sound_top_MAP/audio_rom4_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/douta[5]_INST_0_i_3/O
+                         net (fo=1, routed)           1.149    12.053    sound_top_MAP/audio_rom4_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/douta[5]_INST_0_i_3_n_0
+    SLICE_X63Y57         LUT5 (Prop_lut5_I4_O)        0.316    12.369 r  sound_top_MAP/audio_rom4_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/douta[5]_INST_0/O
+                         net (fo=1, routed)           0.965    13.334    sound_top_MAP/HEX2PWM_reg_MAP/douta[5]
+    SLICE_X63Y72         LUT5 (Prop_lut5_I0_O)        0.124    13.458 r  sound_top_MAP/HEX2PWM_reg_MAP/q[5]_i_1/O
+                         net (fo=1, routed)           0.000    13.458    sound_top_MAP/HEX2PWM_reg_MAP/SFX_MUX_MAP/z[5]
+    SLICE_X63Y72         FDCE                                         r  sound_top_MAP/HEX2PWM_reg_MAP/q_reg[5]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                     10.000    10.000 r  
+    E3                                                0.000    10.000 r  mclk (IN)
+                         net (fo=0)                   0.000    10.000    mclk
+    E3                   IBUF (Prop_ibuf_I_O)         1.411    11.411 r  mclk_IBUF_inst/O
+                         net (fo=1, routed)           1.920    13.331    mclk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    13.422 r  mclk_IBUF_BUFG_inst/O
+                         net (fo=170, routed)         1.497    14.920    sound_top_MAP/HEX2PWM_reg_MAP/clka
+    SLICE_X63Y72         FDCE                                         r  sound_top_MAP/HEX2PWM_reg_MAP/q_reg[5]/C
+                         clock pessimism              0.187    15.107    
+                         clock uncertainty           -0.035    15.071    
+    SLICE_X63Y72         FDCE (Setup_fdce_C_D)        0.031    15.102    sound_top_MAP/HEX2PWM_reg_MAP/q_reg[5]
+  -------------------------------------------------------------------
+                         required time                         15.102    
+                         arrival time                         -13.458    
+  -------------------------------------------------------------------
+                         slack                                  1.644    
+
+Slack (MET) :             1.741ns  (required time - arrival time)
+  Source:                 sound_top_MAP/audio_rom4_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKARDCLK
+                            (rising edge-triggered cell RAMB36E1 clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            sound_top_MAP/HEX2PWM_reg_MAP/q_reg[7]/D
+                            (rising edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (sys_clk_pin rise@10.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        7.953ns  (logic 3.360ns (42.247%)  route 4.593ns (57.753%))
+  Logic Levels:           5  (LUT5=2 LUT6=1 MUXF7=1 MUXF8=1)
+  Clock Path Skew:        -0.347ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.917ns = ( 14.917 - 10.000 ) 
+    Source Clock Delay      (SCD):    5.451ns
+    Clock Pessimism Removal (CPR):    0.187ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  mclk (IN)
+                         net (fo=0)                   0.000     0.000    mclk
+    E3                   IBUF (Prop_ibuf_I_O)         1.482     1.482 r  mclk_IBUF_inst/O
+                         net (fo=1, routed)           2.025     3.506    mclk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.096     3.602 r  mclk_IBUF_BUFG_inst/O
+                         net (fo=170, routed)         1.849     5.451    sound_top_MAP/audio_rom4_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/prim_init.ram/clka
+    RAMB36_X0Y5          RAMB36E1                                     r  sound_top_MAP/audio_rom4_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB36_X0Y5          RAMB36E1 (Prop_ramb36e1_CLKARDCLK_DOADO[7])
+                                                      2.454     7.905 r  sound_top_MAP/audio_rom4_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/DOADO[7]
+                         net (fo=1, routed)           2.392    10.297    sound_top_MAP/audio_rom4_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/douta_array[31]
+    SLICE_X33Y54         LUT6 (Prop_lut6_I0_O)        0.124    10.421 r  sound_top_MAP/audio_rom4_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/douta[7]_INST_0_i_18/O
+                         net (fo=1, routed)           0.000    10.421    sound_top_MAP/audio_rom4_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/douta[7]_INST_0_i_18_n_0
+    SLICE_X33Y54         MUXF7 (Prop_muxf7_I0_O)      0.238    10.659 r  sound_top_MAP/audio_rom4_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/douta[7]_INST_0_i_8/O
+                         net (fo=1, routed)           0.000    10.659    sound_top_MAP/audio_rom4_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/douta[7]_INST_0_i_8_n_0
+    SLICE_X33Y54         MUXF8 (Prop_muxf8_I0_O)      0.104    10.763 r  sound_top_MAP/audio_rom4_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/douta[7]_INST_0_i_3/O
+                         net (fo=1, routed)           1.208    11.970    sound_top_MAP/audio_rom4_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/douta[7]_INST_0_i_3_n_0
+    SLICE_X62Y57         LUT5 (Prop_lut5_I4_O)        0.316    12.286 r  sound_top_MAP/audio_rom4_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/douta[7]_INST_0/O
+                         net (fo=1, routed)           0.994    13.280    sound_top_MAP/HEX2PWM_reg_MAP/douta[7]
+    SLICE_X62Y74         LUT5 (Prop_lut5_I0_O)        0.124    13.404 r  sound_top_MAP/HEX2PWM_reg_MAP/q[7]_i_1/O
+                         net (fo=1, routed)           0.000    13.404    sound_top_MAP/HEX2PWM_reg_MAP/SFX_MUX_MAP/z[7]
+    SLICE_X62Y74         FDCE                                         r  sound_top_MAP/HEX2PWM_reg_MAP/q_reg[7]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                     10.000    10.000 r  
+    E3                                                0.000    10.000 r  mclk (IN)
+                         net (fo=0)                   0.000    10.000    mclk
+    E3                   IBUF (Prop_ibuf_I_O)         1.411    11.411 r  mclk_IBUF_inst/O
+                         net (fo=1, routed)           1.920    13.331    mclk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    13.422 r  mclk_IBUF_BUFG_inst/O
+                         net (fo=170, routed)         1.494    14.917    sound_top_MAP/HEX2PWM_reg_MAP/clka
+    SLICE_X62Y74         FDCE                                         r  sound_top_MAP/HEX2PWM_reg_MAP/q_reg[7]/C
+                         clock pessimism              0.187    15.104    
+                         clock uncertainty           -0.035    15.068    
+    SLICE_X62Y74         FDCE (Setup_fdce_C_D)        0.077    15.145    sound_top_MAP/HEX2PWM_reg_MAP/q_reg[7]
+  -------------------------------------------------------------------
+                         required time                         15.145    
+                         arrival time                         -13.404    
+  -------------------------------------------------------------------
+                         slack                                  1.741    
+
+Slack (MET) :             1.764ns  (required time - arrival time)
+  Source:                 sound_top_MAP/audio_rom4_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKARDCLK
+                            (rising edge-triggered cell RAMB36E1 clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            sound_top_MAP/HEX2PWM_reg_MAP/q_reg[4]/D
+                            (rising edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (sys_clk_pin rise@10.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        7.886ns  (logic 3.360ns (42.610%)  route 4.526ns (57.390%))
+  Logic Levels:           5  (LUT5=2 LUT6=1 MUXF7=1 MUXF8=1)
+  Clock Path Skew:        -0.344ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.920ns = ( 14.920 - 10.000 ) 
+    Source Clock Delay      (SCD):    5.451ns
+    Clock Pessimism Removal (CPR):    0.187ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  mclk (IN)
+                         net (fo=0)                   0.000     0.000    mclk
+    E3                   IBUF (Prop_ibuf_I_O)         1.482     1.482 r  mclk_IBUF_inst/O
+                         net (fo=1, routed)           2.025     3.506    mclk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.096     3.602 r  mclk_IBUF_BUFG_inst/O
+                         net (fo=170, routed)         1.849     5.451    sound_top_MAP/audio_rom4_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/prim_init.ram/clka
+    RAMB36_X0Y5          RAMB36E1                                     r  sound_top_MAP/audio_rom4_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB36_X0Y5          RAMB36E1 (Prop_ramb36e1_CLKARDCLK_DOADO[4])
+                                                      2.454     7.905 r  sound_top_MAP/audio_rom4_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/DOADO[4]
+                         net (fo=1, routed)           2.453    10.359    sound_top_MAP/audio_rom4_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/douta_array[28]
+    SLICE_X36Y51         LUT6 (Prop_lut6_I0_O)        0.124    10.483 r  sound_top_MAP/audio_rom4_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/douta[4]_INST_0_i_18/O
+                         net (fo=1, routed)           0.000    10.483    sound_top_MAP/audio_rom4_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/douta[4]_INST_0_i_18_n_0
+    SLICE_X36Y51         MUXF7 (Prop_muxf7_I0_O)      0.238    10.721 r  sound_top_MAP/audio_rom4_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/douta[4]_INST_0_i_8/O
+                         net (fo=1, routed)           0.000    10.721    sound_top_MAP/audio_rom4_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/douta[4]_INST_0_i_8_n_0
+    SLICE_X36Y51         MUXF8 (Prop_muxf8_I0_O)      0.104    10.825 r  sound_top_MAP/audio_rom4_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/douta[4]_INST_0_i_3/O
+                         net (fo=1, routed)           1.195    12.020    sound_top_MAP/audio_rom4_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/douta[4]_INST_0_i_3_n_0
+    SLICE_X63Y58         LUT5 (Prop_lut5_I4_O)        0.316    12.336 r  sound_top_MAP/audio_rom4_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/douta[4]_INST_0/O
+                         net (fo=1, routed)           0.877    13.213    sound_top_MAP/HEX2PWM_reg_MAP/douta[4]
+    SLICE_X63Y72         LUT5 (Prop_lut5_I0_O)        0.124    13.337 r  sound_top_MAP/HEX2PWM_reg_MAP/q[4]_i_1/O
+                         net (fo=1, routed)           0.000    13.337    sound_top_MAP/HEX2PWM_reg_MAP/SFX_MUX_MAP/z[4]
+    SLICE_X63Y72         FDCE                                         r  sound_top_MAP/HEX2PWM_reg_MAP/q_reg[4]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                     10.000    10.000 r  
+    E3                                                0.000    10.000 r  mclk (IN)
+                         net (fo=0)                   0.000    10.000    mclk
+    E3                   IBUF (Prop_ibuf_I_O)         1.411    11.411 r  mclk_IBUF_inst/O
+                         net (fo=1, routed)           1.920    13.331    mclk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    13.422 r  mclk_IBUF_BUFG_inst/O
+                         net (fo=170, routed)         1.497    14.920    sound_top_MAP/HEX2PWM_reg_MAP/clka
+    SLICE_X63Y72         FDCE                                         r  sound_top_MAP/HEX2PWM_reg_MAP/q_reg[4]/C
+                         clock pessimism              0.187    15.107    
+                         clock uncertainty           -0.035    15.071    
+    SLICE_X63Y72         FDCE (Setup_fdce_C_D)        0.029    15.100    sound_top_MAP/HEX2PWM_reg_MAP/q_reg[4]
+  -------------------------------------------------------------------
+                         required time                         15.100    
+                         arrival time                         -13.337    
+  -------------------------------------------------------------------
+                         slack                                  1.764    
+
+Slack (MET) :             1.781ns  (required time - arrival time)
+  Source:                 sound_top_MAP/audio_rom4_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKARDCLK
+                            (rising edge-triggered cell RAMB36E1 clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            sound_top_MAP/HEX2PWM_reg_MAP/q_reg[3]/D
+                            (rising edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (sys_clk_pin rise@10.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        7.867ns  (logic 3.360ns (42.709%)  route 4.507ns (57.291%))
+  Logic Levels:           5  (LUT5=2 LUT6=1 MUXF7=1 MUXF8=1)
+  Clock Path Skew:        -0.345ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.919ns = ( 14.919 - 10.000 ) 
+    Source Clock Delay      (SCD):    5.451ns
+    Clock Pessimism Removal (CPR):    0.187ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  mclk (IN)
+                         net (fo=0)                   0.000     0.000    mclk
+    E3                   IBUF (Prop_ibuf_I_O)         1.482     1.482 r  mclk_IBUF_inst/O
+                         net (fo=1, routed)           2.025     3.506    mclk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.096     3.602 r  mclk_IBUF_BUFG_inst/O
+                         net (fo=170, routed)         1.849     5.451    sound_top_MAP/audio_rom4_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/prim_init.ram/clka
+    RAMB36_X0Y5          RAMB36E1                                     r  sound_top_MAP/audio_rom4_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB36_X0Y5          RAMB36E1 (Prop_ramb36e1_CLKARDCLK_DOADO[3])
+                                                      2.454     7.905 r  sound_top_MAP/audio_rom4_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/DOADO[3]
+                         net (fo=1, routed)           2.360    10.266    sound_top_MAP/audio_rom4_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/douta_array[27]
+    SLICE_X35Y55         LUT6 (Prop_lut6_I0_O)        0.124    10.390 r  sound_top_MAP/audio_rom4_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/douta[3]_INST_0_i_18/O
+                         net (fo=1, routed)           0.000    10.390    sound_top_MAP/audio_rom4_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/douta[3]_INST_0_i_18_n_0
+    SLICE_X35Y55         MUXF7 (Prop_muxf7_I0_O)      0.238    10.628 r  sound_top_MAP/audio_rom4_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/douta[3]_INST_0_i_8/O
+                         net (fo=1, routed)           0.000    10.628    sound_top_MAP/audio_rom4_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/douta[3]_INST_0_i_8_n_0
+    SLICE_X35Y55         MUXF8 (Prop_muxf8_I0_O)      0.104    10.732 r  sound_top_MAP/audio_rom4_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/douta[3]_INST_0_i_3/O
+                         net (fo=1, routed)           1.211    11.942    sound_top_MAP/audio_rom4_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/douta[3]_INST_0_i_3_n_0
+    SLICE_X63Y57         LUT5 (Prop_lut5_I4_O)        0.316    12.258 r  sound_top_MAP/audio_rom4_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/douta[3]_INST_0/O
+                         net (fo=1, routed)           0.936    13.194    sound_top_MAP/HEX2PWM_reg_MAP/douta[3]
+    SLICE_X63Y73         LUT5 (Prop_lut5_I0_O)        0.124    13.318 r  sound_top_MAP/HEX2PWM_reg_MAP/q[3]_i_1/O
+                         net (fo=1, routed)           0.000    13.318    sound_top_MAP/HEX2PWM_reg_MAP/SFX_MUX_MAP/z[3]
+    SLICE_X63Y73         FDCE                                         r  sound_top_MAP/HEX2PWM_reg_MAP/q_reg[3]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                     10.000    10.000 r  
+    E3                                                0.000    10.000 r  mclk (IN)
+                         net (fo=0)                   0.000    10.000    mclk
+    E3                   IBUF (Prop_ibuf_I_O)         1.411    11.411 r  mclk_IBUF_inst/O
+                         net (fo=1, routed)           1.920    13.331    mclk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    13.422 r  mclk_IBUF_BUFG_inst/O
+                         net (fo=170, routed)         1.496    14.919    sound_top_MAP/HEX2PWM_reg_MAP/clka
+    SLICE_X63Y73         FDCE                                         r  sound_top_MAP/HEX2PWM_reg_MAP/q_reg[3]/C
+                         clock pessimism              0.187    15.106    
+                         clock uncertainty           -0.035    15.070    
+    SLICE_X63Y73         FDCE (Setup_fdce_C_D)        0.029    15.099    sound_top_MAP/HEX2PWM_reg_MAP/q_reg[3]
+  -------------------------------------------------------------------
+                         required time                         15.099    
+                         arrival time                         -13.318    
+  -------------------------------------------------------------------
+                         slack                                  1.781    
+
+Slack (MET) :             1.792ns  (required time - arrival time)
+  Source:                 sound_top_MAP/audio_rom4_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKARDCLK
+                            (rising edge-triggered cell RAMB36E1 clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            sound_top_MAP/HEX2PWM_reg_MAP/q_reg[6]/D
+                            (rising edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (sys_clk_pin rise@10.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        7.859ns  (logic 3.360ns (42.755%)  route 4.499ns (57.245%))
+  Logic Levels:           5  (LUT5=2 LUT6=1 MUXF7=1 MUXF8=1)
+  Clock Path Skew:        -0.344ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.920ns = ( 14.920 - 10.000 ) 
+    Source Clock Delay      (SCD):    5.451ns
+    Clock Pessimism Removal (CPR):    0.187ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  mclk (IN)
+                         net (fo=0)                   0.000     0.000    mclk
+    E3                   IBUF (Prop_ibuf_I_O)         1.482     1.482 r  mclk_IBUF_inst/O
+                         net (fo=1, routed)           2.025     3.506    mclk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.096     3.602 r  mclk_IBUF_BUFG_inst/O
+                         net (fo=170, routed)         1.849     5.451    sound_top_MAP/audio_rom4_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/prim_init.ram/clka
+    RAMB36_X0Y5          RAMB36E1                                     r  sound_top_MAP/audio_rom4_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB36_X0Y5          RAMB36E1 (Prop_ramb36e1_CLKARDCLK_DOADO[6])
+                                                      2.454     7.905 r  sound_top_MAP/audio_rom4_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/DOADO[6]
+                         net (fo=1, routed)           2.484    10.389    sound_top_MAP/audio_rom4_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/douta_array[30]
+    SLICE_X34Y52         LUT6 (Prop_lut6_I0_O)        0.124    10.513 r  sound_top_MAP/audio_rom4_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/douta[6]_INST_0_i_18/O
+                         net (fo=1, routed)           0.000    10.513    sound_top_MAP/audio_rom4_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/douta[6]_INST_0_i_18_n_0
+    SLICE_X34Y52         MUXF7 (Prop_muxf7_I0_O)      0.241    10.754 r  sound_top_MAP/audio_rom4_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/douta[6]_INST_0_i_8/O
+                         net (fo=1, routed)           0.000    10.754    sound_top_MAP/audio_rom4_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/douta[6]_INST_0_i_8_n_0
+    SLICE_X34Y52         MUXF8 (Prop_muxf8_I0_O)      0.098    10.852 r  sound_top_MAP/audio_rom4_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/douta[6]_INST_0_i_3/O
+                         net (fo=1, routed)           1.183    12.035    sound_top_MAP/audio_rom4_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/douta[6]_INST_0_i_3_n_0
+    SLICE_X63Y58         LUT5 (Prop_lut5_I4_O)        0.319    12.354 r  sound_top_MAP/audio_rom4_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/douta[6]_INST_0/O
+                         net (fo=1, routed)           0.832    13.186    sound_top_MAP/HEX2PWM_reg_MAP/douta[6]
+    SLICE_X63Y72         LUT5 (Prop_lut5_I0_O)        0.124    13.310 r  sound_top_MAP/HEX2PWM_reg_MAP/q[6]_i_1/O
+                         net (fo=1, routed)           0.000    13.310    sound_top_MAP/HEX2PWM_reg_MAP/SFX_MUX_MAP/z[6]
+    SLICE_X63Y72         FDCE                                         r  sound_top_MAP/HEX2PWM_reg_MAP/q_reg[6]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                     10.000    10.000 r  
+    E3                                                0.000    10.000 r  mclk (IN)
+                         net (fo=0)                   0.000    10.000    mclk
+    E3                   IBUF (Prop_ibuf_I_O)         1.411    11.411 r  mclk_IBUF_inst/O
+                         net (fo=1, routed)           1.920    13.331    mclk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    13.422 r  mclk_IBUF_BUFG_inst/O
+                         net (fo=170, routed)         1.497    14.920    sound_top_MAP/HEX2PWM_reg_MAP/clka
+    SLICE_X63Y72         FDCE                                         r  sound_top_MAP/HEX2PWM_reg_MAP/q_reg[6]/C
+                         clock pessimism              0.187    15.107    
+                         clock uncertainty           -0.035    15.071    
+    SLICE_X63Y72         FDCE (Setup_fdce_C_D)        0.031    15.102    sound_top_MAP/HEX2PWM_reg_MAP/q_reg[6]
+  -------------------------------------------------------------------
+                         required time                         15.102    
+                         arrival time                         -13.310    
+  -------------------------------------------------------------------
+                         slack                                  1.792    
+
+Slack (MET) :             1.829ns  (required time - arrival time)
+  Source:                 sound_top_MAP/audio_rom4_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKARDCLK
+                            (rising edge-triggered cell RAMB36E1 clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            sound_top_MAP/HEX2PWM_reg_MAP/q_reg[1]/D
+                            (rising edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (sys_clk_pin rise@10.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        7.868ns  (logic 3.360ns (42.707%)  route 4.508ns (57.293%))
+  Logic Levels:           5  (LUT5=2 LUT6=1 MUXF7=1 MUXF8=1)
+  Clock Path Skew:        -0.345ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.919ns = ( 14.919 - 10.000 ) 
+    Source Clock Delay      (SCD):    5.451ns
+    Clock Pessimism Removal (CPR):    0.187ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  mclk (IN)
+                         net (fo=0)                   0.000     0.000    mclk
+    E3                   IBUF (Prop_ibuf_I_O)         1.482     1.482 r  mclk_IBUF_inst/O
+                         net (fo=1, routed)           2.025     3.506    mclk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.096     3.602 r  mclk_IBUF_BUFG_inst/O
+                         net (fo=170, routed)         1.849     5.451    sound_top_MAP/audio_rom4_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/prim_init.ram/clka
+    RAMB36_X0Y5          RAMB36E1                                     r  sound_top_MAP/audio_rom4_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKARDCLK
+  -------------------------------------------------------------------    -------------------
+    RAMB36_X0Y5          RAMB36E1 (Prop_ramb36e1_CLKARDCLK_DOADO[1])
+                                                      2.454     7.905 r  sound_top_MAP/audio_rom4_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/DOADO[1]
+                         net (fo=1, routed)           2.356    10.261    sound_top_MAP/audio_rom4_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/douta_array[25]
+    SLICE_X35Y52         LUT6 (Prop_lut6_I0_O)        0.124    10.385 r  sound_top_MAP/audio_rom4_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/douta[1]_INST_0_i_18/O
+                         net (fo=1, routed)           0.000    10.385    sound_top_MAP/audio_rom4_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/douta[1]_INST_0_i_18_n_0
+    SLICE_X35Y52         MUXF7 (Prop_muxf7_I0_O)      0.238    10.623 r  sound_top_MAP/audio_rom4_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/douta[1]_INST_0_i_8/O
+                         net (fo=1, routed)           0.000    10.623    sound_top_MAP/audio_rom4_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/douta[1]_INST_0_i_8_n_0
+    SLICE_X35Y52         MUXF8 (Prop_muxf8_I0_O)      0.104    10.727 r  sound_top_MAP/audio_rom4_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/douta[1]_INST_0_i_3/O
+                         net (fo=1, routed)           1.202    11.929    sound_top_MAP/audio_rom4_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/douta[1]_INST_0_i_3_n_0
+    SLICE_X63Y58         LUT5 (Prop_lut5_I4_O)        0.316    12.245 r  sound_top_MAP/audio_rom4_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/douta[1]_INST_0/O
+                         net (fo=1, routed)           0.949    13.195    sound_top_MAP/HEX2PWM_reg_MAP/douta[1]
+    SLICE_X62Y73         LUT5 (Prop_lut5_I0_O)        0.124    13.319 r  sound_top_MAP/HEX2PWM_reg_MAP/q[1]_i_1/O
+                         net (fo=1, routed)           0.000    13.319    sound_top_MAP/HEX2PWM_reg_MAP/SFX_MUX_MAP/z[1]
+    SLICE_X62Y73         FDCE                                         r  sound_top_MAP/HEX2PWM_reg_MAP/q_reg[1]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                     10.000    10.000 r  
+    E3                                                0.000    10.000 r  mclk (IN)
+                         net (fo=0)                   0.000    10.000    mclk
+    E3                   IBUF (Prop_ibuf_I_O)         1.411    11.411 r  mclk_IBUF_inst/O
+                         net (fo=1, routed)           1.920    13.331    mclk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    13.422 r  mclk_IBUF_BUFG_inst/O
+                         net (fo=170, routed)         1.496    14.919    sound_top_MAP/HEX2PWM_reg_MAP/clka
+    SLICE_X62Y73         FDCE                                         r  sound_top_MAP/HEX2PWM_reg_MAP/q_reg[1]/C
+                         clock pessimism              0.187    15.106    
+                         clock uncertainty           -0.035    15.070    
+    SLICE_X62Y73         FDCE (Setup_fdce_C_D)        0.077    15.147    sound_top_MAP/HEX2PWM_reg_MAP/q_reg[1]
+  -------------------------------------------------------------------
+                         required time                         15.147    
+                         arrival time                         -13.319    
+  -------------------------------------------------------------------
+                         slack                                  1.829    
+
+Slack (MET) :             5.753ns  (required time - arrival time)
+  Source:                 clkdivtester_MAP/q_reg[12]/C
+                            (rising edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            clkdivtester_MAP/q_reg[17]/D
+                            (rising edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (sys_clk_pin rise@10.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        4.295ns  (logic 1.574ns (36.644%)  route 2.721ns (63.356%))
+  Logic Levels:           3  (BUFG=1 CARRY4=2)
+  Clock Path Skew:        -0.025ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.932ns = ( 14.932 - 10.000 ) 
+    Source Clock Delay      (SCD):    5.233ns
+    Clock Pessimism Removal (CPR):    0.276ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  mclk (IN)
+                         net (fo=0)                   0.000     0.000    mclk
+    E3                   IBUF (Prop_ibuf_I_O)         1.482     1.482 r  mclk_IBUF_inst/O
+                         net (fo=1, routed)           2.025     3.506    mclk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.096     3.602 r  mclk_IBUF_BUFG_inst/O
+                         net (fo=170, routed)         1.630     5.233    clkdivtester_MAP/clka
+    SLICE_X58Y93         FDCE                                         r  clkdivtester_MAP/q_reg[12]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X58Y93         FDCE (Prop_fdce_C_Q)         0.518     5.751 r  clkdivtester_MAP/q_reg[12]/Q
+                         net (fo=1, routed)           0.931     6.682    clk
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     6.778 r  clk_BUFG_inst/O
+                         net (fo=37, routed)          1.790     8.568    clkdivtester_MAP/clk_BUFG
+    SLICE_X58Y93         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.637     9.205 r  clkdivtester_MAP/q_reg[12]_i_1/CO[3]
+                         net (fo=1, routed)           0.000     9.205    clkdivtester_MAP/q_reg[12]_i_1_n_0
+    SLICE_X58Y94         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.323     9.528 r  clkdivtester_MAP/q_reg[16]_i_1/O[1]
+                         net (fo=1, routed)           0.000     9.528    clkdivtester_MAP/q_reg[16]_i_1_n_6
+    SLICE_X58Y94         FDCE                                         r  clkdivtester_MAP/q_reg[17]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                     10.000    10.000 r  
+    E3                                                0.000    10.000 r  mclk (IN)
+                         net (fo=0)                   0.000    10.000    mclk
+    E3                   IBUF (Prop_ibuf_I_O)         1.411    11.411 r  mclk_IBUF_inst/O
+                         net (fo=1, routed)           1.920    13.331    mclk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    13.422 r  mclk_IBUF_BUFG_inst/O
+                         net (fo=170, routed)         1.509    14.932    clkdivtester_MAP/clka
+    SLICE_X58Y94         FDCE                                         r  clkdivtester_MAP/q_reg[17]/C
+                         clock pessimism              0.276    15.208    
+                         clock uncertainty           -0.035    15.172    
+    SLICE_X58Y94         FDCE (Setup_fdce_C_D)        0.109    15.281    clkdivtester_MAP/q_reg[17]
+  -------------------------------------------------------------------
+                         required time                         15.281    
+                         arrival time                          -9.528    
+  -------------------------------------------------------------------
+                         slack                                  5.753    
+
+Slack (MET) :             5.755ns  (required time - arrival time)
+  Source:                 sound_top_MAP/HEX2PWM_reg_MAP/q_reg[0]/C
+                            (rising edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            sound_top_MAP/aud_pwm_mod_MAP/sound_s_reg/R
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (sys_clk_pin rise@10.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        3.459ns  (logic 1.402ns (40.528%)  route 2.057ns (59.473%))
+  Logic Levels:           3  (CARRY4=2 LUT4=1)
+  Clock Path Skew:        -0.037ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.921ns = ( 14.921 - 10.000 ) 
+    Source Clock Delay      (SCD):    5.217ns
+    Clock Pessimism Removal (CPR):    0.259ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  mclk (IN)
+                         net (fo=0)                   0.000     0.000    mclk
+    E3                   IBUF (Prop_ibuf_I_O)         1.482     1.482 r  mclk_IBUF_inst/O
+                         net (fo=1, routed)           2.025     3.506    mclk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.096     3.602 r  mclk_IBUF_BUFG_inst/O
+                         net (fo=170, routed)         1.614     5.217    sound_top_MAP/HEX2PWM_reg_MAP/clka
+    SLICE_X62Y73         FDCE                                         r  sound_top_MAP/HEX2PWM_reg_MAP/q_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X62Y73         FDCE (Prop_fdce_C_Q)         0.518     5.735 r  sound_top_MAP/HEX2PWM_reg_MAP/q_reg[0]/Q
+                         net (fo=2, routed)           1.293     7.028    sound_top_MAP/HEX2PWM_reg_MAP/Q[0]
+    SLICE_X63Y62         LUT4 (Prop_lut4_I0_O)        0.124     7.152 r  sound_top_MAP/HEX2PWM_reg_MAP/gtOp_carry_i_8/O
+                         net (fo=1, routed)           0.000     7.152    sound_top_MAP/aud_pwm_mod_MAP/S[0]
+    SLICE_X63Y62         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.532     7.684 r  sound_top_MAP/aud_pwm_mod_MAP/gtOp_carry/CO[3]
+                         net (fo=1, routed)           0.000     7.684    sound_top_MAP/aud_pwm_mod_MAP/gtOp_carry_n_0
+    SLICE_X63Y63         CARRY4 (Prop_carry4_CI_CO[2])
+                                                      0.228     7.912 r  sound_top_MAP/aud_pwm_mod_MAP/gtOp_carry__0/CO[2]
+                         net (fo=1, routed)           0.764     8.676    sound_top_MAP/aud_pwm_mod_MAP/gtOp
+    SLICE_X58Y69         FDRE                                         r  sound_top_MAP/aud_pwm_mod_MAP/sound_s_reg/R
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                     10.000    10.000 r  
+    E3                                                0.000    10.000 r  mclk (IN)
+                         net (fo=0)                   0.000    10.000    mclk
+    E3                   IBUF (Prop_ibuf_I_O)         1.411    11.411 r  mclk_IBUF_inst/O
+                         net (fo=1, routed)           1.920    13.331    mclk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    13.422 r  mclk_IBUF_BUFG_inst/O
+                         net (fo=170, routed)         1.498    14.921    sound_top_MAP/aud_pwm_mod_MAP/clka
+    SLICE_X58Y69         FDRE                                         r  sound_top_MAP/aud_pwm_mod_MAP/sound_s_reg/C
+                         clock pessimism              0.259    15.180    
+                         clock uncertainty           -0.035    15.144    
+    SLICE_X58Y69         FDRE (Setup_fdre_C_R)       -0.713    14.431    sound_top_MAP/aud_pwm_mod_MAP/sound_s_reg
+  -------------------------------------------------------------------
+                         required time                         14.431    
+                         arrival time                          -8.676    
+  -------------------------------------------------------------------
+                         slack                                  5.755    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.254ns  (arrival time - required time)
+  Source:                 clkdivtester_MAP/q_reg[10]/C
+                            (rising edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            clkdivtester_MAP/q_reg[10]/D
+                            (rising edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.388ns  (logic 0.274ns (70.550%)  route 0.114ns (29.450%))
+  Logic Levels:           1  (CARRY4=1)
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.001ns
+    Source Clock Delay      (SCD):    1.484ns
+    Clock Pessimism Removal (CPR):    0.516ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  mclk (IN)
+                         net (fo=0)                   0.000     0.000    mclk
+    E3                   IBUF (Prop_ibuf_I_O)         0.250     0.250 r  mclk_IBUF_inst/O
+                         net (fo=1, routed)           0.644     0.894    mclk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.920 r  mclk_IBUF_BUFG_inst/O
+                         net (fo=170, routed)         0.565     1.484    clkdivtester_MAP/clka
+    SLICE_X58Y92         FDCE                                         r  clkdivtester_MAP/q_reg[10]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X58Y92         FDCE (Prop_fdce_C_Q)         0.164     1.648 r  clkdivtester_MAP/q_reg[10]/Q
+                         net (fo=1, routed)           0.114     1.763    clkdivtester_MAP/q_reg_n_0_[10]
+    SLICE_X58Y92         CARRY4 (Prop_carry4_S[2]_O[2])
+                                                      0.110     1.873 r  clkdivtester_MAP/q_reg[8]_i_1/O[2]
+                         net (fo=1, routed)           0.000     1.873    clkdivtester_MAP/q_reg[8]_i_1_n_5
+    SLICE_X58Y92         FDCE                                         r  clkdivtester_MAP/q_reg[10]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  mclk (IN)
+                         net (fo=0)                   0.000     0.000    mclk
+    E3                   IBUF (Prop_ibuf_I_O)         0.438     0.438 r  mclk_IBUF_inst/O
+                         net (fo=1, routed)           0.699     1.136    mclk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.165 r  mclk_IBUF_BUFG_inst/O
+                         net (fo=170, routed)         0.836     2.001    clkdivtester_MAP/clka
+    SLICE_X58Y92         FDCE                                         r  clkdivtester_MAP/q_reg[10]/C
+                         clock pessimism             -0.516     1.484    
+    SLICE_X58Y92         FDCE (Hold_fdce_C_D)         0.134     1.618    clkdivtester_MAP/q_reg[10]
+  -------------------------------------------------------------------
+                         required time                         -1.618    
+                         arrival time                           1.873    
+  -------------------------------------------------------------------
+                         slack                                  0.254    
+
+Slack (MET) :             0.254ns  (arrival time - required time)
+  Source:                 clkdivtester_MAP/q_reg[14]/C
+                            (rising edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            clkdivtester_MAP/q_reg[14]/D
+                            (rising edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.388ns  (logic 0.274ns (70.550%)  route 0.114ns (29.450%))
+  Logic Levels:           1  (CARRY4=1)
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.002ns
+    Source Clock Delay      (SCD):    1.485ns
+    Clock Pessimism Removal (CPR):    0.516ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  mclk (IN)
+                         net (fo=0)                   0.000     0.000    mclk
+    E3                   IBUF (Prop_ibuf_I_O)         0.250     0.250 r  mclk_IBUF_inst/O
+                         net (fo=1, routed)           0.644     0.894    mclk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.920 r  mclk_IBUF_BUFG_inst/O
+                         net (fo=170, routed)         0.566     1.485    clkdivtester_MAP/clka
+    SLICE_X58Y93         FDCE                                         r  clkdivtester_MAP/q_reg[14]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X58Y93         FDCE (Prop_fdce_C_Q)         0.164     1.649 r  clkdivtester_MAP/q_reg[14]/Q
+                         net (fo=1, routed)           0.114     1.764    clkdivtester_MAP/q_reg_n_0_[14]
+    SLICE_X58Y93         CARRY4 (Prop_carry4_S[2]_O[2])
+                                                      0.110     1.874 r  clkdivtester_MAP/q_reg[12]_i_1/O[2]
+                         net (fo=1, routed)           0.000     1.874    clkdivtester_MAP/q_reg[12]_i_1_n_5
+    SLICE_X58Y93         FDCE                                         r  clkdivtester_MAP/q_reg[14]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  mclk (IN)
+                         net (fo=0)                   0.000     0.000    mclk
+    E3                   IBUF (Prop_ibuf_I_O)         0.438     0.438 r  mclk_IBUF_inst/O
+                         net (fo=1, routed)           0.699     1.136    mclk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.165 r  mclk_IBUF_BUFG_inst/O
+                         net (fo=170, routed)         0.837     2.002    clkdivtester_MAP/clka
+    SLICE_X58Y93         FDCE                                         r  clkdivtester_MAP/q_reg[14]/C
+                         clock pessimism             -0.516     1.485    
+    SLICE_X58Y93         FDCE (Hold_fdce_C_D)         0.134     1.619    clkdivtester_MAP/q_reg[14]
+  -------------------------------------------------------------------
+                         required time                         -1.619    
+                         arrival time                           1.874    
+  -------------------------------------------------------------------
+                         slack                                  0.254    
+
+Slack (MET) :             0.254ns  (arrival time - required time)
+  Source:                 clkdivtester_MAP/q_reg[6]/C
+                            (rising edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            clkdivtester_MAP/q_reg[6]/D
+                            (rising edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.388ns  (logic 0.274ns (70.550%)  route 0.114ns (29.450%))
+  Logic Levels:           1  (CARRY4=1)
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.001ns
+    Source Clock Delay      (SCD):    1.484ns
+    Clock Pessimism Removal (CPR):    0.516ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  mclk (IN)
+                         net (fo=0)                   0.000     0.000    mclk
+    E3                   IBUF (Prop_ibuf_I_O)         0.250     0.250 r  mclk_IBUF_inst/O
+                         net (fo=1, routed)           0.644     0.894    mclk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.920 r  mclk_IBUF_BUFG_inst/O
+                         net (fo=170, routed)         0.565     1.484    clkdivtester_MAP/clka
+    SLICE_X58Y91         FDCE                                         r  clkdivtester_MAP/q_reg[6]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X58Y91         FDCE (Prop_fdce_C_Q)         0.164     1.648 r  clkdivtester_MAP/q_reg[6]/Q
+                         net (fo=1, routed)           0.114     1.763    clkdivtester_MAP/q_reg_n_0_[6]
+    SLICE_X58Y91         CARRY4 (Prop_carry4_S[2]_O[2])
+                                                      0.110     1.873 r  clkdivtester_MAP/q_reg[4]_i_1/O[2]
+                         net (fo=1, routed)           0.000     1.873    clkdivtester_MAP/q_reg[4]_i_1_n_5
+    SLICE_X58Y91         FDCE                                         r  clkdivtester_MAP/q_reg[6]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  mclk (IN)
+                         net (fo=0)                   0.000     0.000    mclk
+    E3                   IBUF (Prop_ibuf_I_O)         0.438     0.438 r  mclk_IBUF_inst/O
+                         net (fo=1, routed)           0.699     1.136    mclk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.165 r  mclk_IBUF_BUFG_inst/O
+                         net (fo=170, routed)         0.836     2.001    clkdivtester_MAP/clka
+    SLICE_X58Y91         FDCE                                         r  clkdivtester_MAP/q_reg[6]/C
+                         clock pessimism             -0.516     1.484    
+    SLICE_X58Y91         FDCE (Hold_fdce_C_D)         0.134     1.618    clkdivtester_MAP/q_reg[6]
+  -------------------------------------------------------------------
+                         required time                         -1.618    
+                         arrival time                           1.873    
+  -------------------------------------------------------------------
+                         slack                                  0.254    
+
+Slack (MET) :             0.278ns  (arrival time - required time)
+  Source:                 sound_top_MAP/aud_pwm_mod_MAP/counter_reg[6]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            sound_top_MAP/aud_pwm_mod_MAP/counter_reg[6]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.412ns  (logic 0.274ns (66.567%)  route 0.138ns (33.433%))
+  Logic Levels:           1  (CARRY4=1)
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.000ns
+    Source Clock Delay      (SCD):    1.484ns
+    Clock Pessimism Removal (CPR):    0.515ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  mclk (IN)
+                         net (fo=0)                   0.000     0.000    mclk
+    E3                   IBUF (Prop_ibuf_I_O)         0.250     0.250 r  mclk_IBUF_inst/O
+                         net (fo=1, routed)           0.644     0.894    mclk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.920 r  mclk_IBUF_BUFG_inst/O
+                         net (fo=170, routed)         0.565     1.484    sound_top_MAP/aud_pwm_mod_MAP/clka
+    SLICE_X62Y62         FDRE                                         r  sound_top_MAP/aud_pwm_mod_MAP/counter_reg[6]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X62Y62         FDRE (Prop_fdre_C_Q)         0.164     1.648 r  sound_top_MAP/aud_pwm_mod_MAP/counter_reg[6]/Q
+                         net (fo=4, routed)           0.138     1.786    sound_top_MAP/aud_pwm_mod_MAP/counter_reg[7]_0[6]
+    SLICE_X62Y62         CARRY4 (Prop_carry4_S[2]_O[2])
+                                                      0.110     1.896 r  sound_top_MAP/aud_pwm_mod_MAP/counter_reg[4]_i_1/O[2]
+                         net (fo=1, routed)           0.000     1.896    sound_top_MAP/aud_pwm_mod_MAP/counter_reg[4]_i_1_n_5
+    SLICE_X62Y62         FDRE                                         r  sound_top_MAP/aud_pwm_mod_MAP/counter_reg[6]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  mclk (IN)
+                         net (fo=0)                   0.000     0.000    mclk
+    E3                   IBUF (Prop_ibuf_I_O)         0.438     0.438 r  mclk_IBUF_inst/O
+                         net (fo=1, routed)           0.699     1.136    mclk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.165 r  mclk_IBUF_BUFG_inst/O
+                         net (fo=170, routed)         0.835     2.000    sound_top_MAP/aud_pwm_mod_MAP/clka
+    SLICE_X62Y62         FDRE                                         r  sound_top_MAP/aud_pwm_mod_MAP/counter_reg[6]/C
+                         clock pessimism             -0.515     1.484    
+    SLICE_X62Y62         FDRE (Hold_fdre_C_D)         0.134     1.618    sound_top_MAP/aud_pwm_mod_MAP/counter_reg[6]
+  -------------------------------------------------------------------
+                         required time                         -1.618    
+                         arrival time                           1.896    
+  -------------------------------------------------------------------
+                         slack                                  0.278    
+
+Slack (MET) :             0.278ns  (arrival time - required time)
+  Source:                 sound_top_MAP/aud_pwm_mod_MAP/counter_reg[2]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            sound_top_MAP/aud_pwm_mod_MAP/counter_reg[2]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.412ns  (logic 0.274ns (66.506%)  route 0.138ns (33.494%))
+  Logic Levels:           1  (CARRY4=1)
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.002ns
+    Source Clock Delay      (SCD):    1.485ns
+    Clock Pessimism Removal (CPR):    0.516ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  mclk (IN)
+                         net (fo=0)                   0.000     0.000    mclk
+    E3                   IBUF (Prop_ibuf_I_O)         0.250     0.250 r  mclk_IBUF_inst/O
+                         net (fo=1, routed)           0.644     0.894    mclk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.920 r  mclk_IBUF_BUFG_inst/O
+                         net (fo=170, routed)         0.566     1.485    sound_top_MAP/aud_pwm_mod_MAP/clka
+    SLICE_X62Y61         FDRE                                         r  sound_top_MAP/aud_pwm_mod_MAP/counter_reg[2]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X62Y61         FDRE (Prop_fdre_C_Q)         0.164     1.649 r  sound_top_MAP/aud_pwm_mod_MAP/counter_reg[2]/Q
+                         net (fo=4, routed)           0.138     1.787    sound_top_MAP/aud_pwm_mod_MAP/counter_reg[7]_0[2]
+    SLICE_X62Y61         CARRY4 (Prop_carry4_S[2]_O[2])
+                                                      0.110     1.897 r  sound_top_MAP/aud_pwm_mod_MAP/counter_reg[0]_i_2/O[2]
+                         net (fo=1, routed)           0.000     1.897    sound_top_MAP/aud_pwm_mod_MAP/counter_reg[0]_i_2_n_5
+    SLICE_X62Y61         FDRE                                         r  sound_top_MAP/aud_pwm_mod_MAP/counter_reg[2]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  mclk (IN)
+                         net (fo=0)                   0.000     0.000    mclk
+    E3                   IBUF (Prop_ibuf_I_O)         0.438     0.438 r  mclk_IBUF_inst/O
+                         net (fo=1, routed)           0.699     1.136    mclk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.165 r  mclk_IBUF_BUFG_inst/O
+                         net (fo=170, routed)         0.837     2.002    sound_top_MAP/aud_pwm_mod_MAP/clka
+    SLICE_X62Y61         FDRE                                         r  sound_top_MAP/aud_pwm_mod_MAP/counter_reg[2]/C
+                         clock pessimism             -0.516     1.485    
+    SLICE_X62Y61         FDRE (Hold_fdre_C_D)         0.134     1.619    sound_top_MAP/aud_pwm_mod_MAP/counter_reg[2]
+  -------------------------------------------------------------------
+                         required time                         -1.619    
+                         arrival time                           1.897    
+  -------------------------------------------------------------------
+                         slack                                  0.278    
+
+Slack (MET) :             0.278ns  (arrival time - required time)
+  Source:                 sound_top_MAP/aud_pwm_mod_MAP/counter_reg[10]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            sound_top_MAP/aud_pwm_mod_MAP/counter_reg[10]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.412ns  (logic 0.274ns (66.495%)  route 0.138ns (33.505%))
+  Logic Levels:           1  (CARRY4=1)
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.999ns
+    Source Clock Delay      (SCD):    1.483ns
+    Clock Pessimism Removal (CPR):    0.515ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  mclk (IN)
+                         net (fo=0)                   0.000     0.000    mclk
+    E3                   IBUF (Prop_ibuf_I_O)         0.250     0.250 r  mclk_IBUF_inst/O
+                         net (fo=1, routed)           0.644     0.894    mclk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.920 r  mclk_IBUF_BUFG_inst/O
+                         net (fo=170, routed)         0.564     1.483    sound_top_MAP/aud_pwm_mod_MAP/clka
+    SLICE_X62Y63         FDRE                                         r  sound_top_MAP/aud_pwm_mod_MAP/counter_reg[10]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X62Y63         FDRE (Prop_fdre_C_Q)         0.164     1.647 r  sound_top_MAP/aud_pwm_mod_MAP/counter_reg[10]/Q
+                         net (fo=4, routed)           0.138     1.785    sound_top_MAP/aud_pwm_mod_MAP/counter_reg[10]
+    SLICE_X62Y63         CARRY4 (Prop_carry4_S[2]_O[2])
+                                                      0.110     1.895 r  sound_top_MAP/aud_pwm_mod_MAP/counter_reg[8]_i_1/O[2]
+                         net (fo=1, routed)           0.000     1.895    sound_top_MAP/aud_pwm_mod_MAP/counter_reg[8]_i_1_n_5
+    SLICE_X62Y63         FDRE                                         r  sound_top_MAP/aud_pwm_mod_MAP/counter_reg[10]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  mclk (IN)
+                         net (fo=0)                   0.000     0.000    mclk
+    E3                   IBUF (Prop_ibuf_I_O)         0.438     0.438 r  mclk_IBUF_inst/O
+                         net (fo=1, routed)           0.699     1.136    mclk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.165 r  mclk_IBUF_BUFG_inst/O
+                         net (fo=170, routed)         0.834     1.999    sound_top_MAP/aud_pwm_mod_MAP/clka
+    SLICE_X62Y63         FDRE                                         r  sound_top_MAP/aud_pwm_mod_MAP/counter_reg[10]/C
+                         clock pessimism             -0.515     1.483    
+    SLICE_X62Y63         FDRE (Hold_fdre_C_D)         0.134     1.617    sound_top_MAP/aud_pwm_mod_MAP/counter_reg[10]
+  -------------------------------------------------------------------
+                         required time                         -1.617    
+                         arrival time                           1.895    
+  -------------------------------------------------------------------
+                         slack                                  0.278    
+
+Slack (MET) :             0.289ns  (arrival time - required time)
+  Source:                 music_ctrl_MAP/FSM_sequential_present_state_reg[2]/C
+                            (rising edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            music_ctrl_MAP/FSM_sequential_present_state_reg[0]/D
+                            (rising edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.410ns  (logic 0.209ns (51.004%)  route 0.201ns (48.996%))
+  Logic Levels:           1  (LUT6=1)
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.986ns
+    Source Clock Delay      (SCD):    1.472ns
+    Clock Pessimism Removal (CPR):    0.513ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  mclk (IN)
+                         net (fo=0)                   0.000     0.000    mclk
+    E3                   IBUF (Prop_ibuf_I_O)         0.250     0.250 r  mclk_IBUF_inst/O
+                         net (fo=1, routed)           0.644     0.894    mclk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.920 r  mclk_IBUF_BUFG_inst/O
+                         net (fo=170, routed)         0.553     1.472    music_ctrl_MAP/clka
+    SLICE_X60Y74         FDCE                                         r  music_ctrl_MAP/FSM_sequential_present_state_reg[2]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X60Y74         FDCE (Prop_fdce_C_Q)         0.164     1.636 r  music_ctrl_MAP/FSM_sequential_present_state_reg[2]/Q
+                         net (fo=12, routed)          0.201     1.837    clock_pulse_MAP/Q[1]
+    SLICE_X60Y74         LUT6 (Prop_lut6_I1_O)        0.045     1.882 r  clock_pulse_MAP/FSM_sequential_present_state[0]_i_1/O
+                         net (fo=1, routed)           0.000     1.882    music_ctrl_MAP/D[0]
+    SLICE_X60Y74         FDCE                                         r  music_ctrl_MAP/FSM_sequential_present_state_reg[0]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  mclk (IN)
+                         net (fo=0)                   0.000     0.000    mclk
+    E3                   IBUF (Prop_ibuf_I_O)         0.438     0.438 r  mclk_IBUF_inst/O
+                         net (fo=1, routed)           0.699     1.136    mclk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.165 r  mclk_IBUF_BUFG_inst/O
+                         net (fo=170, routed)         0.821     1.986    music_ctrl_MAP/clka
+    SLICE_X60Y74         FDCE                                         r  music_ctrl_MAP/FSM_sequential_present_state_reg[0]/C
+                         clock pessimism             -0.513     1.472    
+    SLICE_X60Y74         FDCE (Hold_fdce_C_D)         0.121     1.593    music_ctrl_MAP/FSM_sequential_present_state_reg[0]
+  -------------------------------------------------------------------
+                         required time                         -1.593    
+                         arrival time                           1.882    
+  -------------------------------------------------------------------
+                         slack                                  0.289    
+
+Slack (MET) :             0.290ns  (arrival time - required time)
+  Source:                 music_ctrl_MAP/FSM_sequential_present_state_reg[2]/C
+                            (rising edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            music_ctrl_MAP/FSM_sequential_present_state_reg[2]/D
+                            (rising edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.410ns  (logic 0.209ns (51.004%)  route 0.201ns (48.996%))
+  Logic Levels:           1  (LUT6=1)
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.986ns
+    Source Clock Delay      (SCD):    1.472ns
+    Clock Pessimism Removal (CPR):    0.513ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  mclk (IN)
+                         net (fo=0)                   0.000     0.000    mclk
+    E3                   IBUF (Prop_ibuf_I_O)         0.250     0.250 r  mclk_IBUF_inst/O
+                         net (fo=1, routed)           0.644     0.894    mclk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.920 r  mclk_IBUF_BUFG_inst/O
+                         net (fo=170, routed)         0.553     1.472    music_ctrl_MAP/clka
+    SLICE_X60Y74         FDCE                                         r  music_ctrl_MAP/FSM_sequential_present_state_reg[2]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X60Y74         FDCE (Prop_fdce_C_Q)         0.164     1.636 r  music_ctrl_MAP/FSM_sequential_present_state_reg[2]/Q
+                         net (fo=12, routed)          0.201     1.837    clock_pulse_MAP/Q[1]
+    SLICE_X60Y74         LUT6 (Prop_lut6_I4_O)        0.045     1.882 r  clock_pulse_MAP/FSM_sequential_present_state[2]_i_1/O
+                         net (fo=1, routed)           0.000     1.882    music_ctrl_MAP/D[1]
+    SLICE_X60Y74         FDCE                                         r  music_ctrl_MAP/FSM_sequential_present_state_reg[2]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  mclk (IN)
+                         net (fo=0)                   0.000     0.000    mclk
+    E3                   IBUF (Prop_ibuf_I_O)         0.438     0.438 r  mclk_IBUF_inst/O
+                         net (fo=1, routed)           0.699     1.136    mclk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.165 r  mclk_IBUF_BUFG_inst/O
+                         net (fo=170, routed)         0.821     1.986    music_ctrl_MAP/clka
+    SLICE_X60Y74         FDCE                                         r  music_ctrl_MAP/FSM_sequential_present_state_reg[2]/C
+                         clock pessimism             -0.513     1.472    
+    SLICE_X60Y74         FDCE (Hold_fdce_C_D)         0.120     1.592    music_ctrl_MAP/FSM_sequential_present_state_reg[2]
+  -------------------------------------------------------------------
+                         required time                         -1.592    
+                         arrival time                           1.882    
+  -------------------------------------------------------------------
+                         slack                                  0.290    
+
+Slack (MET) :             0.290ns  (arrival time - required time)
+  Source:                 clkdivtester_MAP/q_reg[10]/C
+                            (rising edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            clkdivtester_MAP/q_reg[11]/D
+                            (rising edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.424ns  (logic 0.310ns (73.048%)  route 0.114ns (26.952%))
+  Logic Levels:           1  (CARRY4=1)
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.001ns
+    Source Clock Delay      (SCD):    1.484ns
+    Clock Pessimism Removal (CPR):    0.516ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  mclk (IN)
+                         net (fo=0)                   0.000     0.000    mclk
+    E3                   IBUF (Prop_ibuf_I_O)         0.250     0.250 r  mclk_IBUF_inst/O
+                         net (fo=1, routed)           0.644     0.894    mclk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.920 r  mclk_IBUF_BUFG_inst/O
+                         net (fo=170, routed)         0.565     1.484    clkdivtester_MAP/clka
+    SLICE_X58Y92         FDCE                                         r  clkdivtester_MAP/q_reg[10]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X58Y92         FDCE (Prop_fdce_C_Q)         0.164     1.648 r  clkdivtester_MAP/q_reg[10]/Q
+                         net (fo=1, routed)           0.114     1.763    clkdivtester_MAP/q_reg_n_0_[10]
+    SLICE_X58Y92         CARRY4 (Prop_carry4_S[2]_O[3])
+                                                      0.146     1.909 r  clkdivtester_MAP/q_reg[8]_i_1/O[3]
+                         net (fo=1, routed)           0.000     1.909    clkdivtester_MAP/q_reg[8]_i_1_n_4
+    SLICE_X58Y92         FDCE                                         r  clkdivtester_MAP/q_reg[11]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  mclk (IN)
+                         net (fo=0)                   0.000     0.000    mclk
+    E3                   IBUF (Prop_ibuf_I_O)         0.438     0.438 r  mclk_IBUF_inst/O
+                         net (fo=1, routed)           0.699     1.136    mclk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.165 r  mclk_IBUF_BUFG_inst/O
+                         net (fo=170, routed)         0.836     2.001    clkdivtester_MAP/clka
+    SLICE_X58Y92         FDCE                                         r  clkdivtester_MAP/q_reg[11]/C
+                         clock pessimism             -0.516     1.484    
+    SLICE_X58Y92         FDCE (Hold_fdce_C_D)         0.134     1.618    clkdivtester_MAP/q_reg[11]
+  -------------------------------------------------------------------
+                         required time                         -1.618    
+                         arrival time                           1.909    
+  -------------------------------------------------------------------
+                         slack                                  0.290    
+
+Slack (MET) :             0.290ns  (arrival time - required time)
+  Source:                 clkdivtester_MAP/q_reg[14]/C
+                            (rising edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            clkdivtester_MAP/q_reg[15]/D
+                            (rising edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.424ns  (logic 0.310ns (73.048%)  route 0.114ns (26.952%))
+  Logic Levels:           1  (CARRY4=1)
+  Clock Path Skew:        0.000ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.002ns
+    Source Clock Delay      (SCD):    1.485ns
+    Clock Pessimism Removal (CPR):    0.516ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  mclk (IN)
+                         net (fo=0)                   0.000     0.000    mclk
+    E3                   IBUF (Prop_ibuf_I_O)         0.250     0.250 r  mclk_IBUF_inst/O
+                         net (fo=1, routed)           0.644     0.894    mclk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.920 r  mclk_IBUF_BUFG_inst/O
+                         net (fo=170, routed)         0.566     1.485    clkdivtester_MAP/clka
+    SLICE_X58Y93         FDCE                                         r  clkdivtester_MAP/q_reg[14]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X58Y93         FDCE (Prop_fdce_C_Q)         0.164     1.649 r  clkdivtester_MAP/q_reg[14]/Q
+                         net (fo=1, routed)           0.114     1.764    clkdivtester_MAP/q_reg_n_0_[14]
+    SLICE_X58Y93         CARRY4 (Prop_carry4_S[2]_O[3])
+                                                      0.146     1.910 r  clkdivtester_MAP/q_reg[12]_i_1/O[3]
+                         net (fo=1, routed)           0.000     1.910    clkdivtester_MAP/q_reg[12]_i_1_n_4
+    SLICE_X58Y93         FDCE                                         r  clkdivtester_MAP/q_reg[15]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    E3                                                0.000     0.000 r  mclk (IN)
+                         net (fo=0)                   0.000     0.000    mclk
+    E3                   IBUF (Prop_ibuf_I_O)         0.438     0.438 r  mclk_IBUF_inst/O
+                         net (fo=1, routed)           0.699     1.136    mclk_IBUF
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.165 r  mclk_IBUF_BUFG_inst/O
+                         net (fo=170, routed)         0.837     2.002    clkdivtester_MAP/clka
+    SLICE_X58Y93         FDCE                                         r  clkdivtester_MAP/q_reg[15]/C
+                         clock pessimism             -0.516     1.485    
+    SLICE_X58Y93         FDCE (Hold_fdce_C_D)         0.134     1.619    clkdivtester_MAP/q_reg[15]
+  -------------------------------------------------------------------
+                         required time                         -1.619    
+                         arrival time                           1.910    
+  -------------------------------------------------------------------
+                         slack                                  0.290    
+
+
+
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         sys_clk_pin
+Waveform(ns):       { 0.000 5.000 }
+Period(ns):         10.000
+Sources:            { mclk }
+
+Check Type        Corner  Lib Pin             Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location      Pin
+Min Period        n/a     RAMB18E1/CLKARDCLK  n/a            2.576         10.000      7.424      RAMB18_X1Y38  sound_top_MAP/audio_rom2_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[4].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM18.ram/CLKARDCLK
+Min Period        n/a     RAMB18E1/CLKBWRCLK  n/a            2.576         10.000      7.424      RAMB18_X1Y38  sound_top_MAP/audio_rom2_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[4].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM18.ram/CLKBWRCLK
+Min Period        n/a     RAMB18E1/CLKARDCLK  n/a            2.576         10.000      7.424      RAMB18_X1Y39  sound_top_MAP/audio_rom3_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[4].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM18.ram/CLKARDCLK
+Min Period        n/a     RAMB18E1/CLKBWRCLK  n/a            2.576         10.000      7.424      RAMB18_X1Y39  sound_top_MAP/audio_rom3_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[4].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM18.ram/CLKBWRCLK
+Min Period        n/a     RAMB36E1/CLKARDCLK  n/a            2.576         10.000      7.424      RAMB36_X3Y11  sound_top_MAP/audio_rom4_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[12].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKARDCLK
+Min Period        n/a     RAMB36E1/CLKBWRCLK  n/a            2.576         10.000      7.424      RAMB36_X3Y11  sound_top_MAP/audio_rom4_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[12].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKBWRCLK
+Min Period        n/a     RAMB36E1/CLKARDCLK  n/a            2.576         10.000      7.424      RAMB36_X2Y16  sound_top_MAP/audio_rom4_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[16].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKARDCLK
+Min Period        n/a     RAMB36E1/CLKBWRCLK  n/a            2.576         10.000      7.424      RAMB36_X2Y16  sound_top_MAP/audio_rom4_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[16].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKBWRCLK
+Min Period        n/a     RAMB36E1/CLKARDCLK  n/a            2.576         10.000      7.424      RAMB36_X0Y11  sound_top_MAP/audio_rom4_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKARDCLK
+Min Period        n/a     RAMB36E1/CLKBWRCLK  n/a            2.576         10.000      7.424      RAMB36_X0Y11  sound_top_MAP/audio_rom4_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/CLKBWRCLK
+Low Pulse Width   Slow    FDRE/C              n/a            0.500         5.000       4.500      SLICE_X62Y63  sound_top_MAP/aud_pwm_mod_MAP/counter_reg[10]/C
+Low Pulse Width   Slow    FDRE/C              n/a            0.500         5.000       4.500      SLICE_X62Y63  sound_top_MAP/aud_pwm_mod_MAP/counter_reg[11]/C
+Low Pulse Width   Slow    FDRE/C              n/a            0.500         5.000       4.500      SLICE_X62Y64  sound_top_MAP/aud_pwm_mod_MAP/counter_reg[12]/C
+Low Pulse Width   Slow    FDRE/C              n/a            0.500         5.000       4.500      SLICE_X62Y63  sound_top_MAP/aud_pwm_mod_MAP/counter_reg[8]/C
+Low Pulse Width   Slow    FDRE/C              n/a            0.500         5.000       4.500      SLICE_X62Y63  sound_top_MAP/aud_pwm_mod_MAP/counter_reg[9]/C
+Low Pulse Width   Slow    FDRE/C              n/a            0.500         5.000       4.500      SLICE_X62Y61  sound_top_MAP/aud_pwm_mod_MAP/counter_reg[0]/C
+Low Pulse Width   Slow    FDRE/C              n/a            0.500         5.000       4.500      SLICE_X62Y61  sound_top_MAP/aud_pwm_mod_MAP/counter_reg[1]/C
+Low Pulse Width   Slow    FDRE/C              n/a            0.500         5.000       4.500      SLICE_X62Y61  sound_top_MAP/aud_pwm_mod_MAP/counter_reg[2]/C
+Low Pulse Width   Slow    FDRE/C              n/a            0.500         5.000       4.500      SLICE_X62Y61  sound_top_MAP/aud_pwm_mod_MAP/counter_reg[3]/C
+Low Pulse Width   Slow    FDRE/C              n/a            0.500         5.000       4.500      SLICE_X63Y92  sound_top_MAP/audio_rom2_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/no_softecc_sel_reg.ce_pri.sel_pipe_reg[2]/C
+High Pulse Width  Slow    FDCE/C              n/a            0.500         5.000       4.500      SLICE_X58Y92  clkdivtester_MAP/q_reg[10]/C
+High Pulse Width  Slow    FDCE/C              n/a            0.500         5.000       4.500      SLICE_X58Y92  clkdivtester_MAP/q_reg[11]/C
+High Pulse Width  Slow    FDCE/C              n/a            0.500         5.000       4.500      SLICE_X58Y91  clkdivtester_MAP/q_reg[4]/C
+High Pulse Width  Slow    FDCE/C              n/a            0.500         5.000       4.500      SLICE_X58Y91  clkdivtester_MAP/q_reg[5]/C
+High Pulse Width  Slow    FDCE/C              n/a            0.500         5.000       4.500      SLICE_X58Y91  clkdivtester_MAP/q_reg[6]/C
+High Pulse Width  Slow    FDCE/C              n/a            0.500         5.000       4.500      SLICE_X58Y91  clkdivtester_MAP/q_reg[7]/C
+High Pulse Width  Slow    FDCE/C              n/a            0.500         5.000       4.500      SLICE_X58Y92  clkdivtester_MAP/q_reg[8]/C
+High Pulse Width  Slow    FDCE/C              n/a            0.500         5.000       4.500      SLICE_X58Y92  clkdivtester_MAP/q_reg[9]/C
+High Pulse Width  Slow    FDRE/C              n/a            0.500         5.000       4.500      SLICE_X62Y62  sound_top_MAP/aud_pwm_mod_MAP/counter_reg[4]/C
+High Pulse Width  Slow    FDRE/C              n/a            0.500         5.000       4.500      SLICE_X62Y62  sound_top_MAP/aud_pwm_mod_MAP/counter_reg[5]/C
+
+
+

@@ -39,13 +39,13 @@
     <Option Name="WTVcsLaunchSim" Val="0"/>
     <Option Name="WTRivieraLaunchSim" Val="0"/>
     <Option Name="WTActivehdlLaunchSim" Val="0"/>
-    <Option Name="WTXSimExportSim" Val="16"/>
-    <Option Name="WTModelSimExportSim" Val="16"/>
-    <Option Name="WTQuestaExportSim" Val="16"/>
-    <Option Name="WTIesExportSim" Val="16"/>
-    <Option Name="WTVcsExportSim" Val="16"/>
-    <Option Name="WTRivieraExportSim" Val="16"/>
-    <Option Name="WTActivehdlExportSim" Val="16"/>
+    <Option Name="WTXSimExportSim" Val="27"/>
+    <Option Name="WTModelSimExportSim" Val="27"/>
+    <Option Name="WTQuestaExportSim" Val="27"/>
+    <Option Name="WTIesExportSim" Val="27"/>
+    <Option Name="WTVcsExportSim" Val="27"/>
+    <Option Name="WTRivieraExportSim" Val="27"/>
+    <Option Name="WTActivehdlExportSim" Val="27"/>
     <Option Name="GenerateIPUpgradeLog" Val="TRUE"/>
     <Option Name="XSimRadix" Val="hex"/>
     <Option Name="XSimTimeUnit" Val="ns"/>
@@ -74,10 +74,90 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
+      <File Path="$PSRCDIR/sources_1/ip/blk_mem_gen_3/blk_mem_gen_3.xci">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../Aud_Mult_ROM_w_Music_Ctrl_Test_v2/Aud_Mult_ROM_w_Music_Ctrl_Test.srcs/sources_1/ip/blk_mem_gen_3/blk_mem_gen_3.xci"/>
+          <Attr Name="ImportTime" Val="1639440323"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/ip/blk_mem_gen_2/blk_mem_gen_2.xci">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../Aud_Mult_ROM_w_Music_Ctrl_Test_v2/Aud_Mult_ROM_w_Music_Ctrl_Test.srcs/sources_1/ip/blk_mem_gen_2/blk_mem_gen_2.xci"/>
+          <Attr Name="ImportTime" Val="1639440191"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1.xci">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../Aud_Mult_ROM_w_Music_Ctrl_Test_v2/Aud_Mult_ROM_w_Music_Ctrl_Test.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1.xci"/>
+          <Attr Name="ImportTime" Val="1639440166"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../Aud_Mult_ROM_w_Music_Ctrl_Test_v2/Aud_Mult_ROM_w_Music_Ctrl_Test.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci"/>
+          <Attr Name="ImportTime" Val="1639440118"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/ip/blk_mem_gen_0/blk_mem_gen_0_stub.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../Aud_Mult_ROM_w_Music_Ctrl_Test_v2/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/ip/blk_mem_gen_0/blk_mem_gen_0_stub.v"/>
+          <Attr Name="ImportTime" Val="1639440196"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/ip/blk_mem_gen_1/blk_mem_gen_1_stub.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../Aud_Mult_ROM_w_Music_Ctrl_Test_v2/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/ip/blk_mem_gen_1/blk_mem_gen_1_stub.v"/>
+          <Attr Name="ImportTime" Val="1639440245"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/ip/blk_mem_gen_2/blk_mem_gen_2_stub.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../Aud_Mult_ROM_w_Music_Ctrl_Test_v2/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/ip/blk_mem_gen_2/blk_mem_gen_2_stub.v"/>
+          <Attr Name="ImportTime" Val="1639440271"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/ip/blk_mem_gen_3/blk_mem_gen_3_stub.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../Aud_Mult_ROM_w_Music_Ctrl_Test_v2/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/ip/blk_mem_gen_3/blk_mem_gen_3_stub.v"/>
+          <Attr Name="ImportTime" Val="1639440405"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/blocks/ClkDiv.vhd">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../platform_basic_start/platform.srcs/sources_1/imports/blocks/ClkDiv.vhd"/>
-          <Attr Name="ImportTime" Val="1634835914"/>
+          <Attr Name="ImportTime" Val="1639449339"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/new/KeyConv.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../ver6-20211213T044435Z-001/ver6/final_project/final_project.srcs/sources_1/new/KeyConv.vhd"/>
+          <Attr Name="ImportTime" Val="1639334118"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
@@ -106,8 +186,24 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
+      <File Path="$PSRCDIR/sources_1/imports/sources_1/new/aud_pwm_mod.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../Aud_Mult_ROM_w_Music_Ctrl_Test_v2/Aud_Mult_ROM_w_Music_Ctrl_Test.srcs/sources_1/new/aud_pwm_mod.vhd"/>
+          <Attr Name="ImportTime" Val="1638843432"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <File Path="$PSRCDIR/sources_1/new/bounce.vhd">
         <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/sources_1/new/counter.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../Aud_Mult_ROM_w_Music_Ctrl_Test_v2/Aud_Mult_ROM_w_Music_Ctrl_Test.srcs/sources_1/new/counter.vhd"/>
+          <Attr Name="ImportTime" Val="1639373976"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
@@ -116,6 +212,46 @@
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../blocks_v4/final_project_4.srcs/sources_1/new/decode38.vhd"/>
           <Attr Name="ImportTime" Val="1638885398"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/new/keyboard_ctrl.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../ver6-20211213T044435Z-001/ver6/final_project/final_project.srcs/sources_1/new/keyboard_ctrl.vhd"/>
+          <Attr Name="ImportTime" Val="1639334014"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/sources_1/new/music_cntr.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../Aud_Mult_ROM_w_Music_Ctrl_Test_v2/Aud_Mult_ROM_w_Music_Ctrl_Test.srcs/sources_1/new/music_cntr.vhd"/>
+          <Attr Name="ImportTime" Val="1639096074"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/sources_1/new/music_ctrl.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../Aud_Mult_ROM_w_Music_Ctrl_Test_v2/Aud_Mult_ROM_w_Music_Ctrl_Test.srcs/sources_1/new/music_ctrl.vhd"/>
+          <Attr Name="ImportTime" Val="1639368942"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/sources_1/new/mux51.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../Aud_Mult_ROM_w_Music_Ctrl_Test_v2/Aud_Mult_ROM_w_Music_Ctrl_Test.srcs/sources_1/new/mux51.vhd"/>
+          <Attr Name="ImportTime" Val="1639241404"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/Example 44/reg.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../Aud_Mult_ROM_w_Music_Ctrl_Test_v2/Aud_Mult_ROM_w_Music_Ctrl_Test.srcs/sources_1/imports/Example 44/reg.vhd"/>
+          <Attr Name="ImportTime" Val="1632272292"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
@@ -160,6 +296,22 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
+      <File Path="$PSRCDIR/sources_1/imports/sources_1/new/sound_main.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../Aud_Mult_ROM_w_Music_Ctrl_Test_v2/Aud_Mult_ROM_w_Music_Ctrl_Test.srcs/sources_1/new/sound_main.vhd"/>
+          <Attr Name="ImportTime" Val="1639369140"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/sources_1/new/sound_top.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../Aud_Mult_ROM_w_Music_Ctrl_Test_v2/Aud_Mult_ROM_w_Music_Ctrl_Test.srcs/sources_1/new/sound_top.vhd"/>
+          <Attr Name="ImportTime" Val="1639270976"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/new/vga_640x480.vhd">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../platform_basic_start/platform.srcs/sources_1/imports/new/vga_640x480.vhd"/>
@@ -184,20 +336,39 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
+      <File Path="$PSRCDIR/sources_1/imports/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/ip/blk_mem_gen_4/blk_mem_gen_4_stub.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../Aud_Mult_ROM_w_Music_Ctrl_Test_v2/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/ip/blk_mem_gen_4/blk_mem_gen_4_stub.v"/>
+          <Attr Name="ImportTime" Val="1639440399"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/Example 56/clkdivtester.vhd">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../Aud_Mult_ROM_w_Music_Ctrl_Test_v2/Aud_Mult_ROM_w_Music_Ctrl_Test.srcs/sources_1/imports/Example 56/clkdivtester.vhd"/>
+          <Attr Name="ImportTime" Val="1639359350"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/Example 56/clock_pulse.vhd">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../Aud_Mult_ROM_w_Music_Ctrl_Test_v2/Aud_Mult_ROM_w_Music_Ctrl_Test.srcs/sources_1/imports/Example 56/clock_pulse.vhd"/>
+          <Attr Name="ImportTime" Val="1632272294"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <File Path="$PSRCDIR/sources_1/imports/synth/DPRAM.vhd">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="ImportPath" Val="$PPRDIR/../blocks_v5/ver5/ver5.srcs/sources_1/ip/DPRAM/synth/DPRAM.vhd"/>
           <Attr Name="ImportTime" Val="1639169924"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/new/ram.vhd">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../blocks_v4/final_project_4.srcs/sources_1/new/ram.vhd"/>
-          <Attr Name="ImportTime" Val="1638933062"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
@@ -215,6 +386,415 @@
         </FileInfo>
       </File>
       <File Path="$PPRDIR/../blocks_v5/ver5/ver5.ip_user_files/mem_init_files/dpram.coe">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/new/debounce4.vhd">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../ver6-20211213T044435Z-001/ver6/final_project/final_project.srcs/sources_1/new/debounce4.vhd"/>
+          <Attr Name="ImportTime" Val="1639354614"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/sim_scripts/blk_mem_gen_1/xcelium/blk_mem_gen_1.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../Aud_Mult_ROM_w_Music_Ctrl_Test_v2/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/sim_scripts/blk_mem_gen_1/xcelium/blk_mem_gen_1.mif"/>
+          <Attr Name="ImportTime" Val="1639440171"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/sim_scripts/blk_mem_gen_2/xsim/blk_mem_gen_2.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../Aud_Mult_ROM_w_Music_Ctrl_Test_v2/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/sim_scripts/blk_mem_gen_2/xsim/blk_mem_gen_2.mif"/>
+          <Attr Name="ImportTime" Val="1639440196"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/mem_init_files/blk_mem_gen_4.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../Aud_Mult_ROM_w_Music_Ctrl_Test_v2/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/mem_init_files/blk_mem_gen_4.mif"/>
+          <Attr Name="ImportTime" Val="1639440293"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/sim_scripts/blk_mem_gen_0/ies/glbl.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../Aud_Mult_ROM_w_Music_Ctrl_Test_v2/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/sim_scripts/blk_mem_gen_0/ies/glbl.v"/>
+          <Attr Name="ImportTime" Val="1558713910"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/sim_scripts/blk_mem_gen_0/questa/blk_mem_gen_0.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../Aud_Mult_ROM_w_Music_Ctrl_Test_v2/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/sim_scripts/blk_mem_gen_0/questa/blk_mem_gen_0.mif"/>
+          <Attr Name="ImportTime" Val="1639440123"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/sim_scripts/blk_mem_gen_2/activehdl/blk_mem_gen_2.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../Aud_Mult_ROM_w_Music_Ctrl_Test_v2/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/sim_scripts/blk_mem_gen_2/activehdl/blk_mem_gen_2.mif"/>
+          <Attr Name="ImportTime" Val="1639440197"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/sim_scripts/blk_mem_gen_2/riviera/blk_mem_gen_2.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../Aud_Mult_ROM_w_Music_Ctrl_Test_v2/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/sim_scripts/blk_mem_gen_2/riviera/blk_mem_gen_2.mif"/>
+          <Attr Name="ImportTime" Val="1639440197"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/sim_scripts/blk_mem_gen_1/xsim/blk_mem_gen_1.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../Aud_Mult_ROM_w_Music_Ctrl_Test_v2/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/sim_scripts/blk_mem_gen_1/xsim/blk_mem_gen_1.mif"/>
+          <Attr Name="ImportTime" Val="1639440171"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/mem_init_files/blk_mem_gen_3.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../Aud_Mult_ROM_w_Music_Ctrl_Test_v2/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/mem_init_files/blk_mem_gen_3.mif"/>
+          <Attr Name="ImportTime" Val="1639440329"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/sim_scripts/blk_mem_gen_1/activehdl/blk_mem_gen_1.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../Aud_Mult_ROM_w_Music_Ctrl_Test_v2/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/sim_scripts/blk_mem_gen_1/activehdl/blk_mem_gen_1.mif"/>
+          <Attr Name="ImportTime" Val="1639440171"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/sim_scripts/blk_mem_gen_2/xcelium/blk_mem_gen_2.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../Aud_Mult_ROM_w_Music_Ctrl_Test_v2/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/sim_scripts/blk_mem_gen_2/xcelium/blk_mem_gen_2.mif"/>
+          <Attr Name="ImportTime" Val="1639440197"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/sim_scripts/blk_mem_gen_0/xsim/blk_mem_gen_0.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../Aud_Mult_ROM_w_Music_Ctrl_Test_v2/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/sim_scripts/blk_mem_gen_0/xsim/blk_mem_gen_0.mif"/>
+          <Attr Name="ImportTime" Val="1639440123"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/sim_scripts/blk_mem_gen_4/ies/blk_mem_gen_4.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../Aud_Mult_ROM_w_Music_Ctrl_Test_v2/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/sim_scripts/blk_mem_gen_4/ies/blk_mem_gen_4.mif"/>
+          <Attr Name="ImportTime" Val="1639440293"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/mem_init_files/blk_mem_gen_2.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../Aud_Mult_ROM_w_Music_Ctrl_Test_v2/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/mem_init_files/blk_mem_gen_2.mif"/>
+          <Attr Name="ImportTime" Val="1639440197"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/sim_scripts/blk_mem_gen_3/riviera/blk_mem_gen_3.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../Aud_Mult_ROM_w_Music_Ctrl_Test_v2/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/sim_scripts/blk_mem_gen_3/riviera/blk_mem_gen_3.mif"/>
+          <Attr Name="ImportTime" Val="1639440329"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/sim_scripts/blk_mem_gen_0/riviera/blk_mem_gen_0.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../Aud_Mult_ROM_w_Music_Ctrl_Test_v2/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/sim_scripts/blk_mem_gen_0/riviera/blk_mem_gen_0.mif"/>
+          <Attr Name="ImportTime" Val="1639440123"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/sim_scripts/blk_mem_gen_0/activehdl/blk_mem_gen_0.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../Aud_Mult_ROM_w_Music_Ctrl_Test_v2/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/sim_scripts/blk_mem_gen_0/activehdl/blk_mem_gen_0.mif"/>
+          <Attr Name="ImportTime" Val="1639440123"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/sim_scripts/blk_mem_gen_3/xsim/blk_mem_gen_3.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../Aud_Mult_ROM_w_Music_Ctrl_Test_v2/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/sim_scripts/blk_mem_gen_3/xsim/blk_mem_gen_3.mif"/>
+          <Attr Name="ImportTime" Val="1639440328"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/mem_init_files/blk_mem_gen_1.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../Aud_Mult_ROM_w_Music_Ctrl_Test_v2/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/mem_init_files/blk_mem_gen_1.mif"/>
+          <Attr Name="ImportTime" Val="1639440171"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/sim_scripts/blk_mem_gen_3/xcelium/blk_mem_gen_3.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../Aud_Mult_ROM_w_Music_Ctrl_Test_v2/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/sim_scripts/blk_mem_gen_3/xcelium/blk_mem_gen_3.mif"/>
+          <Attr Name="ImportTime" Val="1639440329"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/mem_init_files/blk_mem_gen_0.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../Aud_Mult_ROM_w_Music_Ctrl_Test_v2/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/mem_init_files/blk_mem_gen_0.mif"/>
+          <Attr Name="ImportTime" Val="1639440123"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/sim_scripts/blk_mem_gen_2/modelsim/blk_mem_gen_2.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../Aud_Mult_ROM_w_Music_Ctrl_Test_v2/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/sim_scripts/blk_mem_gen_2/modelsim/blk_mem_gen_2.mif"/>
+          <Attr Name="ImportTime" Val="1639440196"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/sim_scripts/blk_mem_gen_3/modelsim/blk_mem_gen_3.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../Aud_Mult_ROM_w_Music_Ctrl_Test_v2/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/sim_scripts/blk_mem_gen_3/modelsim/blk_mem_gen_3.mif"/>
+          <Attr Name="ImportTime" Val="1639440328"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/sim_scripts/blk_mem_gen_0/ies/blk_mem_gen_0.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../Aud_Mult_ROM_w_Music_Ctrl_Test_v2/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/sim_scripts/blk_mem_gen_0/ies/blk_mem_gen_0.mif"/>
+          <Attr Name="ImportTime" Val="1639440123"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/sim_scripts/blk_mem_gen_4/modelsim/blk_mem_gen_4.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../Aud_Mult_ROM_w_Music_Ctrl_Test_v2/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/sim_scripts/blk_mem_gen_4/modelsim/blk_mem_gen_4.mif"/>
+          <Attr Name="ImportTime" Val="1639440293"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/sim_scripts/blk_mem_gen_1/ies/blk_mem_gen_1.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../Aud_Mult_ROM_w_Music_Ctrl_Test_v2/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/sim_scripts/blk_mem_gen_1/ies/blk_mem_gen_1.mif"/>
+          <Attr Name="ImportTime" Val="1639440171"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/sim_scripts/blk_mem_gen_2/ies/blk_mem_gen_2.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../Aud_Mult_ROM_w_Music_Ctrl_Test_v2/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/sim_scripts/blk_mem_gen_2/ies/blk_mem_gen_2.mif"/>
+          <Attr Name="ImportTime" Val="1639440196"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/sim_scripts/blk_mem_gen_3/ies/blk_mem_gen_3.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../Aud_Mult_ROM_w_Music_Ctrl_Test_v2/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/sim_scripts/blk_mem_gen_3/ies/blk_mem_gen_3.mif"/>
+          <Attr Name="ImportTime" Val="1639440329"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/sim_scripts/blk_mem_gen_0/modelsim/blk_mem_gen_0.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../Aud_Mult_ROM_w_Music_Ctrl_Test_v2/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/sim_scripts/blk_mem_gen_0/modelsim/blk_mem_gen_0.mif"/>
+          <Attr Name="ImportTime" Val="1639440123"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/sim_scripts/blk_mem_gen_1/modelsim/blk_mem_gen_1.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../Aud_Mult_ROM_w_Music_Ctrl_Test_v2/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/sim_scripts/blk_mem_gen_1/modelsim/blk_mem_gen_1.mif"/>
+          <Attr Name="ImportTime" Val="1639440171"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/sim_scripts/blk_mem_gen_4/activehdl/blk_mem_gen_4.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../Aud_Mult_ROM_w_Music_Ctrl_Test_v2/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/sim_scripts/blk_mem_gen_4/activehdl/blk_mem_gen_4.mif"/>
+          <Attr Name="ImportTime" Val="1639440293"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/sim_scripts/blk_mem_gen_4/riviera/blk_mem_gen_4.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../Aud_Mult_ROM_w_Music_Ctrl_Test_v2/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/sim_scripts/blk_mem_gen_4/riviera/blk_mem_gen_4.mif"/>
+          <Attr Name="ImportTime" Val="1639440293"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/sim_scripts/blk_mem_gen_4/vcs/blk_mem_gen_4.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../Aud_Mult_ROM_w_Music_Ctrl_Test_v2/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/sim_scripts/blk_mem_gen_4/vcs/blk_mem_gen_4.mif"/>
+          <Attr Name="ImportTime" Val="1639440293"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/sim_scripts/blk_mem_gen_1/riviera/blk_mem_gen_1.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../Aud_Mult_ROM_w_Music_Ctrl_Test_v2/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/sim_scripts/blk_mem_gen_1/riviera/blk_mem_gen_1.mif"/>
+          <Attr Name="ImportTime" Val="1639440171"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/sim_scripts/blk_mem_gen_0/xcelium/blk_mem_gen_0.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../Aud_Mult_ROM_w_Music_Ctrl_Test_v2/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/sim_scripts/blk_mem_gen_0/xcelium/blk_mem_gen_0.mif"/>
+          <Attr Name="ImportTime" Val="1639440123"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/sim_scripts/blk_mem_gen_2/questa/blk_mem_gen_2.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../Aud_Mult_ROM_w_Music_Ctrl_Test_v2/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/sim_scripts/blk_mem_gen_2/questa/blk_mem_gen_2.mif"/>
+          <Attr Name="ImportTime" Val="1639440196"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/sim_scripts/blk_mem_gen_1/questa/blk_mem_gen_1.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../Aud_Mult_ROM_w_Music_Ctrl_Test_v2/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/sim_scripts/blk_mem_gen_1/questa/blk_mem_gen_1.mif"/>
+          <Attr Name="ImportTime" Val="1639440171"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/sim_scripts/blk_mem_gen_4/xsim/blk_mem_gen_4.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../Aud_Mult_ROM_w_Music_Ctrl_Test_v2/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/sim_scripts/blk_mem_gen_4/xsim/blk_mem_gen_4.mif"/>
+          <Attr Name="ImportTime" Val="1639440293"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/sim_scripts/blk_mem_gen_4/xcelium/blk_mem_gen_4.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../Aud_Mult_ROM_w_Music_Ctrl_Test_v2/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/sim_scripts/blk_mem_gen_4/xcelium/blk_mem_gen_4.mif"/>
+          <Attr Name="ImportTime" Val="1639440293"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/sim_scripts/blk_mem_gen_3/activehdl/blk_mem_gen_3.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../Aud_Mult_ROM_w_Music_Ctrl_Test_v2/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/sim_scripts/blk_mem_gen_3/activehdl/blk_mem_gen_3.mif"/>
+          <Attr Name="ImportTime" Val="1639440329"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/sim_scripts/blk_mem_gen_4/questa/blk_mem_gen_4.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../Aud_Mult_ROM_w_Music_Ctrl_Test_v2/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/sim_scripts/blk_mem_gen_4/questa/blk_mem_gen_4.mif"/>
+          <Attr Name="ImportTime" Val="1639440293"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/sim_scripts/blk_mem_gen_2/vcs/blk_mem_gen_2.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../Aud_Mult_ROM_w_Music_Ctrl_Test_v2/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/sim_scripts/blk_mem_gen_2/vcs/blk_mem_gen_2.mif"/>
+          <Attr Name="ImportTime" Val="1639440196"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/sim_scripts/blk_mem_gen_1/vcs/blk_mem_gen_1.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../Aud_Mult_ROM_w_Music_Ctrl_Test_v2/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/sim_scripts/blk_mem_gen_1/vcs/blk_mem_gen_1.mif"/>
+          <Attr Name="ImportTime" Val="1639440171"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/sim_scripts/blk_mem_gen_3/vcs/blk_mem_gen_3.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../Aud_Mult_ROM_w_Music_Ctrl_Test_v2/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/sim_scripts/blk_mem_gen_3/vcs/blk_mem_gen_3.mif"/>
+          <Attr Name="ImportTime" Val="1639440329"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/sim_scripts/blk_mem_gen_3/questa/blk_mem_gen_3.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../Aud_Mult_ROM_w_Music_Ctrl_Test_v2/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/sim_scripts/blk_mem_gen_3/questa/blk_mem_gen_3.mif"/>
+          <Attr Name="ImportTime" Val="1639440328"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/sim_scripts/blk_mem_gen_0/vcs/blk_mem_gen_0.mif">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../Aud_Mult_ROM_w_Music_Ctrl_Test_v2/Aud_Mult_ROM_w_Music_Ctrl_Test.ip_user_files/sim_scripts/blk_mem_gen_0/vcs/blk_mem_gen_0.mif"/>
+          <Attr Name="ImportTime" Val="1639440123"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../resources/effect12.coe">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../resources/effect14.coe">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../resources/effect1.coe">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../resources/effect20.coe">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PIPUSERFILESDIR/mem_init_files/8BitFunk.coe">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -273,6 +853,21 @@
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
+    <FileSet Name="blk_mem_gen_4" Type="BlockSrcs" RelSrcDir="$PSRCDIR/blk_mem_gen_4">
+      <File Path="$PSRCDIR/sources_1/ip/blk_mem_gen_4/blk_mem_gen_4.xci">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../Aud_Mult_ROM_w_Music_Ctrl_Test_v2/Aud_Mult_ROM_w_Music_Ctrl_Test.srcs/sources_1/ip/blk_mem_gen_4/blk_mem_gen_4.xci"/>
+          <Attr Name="ImportTime" Val="1639440278"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <Config>
+        <Option Name="TopModule" Val="blk_mem_gen_4"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
   </FileSets>
   <Simulators>
     <Simulator Name="XSim">
@@ -317,6 +912,17 @@
       <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2019"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
+    <Run Id="blk_mem_gen_4_synth_1" Type="Ft3:Synth" SrcSet="blk_mem_gen_4" Part="xc7a100tcsg324-1" ConstrsSet="blk_mem_gen_4" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/blk_mem_gen_4_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2019"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
     <Run Id="impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-1" ConstrsSet="constrs_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" State="current" Dir="$PRUNDIR/impl_1" SynthRun="synth_1" IncludeInArchive="true" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019"/>
@@ -337,6 +943,24 @@
     <Run Id="DPRAM_impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-1" ConstrsSet="DPRAM" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="DPRAM_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2019"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="blk_mem_gen_4_impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-1" ConstrsSet="blk_mem_gen_4" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="blk_mem_gen_4_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>

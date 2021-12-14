@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Dec 14 00:45:21 2021
+# Process ID: 639651
+# Current directory: /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.runs/blk_mem_gen_2_synth_1
+# Command line: vivado -log blk_mem_gen_2.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source blk_mem_gen_2.tcl
+# Log file: /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.runs/blk_mem_gen_2_synth_1/blk_mem_gen_2.vds
+# Journal file: /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.runs/blk_mem_gen_2_synth_1/vivado.jou
+#-----------------------------------------------------------
+source blk_mem_gen_2.tcl -notrace

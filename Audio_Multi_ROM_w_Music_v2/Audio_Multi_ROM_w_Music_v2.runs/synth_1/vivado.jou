@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Dec 13 23:43:05 2021
+# Process ID: 471887
+# Current directory: /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/Audio_Multi_ROM_w_Music_v2/Audio_Multi_ROM_w_Music_v2.runs/synth_1
+# Command line: vivado -log sound_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source sound_top.tcl
+# Log file: /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/Audio_Multi_ROM_w_Music_v2/Audio_Multi_ROM_w_Music_v2.runs/synth_1/sound_top.vds
+# Journal file: /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/Audio_Multi_ROM_w_Music_v2/Audio_Multi_ROM_w_Music_v2.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source sound_top.tcl -notrace
