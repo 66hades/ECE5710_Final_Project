@@ -1,2 +1,0 @@
-lives.v,verilog,xil_defaultlib,../../../../platform.srcs/sources_1/ip/lives/sim/lives.v,
-glbl.v,Verilog,xil_defaultlib,glbl.v
