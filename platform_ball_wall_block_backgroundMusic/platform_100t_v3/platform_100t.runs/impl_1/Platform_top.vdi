@@ -2,925 +2,49 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Tue Dec 14 01:40:04 2021
-# Process ID: 767452
+# Start of session at: Tue Dec 14 15:20:47 2021
+# Process ID: 162988
 # Current directory: /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.runs/impl_1
 # Command line: vivado -log Platform_top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source Platform_top.tcl -notrace
 # Log file: /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.runs/impl_1/Platform_top.vdi
 # Journal file: /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.runs/impl_1/vivado.jou
 #-----------------------------------------------------------
 source Platform_top.tcl -notrace
-Command: link_design -top Platform_top -part xc7a100tcsg324-1
-Design is defaulting to srcset: sources_1
-Design is defaulting to constrset: constrs_1
+Command: open_checkpoint Platform_top_routed.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.05 . Memory (MB): peak = 1362.867 ; gain = 0.000 ; free physical = 53783 ; free virtual = 59475
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
-INFO: [Project 1-454] Reading design checkpoint '/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/sources_1/ip/x8ball_ROM/x8ball_ROM.dcp' for cell 'ball_uut'
-INFO: [Project 1-454] Reading design checkpoint '/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/sources_1/ip/DPRAM/DPRAM.dcp' for cell 'dpram_uut'
-INFO: [Project 1-454] Reading design checkpoint '/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/sources_1/ip/platformROM/platformROM.dcp' for cell 'platform_uut'
-INFO: [Project 1-454] Reading design checkpoint '/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.dcp' for cell 'sound_main_uut/sound_top_MAP/audio_rom0_MAP'
-INFO: [Project 1-454] Reading design checkpoint '/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1.dcp' for cell 'sound_main_uut/sound_top_MAP/audio_rom1_MAP'
-INFO: [Project 1-454] Reading design checkpoint '/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/sources_1/ip/blk_mem_gen_2/blk_mem_gen_2.dcp' for cell 'sound_main_uut/sound_top_MAP/audio_rom2_MAP'
-INFO: [Project 1-454] Reading design checkpoint '/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/sources_1/ip/blk_mem_gen_3/blk_mem_gen_3.dcp' for cell 'sound_main_uut/sound_top_MAP/audio_rom3_MAP'
-INFO: [Project 1-454] Reading design checkpoint '/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/sources_1/ip/blk_mem_gen_4/blk_mem_gen_4.dcp' for cell 'sound_main_uut/sound_top_MAP/audio_rom4_MAP'
-INFO: [Netlist 29-17] Analyzing 324 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 327 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-479] Netlist was created with Vivado 2019.1
 INFO: [Project 1-570] Preparing netlist for logic optimization
-Parsing XDC File [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc]
-WARNING: [Vivado 12-584] No ports matched 'sw[8]'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:20]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:20]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[9]'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:21]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:21]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[10]'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:22]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:22]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[11]'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:23]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:23]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[12]'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:24]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:24]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[13]'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:25]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:25]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[14]'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:26]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:26]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'sw[15]'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:27]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:27]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ld[0]'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:30]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:30]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ld[1]'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:31]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:31]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ld[2]'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:32]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:32]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ld[3]'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:33]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:33]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ld[4]'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:34]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:34]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ld[5]'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:35]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:35]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ld[6]'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:36]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:36]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ld[7]'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:37]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:37]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ld[8]'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:38]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:38]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ld[9]'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:39]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:39]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ld[10]'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:40]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:40]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ld[11]'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:41]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:41]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ld[12]'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:42]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:42]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ld[13]'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:43]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:43]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ld[14]'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:44]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:44]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ld[15]'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:45]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:45]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ld16b'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:48]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:48]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ld16g'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:49]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:49]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ld16r'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:50]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:50]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ld17b'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:51]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:51]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ld17g'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:52]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:52]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ld17r'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:53]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:53]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'a_to_g[6]'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:56]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:56]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'a_to_g[5]'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:57]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:57]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'a_to_g[4]'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:58]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:58]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'a_to_g[3]'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:59]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:59]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'a_to_g[2]'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:60]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:60]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'a_to_g[1]'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:61]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:61]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'a_to_g[0]'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:62]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:62]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'dp'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:64]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:64]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'an[0]'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:66]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:66]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'an[1]'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:67]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:67]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'an[2]'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:68]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:68]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'an[3]'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:69]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:69]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'an[4]'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:70]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:70]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'an[5]'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:71]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:71]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'an[6]'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:72]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:72]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'an[7]'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:73]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:73]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'rstn'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:76]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:76]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ja1'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:90]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:90]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ja2'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:91]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:91]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ja3'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:92]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:92]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ja4'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:93]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:93]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ja7'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:94]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:94]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ja8'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:95]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:95]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ja9'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:96]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:96]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ja10'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:97]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:97]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'jb1'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:100]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:100]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'jb2'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:101]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:101]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'jb3'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:102]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:102]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'jb4'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:103]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:103]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'jb7'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:104]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:104]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'jb8'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:105]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:105]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'jb9'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:106]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:106]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'jb10'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:107]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:107]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'jc1'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:110]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:110]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'jc2'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:111]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:111]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'jc3'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:112]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:112]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'jc4'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:113]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:113]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'jc7'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:114]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:114]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'jc8'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:115]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:115]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'jc9'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:116]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:116]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'jc10'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:117]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:117]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'jd1'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:120]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:120]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'jd2'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:121]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:121]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'jd3'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:122]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:122]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'jd4'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:123]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:123]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'jd7'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:124]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:124]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'jd8'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:125]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:125]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'jd9'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:126]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:126]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'jd10'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:127]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:127]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'xa_n[1]'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:130]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:130]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'xa_p[1]'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:131]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:131]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'xa_n[2]'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:132]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:132]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'xa_p[2]'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:133]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:133]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'xa_n[3]'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:134]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:134]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'xa_p[3]'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:135]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:135]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'xa_n[4]'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:136]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:136]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'xa_p[4]'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:137]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:137]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'red[3]'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:143]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:143]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'green[3]'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:148]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:148]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'blue[2]'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:152]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:152]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'blue[3]'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:153]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:153]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ACL_MISO'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:159]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:159]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ACL_MOSI'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:160]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:160]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ACL_SCLK'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:161]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:161]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ACL_CSN'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:162]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:162]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ACL_INT[1]'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:163]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:163]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'ACL_INT[2]'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:164]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:164]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'TMP_SCL'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:167]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:167]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'TMP_SDA'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:168]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:168]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'TMP_INT'. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:169]
-INFO: [Common 17-14] Message 'Vivado 12-584' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:169]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:169]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-INFO: [Common 17-14] Message 'Common 17-55' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:169]
-Finished Parsing XDC File [/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc]
-INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1681.371 ; gain = 0.000 ; free physical = 49850 ; free virtual = 56993
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00.20 ; elapsed = 00:00:00.23 . Memory (MB): peak = 2115.625 ; gain = 6.938 ; free physical = 53024 ; free virtual = 58715
+Restored from archive | CPU: 0.240000 secs | Memory: 4.818619 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00.20 ; elapsed = 00:00:00.24 . Memory (MB): peak = 2115.625 ; gain = 6.938 ; free physical = 53024 ; free virtual = 58715
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2115.625 ; gain = 0.000 ; free physical = 53024 ; free virtual = 58715
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 15 instances were transformed.
-  RAM128X1D => RAM128X1D (RAMD64E, RAMD64E, MUXF7, MUXF7, RAMD64E, RAMD64E): 10 instances
-  RAM32X1D => RAM32X1D (RAMD32, RAMD32): 5 instances
-
-17 Infos, 100 Warnings, 100 Critical Warnings and 0 Errors encountered.
-link_design completed successfully
-Command: opt_design
-Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
-INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t'
-Running DRC as a precondition to command opt_design
-
-Starting DRC Task
-INFO: [DRC 23-27] Running DRC with 8 threads
-INFO: [Project 1-461] DRC finished with 0 Errors
-INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
-
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.95 . Memory (MB): peak = 1782.090 ; gain = 100.719 ; free physical = 49845 ; free virtual = 56989
-
-Starting Cache Timing Information Task
-INFO: [Timing 38-35] Done setting XDC timing constraints.
-Ending Cache Timing Information Task | Checksum: 155959ea9
-
-Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2196.949 ; gain = 414.859 ; free physical = 49476 ; free virtual = 56619
-
-Starting Logic Optimization Task
-
-Phase 1 Retarget
-INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-INFO: [Opt 31-49] Retargeted 0 cell(s).
-Phase 1 Retarget | Checksum: 110392a12
-
-Time (s): cpu = 00:00:00.21 ; elapsed = 00:00:00.09 . Memory (MB): peak = 2313.887 ; gain = 0.000 ; free physical = 49361 ; free virtual = 56505
-INFO: [Opt 31-389] Phase Retarget created 1 cells and removed 2 cells
-
-Phase 2 Constant propagation
-INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Phase 2 Constant propagation | Checksum: 18d2b6546
-
-Time (s): cpu = 00:00:00.23 ; elapsed = 00:00:00.11 . Memory (MB): peak = 2313.887 ; gain = 0.000 ; free physical = 49361 ; free virtual = 56505
-INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 2 cells
-
-Phase 3 Sweep
-Phase 3 Sweep | Checksum: 17615ed6d
-
-Time (s): cpu = 00:00:00.29 ; elapsed = 00:00:00.17 . Memory (MB): peak = 2313.887 ; gain = 0.000 ; free physical = 49359 ; free virtual = 56502
-INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 18 cells
-
-Phase 4 BUFG optimization
-Phase 4 BUFG optimization | Checksum: 17615ed6d
-
-Time (s): cpu = 00:00:00.33 ; elapsed = 00:00:00.21 . Memory (MB): peak = 2313.887 ; gain = 0.000 ; free physical = 49358 ; free virtual = 56501
-INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
-
-Phase 5 Shift Register Optimization
-INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
-Phase 5 Shift Register Optimization | Checksum: 17615ed6d
-
-Time (s): cpu = 00:00:00.35 ; elapsed = 00:00:00.23 . Memory (MB): peak = 2313.887 ; gain = 0.000 ; free physical = 49358 ; free virtual = 56501
-INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
-
-Phase 6 Post Processing Netlist
-Phase 6 Post Processing Netlist | Checksum: 17615ed6d
-
-Time (s): cpu = 00:00:00.36 ; elapsed = 00:00:00.23 . Memory (MB): peak = 2313.887 ; gain = 0.000 ; free physical = 49358 ; free virtual = 56501
-INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
-Opt_design Change Summary
-=========================
-
-
--------------------------------------------------------------------------------------------------------------------------
-|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
--------------------------------------------------------------------------------------------------------------------------
-|  Retarget                     |               1  |               2  |                                              0  |
-|  Constant propagation         |               0  |               2  |                                              0  |
-|  Sweep                        |               0  |              18  |                                              0  |
-|  BUFG optimization            |               0  |               0  |                                              0  |
-|  Shift Register Optimization  |               0  |               0  |                                              0  |
-|  Post Processing Netlist      |               0  |               0  |                                              0  |
--------------------------------------------------------------------------------------------------------------------------
-
-
-
-Starting Connectivity Check Task
-
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2313.887 ; gain = 0.000 ; free physical = 49358 ; free virtual = 56501
-Ending Logic Optimization Task | Checksum: 16ec3478a
-
-Time (s): cpu = 00:00:00.46 ; elapsed = 00:00:00.28 . Memory (MB): peak = 2313.887 ; gain = 0.000 ; free physical = 49347 ; free virtual = 56491
-
-Starting Power Optimization Task
-INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
-INFO: [Timing 38-35] Done setting XDC timing constraints.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=1.405 | TNS=0.000 |
-Running Vector-less Activity Propagation...
-
-Finished Running Vector-less Activity Propagation
-INFO: [Pwropt 34-9] Applying IDT optimizations ...
-INFO: [Pwropt 34-10] Applying ODC optimizations ...
-
-
-Starting PowerOpt Patch Enables Task
-INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 69 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
-INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
-Number of BRAM Ports augmented: 0 newly gated: 0 Total Ports: 138
-Ending PowerOpt Patch Enables Task | Checksum: 16ec3478a
-
-Time (s): cpu = 00:00:00.14 ; elapsed = 00:00:00.14 . Memory (MB): peak = 2563.723 ; gain = 0.000 ; free physical = 49316 ; free virtual = 56460
-Ending Power Optimization Task | Checksum: 16ec3478a
-
-Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 2563.723 ; gain = 249.836 ; free physical = 49324 ; free virtual = 56468
-
-Starting Final Cleanup Task
-Ending Final Cleanup Task | Checksum: 16ec3478a
-
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2563.723 ; gain = 0.000 ; free physical = 49324 ; free virtual = 56468
-
-Starting Netlist Obfuscation Task
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2563.723 ; gain = 0.000 ; free physical = 49324 ; free virtual = 56468
-Ending Netlist Obfuscation Task | Checksum: 16ec3478a
-
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2563.723 ; gain = 0.000 ; free physical = 49324 ; free virtual = 56468
-INFO: [Common 17-83] Releasing license: Implementation
-40 Infos, 100 Warnings, 100 Critical Warnings and 0 Errors encountered.
-opt_design completed successfully
-opt_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:11 . Memory (MB): peak = 2563.723 ; gain = 882.352 ; free physical = 49324 ; free virtual = 56468
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2563.723 ; gain = 0.000 ; free physical = 49324 ; free virtual = 56468
-INFO: [Timing 38-480] Writing timing data to binary archive.
-Writing placer database...
-Writing XDEF routing.
-Writing XDEF routing logical nets.
-Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2563.723 ; gain = 0.000 ; free physical = 49323 ; free virtual = 56467
-INFO: [Common 17-1381] The checkpoint '/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.runs/impl_1/Platform_top_opt.dcp' has been generated.
-INFO: [runtcl-4] Executing : report_drc -file Platform_top_drc_opted.rpt -pb Platform_top_drc_opted.pb -rpx Platform_top_drc_opted.rpx
-Command: report_drc -file Platform_top_drc_opted.rpt -pb Platform_top_drc_opted.pb -rpx Platform_top_drc_opted.rpx
-INFO: [IP_Flow 19-1839] IP Catalog is up to date.
-INFO: [DRC 23-27] Running DRC with 8 threads
-INFO: [Coretcl 2-168] The results of DRC are in file /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.runs/impl_1/Platform_top_drc_opted.rpt.
-report_drc completed successfully
-Command: place_design
-Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
-INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t'
-INFO: [DRC 23-27] Running DRC with 8 threads
-INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
-INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
-Running DRC as a precondition to command place_design
-INFO: [DRC 23-27] Running DRC with 8 threads
-WARNING: [DRC CHECK-3] Report rule limit reached: REQP-1839 rule limit reached: 20 violations have been found.
-WARNING: [DRC CHECK-3] Report rule limit reached: REQP-1840 rule limit reached: 20 violations have been found.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 sound_main_uut/sound_top_MAP/audio_rom0_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram has an input control pin sound_main_uut/sound_top_MAP/audio_rom0_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/ADDRARDADDR[10] (net: sound_main_uut/sound_top_MAP/audio_rom0_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addra[7]) which is driven by a register (sound_main_uut/sound_top_MAP/sfx_counter_MAP/cnt_reg[7]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 sound_main_uut/sound_top_MAP/audio_rom0_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram has an input control pin sound_main_uut/sound_top_MAP/audio_rom0_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/ADDRARDADDR[11] (net: sound_main_uut/sound_top_MAP/audio_rom0_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addra[8]) which is driven by a register (sound_main_uut/sound_top_MAP/sfx_counter_MAP/cnt_reg[8]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 sound_main_uut/sound_top_MAP/audio_rom0_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram has an input control pin sound_main_uut/sound_top_MAP/audio_rom0_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/ADDRARDADDR[12] (net: sound_main_uut/sound_top_MAP/audio_rom0_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addra[9]) which is driven by a register (sound_main_uut/sound_top_MAP/sfx_counter_MAP/cnt_reg[9]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 sound_main_uut/sound_top_MAP/audio_rom0_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram has an input control pin sound_main_uut/sound_top_MAP/audio_rom0_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/ADDRARDADDR[13] (net: sound_main_uut/sound_top_MAP/audio_rom0_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addra[10]) which is driven by a register (sound_main_uut/sound_top_MAP/sfx_counter_MAP/cnt_reg[10]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 sound_main_uut/sound_top_MAP/audio_rom0_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram has an input control pin sound_main_uut/sound_top_MAP/audio_rom0_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/ADDRARDADDR[14] (net: sound_main_uut/sound_top_MAP/audio_rom0_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addra[11]) which is driven by a register (sound_main_uut/sound_top_MAP/sfx_counter_MAP/cnt_reg[11]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 sound_main_uut/sound_top_MAP/audio_rom0_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram has an input control pin sound_main_uut/sound_top_MAP/audio_rom0_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/ADDRARDADDR[3] (net: sound_main_uut/sound_top_MAP/audio_rom0_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addra[0]) which is driven by a register (sound_main_uut/sound_top_MAP/sfx_counter_MAP/cnt_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 sound_main_uut/sound_top_MAP/audio_rom0_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram has an input control pin sound_main_uut/sound_top_MAP/audio_rom0_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/ADDRARDADDR[4] (net: sound_main_uut/sound_top_MAP/audio_rom0_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addra[1]) which is driven by a register (sound_main_uut/sound_top_MAP/sfx_counter_MAP/cnt_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 sound_main_uut/sound_top_MAP/audio_rom0_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram has an input control pin sound_main_uut/sound_top_MAP/audio_rom0_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/ADDRARDADDR[5] (net: sound_main_uut/sound_top_MAP/audio_rom0_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addra[2]) which is driven by a register (sound_main_uut/sound_top_MAP/sfx_counter_MAP/cnt_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 sound_main_uut/sound_top_MAP/audio_rom0_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram has an input control pin sound_main_uut/sound_top_MAP/audio_rom0_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/ADDRARDADDR[6] (net: sound_main_uut/sound_top_MAP/audio_rom0_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addra[3]) which is driven by a register (sound_main_uut/sound_top_MAP/sfx_counter_MAP/cnt_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 sound_main_uut/sound_top_MAP/audio_rom0_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram has an input control pin sound_main_uut/sound_top_MAP/audio_rom0_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/ADDRARDADDR[7] (net: sound_main_uut/sound_top_MAP/audio_rom0_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addra[4]) which is driven by a register (sound_main_uut/sound_top_MAP/sfx_counter_MAP/cnt_reg[4]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 sound_main_uut/sound_top_MAP/audio_rom0_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram has an input control pin sound_main_uut/sound_top_MAP/audio_rom0_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/ADDRARDADDR[8] (net: sound_main_uut/sound_top_MAP/audio_rom0_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addra[5]) which is driven by a register (sound_main_uut/sound_top_MAP/sfx_counter_MAP/cnt_reg[5]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 sound_main_uut/sound_top_MAP/audio_rom0_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram has an input control pin sound_main_uut/sound_top_MAP/audio_rom0_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/ADDRARDADDR[9] (net: sound_main_uut/sound_top_MAP/audio_rom0_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addra[6]) which is driven by a register (sound_main_uut/sound_top_MAP/sfx_counter_MAP/cnt_reg[6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 sound_main_uut/sound_top_MAP/audio_rom0_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram has an input control pin sound_main_uut/sound_top_MAP/audio_rom0_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/ENARDEN (net: sound_main_uut/sound_top_MAP/audio_rom0_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram_i_1_n_0) which is driven by a register (sound_main_uut/sound_top_MAP/sfx_counter_MAP/cnt_reg[12]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 sound_main_uut/sound_top_MAP/audio_rom0_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram has an input control pin sound_main_uut/sound_top_MAP/audio_rom0_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/ENARDEN (net: sound_main_uut/sound_top_MAP/audio_rom0_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram_i_1_n_0) which is driven by a register (sound_main_uut/sound_top_MAP/sfx_counter_MAP/cnt_reg[13]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 sound_main_uut/sound_top_MAP/audio_rom0_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram has an input control pin sound_main_uut/sound_top_MAP/audio_rom0_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/ENARDEN (net: sound_main_uut/sound_top_MAP/audio_rom0_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram_i_1_n_0) which is driven by a register (sound_main_uut/sound_top_MAP/sfx_counter_MAP/cnt_reg[14]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 sound_main_uut/sound_top_MAP/audio_rom0_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram has an input control pin sound_main_uut/sound_top_MAP/audio_rom0_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/ADDRARDADDR[10] (net: sound_main_uut/sound_top_MAP/audio_rom0_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_init.ram/addra[7]) which is driven by a register (sound_main_uut/sound_top_MAP/sfx_counter_MAP/cnt_reg[7]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 sound_main_uut/sound_top_MAP/audio_rom0_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram has an input control pin sound_main_uut/sound_top_MAP/audio_rom0_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/ADDRARDADDR[11] (net: sound_main_uut/sound_top_MAP/audio_rom0_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_init.ram/addra[8]) which is driven by a register (sound_main_uut/sound_top_MAP/sfx_counter_MAP/cnt_reg[8]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 sound_main_uut/sound_top_MAP/audio_rom0_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram has an input control pin sound_main_uut/sound_top_MAP/audio_rom0_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/ADDRARDADDR[12] (net: sound_main_uut/sound_top_MAP/audio_rom0_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_init.ram/addra[9]) which is driven by a register (sound_main_uut/sound_top_MAP/sfx_counter_MAP/cnt_reg[9]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 sound_main_uut/sound_top_MAP/audio_rom0_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram has an input control pin sound_main_uut/sound_top_MAP/audio_rom0_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/ADDRARDADDR[13] (net: sound_main_uut/sound_top_MAP/audio_rom0_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_init.ram/addra[10]) which is driven by a register (sound_main_uut/sound_top_MAP/sfx_counter_MAP/cnt_reg[10]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 sound_main_uut/sound_top_MAP/audio_rom0_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram has an input control pin sound_main_uut/sound_top_MAP/audio_rom0_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/ADDRARDADDR[14] (net: sound_main_uut/sound_top_MAP/audio_rom0_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_init.ram/addra[11]) which is driven by a register (sound_main_uut/sound_top_MAP/sfx_counter_MAP/cnt_reg[11]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 ball_uut/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram has an input control pin ball_uut/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/ADDRARDADDR[10] (net: ball_uut/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addra[5]) which is driven by a register (bounce_uut/c1v_reg[0]_C) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 ball_uut/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram has an input control pin ball_uut/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/ADDRARDADDR[10] (net: ball_uut/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addra[5]) which is driven by a register (bounce_uut/c1v_reg[1]_P) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 ball_uut/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram has an input control pin ball_uut/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/ADDRARDADDR[10] (net: ball_uut/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addra[5]) which is driven by a register (bounce_uut/c1v_reg[2]_C) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 ball_uut/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram has an input control pin ball_uut/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/ADDRARDADDR[10] (net: ball_uut/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addra[5]) which is driven by a register (bounce_uut/c1v_reg[2]_P) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 ball_uut/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram has an input control pin ball_uut/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/ADDRARDADDR[10] (net: ball_uut/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addra[5]) which is driven by a register (bounce_uut/c1v_reg[3]_C) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 ball_uut/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram has an input control pin ball_uut/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/ADDRARDADDR[10] (net: ball_uut/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addra[5]) which is driven by a register (bounce_uut/c1v_reg[3]_P) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 ball_uut/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram has an input control pin ball_uut/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/ADDRARDADDR[10] (net: ball_uut/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addra[5]) which is driven by a register (bounce_uut/c1v_reg[4]_C) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 ball_uut/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram has an input control pin ball_uut/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/ADDRARDADDR[10] (net: ball_uut/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addra[5]) which is driven by a register (bounce_uut/c1v_reg[4]_P) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 ball_uut/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram has an input control pin ball_uut/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/ADDRARDADDR[10] (net: ball_uut/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addra[5]) which is driven by a register (bounce_uut/c1v_reg[5]_C) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 ball_uut/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram has an input control pin ball_uut/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/ADDRARDADDR[10] (net: ball_uut/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addra[5]) which is driven by a register (bounce_uut/c1v_reg[5]_P) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 ball_uut/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram has an input control pin ball_uut/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/ADDRARDADDR[10] (net: ball_uut/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addra[5]) which is driven by a register (bounce_uut/r1v_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 ball_uut/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram has an input control pin ball_uut/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/ADDRARDADDR[10] (net: ball_uut/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addra[5]) which is driven by a register (bounce_uut/r1v_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 ball_uut/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram has an input control pin ball_uut/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/ADDRARDADDR[10] (net: ball_uut/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addra[5]) which is driven by a register (bounce_uut/r1v_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 ball_uut/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram has an input control pin ball_uut/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/ADDRARDADDR[10] (net: ball_uut/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addra[5]) which is driven by a register (vga_640x480_uut/hcs_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 ball_uut/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram has an input control pin ball_uut/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/ADDRARDADDR[10] (net: ball_uut/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addra[5]) which is driven by a register (vga_640x480_uut/hcs_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 ball_uut/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram has an input control pin ball_uut/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/ADDRARDADDR[10] (net: ball_uut/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addra[5]) which is driven by a register (vga_640x480_uut/hcs_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 ball_uut/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram has an input control pin ball_uut/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/ADDRARDADDR[10] (net: ball_uut/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addra[5]) which is driven by a register (vga_640x480_uut/hcs_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 ball_uut/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram has an input control pin ball_uut/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/ADDRARDADDR[10] (net: ball_uut/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addra[5]) which is driven by a register (vga_640x480_uut/hcs_reg[4]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 ball_uut/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram has an input control pin ball_uut/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/ADDRARDADDR[10] (net: ball_uut/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addra[5]) which is driven by a register (vga_640x480_uut/hcs_reg[5]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 ball_uut/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram has an input control pin ball_uut/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/ADDRARDADDR[10] (net: ball_uut/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addra[5]) which is driven by a register (vga_640x480_uut/vcs_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors, 42 Warnings
-INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
-
-Starting Placer Task
-INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 8 CPUs
-
-Phase 1 Placer Initialization
-
-Phase 1.1 Placer Initialization Netlist Sorting
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2635.758 ; gain = 0.000 ; free physical = 49314 ; free virtual = 56459
-Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 754099d1
-
-Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2635.758 ; gain = 0.000 ; free physical = 49314 ; free virtual = 56459
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2635.758 ; gain = 0.000 ; free physical = 49314 ; free virtual = 56459
-
-Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
-INFO: [Timing 38-35] Done setting XDC timing constraints.
-Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: bf6530e3
-
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.57 . Memory (MB): peak = 2635.758 ; gain = 0.000 ; free physical = 49312 ; free virtual = 56457
-
-Phase 1.3 Build Placer Netlist Model
-Phase 1.3 Build Placer Netlist Model | Checksum: 1119d6bc6
-
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.93 . Memory (MB): peak = 2635.758 ; gain = 0.000 ; free physical = 49311 ; free virtual = 56456
-
-Phase 1.4 Constrain Clocks/Macros
-Phase 1.4 Constrain Clocks/Macros | Checksum: 1119d6bc6
-
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.93 . Memory (MB): peak = 2635.758 ; gain = 0.000 ; free physical = 49311 ; free virtual = 56456
-Phase 1 Placer Initialization | Checksum: 1119d6bc6
-
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.93 . Memory (MB): peak = 2635.758 ; gain = 0.000 ; free physical = 49311 ; free virtual = 56456
-
-Phase 2 Global Placement
-
-Phase 2.1 Floorplanning
-Phase 2.1 Floorplanning | Checksum: 1a91a4c5f
-
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.99 . Memory (MB): peak = 2635.758 ; gain = 0.000 ; free physical = 49293 ; free virtual = 56438
-
-Phase 2.2 Global Placement Core
-
-Phase 2.2.1 Physical Synthesis In Placer
-INFO: [Physopt 32-65] No nets found for high-fanout optimization.
-INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
-INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
-INFO: [Physopt 32-456] No candidate cells for DSP register optimization found in the design.
-INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
-INFO: [Physopt 32-677] No candidate cells for Shift Register optimization found in the design
-INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
-INFO: [Physopt 32-526] No candidate cells for BRAM register optimization found in the design
-INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
-INFO: [Physopt 32-949] No candidate nets found for HD net replication
-INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2635.758 ; gain = 0.000 ; free physical = 49313 ; free virtual = 56458
-
-Summary of Physical Synthesis Optimizations
-============================================
-
-
-----------------------------------------------------------------------------------------------------------------------------------------
-|  Optimization                  |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
-----------------------------------------------------------------------------------------------------------------------------------------
-|  Very High Fanout              |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
-|  DSP Register                  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
-|  Shift Register                |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
-|  BRAM Register                 |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
-|  HD Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
-|  Total                         |            0  |              0  |                     0  |           0  |           5  |  00:00:00  |
-----------------------------------------------------------------------------------------------------------------------------------------
-
-
-Phase 2.2.1 Physical Synthesis In Placer | Checksum: 245345b72
-
-Time (s): cpu = 00:00:09 ; elapsed = 00:00:03 . Memory (MB): peak = 2635.758 ; gain = 0.000 ; free physical = 49313 ; free virtual = 56459
-Phase 2.2 Global Placement Core | Checksum: 22f633fa5
-
-Time (s): cpu = 00:00:09 ; elapsed = 00:00:03 . Memory (MB): peak = 2635.758 ; gain = 0.000 ; free physical = 49312 ; free virtual = 56457
-Phase 2 Global Placement | Checksum: 22f633fa5
-
-Time (s): cpu = 00:00:09 ; elapsed = 00:00:03 . Memory (MB): peak = 2635.758 ; gain = 0.000 ; free physical = 49312 ; free virtual = 56457
-
-Phase 3 Detail Placement
-
-Phase 3.1 Commit Multi Column Macros
-Phase 3.1 Commit Multi Column Macros | Checksum: 26e07f6c4
-
-Time (s): cpu = 00:00:09 ; elapsed = 00:00:03 . Memory (MB): peak = 2635.758 ; gain = 0.000 ; free physical = 49313 ; free virtual = 56458
-
-Phase 3.2 Commit Most Macros & LUTRAMs
-Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 125efe450
-
-Time (s): cpu = 00:00:10 ; elapsed = 00:00:03 . Memory (MB): peak = 2635.758 ; gain = 0.000 ; free physical = 49314 ; free virtual = 56459
-
-Phase 3.3 Area Swap Optimization
-Phase 3.3 Area Swap Optimization | Checksum: 1ae1403c1
-
-Time (s): cpu = 00:00:10 ; elapsed = 00:00:03 . Memory (MB): peak = 2635.758 ; gain = 0.000 ; free physical = 49314 ; free virtual = 56459
-
-Phase 3.4 Pipeline Register Optimization
-Phase 3.4 Pipeline Register Optimization | Checksum: f1beeb0a
-
-Time (s): cpu = 00:00:10 ; elapsed = 00:00:03 . Memory (MB): peak = 2635.758 ; gain = 0.000 ; free physical = 49314 ; free virtual = 56459
-
-Phase 3.5 Fast Optimization
-Phase 3.5 Fast Optimization | Checksum: 1e7c2aa3a
-
-Time (s): cpu = 00:00:10 ; elapsed = 00:00:03 . Memory (MB): peak = 2635.758 ; gain = 0.000 ; free physical = 49312 ; free virtual = 56457
-
-Phase 3.6 Small Shape Detail Placement
-Phase 3.6 Small Shape Detail Placement | Checksum: 23fb38c47
-
-Time (s): cpu = 00:00:11 ; elapsed = 00:00:03 . Memory (MB): peak = 2635.758 ; gain = 0.000 ; free physical = 49308 ; free virtual = 56453
-
-Phase 3.7 Re-assign LUT pins
-Phase 3.7 Re-assign LUT pins | Checksum: 1b38deb69
-
-Time (s): cpu = 00:00:11 ; elapsed = 00:00:04 . Memory (MB): peak = 2635.758 ; gain = 0.000 ; free physical = 49308 ; free virtual = 56453
-
-Phase 3.8 Pipeline Register Optimization
-Phase 3.8 Pipeline Register Optimization | Checksum: f422cac2
-
-Time (s): cpu = 00:00:11 ; elapsed = 00:00:04 . Memory (MB): peak = 2635.758 ; gain = 0.000 ; free physical = 49308 ; free virtual = 56453
-
-Phase 3.9 Fast Optimization
-Phase 3.9 Fast Optimization | Checksum: 11833f811
-
-Time (s): cpu = 00:00:11 ; elapsed = 00:00:04 . Memory (MB): peak = 2635.758 ; gain = 0.000 ; free physical = 49306 ; free virtual = 56452
-Phase 3 Detail Placement | Checksum: 11833f811
-
-Time (s): cpu = 00:00:11 ; elapsed = 00:00:04 . Memory (MB): peak = 2635.758 ; gain = 0.000 ; free physical = 49306 ; free virtual = 56452
-
-Phase 4 Post Placement Optimization and Clean-Up
-
-Phase 4.1 Post Commit Optimization
-INFO: [Timing 38-35] Done setting XDC timing constraints.
-
-Phase 4.1.1 Post Placement Optimization
-Post Placement Optimization Initialization | Checksum: 1453c934f
-
-Phase 4.1.1.1 BUFG Insertion
-INFO: [Place 46-56] BUFG insertion identified 0 candidate nets. Inserted BUFG: 0, Replicated BUFG Driver: 0, Skipped due to Placement/Routing Conflicts: 0, Skipped due to Timing Degradation: 0, Skipped due to Illegal Netlist: 0.
-Phase 4.1.1.1 BUFG Insertion | Checksum: 1453c934f
-
-Time (s): cpu = 00:00:12 ; elapsed = 00:00:04 . Memory (MB): peak = 2635.758 ; gain = 0.000 ; free physical = 49302 ; free virtual = 56447
-INFO: [Place 30-746] Post Placement Timing Summary WNS=0.058. For the most accurate timing information please run report_timing.
-Phase 4.1.1 Post Placement Optimization | Checksum: 253b1c998
-
-Time (s): cpu = 00:00:21 ; elapsed = 00:00:13 . Memory (MB): peak = 2635.758 ; gain = 0.000 ; free physical = 49297 ; free virtual = 56442
-Phase 4.1 Post Commit Optimization | Checksum: 253b1c998
-
-Time (s): cpu = 00:00:21 ; elapsed = 00:00:13 . Memory (MB): peak = 2635.758 ; gain = 0.000 ; free physical = 49297 ; free virtual = 56442
-
-Phase 4.2 Post Placement Cleanup
-Phase 4.2 Post Placement Cleanup | Checksum: 253b1c998
-
-Time (s): cpu = 00:00:21 ; elapsed = 00:00:13 . Memory (MB): peak = 2635.758 ; gain = 0.000 ; free physical = 49297 ; free virtual = 56442
-
-Phase 4.3 Placer Reporting
-Phase 4.3 Placer Reporting | Checksum: 253b1c998
-
-Time (s): cpu = 00:00:21 ; elapsed = 00:00:13 . Memory (MB): peak = 2635.758 ; gain = 0.000 ; free physical = 49297 ; free virtual = 56442
-
-Phase 4.4 Final Placement Cleanup
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2635.758 ; gain = 0.000 ; free physical = 49297 ; free virtual = 56442
-Phase 4.4 Final Placement Cleanup | Checksum: 240ef1d76
-
-Time (s): cpu = 00:00:21 ; elapsed = 00:00:13 . Memory (MB): peak = 2635.758 ; gain = 0.000 ; free physical = 49297 ; free virtual = 56442
-Phase 4 Post Placement Optimization and Clean-Up | Checksum: 240ef1d76
-
-Time (s): cpu = 00:00:21 ; elapsed = 00:00:13 . Memory (MB): peak = 2635.758 ; gain = 0.000 ; free physical = 49297 ; free virtual = 56442
-Ending Placer Task | Checksum: 1b9d3ea7a
-
-Time (s): cpu = 00:00:21 ; elapsed = 00:00:13 . Memory (MB): peak = 2635.758 ; gain = 0.000 ; free physical = 49297 ; free virtual = 56442
-INFO: [Common 17-83] Releasing license: Implementation
-70 Infos, 142 Warnings, 100 Critical Warnings and 0 Errors encountered.
-place_design completed successfully
-place_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:14 . Memory (MB): peak = 2635.758 ; gain = 0.000 ; free physical = 49313 ; free virtual = 56459
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2635.758 ; gain = 0.000 ; free physical = 49313 ; free virtual = 56459
-INFO: [Timing 38-480] Writing timing data to binary archive.
-Writing placer database...
-Writing XDEF routing.
-Writing XDEF routing logical nets.
-Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:00.47 ; elapsed = 00:00:00.14 . Memory (MB): peak = 2635.758 ; gain = 0.000 ; free physical = 49306 ; free virtual = 56456
-INFO: [Common 17-1381] The checkpoint '/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.runs/impl_1/Platform_top_placed.dcp' has been generated.
-INFO: [runtcl-4] Executing : report_io -file Platform_top_io_placed.rpt
-report_io: Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.13 . Memory (MB): peak = 2635.758 ; gain = 0.000 ; free physical = 49315 ; free virtual = 56463
-INFO: [runtcl-4] Executing : report_utilization -file Platform_top_utilization_placed.rpt -pb Platform_top_utilization_placed.pb
-INFO: [runtcl-4] Executing : report_control_sets -verbose -file Platform_top_control_sets_placed.rpt
-report_control_sets: Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.09 . Memory (MB): peak = 2635.758 ; gain = 0.000 ; free physical = 49321 ; free virtual = 56468
-Command: route_design
-Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
-INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t'
-Running DRC as a precondition to command route_design
-INFO: [DRC 23-27] Running DRC with 8 threads
-INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
-INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
-
-
-Starting Routing Task
-INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 8 CPUs
-Checksum: PlaceDB: ff9e7795 ConstDB: 0 ShapeSum: ba3572e5 RouteDB: 0
-
-Phase 1 Build RT Design
-Phase 1 Build RT Design | Checksum: 7efd31fd
-
-Time (s): cpu = 00:00:17 ; elapsed = 00:00:13 . Memory (MB): peak = 2635.758 ; gain = 0.000 ; free physical = 49204 ; free virtual = 56351
-Post Restoration Checksum: NetGraph: 556fa24f NumContArr: 298d8fae Constraints: 0 Timing: 0
-
-Phase 2 Router Initialization
-
-Phase 2.1 Create Timer
-Phase 2.1 Create Timer | Checksum: 7efd31fd
-
-Time (s): cpu = 00:00:17 ; elapsed = 00:00:13 . Memory (MB): peak = 2635.758 ; gain = 0.000 ; free physical = 49183 ; free virtual = 56330
-
-Phase 2.2 Fix Topology Constraints
-Phase 2.2 Fix Topology Constraints | Checksum: 7efd31fd
-
-Time (s): cpu = 00:00:17 ; elapsed = 00:00:13 . Memory (MB): peak = 2635.758 ; gain = 0.000 ; free physical = 49148 ; free virtual = 56296
-
-Phase 2.3 Pre Route Cleanup
-Phase 2.3 Pre Route Cleanup | Checksum: 7efd31fd
-
-Time (s): cpu = 00:00:17 ; elapsed = 00:00:13 . Memory (MB): peak = 2635.758 ; gain = 0.000 ; free physical = 49148 ; free virtual = 56296
- Number of Nodes with overlaps = 0
-
-Phase 2.4 Update Timing
-Phase 2.4 Update Timing | Checksum: 197ff7d00
-
-Time (s): cpu = 00:00:18 ; elapsed = 00:00:14 . Memory (MB): peak = 2635.758 ; gain = 0.000 ; free physical = 49137 ; free virtual = 56284
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.068  | TNS=0.000  | WHS=-0.017 | THS=-0.166 |
-
-Phase 2 Router Initialization | Checksum: 1a14036a6
-
-Time (s): cpu = 00:00:18 ; elapsed = 00:00:14 . Memory (MB): peak = 2635.758 ; gain = 0.000 ; free physical = 49134 ; free virtual = 56282
-
-Router Utilization Summary
-  Global Vertical Routing Utilization    = 0.0161031 %
-  Global Horizontal Routing Utilization  = 0.00873828 %
-  Routable Net Status*
-  *Does not include unroutable nets such as driverless and loadless.
-  Run report_route_status for detailed report.
-  Number of Failed Nets               = 2008
-    (Failed Nets is the sum of unrouted and partially routed nets)
-  Number of Unrouted Nets             = 1981
-  Number of Partially Routed Nets     = 27
-  Number of Node Overlaps             = 38
-
-
-Phase 3 Initial Routing
-Phase 3 Initial Routing | Checksum: 181fa7965
-
-Time (s): cpu = 00:00:20 ; elapsed = 00:00:15 . Memory (MB): peak = 2635.758 ; gain = 0.000 ; free physical = 49130 ; free virtual = 56278
-
-Phase 4 Rip-up And Reroute
-
-Phase 4.1 Global Iteration 0
- Number of Nodes with overlaps = 387
- Number of Nodes with overlaps = 95
- Number of Nodes with overlaps = 44
- Number of Nodes with overlaps = 18
- Number of Nodes with overlaps = 8
- Number of Nodes with overlaps = 5
- Number of Nodes with overlaps = 1
- Number of Nodes with overlaps = 1
- Number of Nodes with overlaps = 0
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.263  | TNS=0.000  | WHS=N/A    | THS=N/A    |
-
-Phase 4.1 Global Iteration 0 | Checksum: 133f72b35
-
-Time (s): cpu = 00:00:27 ; elapsed = 00:00:19 . Memory (MB): peak = 2635.758 ; gain = 0.000 ; free physical = 49130 ; free virtual = 56277
-Phase 4 Rip-up And Reroute | Checksum: 133f72b35
-
-Time (s): cpu = 00:00:27 ; elapsed = 00:00:19 . Memory (MB): peak = 2635.758 ; gain = 0.000 ; free physical = 49130 ; free virtual = 56277
-
-Phase 5 Delay and Skew Optimization
-
-Phase 5.1 Delay CleanUp
-Phase 5.1 Delay CleanUp | Checksum: 133f72b35
-
-Time (s): cpu = 00:00:27 ; elapsed = 00:00:19 . Memory (MB): peak = 2635.758 ; gain = 0.000 ; free physical = 49130 ; free virtual = 56277
-
-Phase 5.2 Clock Skew Optimization
-Phase 5.2 Clock Skew Optimization | Checksum: 133f72b35
-
-Time (s): cpu = 00:00:27 ; elapsed = 00:00:19 . Memory (MB): peak = 2635.758 ; gain = 0.000 ; free physical = 49130 ; free virtual = 56277
-Phase 5 Delay and Skew Optimization | Checksum: 133f72b35
-
-Time (s): cpu = 00:00:27 ; elapsed = 00:00:19 . Memory (MB): peak = 2635.758 ; gain = 0.000 ; free physical = 49130 ; free virtual = 56277
-
-Phase 6 Post Hold Fix
-
-Phase 6.1 Hold Fix Iter
-
-Phase 6.1.1 Update Timing
-Phase 6.1.1 Update Timing | Checksum: 19ab17db5
-
-Time (s): cpu = 00:00:27 ; elapsed = 00:00:19 . Memory (MB): peak = 2635.758 ; gain = 0.000 ; free physical = 49130 ; free virtual = 56277
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.271  | TNS=0.000  | WHS=0.092  | THS=0.000  |
-
-Phase 6.1 Hold Fix Iter | Checksum: 19ab17db5
-
-Time (s): cpu = 00:00:27 ; elapsed = 00:00:19 . Memory (MB): peak = 2635.758 ; gain = 0.000 ; free physical = 49130 ; free virtual = 56277
-Phase 6 Post Hold Fix | Checksum: 19ab17db5
-
-Time (s): cpu = 00:00:27 ; elapsed = 00:00:19 . Memory (MB): peak = 2635.758 ; gain = 0.000 ; free physical = 49130 ; free virtual = 56277
-
-Phase 7 Route finalize
-
-Router Utilization Summary
-  Global Vertical Routing Utilization    = 0.715193 %
-  Global Horizontal Routing Utilization  = 0.733376 %
-  Routable Net Status*
-  *Does not include unroutable nets such as driverless and loadless.
-  Run report_route_status for detailed report.
-  Number of Failed Nets               = 0
-    (Failed Nets is the sum of unrouted and partially routed nets)
-  Number of Unrouted Nets             = 0
-  Number of Partially Routed Nets     = 0
-  Number of Node Overlaps             = 0
-
-Phase 7 Route finalize | Checksum: 194a11dbf
-
-Time (s): cpu = 00:00:27 ; elapsed = 00:00:19 . Memory (MB): peak = 2635.758 ; gain = 0.000 ; free physical = 49132 ; free virtual = 56279
-
-Phase 8 Verifying routed nets
-
- Verification completed successfully
-Phase 8 Verifying routed nets | Checksum: 194a11dbf
-
-Time (s): cpu = 00:00:27 ; elapsed = 00:00:19 . Memory (MB): peak = 2635.758 ; gain = 0.000 ; free physical = 49130 ; free virtual = 56278
-
-Phase 9 Depositing Routes
-Phase 9 Depositing Routes | Checksum: 1458350f5
-
-Time (s): cpu = 00:00:27 ; elapsed = 00:00:19 . Memory (MB): peak = 2635.758 ; gain = 0.000 ; free physical = 49132 ; free virtual = 56279
-
-Phase 10 Post Router Timing
-INFO: [Route 35-57] Estimated Timing Summary | WNS=0.271  | TNS=0.000  | WHS=0.092  | THS=0.000  |
-
-INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
-Phase 10 Post Router Timing | Checksum: 1458350f5
-
-Time (s): cpu = 00:00:27 ; elapsed = 00:00:19 . Memory (MB): peak = 2635.758 ; gain = 0.000 ; free physical = 49132 ; free virtual = 56279
-INFO: [Route 35-16] Router Completed Successfully
-
-Time (s): cpu = 00:00:27 ; elapsed = 00:00:19 . Memory (MB): peak = 2635.758 ; gain = 0.000 ; free physical = 49171 ; free virtual = 56319
-
-Routing Is Done.
-INFO: [Common 17-83] Releasing license: Implementation
-87 Infos, 142 Warnings, 100 Critical Warnings and 0 Errors encountered.
-route_design completed successfully
-route_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:20 . Memory (MB): peak = 2635.758 ; gain = 0.000 ; free physical = 49171 ; free virtual = 56319
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2635.758 ; gain = 0.000 ; free physical = 49170 ; free virtual = 56318
-INFO: [Timing 38-480] Writing timing data to binary archive.
-Writing placer database...
-Writing XDEF routing.
-Writing XDEF routing logical nets.
-Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:00.52 ; elapsed = 00:00:00.15 . Memory (MB): peak = 2635.758 ; gain = 0.000 ; free physical = 49155 ; free virtual = 56308
-INFO: [Common 17-1381] The checkpoint '/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.runs/impl_1/Platform_top_routed.dcp' has been generated.
-INFO: [runtcl-4] Executing : report_drc -file Platform_top_drc_routed.rpt -pb Platform_top_drc_routed.pb -rpx Platform_top_drc_routed.rpx
-Command: report_drc -file Platform_top_drc_routed.rpt -pb Platform_top_drc_routed.pb -rpx Platform_top_drc_routed.rpx
-INFO: [IP_Flow 19-1839] IP Catalog is up to date.
-INFO: [DRC 23-27] Running DRC with 8 threads
-INFO: [Coretcl 2-168] The results of DRC are in file /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.runs/impl_1/Platform_top_drc_routed.rpt.
-report_drc completed successfully
-INFO: [runtcl-4] Executing : report_methodology -file Platform_top_methodology_drc_routed.rpt -pb Platform_top_methodology_drc_routed.pb -rpx Platform_top_methodology_drc_routed.rpx
-Command: report_methodology -file Platform_top_methodology_drc_routed.rpt -pb Platform_top_methodology_drc_routed.pb -rpx Platform_top_methodology_drc_routed.rpx
-INFO: [Timing 38-35] Done setting XDC timing constraints.
-INFO: [DRC 23-133] Running Methodology with 8 threads
-INFO: [Coretcl 2-1520] The results of Report Methodology are in file /home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.runs/impl_1/Platform_top_methodology_drc_routed.rpt.
-report_methodology completed successfully
-INFO: [runtcl-4] Executing : report_power -file Platform_top_power_routed.rpt -pb Platform_top_power_summary_routed.pb -rpx Platform_top_power_routed.rpx
-Command: report_power -file Platform_top_power_routed.rpt -pb Platform_top_power_summary_routed.pb -rpx Platform_top_power_routed.rpx
-INFO: [Timing 38-35] Done setting XDC timing constraints.
-Running Vector-less Activity Propagation...
-
-Finished Running Vector-less Activity Propagation
-99 Infos, 142 Warnings, 100 Critical Warnings and 0 Errors encountered.
-report_power completed successfully
-INFO: [runtcl-4] Executing : report_route_status -file Platform_top_route_status.rpt -pb Platform_top_route_status.pb
-INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -file Platform_top_timing_summary_routed.rpt -pb Platform_top_timing_summary_routed.pb -rpx Platform_top_timing_summary_routed.rpx -warn_on_violation 
-INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
-INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
-INFO: [runtcl-4] Executing : report_incremental_reuse -file Platform_top_incremental_reuse_routed.rpt
-INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
-INFO: [runtcl-4] Executing : report_clock_utilization -file Platform_top_clock_utilization_routed.rpt
-INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file Platform_top_bus_skew_routed.rpt -pb Platform_top_bus_skew_routed.pb -rpx Platform_top_bus_skew_routed.rpx
-INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
-INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
-Command: write_bitstream -force Platform_top.bit
+  A total of 12 instances were transformed.
+  RAM128X1D => RAM128X1D (RAMD64E, RAMD64E, MUXF7, MUXF7, RAMD64E, RAMD64E): 8 instances
+  RAM32X1D => RAM32X1D (RAMD32, RAMD32): 4 instances
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2019.1 (64-bit) build 2552052
+open_checkpoint: Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2115.625 ; gain = 752.758 ; free physical = 53023 ; free virtual = 58714
+Command: write_bitstream -force Platform_top.bit -bin_file
 Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t'
 Running DRC as a precondition to command write_bitstream
-INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Vivado/2019.1/data/ip'.
 INFO: [DRC 23-27] Running DRC with 8 threads
 WARNING: [DRC CHECK-3] Report rule limit reached: REQP-1839 rule limit reached: 20 violations have been found.
 WARNING: [DRC CHECK-3] Report rule limit reached: REQP-1840 rule limit reached: 20 violations have been found.
@@ -933,16 +57,16 @@ WARNING: [DRC DPOP-1] PREG Output pipelining: DSP bounce_uut/ram_addr13__1 outpu
 WARNING: [DRC DPOP-2] MREG Output pipelining: DSP bounce_uut/ram_addr13 multiplier stage bounce_uut/ram_addr13/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
 WARNING: [DRC DPOP-2] MREG Output pipelining: DSP bounce_uut/ram_addr13__0 multiplier stage bounce_uut/ram_addr13__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
 WARNING: [DRC DPOP-2] MREG Output pipelining: DSP bounce_uut/ram_addr13__1 multiplier stage bounce_uut/ram_addr13__1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
-WARNING: [DRC PDRC-153] Gated clock check: Net Platform_Motion_uut/BTNC is a gated clock net sourced by a combinational pin Platform_Motion_uut/c1v_reg[5]_LDC_i_1/O, cell Platform_Motion_uut/c1v_reg[5]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-WARNING: [DRC PDRC-153] Gated clock check: Net Platform_Motion_uut/BTNC_2 is a gated clock net sourced by a combinational pin Platform_Motion_uut/c1v_reg[9]_LDC_i_1/O, cell Platform_Motion_uut/c1v_reg[9]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-WARNING: [DRC PDRC-153] Gated clock check: Net Platform_Motion_uut/c1v_reg[0]_1 is a gated clock net sourced by a combinational pin Platform_Motion_uut/c1v_reg[3]_LDC_i_1/O, cell Platform_Motion_uut/c1v_reg[3]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-WARNING: [DRC PDRC-153] Gated clock check: Net Platform_Motion_uut/c1v_reg[0]_3 is a gated clock net sourced by a combinational pin Platform_Motion_uut/c1v_reg[0]_LDC_i_1/O, cell Platform_Motion_uut/c1v_reg[0]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-WARNING: [DRC PDRC-153] Gated clock check: Net Platform_Motion_uut/c1v_reg[0]_5 is a gated clock net sourced by a combinational pin Platform_Motion_uut/c1v_reg[1]_LDC_i_1/O, cell Platform_Motion_uut/c1v_reg[1]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-WARNING: [DRC PDRC-153] Gated clock check: Net Platform_Motion_uut/c1v_reg[1]_2 is a gated clock net sourced by a combinational pin Platform_Motion_uut/c1v_reg[2]_LDC_i_1/O, cell Platform_Motion_uut/c1v_reg[2]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-WARNING: [DRC PDRC-153] Gated clock check: Net Platform_Motion_uut/c1v_reg[3]_1 is a gated clock net sourced by a combinational pin Platform_Motion_uut/c1v_reg[4]_LDC_i_1/O, cell Platform_Motion_uut/c1v_reg[4]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-WARNING: [DRC PDRC-153] Gated clock check: Net Platform_Motion_uut/c1v_reg[5]_3 is a gated clock net sourced by a combinational pin Platform_Motion_uut/c1v_reg[8]_LDC_i_1/O, cell Platform_Motion_uut/c1v_reg[8]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-WARNING: [DRC PDRC-153] Gated clock check: Net Platform_Motion_uut/c1v_reg[5]_4 is a gated clock net sourced by a combinational pin Platform_Motion_uut/c1v_reg[6]_LDC_i_1/O, cell Platform_Motion_uut/c1v_reg[6]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
-WARNING: [DRC PDRC-153] Gated clock check: Net Platform_Motion_uut/c1v_reg[6]_5 is a gated clock net sourced by a combinational pin Platform_Motion_uut/c1v_reg[7]_LDC_i_1/O, cell Platform_Motion_uut/c1v_reg[7]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net Platform_Motion_uut/BTNC_0 is a gated clock net sourced by a combinational pin Platform_Motion_uut/c1v_reg[9]_LDC_i_1/O, cell Platform_Motion_uut/c1v_reg[9]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net Platform_Motion_uut/BTNC_1 is a gated clock net sourced by a combinational pin Platform_Motion_uut/c1v_reg[5]_LDC_i_1/O, cell Platform_Motion_uut/c1v_reg[5]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net Platform_Motion_uut/c1v_reg[0]_1 is a gated clock net sourced by a combinational pin Platform_Motion_uut/c1v_reg[1]_LDC_i_1/O, cell Platform_Motion_uut/c1v_reg[1]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net Platform_Motion_uut/c1v_reg[0]_3 is a gated clock net sourced by a combinational pin Platform_Motion_uut/c1v_reg[3]_LDC_i_1/O, cell Platform_Motion_uut/c1v_reg[3]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net Platform_Motion_uut/c1v_reg[0]_4 is a gated clock net sourced by a combinational pin Platform_Motion_uut/c1v_reg[0]_LDC_i_1/O, cell Platform_Motion_uut/c1v_reg[0]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net Platform_Motion_uut/c1v_reg[1]_1 is a gated clock net sourced by a combinational pin Platform_Motion_uut/c1v_reg[2]_LDC_i_1/O, cell Platform_Motion_uut/c1v_reg[2]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net Platform_Motion_uut/c1v_reg[3]_2 is a gated clock net sourced by a combinational pin Platform_Motion_uut/c1v_reg[4]_LDC_i_1/O, cell Platform_Motion_uut/c1v_reg[4]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net Platform_Motion_uut/c1v_reg[5]_2 is a gated clock net sourced by a combinational pin Platform_Motion_uut/c1v_reg[8]_LDC_i_1/O, cell Platform_Motion_uut/c1v_reg[8]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net Platform_Motion_uut/c1v_reg[5]_3 is a gated clock net sourced by a combinational pin Platform_Motion_uut/c1v_reg[6]_LDC_i_1/O, cell Platform_Motion_uut/c1v_reg[6]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net Platform_Motion_uut/c1v_reg[6]_4 is a gated clock net sourced by a combinational pin Platform_Motion_uut/c1v_reg[7]_LDC_i_1/O, cell Platform_Motion_uut/c1v_reg[7]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 WARNING: [DRC PDRC-153] Gated clock check: Net sound_main_uut/music_ctrl_MAP/FSM_sequential_next_state_reg[2]_i_2_n_0 is a gated clock net sourced by a combinational pin sound_main_uut/music_ctrl_MAP/FSM_sequential_next_state_reg[2]_i_2/O, cell sound_main_uut/music_ctrl_MAP/FSM_sequential_next_state_reg[2]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 sound_main_uut/sound_top_MAP/audio_rom0_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram has an input control pin sound_main_uut/sound_top_MAP/audio_rom0_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/ADDRARDADDR[10] (net: sound_main_uut/sound_top_MAP/audio_rom0_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addra[7]) which is driven by a register (sound_main_uut/sound_top_MAP/sfx_counter_MAP/cnt_reg[7]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 sound_main_uut/sound_top_MAP/audio_rom0_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram has an input control pin sound_main_uut/sound_top_MAP/audio_rom0_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/ADDRARDADDR[11] (net: sound_main_uut/sound_top_MAP/audio_rom0_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addra[8]) which is driven by a register (sound_main_uut/sound_top_MAP/sfx_counter_MAP/cnt_reg[8]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
@@ -965,6 +89,8 @@ WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 sound_main_uut
 WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 sound_main_uut/sound_top_MAP/audio_rom0_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram has an input control pin sound_main_uut/sound_top_MAP/audio_rom0_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/ADDRARDADDR[13] (net: sound_main_uut/sound_top_MAP/audio_rom0_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_init.ram/addra[10]) which is driven by a register (sound_main_uut/sound_top_MAP/sfx_counter_MAP/cnt_reg[10]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 sound_main_uut/sound_top_MAP/audio_rom0_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram has an input control pin sound_main_uut/sound_top_MAP/audio_rom0_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/ADDRARDADDR[14] (net: sound_main_uut/sound_top_MAP/audio_rom0_MAP/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_init.ram/addra[11]) which is driven by a register (sound_main_uut/sound_top_MAP/sfx_counter_MAP/cnt_reg[11]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 ball_uut/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram has an input control pin ball_uut/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/ADDRARDADDR[10] (net: ball_uut/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addra[5]) which is driven by a register (bounce_uut/c1v_reg[0]_C) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 ball_uut/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram has an input control pin ball_uut/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/ADDRARDADDR[10] (net: ball_uut/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addra[5]) which is driven by a register (bounce_uut/c1v_reg[0]_P) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 ball_uut/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram has an input control pin ball_uut/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/ADDRARDADDR[10] (net: ball_uut/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addra[5]) which is driven by a register (bounce_uut/c1v_reg[1]_C) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 ball_uut/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram has an input control pin ball_uut/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/ADDRARDADDR[10] (net: ball_uut/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addra[5]) which is driven by a register (bounce_uut/c1v_reg[1]_P) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 ball_uut/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram has an input control pin ball_uut/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/ADDRARDADDR[10] (net: ball_uut/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addra[5]) which is driven by a register (bounce_uut/c1v_reg[2]_C) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 ball_uut/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram has an input control pin ball_uut/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/ADDRARDADDR[10] (net: ball_uut/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addra[5]) which is driven by a register (bounce_uut/c1v_reg[2]_P) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
@@ -973,17 +99,15 @@ WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 ball_uut/U0/in
 WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 ball_uut/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram has an input control pin ball_uut/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/ADDRARDADDR[10] (net: ball_uut/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addra[5]) which is driven by a register (bounce_uut/c1v_reg[4]_C) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 ball_uut/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram has an input control pin ball_uut/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/ADDRARDADDR[10] (net: ball_uut/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addra[5]) which is driven by a register (bounce_uut/c1v_reg[4]_P) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 ball_uut/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram has an input control pin ball_uut/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/ADDRARDADDR[10] (net: ball_uut/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addra[5]) which is driven by a register (bounce_uut/c1v_reg[5]_C) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 ball_uut/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram has an input control pin ball_uut/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/ADDRARDADDR[10] (net: ball_uut/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addra[5]) which is driven by a register (bounce_uut/c1v_reg[5]_P) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 ball_uut/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram has an input control pin ball_uut/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/ADDRARDADDR[10] (net: ball_uut/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addra[5]) which is driven by a register (bounce_uut/r1v_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 ball_uut/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram has an input control pin ball_uut/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/ADDRARDADDR[10] (net: ball_uut/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addra[5]) which is driven by a register (bounce_uut/r1v_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 ball_uut/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram has an input control pin ball_uut/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/ADDRARDADDR[10] (net: ball_uut/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addra[5]) which is driven by a register (bounce_uut/r1v_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 ball_uut/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram has an input control pin ball_uut/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/ADDRARDADDR[10] (net: ball_uut/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addra[5]) which is driven by a register (vga_640x480_uut/hcs_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 ball_uut/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram has an input control pin ball_uut/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/ADDRARDADDR[10] (net: ball_uut/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addra[5]) which is driven by a register (vga_640x480_uut/hcs_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 ball_uut/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram has an input control pin ball_uut/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/ADDRARDADDR[10] (net: ball_uut/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addra[5]) which is driven by a register (vga_640x480_uut/hcs_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 ball_uut/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram has an input control pin ball_uut/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/ADDRARDADDR[10] (net: ball_uut/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addra[5]) which is driven by a register (vga_640x480_uut/hcs_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 ball_uut/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram has an input control pin ball_uut/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/ADDRARDADDR[10] (net: ball_uut/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addra[5]) which is driven by a register (vga_640x480_uut/hcs_reg[4]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 ball_uut/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram has an input control pin ball_uut/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/ADDRARDADDR[10] (net: ball_uut/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addra[5]) which is driven by a register (vga_640x480_uut/hcs_reg[5]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 ball_uut/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram has an input control pin ball_uut/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/ADDRARDADDR[10] (net: ball_uut/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addra[5]) which is driven by a register (vga_640x480_uut/vcs_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 ball_uut/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram has an input control pin ball_uut/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/ADDRARDADDR[10] (net: ball_uut/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addra[5]) which is driven by a register (vga_640x480_uut/vcs_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 ball_uut/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram has an input control pin ball_uut/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/ADDRARDADDR[10] (net: ball_uut/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addra[5]) which is driven by a register (vga_640x480_uut/vcs_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 INFO: [Vivado 12-3199] DRC finished with 0 Errors, 62 Warnings
 INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
 INFO: [Designutils 20-2272] Running write_bitstream with 8 threads.
@@ -993,13 +117,14 @@ Loading route data...
 Processing options...
 Creating bitmap...
 Creating bitstream...
-Bitstream compression saved 16923584 bits.
+Bitstream compression saved 16670016 bits.
 Writing bitstream ./Platform_top.bit...
+Writing bitstream ./Platform_top.bin...
 INFO: [Vivado 12-1842] Bitgen Completed Successfully.
 INFO: [Project 1-120] WebTalk data collection is mandatory when using a WebPACK part without a full Vivado license. To see the specific WebTalk data collected for your design, open the usage_statistics_webtalk.html or usage_statistics_webtalk.xml file in the implementation directory.
-INFO: [Common 17-186] '/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.runs/impl_1/usage_statistics_webtalk.xml' has been successfully sent to Xilinx on Tue Dec 14 01:41:19 2021. For additional details about this file, please refer to the WebTalk help file at /opt/Vivado/2019.1/doc/webtalk_introduction.html.
+INFO: [Common 17-186] '/home/quantum/Documents/Oakland_university/Fall_2021/ECE5710/ECE5710_Final_Project/platform_ball_wall_block_backgroundMusic/platform_100t_v3/platform_100t.runs/impl_1/usage_statistics_webtalk.xml' has been successfully sent to Xilinx on Tue Dec 14 15:21:14 2021. For additional details about this file, please refer to the WebTalk help file at /opt/Vivado/2019.1/doc/webtalk_introduction.html.
 INFO: [Common 17-83] Releasing license: Implementation
-119 Infos, 204 Warnings, 100 Critical Warnings and 0 Errors encountered.
+23 Infos, 62 Warnings, 0 Critical Warnings and 0 Errors encountered.
 write_bitstream completed successfully
-write_bitstream: Time (s): cpu = 00:00:15 ; elapsed = 00:00:14 . Memory (MB): peak = 2942.223 ; gain = 174.312 ; free physical = 49126 ; free virtual = 56270
-INFO: [Common 17-206] Exiting Vivado at Tue Dec 14 01:41:19 2021...
+write_bitstream: Time (s): cpu = 00:00:15 ; elapsed = 00:00:14 . Memory (MB): peak = 2579.328 ; gain = 463.703 ; free physical = 52981 ; free virtual = 58677
+INFO: [Common 17-206] Exiting Vivado at Tue Dec 14 15:21:14 2021...

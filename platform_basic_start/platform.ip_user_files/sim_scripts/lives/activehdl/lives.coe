@@ -1,0 +1,9 @@
+; VGA Memory Map 
+; .COE file with hex coefficients 
+; Height: 5, width: 15
+
+memory_initialization_radix=16;
+memory_initialization_vector=
+00,09,29,6d,6d,6d,6d,6d,6d,6d,6d,6d,29,09,00,09,72,92,db,db,db,db,db,db,db,db,db,9b,72,2d,0d,52,
+72,96,92,b2,92,92,92,92,92,96,76,52,11,09,76,72,6e,8d,8d,6d,6d,6d,6d,6d,6d,72,76,2d,00,29,29,24,
+24,24,24,24,24,24,24,24,29,29,00;

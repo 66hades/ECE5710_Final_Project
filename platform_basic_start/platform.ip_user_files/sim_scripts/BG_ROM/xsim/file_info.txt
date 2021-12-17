@@ -1,0 +1,2 @@
+BG_ROM.v,verilog,xil_defaultlib,../../../../platform.srcs/sources_1/ip/BG_ROM/sim/BG_ROM.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

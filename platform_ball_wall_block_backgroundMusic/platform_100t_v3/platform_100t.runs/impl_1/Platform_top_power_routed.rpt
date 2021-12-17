@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
-| Date             : Tue Dec 14 01:41:04 2021
+| Date             : Tue Dec 14 13:54:38 2021
 | Host             : QUANTUM-DSKTP running 64-bit Ubuntu 20.04.3 LTS
 | Command          : report_power -file Platform_top_power_routed.rpt -pb Platform_top_power_summary_routed.pb -rpx Platform_top_power_routed.rpx
 | Design           : Platform_top
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.133        |
+| Total On-Chip Power (W)  | 0.131        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.033        |
+| Dynamic (W)              | 0.031        |
 | Device Static (W)        | 0.100        |
 | Effective TJA (C/W)      | 4.6          |
 | Max Ambient (C)          | 84.4         |
@@ -52,21 +52,21 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.005 |        3 |       --- |             --- |
-| Slice Logic              |     0.008 |     2175 |       --- |             --- |
-|   LUT as Logic           |     0.007 |     1196 |     63400 |            1.89 |
+| Clocks                   |     0.004 |        3 |       --- |             --- |
+| Slice Logic              |     0.008 |     2208 |       --- |             --- |
+|   LUT as Logic           |     0.007 |     1207 |     63400 |            1.90 |
 |   CARRY4                 |    <0.001 |      125 |     15850 |            0.79 |
-|   F7/F8 Muxes            |    <0.001 |      128 |     63400 |            0.20 |
+|   F7/F8 Muxes            |    <0.001 |      134 |     63400 |            0.21 |
 |   Register               |    <0.001 |      280 |    126800 |            0.22 |
 |   BUFG                   |    <0.001 |        3 |        32 |            9.38 |
 |   Others                 |     0.000 |      169 |       --- |             --- |
 |   LUT as Distributed RAM |     0.000 |       36 |     19000 |            0.19 |
-| Signals                  |     0.008 |     2011 |       --- |             --- |
+| Signals                  |     0.008 |     2024 |       --- |             --- |
 | Block RAM                |     0.009 |       66 |       135 |           48.89 |
 | DSPs                     |    <0.001 |        3 |       240 |            1.25 |
-| I/O                      |     0.003 |       16 |       210 |            7.62 |
+| I/O                      |     0.002 |       16 |       210 |            7.62 |
 | Static Power             |     0.100 |          |           |                 |
-| Total                    |     0.133 |          |           |                 |
+| Total                    |     0.131 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -76,7 +76,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.045 |       0.029 |      0.017 |
+| Vccint    |       1.000 |     0.045 |       0.028 |      0.017 |
 | Vccaux    |       1.800 |     0.018 |       0.000 |      0.018 |
 | Vcco33    |       3.300 |     0.005 |       0.001 |      0.004 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -145,8 +145,8 @@ Table of Contents
 +-------------------------+-----------+
 | Name                    | Power (W) |
 +-------------------------+-----------+
-| Platform_top            |     0.033 |
-|   bounce_uut            |     0.007 |
+| Platform_top            |     0.031 |
+|   bounce_uut            |     0.006 |
 |   sound_main_uut        |     0.015 |
 |     sound_top_MAP       |     0.015 |
 |       audio_rom0_MAP    |     0.002 |

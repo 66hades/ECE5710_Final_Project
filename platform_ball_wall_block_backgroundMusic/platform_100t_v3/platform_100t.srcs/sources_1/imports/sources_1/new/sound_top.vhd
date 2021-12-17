@@ -206,7 +206,7 @@ begin
         clk => mclk,
         clr => clr, 
         d => muxout_s,
-        q => qout
+        q => hexval_s
         );
 
     aud_pwm_mod_MAP: aud_pwm_mod
@@ -216,15 +216,15 @@ begin
         s_out => AUD_PWM
         );
 
-process(msel)
+--process(msel)
   	
- 	begin
-		if msel < 4 then
-    	        hexval_s <= douta_muxe_s or qout;
-    	else 
-    			hexval_s <= douta_muxe_s;
-		end if;
-  	end process; 
+-- 	begin
+--		if msel < 4 then
+--    	        hexval_s <= douta_muxe_s or qout;
+--    	else 
+--    			hexval_s <= douta_muxe_s;
+--		end if;
+--  	end process; 
 
 --additional logic here
 AUD_SD <= '1';

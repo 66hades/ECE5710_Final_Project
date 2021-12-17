@@ -1,0 +1,481 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Dec  9 20:04:38 2021
+# Process ID: 1296
+# Current directory: C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.runs/synth_1
+# Command line: vivado.exe -log sound_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source sound_top.tcl
+# Log file: C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.runs/synth_1/sound_top.vds
+# Journal file: C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source sound_top.tcl -notrace
+Command: synth_design -top sound_top -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 18012 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 700.699 ; gain = 176.680
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'sound_top' [C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/sources_1/new/sound_top.vhd:19]
+INFO: [Synth 8-3491] module 'clkdiv' declared at 'C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/sources_1/imports/Example 52/clkdiv.vhd:7' bound to instance 'clkdiv_MAP' of component 'clkdiv' [C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/sources_1/new/sound_top.vhd:141]
+INFO: [Synth 8-638] synthesizing module 'clkdiv' [C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/sources_1/imports/Example 52/clkdiv.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'clkdiv' (1#1) [C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/sources_1/imports/Example 52/clkdiv.vhd:16]
+INFO: [Synth 8-3491] module 'counter' declared at 'C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/sources_1/new/counter.vhd:6' bound to instance 'sfx_counter_MAP' of component 'counter' [C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/sources_1/new/sound_top.vhd:149]
+INFO: [Synth 8-638] synthesizing module 'counter' [C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/sources_1/new/counter.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'counter' (2#1) [C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/sources_1/new/counter.vhd:15]
+INFO: [Synth 8-3491] module 'music_cntr' declared at 'C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/sources_1/new/music_cntr.vhd:6' bound to instance 'music_counter_MAP' of component 'music_cntr' [C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/sources_1/new/sound_top.vhd:157]
+INFO: [Synth 8-638] synthesizing module 'music_cntr' [C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/sources_1/new/music_cntr.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'music_cntr' (3#1) [C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/sources_1/new/music_cntr.vhd:15]
+INFO: [Synth 8-3491] module 'blk_mem_gen_0' declared at 'C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.runs/synth_1/.Xil/Vivado-1296-MitchLaptop/realtime/blk_mem_gen_0_stub.vhdl:5' bound to instance 'audio_rom0_MAP' of component 'blk_mem_gen_0' [C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/sources_1/new/sound_top.vhd:165]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_0' [C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.runs/synth_1/.Xil/Vivado-1296-MitchLaptop/realtime/blk_mem_gen_0_stub.vhdl:14]
+INFO: [Synth 8-3491] module 'blk_mem_gen_1' declared at 'C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.runs/synth_1/.Xil/Vivado-1296-MitchLaptop/realtime/blk_mem_gen_1_stub.vhdl:5' bound to instance 'audio_rom1_MAP' of component 'blk_mem_gen_1' [C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/sources_1/new/sound_top.vhd:172]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_1' [C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.runs/synth_1/.Xil/Vivado-1296-MitchLaptop/realtime/blk_mem_gen_1_stub.vhdl:14]
+INFO: [Synth 8-3491] module 'blk_mem_gen_2' declared at 'C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.runs/synth_1/.Xil/Vivado-1296-MitchLaptop/realtime/blk_mem_gen_2_stub.vhdl:5' bound to instance 'audio_rom2_MAP' of component 'blk_mem_gen_2' [C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/sources_1/new/sound_top.vhd:179]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_2' [C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.runs/synth_1/.Xil/Vivado-1296-MitchLaptop/realtime/blk_mem_gen_2_stub.vhdl:14]
+INFO: [Synth 8-3491] module 'blk_mem_gen_3' declared at 'C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.runs/synth_1/.Xil/Vivado-1296-MitchLaptop/realtime/blk_mem_gen_3_stub.vhdl:5' bound to instance 'audio_rom3_MAP' of component 'blk_mem_gen_3' [C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/sources_1/new/sound_top.vhd:186]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_3' [C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.runs/synth_1/.Xil/Vivado-1296-MitchLaptop/realtime/blk_mem_gen_3_stub.vhdl:14]
+INFO: [Synth 8-3491] module 'blk_mem_gen_4' declared at 'C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.runs/synth_1/.Xil/Vivado-1296-MitchLaptop/realtime/blk_mem_gen_4_stub.vhdl:5' bound to instance 'audio_rom4_MAP' of component 'blk_mem_gen_4' [C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/sources_1/new/sound_top.vhd:193]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_4' [C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.runs/synth_1/.Xil/Vivado-1296-MitchLaptop/realtime/blk_mem_gen_4_stub.vhdl:14]
+	Parameter N bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'mux41c' declared at 'C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/sources_1/imports/Example 8/mux41c.vhd:4' bound to instance 'SFX_MUX_MAP' of component 'mux41c' [C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/sources_1/new/sound_top.vhd:200]
+INFO: [Synth 8-638] synthesizing module 'mux41c' [C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/sources_1/imports/Example 8/mux41c.vhd:16]
+	Parameter N bound to: 8 - type: integer 
+INFO: [Synth 8-226] default block is never used [C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/sources_1/imports/Example 8/mux41c.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'mux41c' (4#1) [C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/sources_1/imports/Example 8/mux41c.vhd:16]
+	Parameter N bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'mux21c' declared at 'C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/sources_1/imports/Example 6/mux21c.vhd:6' bound to instance 'SFX_OR_MUSIC_MUX' of component 'mux21c' [C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/sources_1/new/sound_top.vhd:210]
+INFO: [Synth 8-638] synthesizing module 'mux21c' [C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/sources_1/imports/Example 6/mux21c.vhd:16]
+	Parameter N bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mux21c' (5#1) [C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/sources_1/imports/Example 6/mux21c.vhd:16]
+	Parameter N bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'reg' declared at 'C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/sources_1/imports/Example 44/reg.vhd:7' bound to instance 'HEX2PWM_reg_MAP' of component 'reg' [C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/sources_1/new/sound_top.vhd:218]
+INFO: [Synth 8-638] synthesizing module '\reg ' [C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/sources_1/imports/Example 44/reg.vhd:18]
+	Parameter N bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module '\reg ' (6#1) [C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/sources_1/imports/Example 44/reg.vhd:18]
+INFO: [Synth 8-3491] module 'aud_pwm_mod' declared at 'C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/sources_1/new/aud_pwm_mod.vhd:5' bound to instance 'aud_pwm_mod_MAP' of component 'aud_pwm_mod' [C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/sources_1/new/sound_top.vhd:227]
+INFO: [Synth 8-638] synthesizing module 'aud_pwm_mod' [C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/sources_1/new/aud_pwm_mod.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'aud_pwm_mod' (7#1) [C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/sources_1/new/aud_pwm_mod.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'sound_top' (8#1) [C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/sources_1/new/sound_top.vhd:19]
+WARNING: [Synth 8-3917] design sound_top has port AUD_SD driven by constant 1
+WARNING: [Synth 8-3331] design sound_top has unconnected port clr
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 767.410 ; gain = 243.391
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 767.410 ; gain = 243.391
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 767.410 ; gain = 243.391
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'audio_rom0_MAP'
+Finished Parsing XDC File [c:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'audio_rom0_MAP'
+Parsing XDC File [c:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1/blk_mem_gen_1_in_context.xdc] for cell 'audio_rom1_MAP'
+Finished Parsing XDC File [c:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1/blk_mem_gen_1_in_context.xdc] for cell 'audio_rom1_MAP'
+Parsing XDC File [c:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/sources_1/ip/blk_mem_gen_2/blk_mem_gen_2/blk_mem_gen_2_in_context.xdc] for cell 'audio_rom2_MAP'
+Finished Parsing XDC File [c:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/sources_1/ip/blk_mem_gen_2/blk_mem_gen_2/blk_mem_gen_2_in_context.xdc] for cell 'audio_rom2_MAP'
+Parsing XDC File [c:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/sources_1/ip/blk_mem_gen_3/blk_mem_gen_3/blk_mem_gen_3_in_context.xdc] for cell 'audio_rom3_MAP'
+Finished Parsing XDC File [c:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/sources_1/ip/blk_mem_gen_3/blk_mem_gen_3/blk_mem_gen_3_in_context.xdc] for cell 'audio_rom3_MAP'
+Parsing XDC File [c:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/sources_1/ip/blk_mem_gen_4/blk_mem_gen_4/blk_mem_gen_4_in_context.xdc] for cell 'audio_rom4_MAP'
+Finished Parsing XDC File [c:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/sources_1/ip/blk_mem_gen_4/blk_mem_gen_4/blk_mem_gen_4_in_context.xdc] for cell 'audio_rom4_MAP'
+Parsing XDC File [C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/constrs_1/imports/Documents/nexys4_ddr.xdc]
+WARNING: [Vivado 12-584] No ports matched 'sw[2]'. [C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/constrs_1/imports/Documents/nexys4_ddr.xdc:8]
+WARNING: [Vivado 12-584] No ports matched 'sw[3]'. [C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/constrs_1/imports/Documents/nexys4_ddr.xdc:9]
+WARNING: [Vivado 12-584] No ports matched 'sw[4]'. [C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/constrs_1/imports/Documents/nexys4_ddr.xdc:10]
+WARNING: [Vivado 12-584] No ports matched 'sw[5]'. [C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/constrs_1/imports/Documents/nexys4_ddr.xdc:11]
+WARNING: [Vivado 12-584] No ports matched 'sw[6]'. [C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/constrs_1/imports/Documents/nexys4_ddr.xdc:12]
+WARNING: [Vivado 12-584] No ports matched 'sw[7]'. [C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/constrs_1/imports/Documents/nexys4_ddr.xdc:13]
+WARNING: [Vivado 12-584] No ports matched 'sw[8]'. [C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/constrs_1/imports/Documents/nexys4_ddr.xdc:14]
+WARNING: [Vivado 12-584] No ports matched 'sw[9]'. [C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/constrs_1/imports/Documents/nexys4_ddr.xdc:15]
+WARNING: [Vivado 12-584] No ports matched 'sw[10]'. [C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/constrs_1/imports/Documents/nexys4_ddr.xdc:16]
+WARNING: [Vivado 12-584] No ports matched 'sw[11]'. [C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/constrs_1/imports/Documents/nexys4_ddr.xdc:17]
+WARNING: [Vivado 12-584] No ports matched 'sw[12]'. [C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/constrs_1/imports/Documents/nexys4_ddr.xdc:18]
+WARNING: [Vivado 12-584] No ports matched 'sw[13]'. [C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/constrs_1/imports/Documents/nexys4_ddr.xdc:19]
+WARNING: [Vivado 12-584] No ports matched 'sw[14]'. [C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/constrs_1/imports/Documents/nexys4_ddr.xdc:20]
+WARNING: [Vivado 12-584] No ports matched 'sw[15]'. [C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/constrs_1/imports/Documents/nexys4_ddr.xdc:21]
+WARNING: [Vivado 12-584] No ports matched 'ld[0]'. [C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/constrs_1/imports/Documents/nexys4_ddr.xdc:24]
+WARNING: [Vivado 12-584] No ports matched 'ld[1]'. [C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/constrs_1/imports/Documents/nexys4_ddr.xdc:25]
+WARNING: [Vivado 12-584] No ports matched 'ld[2]'. [C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/constrs_1/imports/Documents/nexys4_ddr.xdc:26]
+WARNING: [Vivado 12-584] No ports matched 'ld[3]'. [C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/constrs_1/imports/Documents/nexys4_ddr.xdc:27]
+WARNING: [Vivado 12-584] No ports matched 'ld[4]'. [C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/constrs_1/imports/Documents/nexys4_ddr.xdc:28]
+WARNING: [Vivado 12-584] No ports matched 'ld[5]'. [C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/constrs_1/imports/Documents/nexys4_ddr.xdc:29]
+WARNING: [Vivado 12-584] No ports matched 'ld[6]'. [C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/constrs_1/imports/Documents/nexys4_ddr.xdc:30]
+WARNING: [Vivado 12-584] No ports matched 'ld[7]'. [C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/constrs_1/imports/Documents/nexys4_ddr.xdc:31]
+WARNING: [Vivado 12-584] No ports matched 'ld[8]'. [C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/constrs_1/imports/Documents/nexys4_ddr.xdc:32]
+WARNING: [Vivado 12-584] No ports matched 'ld[9]'. [C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/constrs_1/imports/Documents/nexys4_ddr.xdc:33]
+WARNING: [Vivado 12-584] No ports matched 'ld[10]'. [C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/constrs_1/imports/Documents/nexys4_ddr.xdc:34]
+WARNING: [Vivado 12-584] No ports matched 'ld[11]'. [C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/constrs_1/imports/Documents/nexys4_ddr.xdc:35]
+WARNING: [Vivado 12-584] No ports matched 'ld[12]'. [C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/constrs_1/imports/Documents/nexys4_ddr.xdc:36]
+WARNING: [Vivado 12-584] No ports matched 'ld[13]'. [C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/constrs_1/imports/Documents/nexys4_ddr.xdc:37]
+WARNING: [Vivado 12-584] No ports matched 'ld[14]'. [C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/constrs_1/imports/Documents/nexys4_ddr.xdc:38]
+WARNING: [Vivado 12-584] No ports matched 'ld[15]'. [C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/constrs_1/imports/Documents/nexys4_ddr.xdc:39]
+WARNING: [Vivado 12-584] No ports matched 'ld16b'. [C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/constrs_1/imports/Documents/nexys4_ddr.xdc:42]
+WARNING: [Vivado 12-584] No ports matched 'ld16g'. [C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/constrs_1/imports/Documents/nexys4_ddr.xdc:43]
+WARNING: [Vivado 12-584] No ports matched 'ld16r'. [C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/constrs_1/imports/Documents/nexys4_ddr.xdc:44]
+WARNING: [Vivado 12-584] No ports matched 'ld17b'. [C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/constrs_1/imports/Documents/nexys4_ddr.xdc:45]
+WARNING: [Vivado 12-584] No ports matched 'ld17g'. [C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/constrs_1/imports/Documents/nexys4_ddr.xdc:46]
+WARNING: [Vivado 12-584] No ports matched 'ld17r'. [C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/constrs_1/imports/Documents/nexys4_ddr.xdc:47]
+WARNING: [Vivado 12-584] No ports matched 'a_to_g[6]'. [C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/constrs_1/imports/Documents/nexys4_ddr.xdc:50]
+WARNING: [Vivado 12-584] No ports matched 'a_to_g[5]'. [C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/constrs_1/imports/Documents/nexys4_ddr.xdc:51]
+WARNING: [Vivado 12-584] No ports matched 'a_to_g[4]'. [C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/constrs_1/imports/Documents/nexys4_ddr.xdc:52]
+WARNING: [Vivado 12-584] No ports matched 'a_to_g[3]'. [C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/constrs_1/imports/Documents/nexys4_ddr.xdc:53]
+WARNING: [Vivado 12-584] No ports matched 'a_to_g[2]'. [C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/constrs_1/imports/Documents/nexys4_ddr.xdc:54]
+WARNING: [Vivado 12-584] No ports matched 'a_to_g[1]'. [C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/constrs_1/imports/Documents/nexys4_ddr.xdc:55]
+WARNING: [Vivado 12-584] No ports matched 'a_to_g[0]'. [C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/constrs_1/imports/Documents/nexys4_ddr.xdc:56]
+WARNING: [Vivado 12-584] No ports matched 'dp'. [C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/constrs_1/imports/Documents/nexys4_ddr.xdc:58]
+WARNING: [Vivado 12-584] No ports matched 'an[0]'. [C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/constrs_1/imports/Documents/nexys4_ddr.xdc:60]
+WARNING: [Vivado 12-584] No ports matched 'an[1]'. [C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/constrs_1/imports/Documents/nexys4_ddr.xdc:61]
+WARNING: [Vivado 12-584] No ports matched 'an[2]'. [C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/constrs_1/imports/Documents/nexys4_ddr.xdc:62]
+WARNING: [Vivado 12-584] No ports matched 'an[3]'. [C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/constrs_1/imports/Documents/nexys4_ddr.xdc:63]
+WARNING: [Vivado 12-584] No ports matched 'an[4]'. [C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/constrs_1/imports/Documents/nexys4_ddr.xdc:64]
+WARNING: [Vivado 12-584] No ports matched 'an[5]'. [C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/constrs_1/imports/Documents/nexys4_ddr.xdc:65]
+WARNING: [Vivado 12-584] No ports matched 'an[6]'. [C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/constrs_1/imports/Documents/nexys4_ddr.xdc:66]
+WARNING: [Vivado 12-584] No ports matched 'an[7]'. [C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/constrs_1/imports/Documents/nexys4_ddr.xdc:67]
+WARNING: [Vivado 12-584] No ports matched 'rstn'. [C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/constrs_1/imports/Documents/nexys4_ddr.xdc:70]
+WARNING: [Vivado 12-584] No ports matched 'btn[4]'. [C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/constrs_1/imports/Documents/nexys4_ddr.xdc:71]
+WARNING: [Vivado 12-584] No ports matched 'btn[3]'. [C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/constrs_1/imports/Documents/nexys4_ddr.xdc:72]
+WARNING: [Vivado 12-584] No ports matched 'btn[2]'. [C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/constrs_1/imports/Documents/nexys4_ddr.xdc:73]
+WARNING: [Vivado 12-584] No ports matched 'ja1'. [C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/constrs_1/imports/Documents/nexys4_ddr.xdc:78]
+WARNING: [Vivado 12-584] No ports matched 'ja2'. [C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/constrs_1/imports/Documents/nexys4_ddr.xdc:79]
+WARNING: [Vivado 12-584] No ports matched 'ja3'. [C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/constrs_1/imports/Documents/nexys4_ddr.xdc:80]
+WARNING: [Vivado 12-584] No ports matched 'ja4'. [C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/constrs_1/imports/Documents/nexys4_ddr.xdc:81]
+WARNING: [Vivado 12-584] No ports matched 'ja7'. [C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/constrs_1/imports/Documents/nexys4_ddr.xdc:82]
+WARNING: [Vivado 12-584] No ports matched 'ja8'. [C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/constrs_1/imports/Documents/nexys4_ddr.xdc:83]
+WARNING: [Vivado 12-584] No ports matched 'ja9'. [C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/constrs_1/imports/Documents/nexys4_ddr.xdc:84]
+WARNING: [Vivado 12-584] No ports matched 'ja10'. [C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/constrs_1/imports/Documents/nexys4_ddr.xdc:85]
+WARNING: [Vivado 12-584] No ports matched 'jb1'. [C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/constrs_1/imports/Documents/nexys4_ddr.xdc:88]
+WARNING: [Vivado 12-584] No ports matched 'jb2'. [C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/constrs_1/imports/Documents/nexys4_ddr.xdc:89]
+WARNING: [Vivado 12-584] No ports matched 'jb3'. [C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/constrs_1/imports/Documents/nexys4_ddr.xdc:90]
+WARNING: [Vivado 12-584] No ports matched 'jb4'. [C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/constrs_1/imports/Documents/nexys4_ddr.xdc:91]
+WARNING: [Vivado 12-584] No ports matched 'jb7'. [C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/constrs_1/imports/Documents/nexys4_ddr.xdc:92]
+WARNING: [Vivado 12-584] No ports matched 'jb8'. [C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/constrs_1/imports/Documents/nexys4_ddr.xdc:93]
+WARNING: [Vivado 12-584] No ports matched 'jb9'. [C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/constrs_1/imports/Documents/nexys4_ddr.xdc:94]
+WARNING: [Vivado 12-584] No ports matched 'jb10'. [C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/constrs_1/imports/Documents/nexys4_ddr.xdc:95]
+WARNING: [Vivado 12-584] No ports matched 'jc1'. [C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/constrs_1/imports/Documents/nexys4_ddr.xdc:98]
+WARNING: [Vivado 12-584] No ports matched 'jc2'. [C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/constrs_1/imports/Documents/nexys4_ddr.xdc:99]
+WARNING: [Vivado 12-584] No ports matched 'jc3'. [C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/constrs_1/imports/Documents/nexys4_ddr.xdc:100]
+WARNING: [Vivado 12-584] No ports matched 'jc4'. [C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/constrs_1/imports/Documents/nexys4_ddr.xdc:101]
+WARNING: [Vivado 12-584] No ports matched 'jc7'. [C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/constrs_1/imports/Documents/nexys4_ddr.xdc:102]
+WARNING: [Vivado 12-584] No ports matched 'jc8'. [C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/constrs_1/imports/Documents/nexys4_ddr.xdc:103]
+WARNING: [Vivado 12-584] No ports matched 'jc9'. [C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/constrs_1/imports/Documents/nexys4_ddr.xdc:104]
+WARNING: [Vivado 12-584] No ports matched 'jc10'. [C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/constrs_1/imports/Documents/nexys4_ddr.xdc:105]
+WARNING: [Vivado 12-584] No ports matched 'jd1'. [C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/constrs_1/imports/Documents/nexys4_ddr.xdc:108]
+WARNING: [Vivado 12-584] No ports matched 'jd2'. [C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/constrs_1/imports/Documents/nexys4_ddr.xdc:109]
+WARNING: [Vivado 12-584] No ports matched 'jd3'. [C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/constrs_1/imports/Documents/nexys4_ddr.xdc:110]
+WARNING: [Vivado 12-584] No ports matched 'jd4'. [C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/constrs_1/imports/Documents/nexys4_ddr.xdc:111]
+WARNING: [Vivado 12-584] No ports matched 'jd7'. [C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/constrs_1/imports/Documents/nexys4_ddr.xdc:112]
+WARNING: [Vivado 12-584] No ports matched 'jd8'. [C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/constrs_1/imports/Documents/nexys4_ddr.xdc:113]
+WARNING: [Vivado 12-584] No ports matched 'jd9'. [C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/constrs_1/imports/Documents/nexys4_ddr.xdc:114]
+WARNING: [Vivado 12-584] No ports matched 'jd10'. [C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/constrs_1/imports/Documents/nexys4_ddr.xdc:115]
+WARNING: [Vivado 12-584] No ports matched 'xa_n[1]'. [C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/constrs_1/imports/Documents/nexys4_ddr.xdc:118]
+WARNING: [Vivado 12-584] No ports matched 'xa_p[1]'. [C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/constrs_1/imports/Documents/nexys4_ddr.xdc:119]
+WARNING: [Vivado 12-584] No ports matched 'xa_n[2]'. [C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/constrs_1/imports/Documents/nexys4_ddr.xdc:120]
+WARNING: [Vivado 12-584] No ports matched 'xa_p[2]'. [C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/constrs_1/imports/Documents/nexys4_ddr.xdc:121]
+WARNING: [Vivado 12-584] No ports matched 'xa_n[3]'. [C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/constrs_1/imports/Documents/nexys4_ddr.xdc:122]
+WARNING: [Vivado 12-584] No ports matched 'xa_p[3]'. [C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/constrs_1/imports/Documents/nexys4_ddr.xdc:123]
+WARNING: [Vivado 12-584] No ports matched 'xa_n[4]'. [C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/constrs_1/imports/Documents/nexys4_ddr.xdc:124]
+WARNING: [Vivado 12-584] No ports matched 'xa_p[4]'. [C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/constrs_1/imports/Documents/nexys4_ddr.xdc:125]
+WARNING: [Vivado 12-584] No ports matched 'red[0]'. [C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/constrs_1/imports/Documents/nexys4_ddr.xdc:128]
+WARNING: [Vivado 12-584] No ports matched 'red[1]'. [C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/constrs_1/imports/Documents/nexys4_ddr.xdc:129]
+WARNING: [Vivado 12-584] No ports matched 'red[2]'. [C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/constrs_1/imports/Documents/nexys4_ddr.xdc:130]
+WARNING: [Vivado 12-584] No ports matched 'red[3]'. [C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/constrs_1/imports/Documents/nexys4_ddr.xdc:131]
+INFO: [Common 17-14] Message 'Vivado 12-584' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/constrs_1/imports/Documents/nexys4_ddr.xdc:131]
+Finished Parsing XDC File [C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/constrs_1/imports/Documents/nexys4_ddr.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/constrs_1/imports/Documents/nexys4_ddr.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/sound_top_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.srcs/constrs_1/imports/Documents/nexys4_ddr.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/sound_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/sound_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 873.430 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 873.430 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'audio_rom0_MAP' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'audio_rom1_MAP' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'audio_rom2_MAP' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'audio_rom3_MAP' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'audio_rom4_MAP' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 882.594 ; gain = 358.574
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 882.594 ; gain = 358.574
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for audio_rom0_MAP. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for audio_rom1_MAP. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for audio_rom2_MAP. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for audio_rom3_MAP. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for audio_rom4_MAP. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 882.594 ; gain = 358.574
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 882.594 ; gain = 358.574
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   4 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module counter 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module music_cntr 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module mux41c 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      8 Bit        Muxes := 1     
+Module mux21c 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module reg 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+Module aud_pwm_mod 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3917] design sound_top has port AUD_SD driven by constant 1
+WARNING: [Synth 8-3331] design sound_top has unconnected port clr
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 882.594 ; gain = 358.574
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 882.594 ; gain = 358.574
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 882.594 ; gain = 358.574
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 882.594 ; gain = 358.574
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 889.016 ; gain = 364.996
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 889.016 ; gain = 364.996
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 889.016 ; gain = 364.996
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 889.016 ; gain = 364.996
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 889.016 ; gain = 364.996
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 889.016 ; gain = 364.996
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |blk_mem_gen_0 |         1|
+|2     |blk_mem_gen_1 |         1|
+|3     |blk_mem_gen_2 |         1|
+|4     |blk_mem_gen_3 |         1|
+|5     |blk_mem_gen_4 |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+---------------------+------+
+|      |Cell                 |Count |
++------+---------------------+------+
+|1     |blk_mem_gen_0_bbox_0 |     1|
+|2     |blk_mem_gen_1_bbox_1 |     1|
+|3     |blk_mem_gen_2_bbox_2 |     1|
+|4     |blk_mem_gen_3_bbox_3 |     1|
+|5     |blk_mem_gen_4_bbox_4 |     1|
+|6     |BUFG                 |     2|
+|7     |CARRY4               |    19|
+|8     |LUT1                 |     3|
+|9     |LUT2                 |    37|
+|10    |LUT3                 |     1|
+|11    |LUT4                 |    11|
+|12    |LUT5                 |     1|
+|13    |LUT6                 |    26|
+|14    |FDCE                 |    54|
+|15    |FDRE                 |    16|
+|16    |IBUF                 |     5|
+|17    |OBUF                 |     2|
++------+---------------------+------+
+
+Report Instance Areas: 
++------+--------------------+------------+------+
+|      |Instance            |Module      |Cells |
++------+--------------------+------------+------+
+|1     |top                 |            |   217|
+|2     |  HEX2PWM_reg_MAP   |\reg        |    28|
+|3     |  aud_pwm_mod_MAP   |aud_pwm_mod |    33|
+|4     |  clkdiv_MAP        |clkdiv      |    18|
+|5     |  music_counter_MAP |music_cntr  |    47|
+|6     |  sfx_counter_MAP   |counter     |    42|
++------+--------------------+------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 889.016 ; gain = 364.996
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 889.016 ; gain = 249.812
+Synthesis Optimization Complete : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 889.016 ; gain = 364.996
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 19 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 903.871 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+47 Infos, 110 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 903.871 ; gain = 611.777
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 903.871 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Lisa/Documents/Audio_Multi_ROM_w_Music/Audio_Multi_ROM_w_Music.runs/synth_1/sound_top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file sound_top_utilization_synth.rpt -pb sound_top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Dec  9 20:05:03 2021...

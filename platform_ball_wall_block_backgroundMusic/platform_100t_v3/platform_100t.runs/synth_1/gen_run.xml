@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1639463968">
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1639507998">
   <File Type="VDS-TIMING-PB" Name="Platform_top_timing_summary_synth.pb"/>
   <File Type="VDS-TIMINGSUMMARY" Name="Platform_top_timing_summary_synth.rpt"/>
   <File Type="RDS-DCP" Name="Platform_top.dcp"/>
@@ -742,6 +742,18 @@
       </FileInfo>
     </File>
     <File Path="$PIPUSERFILESDIR/mem_init_files/effect20.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PIPUSERFILESDIR/mem_init_files/dpramOU.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PIPUSERFILESDIR/mem_init_files/dpramPrettyColors.coe">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>

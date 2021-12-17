@@ -1,0 +1,350 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Dec 13 14:46:40 2021
+# Process ID: 2912
+# Current directory: C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.runs/impl_1
+# Command line: vivado.exe -log Platform_top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source Platform_top.tcl -notrace
+# Log file: C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.runs/impl_1/Platform_top.vdi
+# Journal file: C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source Platform_top.tcl -notrace
+Command: link_design -top Platform_top -part xc7a100tcsg324-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/ip/x8ball_ROM/x8ball_ROM.dcp' for cell 'ball_uut'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/ip/DPRAM/DPRAM.dcp' for cell 'dpram_uut'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/sources_1/ip/platformROM/platformROM.dcp' for cell 'platform_uut'
+INFO: [Netlist 29-17] Analyzing 140 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc]
+WARNING: [Vivado 12-584] No ports matched 'sw[8]'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:20]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:20]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[9]'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:21]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:21]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[10]'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:22]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:22]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[11]'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:23]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:23]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[12]'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:24]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[13]'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:25]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:25]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[14]'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:26]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:26]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[15]'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:27]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ld[0]'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:30]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:30]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ld[1]'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:31]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:31]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ld[2]'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:32]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:32]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ld[3]'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:33]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ld[4]'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ld[5]'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:35]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ld[6]'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ld[7]'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ld[8]'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ld[9]'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:39]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ld[10]'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:40]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:40]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ld[11]'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:41]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:41]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ld[12]'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:42]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:42]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ld[13]'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:43]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:43]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ld[14]'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:44]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:44]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ld[15]'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:45]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:45]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ld16b'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:48]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:48]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ld16g'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:49]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:49]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ld16r'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:50]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:50]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ld17b'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:51]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:51]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ld17g'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:52]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:52]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ld17r'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:53]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:53]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'a_to_g[6]'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:56]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:56]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'a_to_g[5]'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:57]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:57]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'a_to_g[4]'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:58]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:58]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'a_to_g[3]'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:59]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:59]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'a_to_g[2]'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:60]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:60]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'a_to_g[1]'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:61]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:61]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'a_to_g[0]'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:62]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:62]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dp'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:64]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:64]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[0]'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:66]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:66]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[1]'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:67]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:67]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[2]'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:68]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:68]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[3]'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:69]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:69]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[4]'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:70]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:70]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[5]'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:71]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:71]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[6]'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:72]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:72]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[7]'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:73]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:73]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'rstn'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:76]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:76]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ja1'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:90]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:90]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ja2'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:91]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:91]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ja3'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:92]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:92]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ja4'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:93]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:93]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ja7'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:94]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:94]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ja8'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:95]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:95]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ja9'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:96]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:96]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ja10'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:97]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:97]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jb1'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:100]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:100]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jb2'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:101]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:101]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jb3'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:102]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:102]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jb4'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:103]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:103]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jb7'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:104]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:104]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jb8'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:105]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:105]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jb9'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:106]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:106]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jb10'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:107]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:107]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jc1'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:110]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:110]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jc2'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:111]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:111]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jc3'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:112]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:112]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jc4'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:113]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:113]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jc7'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:114]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:114]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jc8'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:115]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:115]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jc9'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:116]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:116]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jc10'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:117]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:117]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jd1'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:120]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:120]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jd2'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:121]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:121]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jd3'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:122]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:122]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jd4'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:123]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:123]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jd7'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:124]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:124]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jd8'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:125]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:125]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jd9'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:126]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:126]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'jd10'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:127]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:127]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'xa_n[1]'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:130]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:130]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'xa_p[1]'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:131]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:131]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'xa_n[2]'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:132]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:132]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'xa_p[2]'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:133]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:133]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'xa_n[3]'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:134]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:134]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'xa_p[3]'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:135]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:135]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'xa_n[4]'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:136]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:136]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'xa_p[4]'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:137]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:137]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'red[3]'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:143]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:143]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'green[3]'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:148]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:148]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'blue[2]'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:152]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:152]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'blue[3]'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:153]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:153]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ACL_MISO'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:159]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:159]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ACL_MOSI'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:160]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:160]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ACL_SCLK'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:161]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:161]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ACL_CSN'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:162]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:162]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ACL_INT[1]'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:163]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:163]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ACL_INT[2]'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:164]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:164]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'TMP_SCL'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:167]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:167]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'TMP_SDA'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:168]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:168]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'TMP_INT'. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:169]
+INFO: [Common 17-14] Message 'Vivado 12-584' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:169]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:169]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+INFO: [Common 17-14] Message 'Common 17-55' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc:169]
+Finished Parsing XDC File [C:/Users/Quantum/Documents/Oakland University/Fall 2021/ECE5710/ECE5710_Final_Project/platform_100t_v3/platform_100t.srcs/constrs_1/imports/ECE5710_Final_Project/nexys4_ddr.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 668.043 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 15 instances were transformed.
+  RAM128X1D => RAM128X1D (RAMD64E, RAMD64E, MUXF7, MUXF7, RAMD64E, RAMD64E): 10 instances
+  RAM32X1D => RAM32X1D (RAMD32, RAMD32): 5 instances
+
+12 Infos, 100 Warnings, 100 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 668.043 ; gain = 377.016
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.970 . Memory (MB): peak = 687.051 ; gain = 19.008
+
+Starting Cache Timing Information Task
