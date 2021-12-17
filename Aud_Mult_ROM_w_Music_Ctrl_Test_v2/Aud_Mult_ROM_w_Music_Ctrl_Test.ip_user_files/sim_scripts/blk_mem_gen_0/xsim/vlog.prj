@@ -1,6 +1,0 @@
-verilog xil_defaultlib  \
-"../../../../Aud_Mult_ROM_w_Music_Ctrl_Test.srcs/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v" \
-
-verilog xil_defaultlib "glbl.v"
-
-nosort

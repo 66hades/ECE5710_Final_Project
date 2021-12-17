@@ -1,6 +1,0 @@
-Sound effects taken from https://www.sounds-resource.com/nes/metroid/
-
-Silence removed with FFMPEG in bash on Linux:
-for f in *.wav; do ffmpeg -i $f -filter_complex "[0:a]silenceremove=stop_periods=-1" output/${f}; done
-
-Use gen_all_coe.m to convert all .wav files to .coe.
